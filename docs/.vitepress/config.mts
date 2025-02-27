@@ -5,7 +5,7 @@ export default defineConfig({
   title: " ",
   description: "Help Center",
   base: '/help-center/',
-  head: [['link', { rel: 'icon', href: '/help-center/favicon.ico' }]],
+  head: [['link', { rel: 'icon', href: './help-center/favicon.ico' }]],
   themeConfig: {
     logo: 'https://public.dev.sairis.ai/images/f6eb7bac-3a9c-4db2-aa32-39cfadbc1e29/logo_light.png',
     // https://vitepress.dev/reference/default-theme-config
