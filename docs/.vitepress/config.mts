@@ -2,7 +2,7 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: " ",
+  title: "Sairis",
   description: "Help Center",
   base: '/help-center/',
   // head: [['link', { rel: 'icon', href: './help-center/favicon.ico' }]],
