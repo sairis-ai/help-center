@@ -1,5 +1,3 @@
 # Build outputs
 docs/.vitepress/cache
-dist/
-build/
 node_modules/
