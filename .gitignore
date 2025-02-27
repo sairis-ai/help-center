@@ -1,5 +1,4 @@
 # Build outputs
-docs/.vitepress/dist 
 docs/.vitepress/cache
 dist/
 build/
