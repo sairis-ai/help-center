@@ -32,6 +32,20 @@ export default defineConfig({
         ]
       },
       {
+        text: 'Administration',
+        collapsed: false,
+        items: [
+          { text: 'AI Management', link: '/AI-Management' },
+          { text: 'Dashboards', link: '/Dashboards' },
+          { text: 'Manage', collapsed: true, items: 
+            [ 
+              {text: 'Users', link: '/Administration/Manage/Users'}, 
+              {text: 'Groups', link: 'Administration/Manage/Groups'}, 
+              {text: 'Global Settings', link: 'Administration/Manage/Global-Settings'}] 
+            }
+        ]
+      },
+      {
         text: 'Resources',
         collapsed: false,
         items: [
