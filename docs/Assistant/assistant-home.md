@@ -5,4 +5,4 @@ This the the place to start learning about the Assistant. You will gain the abil
 ![homepage](../images/home_page.png)
 
 Hello!
-> This is neat. MORE
+> This is neat. MORE, more
