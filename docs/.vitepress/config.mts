@@ -32,27 +32,89 @@ export default defineConfig({
         ]
       },
       {
-        text: 'Administration',
-        collapsed: false,
-        items: [
-          { text: 'AI Management', link: '/AI-Management' },
-          { text: 'Dashboards', link: '/Dashboards' },
-          { text: 'Manage', collapsed: true, items: 
+       text: 'AI Management', collapsed: false, items: 
             [ 
-              {text: 'Users', link: '/Administration/Manage/Users'}, 
-              {text: 'Groups', link: 'Administration/Manage/Groups'}, 
-              {text: 'Global Settings', link: 'Administration/Manage/Global-Settings'}] 
-            }
-        ]
+              {text: 'AI Content', collapsed: false, items:
+                [
+                  {text: 'AI Content Manager', link: '/Administration/AI-Management/AI-Content/content-manager'},
+                  {text: 'AI Card', link: '/Administration/AI-Management/AI-Content/ai-card'},
+                  {text: 'AI File Manager', link: '/Administration/AI-Management/AI-Content/ai-file-manager'},
+                  {text: 'AI Web Link', link: '/Administration/AI-Management/AI-Content/ai-web-link'}
+                ]
+              },
+              {text: 'Blueprints', collapsed: false, items:
+                [
+                  {text: 'Blueprint List',link: '/Administration/AI-Management/Blueprints/blueprint-list-view'},
+                  {text: 'Blueprint Settings',link: '/Administration/AI-Management/Blueprints/blueprint-settings'}
+                ]
+              },              
+              {text: 'Knowledge Bases', collapsed: false, items:
+                [
+                  {text: 'Knowledge Base List',link: '/Administration/AI-Management/Knowledge-Bases/knowledge-base-list'},
+                  {text: 'Knowledge Base Settings',link: '/Administration/AI-Management/Knowledge-Bases/knowledge-base'}
+                ]
+              }, 
+              {text: 'Test Cases', link: '/Administration/Test-Cases/ai-test-case-view'}, 
+              {text: 'Settings', collapsed: false, items:
+                [
+                  {text: 'Launch Pad',link: '/Administration/AI-Management/Settings/launchpad'},
+                  {text: 'Topics',link: '/Administration/AI-Management/Settings/topics'},
+                  {text: 'Tags',link: '/Administration/AI-Management/Settings/tags'},
+                  {text: 'LLM\'s',link: '/Administration/AI-Management/Settings/large-language-models'},
+                  {text: 'Roles',link: '/Administration/AI-Management/Settings/roles'},
+                  {text: 'Bans',link: '/Administration/AI-Management/Settings/bans'}
+                ]
+              },
+            ]         
+      },
+      {text: 'Dashboard Insights', collapsed: false, items: 
+        [ 
+          {text: 'Platform', link: '/Administration/Dashboard/Insights/platform'}, 
+          {text: 'Tokens', link: 'Administration/Dashboard/Insights/tokens'}, 
+          {text: 'KB\'s', link: 'Administration/Dashboard/Insights/kbs'},
+          {text: 'Content', link: 'Administration/Dashboard/Insights/content'},
+          {text: 'Usage', link: 'Administration/Dashboard/Insights/usage'},
+          {text: 'Logins', link: 'Administration/Dashboard/Insights/logins'},
+          {text: 'Devices', link: 'Administration/Dashboard/Insights/devices'}
+          ]
+        },
+      {text: 'Manage', collapsed: false, items: 
+        [ 
+          {text: 'Users', collapsed: false, items: 
+            [
+              {text: 'User Management', link: '/Administration/Manage/Users/user-management'},
+              {text: 'User Profile', link: '/Administration/Manage/Users/user-profile'},
+              {text: 'User Groups', link: '/Administration/Manage/Users/user-groups'},
+              {text: 'User Privileges', link: '/Administration/Manage/Users/user-privileges'},
+              {text: 'User Personal', link: '/Administration/Manage/Users/user-personal'},
+              {text: 'User Activities', link: '/Administration/Manage/Users/user-activities'}
+            ]
+          }, 
+          {text: 'Groups', collapsed: false, items: 
+            [  
+              {text: 'Group Management', link: '/Administration/Manage/Groups/group-management'},
+              {text: 'Create Groups', link: '/Administration/Manage/Groups/smart-group'}
+            ]
+          }, 
+          {text: 'Global Settings',collapsed: false, items: 
+            [  
+              {text: 'Branding', link: '/Administration/Manage/global-settings/branding'},
+              {text: 'Security', link: '/Administration/Manage/global-settings/security'},
+              {text: 'Features', link: '/Administration/Manage/global-settings/features'},
+              {text: 'Messaging', link: '/Administration/Manage/global-settings/messaging'}
+            ]
+          }
+        ] 
       },
       {
-        text: 'Resources',
-        collapsed: false,
-        items: [
-          { text: 'Sample 1', link: '/markdown-examples' },
-          { text: 'Sample 2', link: '/api-examples' },
-          { text: 'Sample 3', link: '/sairis-overview' }
-        ]
+        text: 'View - User Menu', link: '/Administration/View/Users'
+      },
+      {
+        text: 'Tenant', collapsed: false,items: 
+        [ 
+          {text: 'Tenant Management', link: '/Administration/Tenant/tenant-management'},
+          {text: 'Tenant Profile', link: '/Administration/Tenant/tenant-profile'}
+        ] 
       }
     ],
   }
