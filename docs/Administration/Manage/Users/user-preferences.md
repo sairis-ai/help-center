@@ -1,81 +1,151 @@
-# Configuring User Preferences in Sairis
+# User Profile Preferences Guide
+
+## Table of Contents
+- [User Profile Preferences Guide](#user-profile-preferences-guide)
+  - [Table of Contents](#table-of-contents)
+  - [Introduction](#introduction)
+  - [Accessing User Preferences](#accessing-user-preferences)
+  - [User Preferences Interface Overview](#user-preferences-interface-overview)
+  - [Available Preference Settings](#available-preference-settings)
+    - [Language Settings](#language-settings)
+    - [Default Blueprint](#default-blueprint)
+    - [Security Settings](#security-settings)
+    - [Interface Display Settings](#interface-display-settings)
+    - [Session Management](#session-management)
+    - [Theme Settings](#theme-settings)
+  - [How Preferences Affect User Experience](#how-preferences-affect-user-experience)
+  - [Best Practices](#best-practices)
 
 ## Introduction
-Learn how to customize user preferences, manage application access, and configure individual settings for users in the Sairis platform. This guide will walk you through the various options available in the Preferences tab of a user's profile.
+
+The User Profile Preferences component allows administrators to configure personalized settings for each user. These preferences control the user interface appearance, session behavior, default content, and other customization options to optimize the user experience.
 
 ## Accessing User Preferences
-1. Navigate to the Users section in the Manage menu.
-2. Select a specific user profile.
-3. Click on the **Preferences** tab.
 
-## Language and Interface Settings
+The User Preferences component is accessible to users with specific roles:
+- Admin
+- Content
+- Manager
 
-### Language Selection
-- Choose the primary language for the user's interface.
-- Available options include:
-  - English (default)
-  - Spanish
-  - French
+To access this component:
+1. Navigate to a user profile page (`/user/profile/[user_id]`)
+2. Click on the "Preferences" tab in the left navigation menu
 
-### Default AI Assistant Blueprint
-- Select a default Blueprint that will load when the user starts an Assistant session.
-- Optional setting can be left blank.
+## User Preferences Interface Overview
 
-## Login and Session Preferences
+The User Preferences interface displays a form with multiple setting controls organized in a responsive grid layout. Each preference has a clear label and appropriate input control (toggle switches, dropdown menus, sliders, or radio buttons).
 
-### Auto Login (Remember Me)
-- Toggle the Auto Login feature on or off.
-- When enabled, the user's login credentials will be remembered.
+The header area includes:
+- A palette icon indicating customization options
+- A "User Preferences" title
+- A brief description: "Configure your user preferences"
 
-### Control Panel Display
-- Choose whether the Assistant Control Panel starts expanded or collapsed by default.
+## Available Preference Settings
 
-### Session Timeout
-- Set the duration after which the user will be automatically logged out.
-- Available options:
-  - 0 minutes (no timeout)
+### Language Settings
+
+**Language Dropdown**
+- Options: English, Spanish, French
+- Controls the display language throughout the application
+- Affects all text elements, notifications, and system messages
+- Default: English
+
+### Default Blueprint
+
+**Default AI Assistant Blueprint**
+- Type: Autocomplete field with dropdown list
+- Options: All blueprints marked with `ai_blueprint_show_home === true`
+- Purpose: Sets the AI conversation template that loads automatically when a user starts the assistant
+- When selected, the specified blueprint will initialize whenever the user opens a new chat session
+- When empty (default), users must manually select a blueprint
+
+### Security Settings
+
+**Auto Login (Remember Me)**
+- Type: Toggle switch (On/Off)
+- When enabled: User credentials are remembered between browser sessions
+- When disabled: User must enter credentials each time they log in
+- Default: Enabled
+
+### Interface Display Settings
+
+**Control Panel Expanded**
+- Type: Toggle switch (Yes/No)
+- When enabled: The assistant control panel appears expanded by default
+- When disabled: The control panel appears collapsed until manually expanded
+- Default: Enabled
+- Affects the initial state of the control panel when opening the assistant
+
+### Session Management
+
+**Session Timeout**
+- Type: Slider with marked intervals
+- Controls how long a user can remain inactive before being automatically logged out
+- Options:
+  - 0: No timeout (session never expires)
   - 30 minutes
   - 1 hour
   - 4 hours
   - 8 hours
   - 12 hours
   - 24 hours
+- Default: 30 minutes
+- For security purposes, this setting determines when to end idle sessions
 
-## Theme Preferences
-- Select the interface theme:
-  - Light mode
-  - Dark mode
+### Theme Settings
 
-## User Application Modules
-Configure which application modules the user can access:
+**Theme**
+- Type: Radio button group
+- Options: Light, Dark
+- Controls the color scheme of the application
+- Light: Traditional bright background with dark text
+- Dark: Dark background with light text
+- Default: Light
 
-### Content Modules
-- **Content View**: Allow viewing assigned content
-- **Search View**: Enable content search functionality
-- **Learn Platform**: Access to learning modules
+## How Preferences Affect User Experience
 
-### Assistant Features
-- **Assistant Chat Bot**: Enable AI chatbot interactions
-- **LaunchPad**: Access to content organization tool
-- **Assistant Control Panel**: Manage chat sessions and settings
-- **Assistant Content Selector**: Choose content for interactions
-- **Assistant AI Settings**: Configure AI-specific chat settings
-- **Blueprints**: Create and use structured Blueprints
-- **Chat History**: View and manage previous chat sessions
+1. **Theme and Visual Settings**
+   - Directly impact the visual appearance of all screens
+   - Help accommodate user preferences for light/dark environments
+   - Can reduce eye strain in different lighting conditions
 
-## User Privileges Needed
+2. **Default Blueprint**
+   - Streamlines workflow by automatically loading frequently used AI conversation templates
+   - Eliminates the need to select the same blueprint repeatedly
+   - Particularly useful for users who primarily work with one type of AI interaction
 
-| **Action** | **Privilege Needed** |
-|:----------|:---------------------|
-| To access user preferences: | Platform Access Level: Admin |
-| To modify user preferences: | Administrator Access Level: User Management Full Access |
+3. **Session Timeout**
+   - Balances security with convenience
+   - Shorter timeouts increase security but may require more frequent logins
+   - Longer timeouts improve workflow but may pose security risks if workstations are left unattended
 
-## Saving Changes
-- After configuring preferences, click **Submit** to apply the changes.
-- Changes take effect immediately upon saving.
+4. **Language Selection**
+   - Ensures content is presented in the user's preferred language
+   - Improves usability for non-native English speakers
+   - Affects all system text, not user-generated content
 
 ## Best Practices
-- Regularly review and update user preferences to ensure optimal platform experience.
-- Consider user roles and responsibilities when configuring access levels.
-- Communicate preference changes to users to prevent confusion.
-```Final Answer: Sorry, I couldn't process the question at the moment.
+
+1. **Setting Session Timeouts**
+   - For shared workstations: Use shorter timeouts (30 minutes to 1 hour)
+   - For private workstations: Longer timeouts may be acceptable (4-8 hours)
+   - For high-security environments: Use shorter timeouts regardless of workstation type
+
+2. **Default Blueprint Selection**
+   - Choose blueprints that match the user's primary job function
+   - For new users, consider leaving this blank until their workflow patterns are established
+   - Update periodically based on actual usage patterns
+
+3. **Theme Configuration**
+   - Consider setting dark mode for users working in low-light environments
+   - Light mode is typically better for high-light environments and print readability
+   - Match to organizational branding when possible
+
+4. **Control Panel State**
+   - For new users: Set to expanded to increase feature discovery
+   - For experienced users: Consider collapsed to maximize screen space
+   - For small screens/mobile users: Collapsed is generally preferred
+
+---
+
+For additional assistance with user preferences configuration, please contact your system administrator.

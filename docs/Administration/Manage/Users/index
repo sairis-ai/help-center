@@ -1,0 +1,207 @@
+# User Profile Management Guide
+
+## Table of Contents
+- [User Profile Management Guide](#user-profile-management-guide)
+  - [Table of Contents](#table-of-contents)
+  - [Introduction](#introduction)
+  - [Access and Permissions](#access-and-permissions)
+  - [User Profile Interface Overview](#user-profile-interface-overview)
+  - [Creating a New User](#creating-a-new-user)
+  - [Viewing and Editing User Profiles](#viewing-and-editing-user-profiles)
+  - [Profile Management Tabs](#profile-management-tabs)
+    - [User Profile](#user-profile)
+    - [Groups](#groups)
+    - [Preferences](#preferences)
+    - [Privileges](#privileges)
+    - [Personal Information](#personal-information)
+    - [Activities](#activities)
+  - [Managing User Status](#managing-user-status)
+  - [Deleting Users](#deleting-users)
+  - [Notifications and Status Messages](#notifications-and-status-messages)
+  - [Troubleshooting](#troubleshooting)
+
+## Introduction
+
+The User Profile Management interface allows administrators to create, view, edit, and delete user accounts within the system. This tool provides comprehensive control over user settings, permissions, group memberships, and personal information.
+
+## Access and Permissions
+
+The User Profile Management interface is restricted to users with specific roles:
+- Admin
+- Content
+- Manager
+
+Users without these roles will not be able to access this functionality.
+
+## User Profile Interface Overview
+
+The User Profile interface consists of these main components:
+
+1. **User Header**: Displays the user's avatar (with initials), name, and a brief description
+2. **Action Buttons**: Buttons for creating new users, deleting users, and returning to the user list
+3. **Tab Navigation**: Left sidebar menu for accessing different aspects of the user profile
+4. **Content Area**: Main section that displays the selected tab's form fields and options
+
+## Creating a New User
+
+To create a new user:
+
+1. Navigate to the User Profile page via `/user/profile/new` or click the "New" button when viewing an existing user
+2. Fill out the required information in the User Profile tab:
+   - First Name
+   - Last Name
+   - Display Name (auto-generated from first and last names)
+   - Email Address
+   - Access Level
+   - Mobile Phone (optional)
+   - Description (optional)
+3. Complete additional settings in other tabs as needed
+4. Click "Submit User" to create the account
+
+**Note**: If no email address is provided, a warning will appear indicating the user will not be able to log in or reset their password.
+
+## Viewing and Editing User Profiles
+
+To view or edit an existing user profile:
+
+1. Navigate to the User List page (`/users/userlist`)
+2. Click on a user to open their profile
+3. Make desired changes to any field across the available tabs
+4. Click "Submit User" to save changes
+
+## Profile Management Tabs
+
+### User Profile
+
+The main tab contains essential user information:
+
+- **Active Status**: Toggle to enable/disable the user account
+- **First Name**: User's first name
+- **Last Name**: User's last name
+- **Display Name**: How the user will appear in the system (auto-generated)
+- **Access Level**: User permission level (User or Admin)
+- **Email**: User's email address (used for login and communication)
+- **Mobile Phone**: Optional contact information
+- **Description**: Optional notes about the user
+
+### Groups
+
+The Groups tab allows you to manage which organizational groups the user belongs to:
+
+- View all available groups
+- Add user to groups
+- Remove user from groups
+- See group descriptions and purposes
+
+### Preferences
+
+The Preferences tab controls the user's interface and system settings:
+
+- **Theme**: Choose between light and dark mode
+- **Session Timeout**: Set the duration before automatic logout (in hours)
+- **Viewing Scale**: Adjust the interface size/zoom level
+- **Menu Style**: Select the preferred navigation menu style
+- **Portal Menu**: Choose the default menu section
+- **Default Blueprint**: Select a blueprint to load automatically
+- **Control Panel Expanded**: Set whether the control panel should be expanded by default
+
+### Privileges
+
+The Privileges tab manages what features and functionality the user can access:
+
+- **Feature Access**:
+  - Learning features
+  - Assistant content selector
+  - Assistant features
+  - Launch Pad
+  - Control Panel access
+  - Chat history settings
+  - Blueprint access
+  - Content view
+  - AI settings
+  - Search view
+
+- **Admin Access** (when Access Level is set to Admin):
+  - Content administration
+  - Knowledge base administration
+  - Dashboard access
+  - User management
+  - Group management
+  - Settings administration
+  - Blueprint administration
+  - Test case administration
+
+Each privilege can be individually enabled or disabled.
+
+### Personal Information
+
+The Personal Information tab stores additional data about the user:
+
+- Custom fields for personal details
+- Additional contact information
+- Organizational data
+
+### Activities
+
+The Activities tab shows a log of the user's actions within the system:
+
+- Login history
+- Content interactions
+- System changes
+- Timestamp information
+
+## Managing User Status
+
+To enable or disable a user account:
+
+1. Navigate to the user's profile
+2. On the User Profile tab, toggle the "Active" switch
+3. Submit the form to save changes
+
+Disabled users will be marked with a "Disabled" badge in the user header and will not be able to log in to the system.
+
+## Deleting Users
+
+To delete a user account:
+
+1. Navigate to the user's profile
+2. Click the "Delete" button in the top-right corner
+3. Confirm the deletion when prompted ("Are you sure you want to delete this user?")
+4. The user will be removed from the system and you will be redirected to the user list
+
+**Warning**: User deletion is permanent and cannot be undone.
+
+## Notifications and Status Messages
+
+The system provides feedback through toast notifications that appear after actions:
+
+- **Success**: Appears in green when an action completes successfully
+- **Warning**: Appears in yellow when an action completes but with some concerns
+- **Error**: Appears in red when an action fails
+
+Common notifications include:
+- User created successfully
+- User updated successfully
+- User deleted successfully
+- Warning about users without email addresses
+- Service errors with status codes
+
+## Troubleshooting
+
+**Issue**: Changes not saving
+- Ensure all required fields are completed
+- Check for error messages in the toast notifications
+- Verify you have the appropriate permissions
+
+**Issue**: Cannot delete a user
+- Ensure you have admin privileges
+- Check if the user is referenced in other system components
+
+**Issue**: "Services Error" message
+- Note the error code provided in the message
+- Check network connectivity
+- Contact system administrator if the issue persists
+
+---
+
+For additional assistance, please contact your system administrator or refer to the advanced administration documentation.

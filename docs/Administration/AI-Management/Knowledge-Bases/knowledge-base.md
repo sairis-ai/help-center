@@ -1,87 +1,124 @@
-# How to Create a New Knowledge Base
+# Knowledge Base Configuration Guide
+
+## Table of Contents
+- [Knowledge Base Configuration Guide](#knowledge-base-configuration-guide)
+  - [Table of Contents](#table-of-contents)
+  - [Introduction](#introduction)
+  - [Accessing Knowledge Base Configuration](#accessing-knowledge-base-configuration)
+  - [Knowledge Base Dialog Overview](#knowledge-base-dialog-overview)
+  - [Basic Information Section](#basic-information-section)
+    - [Name and Initials](#name-and-initials)
+    - [Description](#description)
+    - [Group Access](#group-access)
+    - [Topics and Tags](#topics-and-tags)
+  - [AI Configuration Section](#ai-configuration-section)
+    - [Foundation Model Selection](#foundation-model-selection)
+    - [Creativity Settings](#creativity-settings)
 
 ## Introduction
-Learn how to create and configure a new Knowledge Base (KB) in the Sairis platform. Knowledge Bases are essential for organizing and managing information that can be used by the AI Assistant.
 
-## Why This Matters
-Knowledge Bases allow you to create structured, searchable repositories of information. By carefully curating and organizing your Knowledge Base, you can improve the accuracy and relevance of AI-generated responses across your organization.
+The Knowledge Base Configuration dialog allows administrators to create and edit knowledge bases within the AI Assistant platform. A knowledge base (KB) is a collection of content that the AI uses to provide answers to user queries. This guide explains how to configure knowledge bases effectively using the KB Dialog interface.
 
-## Prerequisites
-Before creating a Knowledge Base, ensure you have:
-- Access to the Knowledge Base management section
-- Necessary permissions to create and configure Knowledge Bases
+## Accessing Knowledge Base Configuration
 
-## Step-by-Step Instructions
+The Knowledge Base Configuration dialog is accessible to users with specific roles:
+- Admin
+- Content
+- Manager
 
-### Accessing Knowledge Base Creation
-1. Navigate to the Knowledge Bases section in the AI Management menu
-2. Click the **Add KB** button
+This dialog appears when:
+- Creating a new knowledge base by clicking "Add KB" in the Knowledge Base List View
+- Editing an existing knowledge base by clicking its name or the edit button
 
-### Configure Basic Information
-1. **Name**: Enter a clear, descriptive name for your Knowledge Base
-   - Example: "Auto Maintenance"
+## Knowledge Base Dialog Overview
+
+The Knowledge Base Dialog is divided into two main columns:
+
+**Left Column**: Contains basic information fields
+- Name and initials
+- Description
+- Group access settings
+- Topic and tag selection
+
+**Right Column**: Contains AI and search configuration
+- AI foundation model selection
+- Creativity settings
+- System instructions
+- Search configuration parameters
+- Sharing and visibility toggles
+
+## Basic Information Section
+
+### Name and Initials
+
+1. **Name** (Required):
+   - The primary identifier for your knowledge base
+   - Should be descriptive and unique
+   - Appears in the knowledge base list and selection dropdowns
    - Maximum length: 255 characters
 
-2. **Initials**: Provide 1-2 character initials to represent the Knowledge Base
-   - Example: "AU"
-   - Used for quick identification
+2. **Initials** (Required):
+   - Two-character identifier used for the knowledge base avatar
+   - Automatically generated from the first two letters of the name
+   - Can be manually overridden
+   - Used in visual representations throughout the system
 
-3. **Description**: Write a detailed description explaining the purpose of the Knowledge Base
-   - Be specific about the type of information contained
-   - Maximum length: Approximately 500 characters
+### Description
 
-### Advanced Configuration
+The description field provides context about the knowledge base's purpose and content:
+- Helps users understand what information the KB contains
+- Appears in the knowledge base list and selection interfaces
+- Use clear, concise language explaining the KB's scope and use cases
+- Optional but strongly recommended
 
-#### AI Model Settings
-1. Select an **AI Foundation Model**
-   - Options: 
-     * haiku
-     * sonnet (default)
+### Group Access
 
-2. Choose **Creativity Level**
-   - Options:
-     * Creative
-     * Balanced
-     * Precise
+Group Access controls which users can access this knowledge base:
 
-3. **Optional**: Add custom **Instructions** for the AI's behavior with this Knowledge Base
+1. **Group Selection**:
+   - Choose from existing groups in the system
+   - Multiple groups can be selected
+   - Only users belonging to selected groups will see this knowledge base
+   - Groups are displayed as a tag list for easy management
 
-#### Search and Access Configuration
-1. **KB Search Results**
-   - Set the number of results returned when searching the Knowledge Base
-   - Default: 10 results
-   - Range: 1-100 results
+2. **Access Implications**:
+   - Adding many groups increases visibility but may expose sensitive information
+   - Limited group selection creates specialized access for specific teams
+   - No groups selected means no users can access the knowledge base
 
-2. **Results Match Score**
-   - Minimum score for search results
-   - Recommended: 58-60
-   - Range: 1-100
+### Topics and Tags
 
-#### Visibility and Sharing
-1. **Allow Copies**
-   - Toggle to permit others to create derivative work from this Knowledge Base
+Topics and tags help organize and categorize knowledge bases:
 
-2. **Publish in Quick List**
-   - Show this Knowledge Base in the main AI Selector dropdown
+1. **KB Topic**:
+   - Single selection from predefined list
+   - Used for major categorization
+   - Helps organize knowledge bases in the list view
+   - Optional field
 
-3. **Publish on Home Page**
-   - Display the Knowledge Base on users' home pages
+2. **KB Tags**:
+   - Multiple selections from predefined list
+   - Can create new tags if needed
+   - Used for more granular categorization
+   - Helps users find relevant knowledge bases
+   - Optional field
 
-### Final Steps
-1. Review all settings
-2. Click **Submit** to create the Knowledge Base
+## AI Configuration Section
 
-## User Privileges Needed
+### Foundation Model Selection
 
-| **Action** | **Privilege Needed** |
-|-----------|---------------------|
-| To create a Knowledge Base | Platform Access Level: Admin |
-| To modify Knowledge Base settings | Administrator Access Level: Full Knowledge Base Management |
+Choose the AI model that will power this knowledge base:
 
-## Best Practices
-- Choose a clear, descriptive name
-- Write a comprehensive description
-- Set an appropriate creativity level
-- Configure search parameters carefully
-- Regularly update and maintain your Knowledge Base
-```Final Answer: Sorry, I couldn't process the question at the moment.
+1. **AI Model** (Required):
+   - Options: "haiku" or "sonnet"
+   - Haiku: Optimized for speed and efficiency
+   - Sonnet: Optimized for depth and complexity
+   - Selection affects response quality and processing time
+
+### Creativity Settings
+
+Control how creative or precise the AI responses should be:
+
+1. **Creativity** (Required):
+   - Options: "Creative," "Balanced," or "Precise"
+   - Creative: More varied and imaginative
