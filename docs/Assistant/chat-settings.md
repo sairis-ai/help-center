@@ -1,5 +1,6 @@
 # AI Settings Panel User Guide
 
+<!--
 ## Table of Contents
 - [AI Settings Panel User Guide](#ai-settings-panel-user-guide)
   - [Table of Contents](#table-of-contents)
@@ -30,6 +31,7 @@
     - [Blueprint Ownership](#blueprint-ownership)
   - [Best Practices](#best-practices)
   - [Troubleshooting](#troubleshooting)
+--> 
 
 ## Introduction
 
@@ -47,6 +49,8 @@ The AI Settings Panel is accessible from the main AI Assistant interface:
 
 The Settings Panel is organized into several key sections:
 
+![homepage](/images/assistant-settings.png)
+
 1. **Header** - Contains the title and Options menu
 2. **Blueprint** - Load, save, and manage Blueprints
 3. **Instructions** - Configure AI behavior through system prompts
@@ -60,6 +64,8 @@ The Settings Panel is organized into several key sections:
 ### Loading Blueprints
 
 To use a saved Blueprint configuration:
+
+![homepage](/images/assistant-blueprint.png)
 
 1. Click the dropdown icon in the Blueprint section
 2. A popup appears with available Blueprints

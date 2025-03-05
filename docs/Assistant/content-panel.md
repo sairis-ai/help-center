@@ -1,5 +1,6 @@
 # AI Content Manager User Guide
 
+<!--
 ## Table of Contents
 - [AI Content Manager User Guide](#ai-content-manager-user-guide)
   - [Table of Contents](#table-of-contents)
@@ -22,6 +23,7 @@
   - [Creating Content Chats](#creating-content-chats)
   - [Best Practices](#best-practices)
   - [Troubleshooting](#troubleshooting)
+-->
 
 ## Introduction
 
@@ -40,7 +42,7 @@ The Content Manager appears as a sidebar panel within the AI Assistant interface
 The Content Manager consists of four main sections:
 
 1. **Header**: Contains the "New Content Chat" button and search bar
-2. **Selected Content**: Displays currently selected items as chips
+2. **Selected Content**: Displays currently selected items as checkboxes
 3. **Knowledge Bases**: Accordion panel for browsing and selecting knowledge repositories
 4. **Assigned Content**: Accordion panel for selecting specific content items
 5. **My Content**: Accordion panel for personal file uploads and categories
@@ -51,10 +53,12 @@ The Content Manager consists of four main sections:
 
 The top section displays all currently selected content:
 
-1. Each selected item appears as a colored chip:
+![homepage](/images/content-selected-contentview.png)
+
+1. Each selected item appears as a colored checkbox:
    - Knowledge Base items: Blue/primary color background
    - Individual content items: White/neutral background
-2. Chips display the name of each selected knowledge base or content item
+2. Checkboxes display the name of each selected knowledge base or content item
 3. Empty state shows "empty" when no content is selected
 4. This area scrolls if many items are selected
 
@@ -62,7 +66,7 @@ The top section displays all currently selected content:
 
 To manage your selected content:
 
-1. **Removing Individual Items**: Click the X on any chip to remove that item
+1. **Removing Individual Items**: Click the 'check' on any checkbox to remove that item
 2. **Clearing All Selections**: Click the "clear" badge next to "Selected Content" heading
 3. **Adding New Items**: Use the Knowledge Bases or Assigned Content panels
 
@@ -73,6 +77,8 @@ Changes to selected content are applied immediately to the conversation context.
 ### Browsing Knowledge Bases
 
 To browse available knowledge bases:
+
+![homepage](/images/content-selected-view-kb.png)
 
 1. Click the "Knowledge Bases" accordion panel to expand it
 2. View the list of available knowledge bases
@@ -97,6 +103,8 @@ To select knowledge bases for your conversation:
 
 To browse individual content items:
 
+![homepage](/images/content-selected-view-content.png)
+
 1. Click the "Assigned Content" accordion panel to expand it
 2. View the list of available content items across all knowledge bases
 3. Each content item appears with:
@@ -120,6 +128,8 @@ For more granular control over conversation context:
 ### Uploading Files
 
 To use your own files in a conversation:
+
+![homepage](/images/content-selected-view-mycontent.png)
 
 1. Expand the "My Content" accordion panel
 2. Click "Upload File" to open your device's file browser
@@ -204,7 +214,7 @@ For effective content selection:
 - Contact your administrator if permission issues persist
 
 **Issue**: Selected content not affecting AI responses
-- Ensure content is properly selected (appears in chips)
+- Ensure content is properly selected (appears in checkboxes)
 - Try starting a new content chat
 - Ask questions that specifically relate to the selected content
 - Check if content contains information relevant to your questions
@@ -221,7 +231,7 @@ For effective content selection:
 - Ensure you have upload permissions
 - Try a different browser if issues persist
 
-**Issue**: Content chips disappear unexpectedly
+**Issue**: Content checkboxs disappear unexpectedly
 - Another user or process might have modified permissions
 - The system might have refreshed content listings
 - Try reselecting the content items

@@ -1,5 +1,6 @@
 # AI Content Manager User Guide
 
+<!--
 ## Table of Contents
 - [AI Content Manager User Guide](#ai-content-manager-user-guide)
   - [Table of Contents](#table-of-contents)
@@ -22,6 +23,7 @@
   - [Creating Content Chats](#creating-content-chats)
   - [Best Practices](#best-practices)
   - [Troubleshooting](#troubleshooting)
+-->
 
 ## Introduction
 
@@ -54,7 +56,7 @@ The top section displays all currently selected content:
 1. Each selected item appears as a colored chip:
    - Knowledge Base items: Blue/primary color background
    - Individual content items: White/neutral background
-2. Chips display the name of each selected knowledge base or content item
+2. Checkboxes display the name of each selected knowledge base or content item
 3. Empty state shows "empty" when no content is selected
 4. This area scrolls if many items are selected
 

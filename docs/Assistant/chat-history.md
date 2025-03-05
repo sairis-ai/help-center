@@ -1,5 +1,6 @@
 # AI Chat History Manager User Guide
 
+<!--
 ## Table of Contents
 - [AI Chat History Manager User Guide](#ai-chat-history-manager-user-guide)
   - [Table of Contents](#table-of-contents)
@@ -26,6 +27,7 @@
     - [Refreshing History](#refreshing-history)
   - [Mobile Experience](#mobile-experience)
   - [Troubleshooting](#troubleshooting)
+-->
 
 ## Introduction
 
@@ -43,6 +45,8 @@ The Chat History Manager appears as a sidebar panel within the AI Assistant inte
 
 The Chat History Manager consists of two main sections:
 
+![homepage](/images/assistant-chat-bp-history.png)
+
 1. **Chat History Section**:
    - Search bar at the top for finding specific conversations
    - Sorting and display controls
@@ -59,6 +63,8 @@ The Chat History Manager consists of two main sections:
 ### Creating New Chats
 
 To start a fresh conversation:
+
+![homepage](/images/assistant-chat-new.png)
 
 1. Click the "+" button in the top-right corner of the Chat History section
 2. A new conversation appears at the top of your history list
@@ -88,6 +94,8 @@ To find specific conversations:
 ### Sorting Options
 
 Change the order of your conversation list:
+
+![homepage](/images/assistant-chat-sort.png)
 
 1. Click the sort icon (stack of lines) to open the sort menu
 2. Choose from available sorting options:
@@ -120,6 +128,8 @@ Newly created conversations start with a date/time name that you can customize f
 
 Tags help organize and find related conversations:
 
+![homepage](/images/assistant-chat-tags.png)
+
 1. Click the three-dot menu next to a conversation
 2. Select "Rename & Tags"
 3. In the dialog that appears:
@@ -131,6 +141,8 @@ Tags help organize and find related conversations:
 ### Viewing Token Counts
 
 To see token usage statistics for a conversation:
+
+![homepage](/images/assistant-chat-elpise.png)
 
 1. Click the three-dot menu next to a conversation
 2. Select "Token Count"
@@ -145,6 +157,8 @@ To see token usage statistics for a conversation:
 
 To remove all messages from a conversation while keeping the chat:
 
+![homepage](/images/assistant-chat-elpise.png)
+
 1. Click the three-dot menu next to a conversation
 2. Select "Clear Conversation"
 3. Confirm in the dialog that appears
@@ -154,6 +168,8 @@ To remove all messages from a conversation while keeping the chat:
 ### Deleting Chats
 
 To completely remove a conversation:
+
+![homepage](/images/assistant-chat-elpise.png)
 
 1. Click the three-dot menu next to a conversation
 2. Select "Delete Chat"
@@ -165,6 +181,8 @@ To completely remove a conversation:
 ### Viewing Blueprints
 
 When Blueprints are enabled:
+
+![homepage](/images/assistant-blueprints.png)
 
 1. The lower half of the sidebar shows available Blueprints
 2. Each Blueprint displays its name

@@ -1,5 +1,6 @@
 # AI Platform Home Dashboard User Guide
 
+<!--
 ## Table of Contents
 - [AI Platform Home Dashboard User Guide](#ai-platform-home-dashboard-user-guide)
   - [Table of Contents](#table-of-contents)
@@ -21,6 +22,7 @@
     - [Interactive Elements](#interactive-elements)
   - [Best Practices](#best-practices)
   - [Troubleshooting](#troubleshooting)
+-->
 
 ## Introduction
 
@@ -34,6 +36,9 @@ The Home Dashboard is accessible to users with specific roles:
 - Manager
 
 To access the dashboard:
+
+![homepage](/images/home-dashboard.png)
+
 1. Log in to the AI Platform
 2. You'll be automatically directed to the Home Dashboard
 3. Alternatively, click the "Home" icon in the main navigation menu from anywhere in the platform
@@ -54,6 +59,8 @@ The Home Dashboard consists of these key components:
 
 Primary interface card for accessing the AI chat assistant:
 
+![homepage](/images/home-ai-assistant.png)
+
 1. **Visual Elements**:
    - Primary color circular icon with chat/comments symbol
    - "AI Assistant" heading in large text
@@ -72,6 +79,8 @@ Primary interface card for accessing the AI chat assistant:
 ### Manage AI Content Card
 
 Card for accessing content management tools:
+
+![homepage](/images/home-manage-ai-content.png)
 
 1. **Visual Elements**:
    - Blue circular icon with palette symbol
@@ -92,6 +101,8 @@ Card for accessing content management tools:
 
 Analytics and reporting interface card:
 
+![homepage](/images/home-performance.png)
+
 1. **Visual Elements**:
    - Purple circular icon with chart symbol
    - "Performance" heading
@@ -110,6 +121,8 @@ Analytics and reporting interface card:
 ### Manage Users Card
 
 User administration interface card:
+
+![homepage](/images/home-manage-user.png)
 
 1. **Visual Elements**:
    - Cyan circular icon with user symbol
@@ -131,6 +144,8 @@ User administration interface card:
 
 Knowledge base management interface card:
 
+![homepage](/images/home-kbs.png)
+
 1. **Visual Elements**:
    - Slate gray circular icon with server symbol
    - "Knowledge Bases" heading
@@ -150,6 +165,8 @@ Knowledge base management interface card:
 
 Platform and AI configuration card:
 
+![homepage](/images/home-settings.png)
+
 1. **Visual Elements**:
    - Orange circular icon with sliders symbol
    - "Settings" heading
@@ -168,6 +185,8 @@ Platform and AI configuration card:
 ## Getting Started
 
 For new users of the platform:
+
+![homepage](/images/home-learn.png)
 
 1. The "Learn the platform" button in the top-right provides quick access to learning resources
 2. This takes you to the AI Assistant where you can ask questions about using the platform

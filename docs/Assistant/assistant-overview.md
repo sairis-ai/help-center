@@ -1,5 +1,6 @@
 # AI Assistant User Guide
 
+<!--
 ## Table of Contents
 - [AI Assistant User Guide](#ai-assistant-user-guide)
   - [Table of Contents](#table-of-contents)
@@ -29,6 +30,7 @@
     - [Keyboard Shortcuts](#keyboard-shortcuts)
   - [Mobile Experience](#mobile-experience)
   - [Troubleshooting](#troubleshooting)
+-->
 
 ## Introduction
 
@@ -45,6 +47,10 @@ The AI Assistant is available from the main navigation menu. When you first acce
 ### First Interaction
 
 To begin using the Assistant:
+
+![homepage](/images/assistant-question.png)
+
+
 1. Type a question in the prompt field at the bottom of the screen
 2. Press Enter or click the Send button (paper airplane icon)
 3. The AI will process your question and provide a response
