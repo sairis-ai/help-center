@@ -1,5 +1,6 @@
 # AI Card Designer User Guide
 
+<!--
 ## Table of Contents
 - [AI Card Designer User Guide](#ai-card-designer-user-guide)
   - [Table of Contents](#table-of-contents)
@@ -27,6 +28,7 @@
     - [Deleting Cards](#deleting-cards)
   - [Best Practices](#best-practices)
   - [Troubleshooting](#troubleshooting)
+-->
 
 ## Introduction
 
