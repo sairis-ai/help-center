@@ -45,6 +45,8 @@ To access this component:
 
 The User Activities interface features a tabbed layout with four main sections:
 
+![homepage](/images/user-activities.png)
+
 1. **Tokens**: Displays AI token usage statistics and charts
 2. **Logins**: Shows login frequency and patterns over time
 3. **Devices / Last seen**: Lists devices used to access the system
@@ -55,6 +57,8 @@ Each tab contains specialized visualizations and data displays relevant to that 
 ## Token Usage Analytics
 
 The Tokens tab provides detailed information about a user's AI token consumption:
+
+![homepage](/images/user-tokens.png)
 
 ### Key Metrics Displayed
 
@@ -83,6 +87,8 @@ This visualization helps administrators monitor AI resource usage and identify u
 
 The Logins tab tracks when and how frequently a user has accessed the system:
 
+![homepage](/images/user-logins.png)
+
 ### Login Activity Chart
 
 The chart displays:
@@ -103,6 +109,8 @@ The chart displays:
 ## Device Tracking
 
 The Devices / Last seen tab shows all devices used to authenticate with the system:
+
+![homepage](/images/user-devices.png)
 
 ### Device Table
 
@@ -133,6 +141,8 @@ When selecting a device row:
 ## User Metadata
 
 The Meta tab displays system information about the user account:
+
+![homepage](/images/user-meta.png)
 
 ### Account Metadata
 

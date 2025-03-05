@@ -40,6 +40,8 @@ To access this component, navigate to the user profile page either by:
 
 The User Profile interface consists of these key components:
 
+![homepage](/images/user-profile.png)
+
 1. **Header Section**: Contains the component title "User Profile", description, and action buttons
 2. **Account Management Buttons**: 
    - Enable/Disable User toggle

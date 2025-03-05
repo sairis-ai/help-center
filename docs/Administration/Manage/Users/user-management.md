@@ -41,6 +41,8 @@ To access this component, navigate to `/users/UserList` in the system. You'll ty
 
 The User List interface consists of these key components:
 
+![homepage](/images/user-management.png)
+
 1. **Header Section**: Contains the title "User Management" with user count badge, description, and action buttons
 2. **Search and Filter Controls**: Search box and filter buttons to find specific users
 3. **Data Table**: Displays user information in a scrollable, sortable table

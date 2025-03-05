@@ -27,6 +27,8 @@ The User Privileges component is accessible to users with specific roles:
 - Content
 - Manager
 
+![homepage](/images/user-privileges.png)
+
 To access this component:
 1. Navigate to a user profile page (`/user/profile/[user_id]`)
 2. Click on the "Privileges" tab in the left navigation menu
@@ -44,6 +46,8 @@ Each section contains multiple toggle switches and button groups that control sp
 ## Admin Access Privileges
 
 This section appears only when a user's access level is set to "Admin" and allows fine-grained control over administrative functions.
+
+![homepage](/images/user-privileges-access.png)
 
 For each administrative area, you can set one of three permission levels:
 - **No Access**: User cannot view or modify this area
@@ -96,6 +100,8 @@ The administrative areas include:
 
 This section controls which application modules are available to the user in the main navigation menu.
 
+![homepage](/images/user-privileges-modules.png)
+
 Each toggle enables or disables a specific module:
 
 1. **Content View**
@@ -115,6 +121,8 @@ Disabling all modules will result in the user only seeing the Assistant when the
 ## Assistant Features
 
 This section controls specific features within the AI Assistant interface.
+
+![homepage](/images/user-privileges-assistant.png)
 
 Each toggle enables or disables a specific feature:
 

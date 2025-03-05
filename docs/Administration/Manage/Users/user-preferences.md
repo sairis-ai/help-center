@@ -37,6 +37,8 @@ To access this component:
 
 The User Preferences interface displays a form with multiple setting controls organized in a responsive grid layout. Each preference has a clear label and appropriate input control (toggle switches, dropdown menus, sliders, or radio buttons).
 
+![homepage](/images/user-preferences.png)
+
 The header area includes:
 - A palette icon indicating customization options
 - A "User Preferences" title

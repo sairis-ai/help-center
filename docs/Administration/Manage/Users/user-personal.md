@@ -54,6 +54,8 @@ The form is divided into three main sections:
 
 These fields capture information related to the user's role within the organization:
 
+![homepage](/images/user-personal.png)
+
 **Job Title**
 - Type: Text field
 - Purpose: Records the user's official position or title

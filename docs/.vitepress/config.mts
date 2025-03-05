@@ -80,6 +80,7 @@ export default defineConfig({
               {text: 'User Profile', link: '/Administration/Manage/Users/user-profile'},
               {text: 'User Groups', link: '/Administration/Manage/Users/user-groups'},
               {text: 'User Privileges', link: '/Administration/Manage/Users/user-privileges'},
+              {text: 'User Preferences', link: '/Administration/Manage/Users/user-preferences'},
               {text: 'User Personal', link: '/Administration/Manage/Users/user-personal'},
               {text: 'User Activities', link: '/Administration/Manage/Users/user-activities'}
             ]
