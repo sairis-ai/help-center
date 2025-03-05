@@ -50,7 +50,6 @@ To begin using the Assistant:
 
 ![homepage](/images/assistant-question.png)
 
-
 1. Type a question in the prompt field at the bottom of the screen
 2. Press Enter or click the Send button (paper airplane icon)
 3. The AI will process your question and provide a response
