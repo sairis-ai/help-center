@@ -95,6 +95,9 @@ The interface provides quick filter buttons for common filtering needs:
 ### Creating a New User
 
 To create a new user:
+
+![homepage](/images/user-profile.png)
+
 1. Click the "+ User" button in the top-right corner
 2. You'll be redirected to the user profile page with empty fields
 3. Complete the required information

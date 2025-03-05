@@ -39,6 +39,8 @@ The Group Management interface displays a list of groups to which the user belon
 
 ![homepage](/images/user-groups.png)
 
+smart-groups-manage.png
+
 1. **Group Avatar**: Displays the group's initials in a circular badge
 2. **Group Name**: The full name of the group
 3. **Group Description**: A brief explanation of the group's purpose
@@ -63,7 +65,7 @@ Groups serve several important purposes within the system:
 
 When you access the Groups tab for an existing user, the system automatically loads all groups to which the user belongs. The groups are displayed in a list format with the following information:
 
-![homepage](/images/user-groups-example.png)
+![homepage](/images/smart-groups-manage.png)
 
 1. **Group Initials**: Displayed within a circular avatar
 2. **Group Name**: The primary identifier for the group
@@ -77,27 +79,27 @@ If the user does not belong to any groups, a message will be displayed: "There a
 
 To add a user to one or more groups:
 
-![homepage](/images/smart-groups-users-small.png)
+![homepage](/images/user-groups-add.png)
 
 1. From the Groups tab, locate the "Smart Group Builder" button (shown when no groups exist)
 2. Click the button to navigate to the Group List View (`/groups/GroupListView`)
 3. In the Group List View:
    - Find the group you want to add the user to
    - Click the edit button for that group
-   - Use the Smart Group Builder to add the user to the group
+   - Use the Smart Group Builder, adjust the rules to add the user to the group
    - Save the group changes
 
 ### Removing a User from Groups
 
 Group membership is managed through the Smart Group Builder:
 
-![homepage](/images/user-groups-example.png)
+![homepage](/images/user-groups-add.png)
 
 1. From User, click groups tab and then the pencil next to the group you wish to remove
 2. From the Groups tab, find the group you want to remove the user from
 3. Click the pencil/edit icon next to the group name
 4. The Smart Group Builder dialog will open
-5. Use the Smart Group Builder interface to remove the user
+5. Use the Smart Group Builder interface, adjust the rules to remove the user
 6. Save the changes
 
 ### Editing Group Details

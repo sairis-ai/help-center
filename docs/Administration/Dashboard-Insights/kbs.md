@@ -2,4 +2,4 @@
 
 ## KB's 
 
-![homepage](/images/kb-insights.png)
+![homepage](/images/insights-kb.png)

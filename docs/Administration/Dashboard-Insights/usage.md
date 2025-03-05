@@ -2,4 +2,4 @@
 
 ## Usage 
 
-![homepage](/images/usage-insights.png)
+![homepage](/images/insights-usage.png)

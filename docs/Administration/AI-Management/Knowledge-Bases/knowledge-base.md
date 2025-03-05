@@ -34,7 +34,7 @@ This dialog appears when:
 
 ## Knowledge Base Dialog Overview
 
-![homepage](../../../images/knowledge-base-new.png)
+![homepage](/images/knowledge-base-new.png)
 
 The Knowledge Base Dialog is divided into two main columns:
 

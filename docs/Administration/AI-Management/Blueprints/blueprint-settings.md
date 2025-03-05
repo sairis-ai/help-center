@@ -87,7 +87,7 @@ The AI Settings tab contains AI behavior configuration:
 - Knowledge base selection
 - Web integration settings
 
-![homepage](../../../images/blueprint-ai-settings.png)
+![homepage](/images/blueprint-ai-settings.png)
 
 ### Share Tab
 
@@ -96,7 +96,7 @@ The Share tab controls access and permissions:
 - Universal link generation
 - Ownership management
   
-![homepage](../../../images/blueprint-sharing.png)
+![homepage](/images/blueprint-sharing.png)
 
 ## Basic Blueprint Information
 
@@ -375,7 +375,7 @@ The Actions menu provides additional operations:
 6. **Create New Blueprint**: Start fresh with default settings
 7. **Import/Export Blueprint**: Share configurations between systems
 
-![homepage](../../../images/blueprint-actions.png)
+![homepage](/images/blueprint-actions.png)
 
 ### Import/Export
 

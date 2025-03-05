@@ -2,4 +2,4 @@
 
 ## Platform 
 
-![homepage](/images/platform-insights.png)
+![homepage](/images/insights-platform.png)

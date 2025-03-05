@@ -43,7 +43,7 @@ To access this component, navigate to the tenant settings section and select "Br
 
 The top section of the branding page contains fields for essential organizational information:
 
-![homepage](/images/branding.png)
+![homepage](/images/settings-branding.png)
 
 1. **Company Name** (Required)
    - The official name of your organization

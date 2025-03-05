@@ -33,7 +33,7 @@ The Security Settings component allows administrators to configure authenticatio
 
 ## Accessing Security Settings
 
-![homepage](/images/security.png)
+![homepage](/images/settings-security.png)
 
 The Security Settings component is accessible to users with specific roles:
 - Admin

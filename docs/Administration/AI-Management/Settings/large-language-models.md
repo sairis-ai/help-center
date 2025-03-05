@@ -60,7 +60,7 @@ Large Language Models (LLMs) are the foundation of AI capabilities in the platfo
 
 Each available model is displayed as a card with comprehensive information:
 
-![homepage](../../../images/settings-llm.png)
+![homepage](/images/llm-settings.png)
 
 1. **Visual Elements**:
    - Provider logo (Anthropic, Amazon, etc.)

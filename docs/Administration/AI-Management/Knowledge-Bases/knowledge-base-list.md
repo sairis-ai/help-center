@@ -41,7 +41,7 @@ To access this component, navigate to `/assistant/kb/KBListView` in the system. 
 
 ## Knowledge Base Interface Overview
 
-![homepage](../../../images/knowledge-base-manager.png)
+![homepage](/images/knowledge-base-manager.png)
 
 The Knowledge Base Management interface consists of these key components:
 
@@ -131,7 +131,7 @@ Each knowledge base has additional actions accessible via buttons in the Actions
 
 ### Viewing KB Content
 
-![homepage](../../../images/knowledge-base-actions.png)
+![homepage](/images/knowledge-base-actions.png)
 
 To view and manage content within a knowledge base:
 1. Click the palette icon (first icon in Actions column)

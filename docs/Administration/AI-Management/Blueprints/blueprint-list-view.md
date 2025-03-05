@@ -48,7 +48,7 @@ To access this component, navigate to `/blueprint/BlueprintListView` in the syst
 
 The Blueprint Manager consists of these key components:
 
-![homepage](../../../images/blueprint-manager.png)
+![homepage](/images/blueprint-manager.png)
 
 1. **Header Section**: Contains the title "Blueprint Manager" with blueprint count badge, description, and Add Blueprint button
 2. **Search and Filter Controls**: Tools for finding specific blueprints including global search, topic filter, and feature filter
@@ -143,7 +143,7 @@ To clear all active filters:
 
 To create a new blueprint:
 
-![homepage](../../../images/blueprint-new.png)
+![homepage](/images/blueprint-new.png)
 
 1. Click the "Add" button in the top-right corner
 2. The Blueprint Editor dialog will open

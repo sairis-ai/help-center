@@ -2,4 +2,4 @@
 
 ## Devices 
 
-![homepage](/images/device-insights.png)
+![homepage](/images/insights-device.png)

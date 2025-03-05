@@ -2,11 +2,11 @@
 
 ## Roles Management Interface
 
-![homepage](../../../images/roles-manage.png)
+![homepage](/images/roles-manage.png)
 
 ## Create a New Roles
 
-![homepage](../../../images/roles-add-new.png)
+![homepage](/images/roles-add-new.png)
 
 
 

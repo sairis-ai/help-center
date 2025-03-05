@@ -27,7 +27,7 @@ The Feature Settings component allows administrators to configure which features
 
 ## Accessing Feature Settings
 
-![homepage](/images/features.png)
+![homepage](/images/settings-features.png)
 
 The Feature Settings component is accessible to users with specific roles:
 - Admin

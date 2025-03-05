@@ -24,7 +24,7 @@ The Messaging Templates Configuration allows administrators to customize all sys
 
 ## Accessing Messaging Templates
 
-![homepage](/images/messaging.png)
+![homepage](/images/settings-messaging.png)
 
 The Messaging Templates configuration is accessible to users with specific roles:
 - Admin

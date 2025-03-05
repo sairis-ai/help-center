@@ -59,7 +59,7 @@ Tags are lightweight labels that provide additional categorization beyond primar
 
 The Tag Management interface consists of these key components:
 
-![homepage](../../../images/tags-manage.png)
+![homepage](/images/tags-manage.png)
 
 1. **Header**: Title "Manage Tags" with explanatory text
 2. **Tag List**: List of existing system tags
@@ -72,7 +72,7 @@ The Tag Management interface consists of these key components:
 
 To create a new system tag:
 
-![homepage](../../../images/tags-add.png)
+![homepage](/images/tags-add.png)
 
 1. Click the "Add Tag" button at the bottom of the tag list
 2. A new input field will appear

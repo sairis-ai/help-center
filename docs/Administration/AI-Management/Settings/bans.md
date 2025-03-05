@@ -2,4 +2,4 @@
 
 ## Bans Management Interface
 
-![homepage](../../../images/bans-manage.png)
+![homepage](/images/bans-manage.png)
