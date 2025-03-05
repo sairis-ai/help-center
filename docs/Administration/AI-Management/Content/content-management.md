@@ -1,5 +1,6 @@
 # Content Manager User Guide
 
+<!--
 ## Table of Contents
 - [Content Manager User Guide](#content-manager-user-guide)
   - [Table of Contents](#table-of-contents)
@@ -30,6 +31,7 @@
     - [Other Content Types](#other-content-types)
   - [Best Practices](#best-practices)
   - [Troubleshooting](#troubleshooting)
+-->
 
 ## Introduction
 

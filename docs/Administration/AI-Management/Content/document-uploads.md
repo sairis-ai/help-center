@@ -1,5 +1,6 @@
 # AI File Manager User Guide
 
+<!--
 ## Table of Contents
 - [Introduction](#introduction)
 - [Getting Started](#getting-started)
@@ -11,6 +12,7 @@
 - [Advanced Features](#advanced-features)
 - [Viewing Files](#viewing-files)
 - [Troubleshooting](#troubleshooting)
+-->
 
 ## Introduction
 

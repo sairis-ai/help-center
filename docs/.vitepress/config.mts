@@ -18,22 +18,26 @@ export default defineConfig({
   themeConfig: {
     sidebar: [
       {text: 'Home', link: '/Assistant/assistant-home' },
+      {text: 'User Content', link: '/Content/user-content' },
       {text: 'Assistant', collapsed: false, items: 
         [
+          {text: 'Launchpad', link: '/Assistant/launchpad' },
           {text: 'Assistant Home', link: '/Assistant/assistant-home' },
-          {text: 'Chat', link: '/chat' },
-          {text: 'Content', link: '/content' },
-          {text: 'Settings', link: '/settings' }
+          {text: 'Assistant Overview', link: '/Assistant/assistant-overview' },
+          {text: 'Chat History', link: '/Assistant/chat-history' },
+          {text: 'Settings', link: '/Assistant/chat-settings' },
+          {text: 'Chat Tokens', link: '/Assistant/chat-token-counts' },
+          {text: 'Content Panel', link: '/Assistant/content-panel' }          
         ]
       },
       {text: 'AI Management', collapsed: false, items: 
             [ 
               {text: 'AI Content', collapsed: false, items:
                 [
-                  {text: 'AI Content Manager', link: '/Administration/AI-Management/AI-Content/content-manager'},
-                  {text: 'AI Card', link: '/Administration/AI-Management/AI-Content/ai-card'},
-                  {text: 'AI File Manager', link: '/Administration/AI-Management/AI-Content/ai-file-manager'},
-                  {text: 'AI Web Link', link: '/Administration/AI-Management/AI-Content/ai-web-link'}
+                  {text: 'Content Manager', link: '/Administration/AI-Management/Content/content-management'},
+                  {text: 'Card', link: '/Administration/AI-Management/Content/card-designer'},
+                  {text: 'File Manager', link: '/Administration/AI-Management/Content/document-uploads'},
+                  {text: 'Web Link', link: '/Administration/AI-Management/Content/web-links'}
                 ]
               },
               {text: 'Blueprints', collapsed: false, items:

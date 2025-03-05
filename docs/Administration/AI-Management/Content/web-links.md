@@ -1,5 +1,6 @@
 # Web Link Manager User Guide
 
+<!--
 ## Table of Contents
 - [Web Link Manager User Guide](#web-link-manager-user-guide)
   - [Table of Contents](#table-of-contents)
@@ -27,6 +28,7 @@
   - [Metadata and Information](#metadata-and-information)
   - [Best Practices](#best-practices)
   - [Troubleshooting](#troubleshooting)
+-->
 
 ## Introduction
 
