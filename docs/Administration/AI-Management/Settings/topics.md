@@ -1,5 +1,6 @@
 # Topic Management Guide
 
+<!--
 ## Table of Contents
 - [Topic Management Guide](#topic-management-guide)
   - [Table of Contents](#table-of-contents)
@@ -19,6 +20,7 @@
   - [Topics vs. Tags](#topics-vs-tags)
   - [Best Practices](#best-practices)
   - [Troubleshooting](#troubleshooting)
+--> 
 
 ## Introduction
 
@@ -66,9 +68,13 @@ The Topic Management interface consists of these key components:
 
 ## Managing Topics
 
+![homepage](../../../images/topics-manage.png)
+
 ### Adding Topics
 
 To create a new topic:
+
+![homepage](../../../images/topics-add-new.png)
 
 1. Click the "Add New Topic" button at the bottom of the topic list
 2. A new input field will appear

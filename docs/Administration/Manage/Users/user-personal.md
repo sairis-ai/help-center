@@ -1,5 +1,6 @@
 # User Profile Personal Information Guide
 
+<!--
 ## Table of Contents
 - [User Profile Personal Information Guide](#user-profile-personal-information-guide)
   - [Table of Contents](#table-of-contents)
@@ -16,6 +17,7 @@
     - [Clearing Information](#clearing-information)
   - [Data Usage and Privacy](#data-usage-and-privacy)
   - [Best Practices](#best-practices)
+--> 
 
 ## Introduction
 

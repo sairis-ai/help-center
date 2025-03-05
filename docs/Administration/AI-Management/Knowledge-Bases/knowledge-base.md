@@ -1,5 +1,6 @@
 # Knowledge Base Configuration Guide
 
+<!--
 ## Table of Contents
 - [Knowledge Base Configuration Guide](#knowledge-base-configuration-guide)
   - [Table of Contents](#table-of-contents)
@@ -14,6 +15,7 @@
   - [AI Configuration Section](#ai-configuration-section)
     - [Foundation Model Selection](#foundation-model-selection)
     - [Creativity Settings](#creativity-settings)
+-->
 
 ## Introduction
 
@@ -31,6 +33,8 @@ This dialog appears when:
 - Editing an existing knowledge base by clicking its name or the edit button
 
 ## Knowledge Base Dialog Overview
+
+![homepage](../../../images/knowledge-base-new.png)
 
 The Knowledge Base Dialog is divided into two main columns:
 

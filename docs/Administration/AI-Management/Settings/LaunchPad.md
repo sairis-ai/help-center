@@ -1,5 +1,6 @@
 # LaunchPad User Guide
 
+<!--
 ## Table of Contents
 - [LaunchPad User Guide](#launchpad-user-guide)
   - [Table of Contents](#table-of-contents)
@@ -17,6 +18,7 @@
     - [Section Visibility](#section-visibility)
     - [Card Appearance](#card-appearance)
   - [Troubleshooting](#troubleshooting)
+-->
 
 ## Introduction
 
@@ -36,6 +38,8 @@ The LaunchPad allows you to:
 ## LaunchPad Interface Overview
 
 The LaunchPad consists of several key components:
+
+![homepage](../../../images/launchpad-settings.png)
 
 1. **Header Area**: Contains your personalized greeting and global search bar
 2. **Toggle Control**: Enables or disables the entire LaunchPad functionality
@@ -57,6 +61,8 @@ LaunchPad supports three types of sections:
 
 To add a new section:
 
+![homepage](../../../images/launchpad-add-section.png)
+
 1. Click the "Add Section" button located at the bottom right of the screen
 2. Configure the section settings in the dialog that appears
 3. Click "Done" to save your changes
@@ -65,6 +71,8 @@ To add a new section:
 
 Each section can be customized with the following settings:
 
+![homepage](../../../images/launchpad-setting-config.png)
+
 1. **Section Name**: The title displayed above the section
 2. **Match By Content Type**: Filter content by type (Blueprint, Document, Link, Knowledgebase)
 3. **Match By Topic**: Filter content to display only items with a specific topic
@@ -72,6 +80,9 @@ Each section can be customized with the following settings:
 5. **Section Appearance**: Customize background and text colors for both light and dark modes
 
 To configure an existing section:
+
+![homepage](../../../images/launchpad-edit-section.png)
+
 1. Find the gear icon next to the section title
 2. Click the icon to open the configuration dialog
 3. Adjust settings as needed
@@ -82,6 +93,7 @@ For DynamicTopic sections, you can also choose between "By Row" or "By Column" d
 ### Reordering Sections
 
 To change the order of sections:
+![homepage](../../../images/launchpad-section-order.png)
 
 1. Click the "Section Order" button in the top menu bar
 2. In the dialog that appears, drag and drop sections using the handle (⋮⋮) on the left

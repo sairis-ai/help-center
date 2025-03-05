@@ -1,5 +1,6 @@
 # Security Settings Configuration Guide
 
+<!--
 ## Table of Contents
 - [Security Settings Configuration Guide](#security-settings-configuration-guide)
   - [Table of Contents](#table-of-contents)
@@ -24,12 +25,15 @@
     - [SAML Identifiers](#saml-identifiers)
   - [Best Practices](#best-practices)
   - [Troubleshooting](#troubleshooting)
+--> 
 
 ## Introduction
 
 The Security Settings component allows administrators to configure authentication methods, multi-factor authentication (MFA), and identity provider integrations for your organization. These settings determine how users authenticate with the system and what security measures are required for account access.
 
 ## Accessing Security Settings
+
+![homepage](/images/security.png)
 
 The Security Settings component is accessible to users with specific roles:
 - Admin

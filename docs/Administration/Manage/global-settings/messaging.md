@@ -1,5 +1,6 @@
 # Messaging Templates Configuration Guide
 
+<!--
 ## Table of Contents
 - [Messaging Templates Configuration Guide](#messaging-templates-configuration-guide)
   - [Table of Contents](#table-of-contents)
@@ -15,12 +16,15 @@
   - [Branding Integration](#branding-integration)
   - [Best Practices](#best-practices)
   - [Troubleshooting](#troubleshooting)
+-->
 
 ## Introduction
 
 The Messaging Templates Configuration allows administrators to customize all system-generated communications sent to users. These communications include account invitations, verification codes, and multi-factor authentication (MFA) messages sent via email or SMS. By customizing these templates, you can ensure all system communications align with your organization's branding and communication style.
 
 ## Accessing Messaging Templates
+
+![homepage](/images/messaging.png)
 
 The Messaging Templates configuration is accessible to users with specific roles:
 - Admin

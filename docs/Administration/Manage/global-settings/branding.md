@@ -1,5 +1,6 @@
 # Platform Branding & Customization Guide
 
+<!--
 ## Table of Contents
 - [Platform Branding \& Customization Guide](#platform-branding--customization-guide)
   - [Table of Contents](#table-of-contents)
@@ -23,6 +24,7 @@
     - [Menu Theme](#menu-theme)
   - [Best Practices](#best-practices)
   - [Troubleshooting](#troubleshooting)
+--> 
 
 ## Introduction
 
@@ -40,6 +42,8 @@ To access this component, navigate to the tenant settings section and select "Br
 ## Organization Information
 
 The top section of the branding page contains fields for essential organizational information:
+
+![homepage](/images/branding.png)
 
 1. **Company Name** (Required)
    - The official name of your organization

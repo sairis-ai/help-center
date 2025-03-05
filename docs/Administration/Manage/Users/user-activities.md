@@ -1,5 +1,6 @@
 # User Activities and Analytics Guide
 
+<!--
 ## Table of Contents
 - [User Activities and Analytics Guide](#user-activities-and-analytics-guide)
   - [Table of Contents](#table-of-contents)
@@ -23,6 +24,7 @@
   - [Data Visualization Features](#data-visualization-features)
   - [Security Monitoring](#security-monitoring)
   - [Troubleshooting](#troubleshooting)
+-->
 
 ## Introduction
 

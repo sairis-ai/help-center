@@ -1,5 +1,6 @@
 # User Profile Component Guide
 
+<!--
 ## Table of Contents
 - [User Profile Component Guide](#user-profile-component-guide)
   - [Table of Contents](#table-of-contents)
@@ -18,6 +19,7 @@
     - [Re-inviting Users](#re-inviting-users)
   - [Form Validation](#form-validation)
   - [Troubleshooting](#troubleshooting)
+--> 
 
 ## Introduction
 

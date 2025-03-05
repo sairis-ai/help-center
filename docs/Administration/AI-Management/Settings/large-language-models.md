@@ -1,5 +1,6 @@
 # AI Model Configuration Guide
 
+<!--
 ## Table of Contents
 - [AI Model Configuration Guide](#ai-model-configuration-guide)
   - [Table of Contents](#table-of-contents)
@@ -24,6 +25,7 @@
     - [Performance Requirements](#performance-requirements)
   - [Best Practices](#best-practices)
   - [Troubleshooting](#troubleshooting)
+-->
 
 ## Introduction
 
@@ -57,6 +59,8 @@ Large Language Models (LLMs) are the foundation of AI capabilities in the platfo
 ### Model Cards
 
 Each available model is displayed as a card with comprehensive information:
+
+![homepage](../../../images/settings-llm.png)
 
 1. **Visual Elements**:
    - Provider logo (Anthropic, Amazon, etc.)

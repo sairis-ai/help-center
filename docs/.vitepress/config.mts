@@ -14,25 +14,19 @@ export default defineConfig({
   //     { text: 'Assistant', link: '/sairis-overview' },
   //     { text: 'Admin Portal', link: '../public-docs' },
   //   ],
+
   themeConfig: {
     sidebar: [
-      {
-        text: 'Assistant',
-        collapsed: false,
-        items: [
-          { text: 'Assistant Home', link: '/Assistant/assistant-home' },
-          { text: 'Runtime API Examples', link: '/api-examples' },
-          { text: 'Sairis', link: '/sairis-overview' },
-          { text: 'Settings', collapsed: true, items: 
-            [ 
-              {text: 'Branding', link: 'brads-page'}, 
-              {text: 'Single Sign On', link: 'brads-page'}, 
-              {text: 'Messaging', link: 'brads-page'}] 
-            },
+      {text: 'Home', link: '/Assistant/assistant-home' },
+      {text: 'Assistant', collapsed: false, items: 
+        [
+          {text: 'Assistant Home', link: '/Assistant/assistant-home' },
+          {text: 'Chat', link: '/chat' },
+          {text: 'Content', link: '/content' },
+          {text: 'Settings', link: '/settings' }
         ]
       },
-      {
-       text: 'AI Management', collapsed: false, items: 
+      {text: 'AI Management', collapsed: false, items: 
             [ 
               {text: 'AI Content', collapsed: false, items:
                 [
@@ -69,13 +63,13 @@ export default defineConfig({
       },
       {text: 'Dashboard Insights', collapsed: false, items: 
         [ 
-          {text: 'Platform', link: '/Administration/Dashboard/Insights/platform'}, 
-          {text: 'Tokens', link: 'Administration/Dashboard/Insights/tokens'}, 
-          {text: 'KB\'s', link: 'Administration/Dashboard/Insights/kbs'},
-          {text: 'Content', link: 'Administration/Dashboard/Insights/content'},
-          {text: 'Usage', link: 'Administration/Dashboard/Insights/usage'},
-          {text: 'Logins', link: 'Administration/Dashboard/Insights/logins'},
-          {text: 'Devices', link: 'Administration/Dashboard/Insights/devices'}
+          {text: 'Platform', link: '/Administration/Dashboard-Insights/platform'}, 
+          {text: 'Tokens', link: 'Administration/Dashboard-Insights/tokens'}, 
+          {text: 'KB\'s', link: 'Administration/Dashboard-Insights/kbs'},
+          {text: 'Content', link: 'Administration/Dashboard-Insights/content'},
+          {text: 'Usage', link: 'Administration/Dashboard-Insights/usage'},
+          {text: 'Logins', link: 'Administration/Dashboard-Insights/logins'},
+          {text: 'Devices', link: 'Administration/Dashboard-Insights/devices'}
           ]
         },
       {text: 'Manage', collapsed: false, items: 

@@ -1,5 +1,6 @@
 # Smart Groups Management Guide
 
+<!--
 ## Table of Contents
 - [Smart Groups Management Guide](#smart-groups-management-guide)
   - [Table of Contents](#table-of-contents)
@@ -21,6 +22,7 @@
     - [Smart Group Dialog](#smart-group-dialog)
     - [State Persistence](#state-persistence)
   - [Troubleshooting](#troubleshooting)
+--> 
 
 ## Introduction
 
@@ -39,8 +41,11 @@ To access this component, navigate to `/groups/GroupListView` in the system. You
 
 The Smart Groups interface consists of these key components:
 
+![homepage](/images/smart-groups-manage.png)
+
 1. **Header Section**: Contains the title "Smart Groups" with a brief description
 2. **Action Buttons**: 
+
    - Create new Smart Group
    - Refresh data
    - Clear filters
@@ -80,9 +85,12 @@ The interface provides quick action buttons in the top-right corner:
 
 ## Smart Group Operations
 
+
 ### Creating a New Smart Group
 
 To create a new Smart Group:
+
+![homepage](/images/smart-groups-new.png)
 
 1. Click the "+ Smart Group" button in the top-right corner
 2. The Smart Group Dialog will open with empty fields
@@ -92,27 +100,33 @@ To create a new Smart Group:
    - Membership rules and conditions
 4. Click "Save" to create the Smart Group
 
+### Viewing Group Members
+
+To see which users belong to a Smart Group:
+
+![homepage](/images/smart-groups-actions.png)
+
+1. Click the users icon (people) in the Actions column
+2. The Group Members dialog will open
+3. All users matching the group's criteria will be displayed
+4. Close the dialog when finished
+   
 ### Editing Smart Groups
 
 To edit an existing Smart Group:
+
+![homepage](/images/smart-groups-actions.png)
 
 1. Click on the group name or the pencil icon in the Actions column
 2. The Smart Group Dialog will open with the current settings
 3. Make necessary changes
 4. Click "Save" to update the Smart Group
 
-### Viewing Group Members
-
-To see which users belong to a Smart Group:
-
-1. Click the users icon (people) in the Actions column
-2. The Group Members dialog will open
-3. All users matching the group's criteria will be displayed
-4. Close the dialog when finished
-
 ### Deleting Smart Groups
 
 To delete a Smart Group:
+
+![homepage](/images/smart-groups-actions.png)
 
 1. Click the trash icon in the Actions column
 2. A confirmation dialog will appear asking "Are you sure you want to delete [group_name]?"

@@ -1,5 +1,6 @@
 # User Profile Privileges Guide
 
+<!--
 ## Table of Contents
 - [User Profile Privileges Guide](#user-profile-privileges-guide)
   - [Table of Contents](#table-of-contents)
@@ -13,6 +14,7 @@
     - [Effects of Disabling Key Features](#effects-of-disabling-key-features)
     - [Admin Access Level Combinations](#admin-access-level-combinations)
   - [Best Practices](#best-practices)
+--> 
 
 ## Introduction
 

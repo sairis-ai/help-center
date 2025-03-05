@@ -1,5 +1,6 @@
 # Tag Management Guide
 
+<!--
 ## Table of Contents
 - [Tag Management Guide](#tag-management-guide)
   - [Table of Contents](#table-of-contents)
@@ -17,6 +18,7 @@
     - [Knowledge Base Tagging](#knowledge-base-tagging)
   - [Best Practices](#best-practices)
   - [Troubleshooting](#troubleshooting)
+--> 
 
 ## Introduction
 
@@ -57,6 +59,8 @@ Tags are lightweight labels that provide additional categorization beyond primar
 
 The Tag Management interface consists of these key components:
 
+![homepage](../../../images/tags-manage.png)
+
 1. **Header**: Title "Manage Tags" with explanatory text
 2. **Tag List**: List of existing system tags
 3. **Add Tag Button**: Button to create new tags
@@ -67,6 +71,8 @@ The Tag Management interface consists of these key components:
 ### Adding Tags
 
 To create a new system tag:
+
+![homepage](../../../images/tags-add.png)
 
 1. Click the "Add Tag" button at the bottom of the tag list
 2. A new input field will appear

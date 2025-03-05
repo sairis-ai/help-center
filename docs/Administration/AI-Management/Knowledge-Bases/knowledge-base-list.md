@@ -1,5 +1,6 @@
 # Knowledge Base Management Guide
 
+<!--
 ## Table of Contents
 - [Knowledge Base Management Guide](#knowledge-base-management-guide)
   - [Table of Contents](#table-of-contents)
@@ -23,6 +24,7 @@
     - [Exporting Knowledge Base Data](#exporting-knowledge-base-data)
     - [Refreshing the Knowledge Base List](#refreshing-the-knowledge-base-list)
   - [Troubleshooting](#troubleshooting)
+-->
 
 ## Introduction
 
@@ -39,12 +41,16 @@ To access this component, navigate to `/assistant/kb/KBListView` in the system. 
 
 ## Knowledge Base Interface Overview
 
+![homepage](../../../images/knowledge-base-manager.png)
+
 The Knowledge Base Management interface consists of these key components:
 
 1. **Header Section**: Contains the title "Knowledge Bases" with a count badge, description, and Add KB button
 2. **Search and Filter Bar**: Tools for finding specific knowledge bases
 3. **Data Table**: Displays knowledge base information in a sortable, filterable table
 4. **Action Buttons**: Quick access to operations like refresh, clear filters, and export
+
+
 
 ## Viewing Knowledge Bases
 
@@ -125,6 +131,8 @@ Each knowledge base has additional actions accessible via buttons in the Actions
 
 ### Viewing KB Content
 
+![homepage](../../../images/knowledge-base-actions.png)
+
 To view and manage content within a knowledge base:
 1. Click the palette icon (first icon in Actions column)
 2. You'll be redirected to the Content List View filtered for this knowledge base
@@ -144,6 +152,7 @@ To process and update the AI embeddings for knowledge base content:
 2. You'll be redirected to the File Queue status page
 3. Here you can monitor and manage the synchronization of content with the AI system
 4. This process ensures content is properly vectorized for accurate retrieval
+
 
 ## Data Management
 

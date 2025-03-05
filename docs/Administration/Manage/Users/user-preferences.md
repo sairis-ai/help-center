@@ -1,5 +1,6 @@
 # User Profile Preferences Guide
 
+<!--
 ## Table of Contents
 - [User Profile Preferences Guide](#user-profile-preferences-guide)
   - [Table of Contents](#table-of-contents)
@@ -15,6 +16,7 @@
     - [Theme Settings](#theme-settings)
   - [How Preferences Affect User Experience](#how-preferences-affect-user-experience)
   - [Best Practices](#best-practices)
+--> 
 
 ## Introduction
 

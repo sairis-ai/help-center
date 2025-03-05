@@ -1,5 +1,6 @@
 # User List Management Guide
 
+<!--
 ## Table of Contents
 - [User List Management Guide](#user-list-management-guide)
   - [Table of Contents](#table-of-contents)
@@ -21,6 +22,7 @@
     - [State Persistence](#state-persistence)
     - [Column Customization](#column-customization)
   - [Troubleshooting](#troubleshooting)
+-->
 
 ## Introduction
 

@@ -1,5 +1,6 @@
 # Feature Settings Configuration Guide
 
+<!--
 ## Table of Contents
 - [Feature Settings Configuration Guide](#feature-settings-configuration-guide)
   - [Table of Contents](#table-of-contents)
@@ -18,12 +19,15 @@
   - [Feature Interactions](#feature-interactions)
   - [Best Practices](#best-practices)
   - [Troubleshooting](#troubleshooting)
+-->
 
 ## Introduction
 
 The Feature Settings component allows administrators to configure which features are available in the platform and customize the user experience. This interface provides toggles for enabling or disabling specific functionality and customizing system messages that users see throughout the application.
 
 ## Accessing Feature Settings
+
+![homepage](/images/features.png)
 
 The Feature Settings component is accessible to users with specific roles:
 - Admin

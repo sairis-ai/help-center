@@ -1,5 +1,6 @@
 # AI Blueprint Manager Guide
 
+<!--
 ## Table of Contents
 - [AI Blueprint Manager Guide](#ai-blueprint-manager-guide)
   - [Table of Contents](#table-of-contents)
@@ -28,6 +29,7 @@
     - [Understanding Blueprint Metadata](#understanding-blueprint-metadata)
   - [Best Practices](#best-practices)
   - [Troubleshooting](#troubleshooting)
+-->
 
 ## Introduction
 
@@ -46,11 +48,14 @@ To access this component, navigate to `/blueprint/BlueprintListView` in the syst
 
 The Blueprint Manager consists of these key components:
 
+![homepage](../../../images/blueprint-manager.png)
+
 1. **Header Section**: Contains the title "Blueprint Manager" with blueprint count badge, description, and Add Blueprint button
 2. **Search and Filter Controls**: Tools for finding specific blueprints including global search, topic filter, and feature filter
 3. **Data Table**: Displays blueprint information in a sortable, filterable table
 4. **Action Buttons**: Quick access to refresh data, clear filters, and export to Excel
 5. **Blueprint Editor**: Full-screen dialog for creating and editing blueprints
+
 
 ## Viewing Blueprints
 
@@ -73,6 +78,7 @@ Each blueprint entry shows comprehensive information:
 2. **Status Indicator**: "Disabled" badge appears for inactive blueprints
 3. **Description**: Text explaining the blueprint's purpose
 4. **Tags**: Small badges showing associated tags for categorization
+
 
 ### Blueprint Features Indicators
 
@@ -137,11 +143,14 @@ To clear all active filters:
 
 To create a new blueprint:
 
+![homepage](../../../images/blueprint-new.png)
+
 1. Click the "Add" button in the top-right corner
 2. The Blueprint Editor dialog will open
 3. Configure the blueprint settings across the available tabs
 4. Click "Save" to create the blueprint
 5. The new blueprint will appear in the list
+
 
 ### Editing Blueprints
 

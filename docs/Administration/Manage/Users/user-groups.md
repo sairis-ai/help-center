@@ -1,5 +1,6 @@
 # User Profile Groups Management Guide
 
+<!--
 ## Table of Contents
 - [User Profile Groups Management Guide](#user-profile-groups-management-guide)
   - [Table of Contents](#table-of-contents)
@@ -15,6 +16,7 @@
   - [Smart Group Builder](#smart-group-builder)
   - [Group-Based Access Control](#group-based-access-control)
   - [Troubleshooting](#troubleshooting)
+--> 
 
 ## Introduction
 

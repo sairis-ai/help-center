@@ -1,5 +1,6 @@
 # Smart Group Configuration Guide
 
+<!--
 ## Table of Contents
 - [Smart Group Configuration Guide](#smart-group-configuration-guide)
   - [Table of Contents](#table-of-contents)
@@ -23,6 +24,7 @@
   - [Best Practices](#best-practices)
     - [Creating Effective Smart Groups](#creating-effective-smart-groups)
     - [Managing Group Membership](#managing-group-membership-1)
+--> 
 
 ## Introduction
 
@@ -35,6 +37,8 @@ The Smart Group Dialog is the primary interface for creating, configuring, and m
 ### Basic Information
 
 The top section of the dialog contains fields for essential group information:
+
+![homepage](/images/smart-groups-new.png)
 
 1. **Group Name** (Required): The primary identifier for the group
    - Must be unique within the system
@@ -58,6 +62,8 @@ The top section of the dialog contains fields for essential group information:
 
 The Smart Group Builder tab provides a powerful query interface for defining membership criteria:
 
+![homepage](/images/smart-groups-builder.png)
+
 1. **Query Builder**: Allows you to create complex conditions that determine group membership
    - **Fields**: Select from user properties like name, department, title, etc.
    - **Operators**: Choose logical operators (contains, equals, starts with, etc.)
@@ -77,6 +83,8 @@ The Smart Group Builder tab provides a powerful query interface for defining mem
 
 The Users in Group tab shows all users who match the defined criteria:
 
+![homepage](/images/smart-groups-users.png)
+
 1. **Member List**: Displays all users who currently match the group's query criteria
    - Shows user details including name, username, and access level
    - Updates automatically when the query is modified
@@ -88,6 +96,8 @@ The Users in Group tab shows all users who match the defined criteria:
 ### Knowledge Base Assignments
 
 The Assigned KBs tab shows knowledge bases that are associated with this group:
+
+![homepage](/images/smart-groups-kbs.png)
 
 1. **Knowledge Base List**: Shows all knowledge bases assigned to this group
    - Displays KB name, initials, and description
