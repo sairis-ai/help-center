@@ -50,6 +50,8 @@ To access this component:
 
 The AI Card Designer consists of four main sections:
 
+![homepage](/images/content-card.png)
+
 1. **Header Bar**: Contains the title, action buttons (Templates, Delete, Done, Save), and description
 2. **Content Preview**: Shows how your card will appear to users, with a live preview that updates as you edit
 3. **Markdown Editor**: The text editor where you create and format your card content

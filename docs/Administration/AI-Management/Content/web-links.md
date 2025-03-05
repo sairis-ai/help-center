@@ -50,6 +50,8 @@ To access this component:
 
 The Web Link Manager consists of these key sections:
 
+![homepage](/images/content-web-link.png)
+
 1. **Header Bar**: Contains the title, help button, and action buttons (Save, Delete, Done)
 2. **Link Configuration Panel**: Where you configure the link title, description, and URL
 3. **Icon Styler**: Tools to customize icon appearance for light and dark themes

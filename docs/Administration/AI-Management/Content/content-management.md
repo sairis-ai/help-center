@@ -50,6 +50,8 @@ To access this component, navigate to the Content section in the main navigation
 
 The Content Manager consists of these key components:
 
+![homepage](/images/content-manage.png)
+
 1. **Header Section**: Contains the title "Content Manager" with content count badge, description, and Add button
 2. **Search and Filter Controls**: Tools for finding specific content including global search, content type filters, knowledge base filters, and quick filters
 3. **Data Table**: Displays content items in a sortable, filterable table
@@ -98,6 +100,8 @@ Enter text in the search box to instantly filter the list to matching content it
 
 To filter content by type:
 
+![homepage](/images/content-type.png)
+
 1. Click the "Type" button to open the content type selection menu
 2. Options include:
    - **All Content**: Shows all content types
@@ -122,6 +126,8 @@ To filter content by type:
 ### Knowledge Base Filtering
 
 To filter content by knowledge base:
+
+![homepage](/images/content-filters.png)
 
 1. Click the "KB" button to open the knowledge base selection menu
 2. Options include:
@@ -159,6 +165,8 @@ To clear all active filters:
 ### Adding New Content
 
 To add new content:
+
+![homepage](/images/content-add.png)
 
 1. Click the "Add" button in the top-right corner
 2. The content type menu appears with options:
@@ -203,6 +211,9 @@ To ensure you're viewing the most current data:
 ### Documents
 
 Documents can be various file types:
+
+![homepage](/images/content-file.png)
+
 - **PDFs**: Standard document format with fixed layout
 - **Office Documents**: Word, Excel, PowerPoint files
 - **Text Files**: Plain text, RTF, CSV, JSON, XML
@@ -214,6 +225,9 @@ Documents are processed by the AI and their content becomes searchable in knowle
 ### Cards
 
 Cards are rich content items created in the platform:
+
+![homepage](/images/content-card.png)
+
 - Designed for engaging user interactions
 - Can contain text, images, buttons, and other interactive elements
 - Often used for frequently accessed information
@@ -222,6 +236,9 @@ Cards are rich content items created in the platform:
 ### Web Links
 
 Web links point to external resources:
+
+![homepage](/images/content-web-link.png)
+
 - Reference websites outside the platform
 - Appear in search results and LaunchPad
 - Include title, description, and URL
@@ -230,6 +247,9 @@ Web links point to external resources:
 ### Assets
 
 Assets are supporting files:
+
+![homepage](/images/content-file.png)
+
 - Images, icons, and graphics
 - Used within cards and other content
 - Stored in the asset library

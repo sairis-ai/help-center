@@ -29,6 +29,9 @@ The AI File Manager is a powerful tool that allows you to upload, manage, and as
 ### Understanding the Interface
 
 The AI File Manager has three main sections:
+
+![homepage](/images/content-file.png)
+
 - **File Upload Area** (left/center): Where you upload and manage files
 - **File Information Panel** (right top): Configure basic file details
 - **Publish Attributes Panel** (right middle): Set categorization and scheduling options
