@@ -32,7 +32,7 @@ export default defineConfig({
       },
       {text: 'AI Management', collapsed: false, items: 
             [ 
-              {text: 'AI Content', collapsed: false, items:
+              {text: 'AI Content', collapsed: true, items:
                 [
                   {text: 'Content Manager', link: '/Administration/AI-Management/Content/content-management'},
                   {text: 'Card', link: '/Administration/AI-Management/Content/card-designer'},
@@ -40,20 +40,20 @@ export default defineConfig({
                   {text: 'Web Link', link: '/Administration/AI-Management/Content/web-links'}
                 ]
               },
-              {text: 'Blueprints', collapsed: false, items:
+              {text: 'Blueprints', collapsed: true, items:
                 [
                   {text: 'Blueprint List',link: '/Administration/AI-Management/Blueprints/blueprint-list-view'},
                   {text: 'Blueprint Settings',link: '/Administration/AI-Management/Blueprints/blueprint-settings'}
                 ]
               },              
-              {text: 'Knowledge Bases', collapsed: false, items:
+              {text: 'Knowledge Bases', collapsed: true, items:
                 [
                   {text: 'Knowledge Base List',link: '/Administration/AI-Management/Knowledge-Bases/knowledge-base-list'},
                   {text: 'Knowledge Base Settings',link: '/Administration/AI-Management/Knowledge-Bases/knowledge-base'}
                 ]
               }, 
               {text: 'Test Cases', link: '/Administration/Test-Cases/ai-test-case-view'}, 
-              {text: 'Settings', collapsed: false, items:
+              {text: 'Settings', collapsed: true, items:
                 [
                   {text: 'Launch Pad',link: '/Administration/AI-Management/Settings/launchpad'},
                   {text: 'Topics',link: '/Administration/AI-Management/Settings/topics'},
@@ -65,7 +65,7 @@ export default defineConfig({
               },
             ]         
       },
-      {text: 'Dashboard Insights', collapsed: false, items: 
+      {text: 'Dashboard Insights', collapsed: true, items: 
         [ 
           {text: 'Platform', link: '/Administration/Dashboard-Insights/platform'}, 
           {text: 'Tokens', link: 'Administration/Dashboard-Insights/tokens'}, 
@@ -76,9 +76,9 @@ export default defineConfig({
           {text: 'Devices', link: 'Administration/Dashboard-Insights/devices'}
           ]
         },
-      {text: 'Manage', collapsed: false, items: 
+      {text: 'Manage', collapsed: true, items: 
         [ 
-          {text: 'Users', collapsed: false, items: 
+          {text: 'Users', collapsed: true, items: 
             [
               {text: 'User Management', link: '/Administration/Manage/Users/user-management'},
               {text: 'User Profile', link: '/Administration/Manage/Users/user-profile'},
@@ -89,13 +89,13 @@ export default defineConfig({
               {text: 'User Activities', link: '/Administration/Manage/Users/user-activities'}
             ]
           }, 
-          {text: 'Groups', collapsed: false, items: 
+          {text: 'Groups', collapsed: true, items: 
             [  
               {text: 'Group Management', link: '/Administration/Manage/Groups/group-management'},
               {text: 'Create Groups', link: '/Administration/Manage/Groups/smart-group'}
             ]
           }, 
-          {text: 'Global Settings',collapsed: false, items: 
+          {text: 'Global Settings',collapsed: true, items: 
             [  
               {text: 'Branding', link: '/Administration/Manage/global-settings/branding'},
               {text: 'Security', link: '/Administration/Manage/global-settings/security'},
