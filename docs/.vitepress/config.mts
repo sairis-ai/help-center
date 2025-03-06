@@ -58,6 +58,7 @@ export default defineConfig({
                   {text: 'Launch Pad',link: '/Administration/AI-Management/Settings/launchpad'},
                   {text: 'Topics',link: '/Administration/AI-Management/Settings/topics'},
                   {text: 'Tags',link: '/Administration/AI-Management/Settings/tags'},
+                  // {text: 'Understanding LLM\'s',link: '/Administration/AI-Management/Settings/llm'},
                   {text: 'LLM\'s',link: '/Administration/AI-Management/Settings/large-language-models'},
                   {text: 'Roles',link: '/Administration/AI-Management/Settings/roles'},
                   {text: 'Bans',link: '/Administration/AI-Management/Settings/bans'}

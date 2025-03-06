@@ -114,6 +114,8 @@ Some Blueprints may be marked as secure:
 
 The Instructions section controls the AI's behavior through system prompts:
 
+![homepage](/images/assistant-blueprint-instructions.png)
+
 1. View the current instructions in the text area
 2. Click the pencil icon to open the full Instructions editor
 3. In the editor:
@@ -134,6 +136,11 @@ Best practices for instructions:
 
 To select the AI foundation model:
 
+![homepage](/images/assistant-model.png)
+
+Before selecting or changing your Language Model you may wish to review the differences between the models.
+[Understanding Large Language Models](/Administration/AI-Management/Settings/llm)
+
 1. Click on the model name box
 2. The LLM selector dialog opens
 3. Choose from available models (Claude 3 Haiku, Sonnet, etc.)
@@ -144,6 +151,8 @@ To select the AI foundation model:
 
 Configure how the AI processes and responds to queries:
 
+![homepage](/images/assistant-mode.png)
+
 1. Use the AI Mode dropdown to select:
    - **Question & Answers**: Standard Q&A functionality
    - **Agentic**: More autonomous problem-solving abilities
@@ -152,6 +161,8 @@ Configure how the AI processes and responds to queries:
 ### Web Tools
 
 Control the AI's access to external information:
+
+![homepage](/images/assistant-web-tools.png)
 
 1. **Live Web Lookup**:
    - Toggle the "Live Web" button on/off
@@ -166,6 +177,8 @@ Control the AI's access to external information:
    - Useful for questions about current events and recent developments
 
 ## Model Settings
+
+![homepage](/images/assistant-model-settings.png)
 
 ### General Knowledge
 
@@ -197,6 +210,8 @@ Control content appropriateness:
 ## Knowledge Sources
 
 ### Knowledge Bases
+
+![homepage](/images/assistant-kbs.png)
 
 Select knowledge repositories for the AI to use:
 
@@ -236,6 +251,8 @@ Fine-tune how the AI searches knowledge sources:
 ### Web Pages
 
 Add specific web pages as information sources:
+
+![homepage](/images/assistant-webpages.png)
 
 1. Expand the "Web Pages" accordion
 2. View any currently added web pages

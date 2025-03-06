@@ -42,7 +42,9 @@ This interface is typically found in the system settings under AI Settings or Ad
 
 ## AI Models Overview
 
-Large Language Models (LLMs) are the foundation of AI capabilities in the platform. Different models offer varying capabilities, costs, and performance characteristics:
+Large Language Models (LLMs) are the foundation of AI capabilities in the platform. Different models offer varying capabilities, costs, and performance characteristics. 
+
+Before selecting or changing your Language Model you may wish to review the differences between the models. [Understanding Large Language Models](/Administration/AI-Management/Settings/llm)
 
 1. **Model Types**:
    - Foundation models (general-purpose)
