@@ -18,7 +18,7 @@ export default defineConfig({
   themeConfig: {
     sidebar: [
       {text: 'Home', link: '/Assistant/assistant-home' },
-      {text: 'User Content', link: '/Content/user-content' },
+      {text: 'User Content', link: '/Assistant/assistant-home' },
       {text: 'Assistant', collapsed: false, items: 
         [
           {text: 'Launchpad', link: '/Assistant/launchpad' },

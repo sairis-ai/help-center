@@ -1,5 +1,6 @@
 # AI Platform Home Dashboard User Guide
 
+<!--
 ## Table of Contents
 - [AI Platform Home Dashboard User Guide](#ai-platform-home-dashboard-user-guide)
   - [Table of Contents](#table-of-contents)
@@ -21,6 +22,7 @@
     - [Interactive Elements](#interactive-elements)
   - [Best Practices](#best-practices)
   - [Troubleshooting](#troubleshooting)
+--> 
 
 ## Introduction
 
