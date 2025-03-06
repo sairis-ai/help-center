@@ -1,5 +1,6 @@
 # Chat Token Counter User Guide
 
+<!--
 ## Table of Contents
 - [Chat Token Counter User Guide](#chat-token-counter-user-guide)
   - [Table of Contents](#table-of-contents)
@@ -16,6 +17,7 @@
   - [Loading States](#loading-states)
   - [Best Practices](#best-practices)
   - [Troubleshooting](#troubleshooting)
+--> 
 
 ## Introduction
 
@@ -25,6 +27,8 @@ The Chat Token Counter provides insights into the resource usage of your AI conv
 
 The Token Counter is accessible from the chat history panel:
 
+![homepage](/images/assistant-chat-tokens.png)
+
 1. Open the Chat History sidebar in the AI Assistant
 2. Click the three-dot menu next to a conversation 
 3. Select "Token Count" from the menu
@@ -33,6 +37,8 @@ The Token Counter is accessible from the chat history panel:
 ## Token Counter Interface
 
 The Token Counter displays information in a clean, card-based layout:
+
+![homepage](/images/assistant-chat-token-count.png)
 
 1. **Header**: "Token Counts" title at the top of the dialog
 2. **Metric Cards**: Four visual cards showing different token metrics
