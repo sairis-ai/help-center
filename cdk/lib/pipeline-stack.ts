@@ -212,10 +212,6 @@ export class PipelineStack extends cdk.Stack {
           {
             commands: [
               'npm run docs:build',
-              'find . -type d | sort',  // Add this to see the directory structure
-              'ls -la docs/.vitepress/dist || echo "Directory not found"',  // Check if this directory exists
-              'ls -la',
-              'ls -la docs/.vitepress',
               'ls -la docs/.vitepress/dist',
             ],
           },
