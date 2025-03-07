@@ -4,7 +4,7 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: "Sairis",
   description: "Help Center",
-  base: '/help-center/',
+  base: '/',
   // head: [['link', { rel: 'icon', href: './help-center/favicon.ico' }]],
   // themeConfig: {
   //   logo: 'https://public.dev.sairis.ai/images/f6eb7bac-3a9c-4db2-aa32-39cfadbc1e29/logo_light.png',
