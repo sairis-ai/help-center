@@ -151,8 +151,10 @@ export class PipelineStack extends cdk.Stack {
             ],
           },
         },
-
-        artifacts: { files: 'docs/.vitepress/dist/**/*' },
+        artifacts: {
+          'base-directory': 'docs/.vitepress/dist',
+          'files': ['**/*']
+        },
       }),
       environment: {
         buildImage: codebuild.LinuxArmBuildImage.AMAZON_LINUX_2_STANDARD_3_0,
