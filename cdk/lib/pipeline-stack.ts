@@ -146,7 +146,7 @@ export class PipelineStack extends cdk.Stack {
           build:
           {
             commands: [
-              'npm run docs:build',
+              'npm run build',
               'ls',
             ],
           },
