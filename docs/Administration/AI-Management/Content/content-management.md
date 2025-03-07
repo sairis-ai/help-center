@@ -122,6 +122,9 @@ To filter content by type:
 
 3. The selected filter displays on the button (e.g., "PDF" or "Link")
 4. The list updates to show only content of the selected type
+5. To remove the filter, select the remove filter image on the top right
+
+![homepage](/images/content-remove-filters.png)
 
 ### Knowledge Base Filtering
 
@@ -135,10 +138,13 @@ To filter content by knowledge base:
    - Individual knowledge bases listed by name
 3. The selected KB name displays on the button
 4. The list updates to show only content in the selected knowledge base
-
+5. To remove the filter, select the remove filter image on the top right
+   
 ### Topic and Tag Filtering
 
 To filter by topics or tags:
+
+![homepage](/images/content-topic-tag-filters.png)
 
 1. Click the filter icon in the column header for Topics or Tags
 2. Select from the dropdown list of available topics or tags
@@ -147,6 +153,8 @@ To filter by topics or tags:
 ### Quick Filters
 
 Pre-configured filters for common scenarios:
+
+![homepage](/images/content-filters-my-recent.png)
 
 1. **My**: Shows only content updated by the current user
 2. **Recent**: Sorts content by update date with newest items first
@@ -157,6 +165,7 @@ When filters are active, a "Filter On" indicator appears and the filter button t
 
 To clear all active filters:
 1. Click the filter slash button (filter icon with a slash)
+![homepage](/images/content-remove-filters.png)
 2. All filters will be reset to their default state
 3. The complete content list will be displayed
 
@@ -186,6 +195,9 @@ To view or edit an existing content item:
    - Documents open in the document viewer
    - Cards open in the card designer
    - Links open in the link editor
+  
+  Please see [File Manager](/Administration/AI-Management/Content/document-uploads.html#file-management), and View Existing Files for detailed information 
+
 
 ## Content Operations
 
@@ -220,6 +232,8 @@ Documents can be various file types:
 - **Media Files**: MP4 videos, MP3 audio
 - **Code/Markup**: HTML, Markdown
 
+Please see [File Manager User Guide](/Administration/AI-Management/Content/document-uploads) for information on uploading and managing files
+
 Documents are processed by the AI and their content becomes searchable in knowledge bases.
 
 ### Cards
@@ -233,6 +247,8 @@ Cards are rich content items created in the platform:
 - Often used for frequently accessed information
 - Appear in the AI interface as structured responses
 
+Please see [AI Card Designer User Guide](/Administration/AI-Management/Content/card-designer) for information on managing cards
+
 ### Web Links
 
 Web links point to external resources:
@@ -244,6 +260,8 @@ Web links point to external resources:
 - Include title, description, and URL
 - Can be categorized with topics and tags
 
+Please see [Web Link Manager User Guide](/Administration/AI-Management/Content/card-designer) for information on managing web links
+
 ### Assets
 
 Assets are supporting files:
@@ -254,6 +272,8 @@ Assets are supporting files:
 - Used within cards and other content
 - Stored in the asset library
 - Not directly processed by AI but support other content
+
+Please see [File Manager User Guide](/Administration/AI-Management/Content/document-uploads) for information on uploading and managing assets
 
 ### Other Content Types
 
