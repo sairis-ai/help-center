@@ -148,6 +148,7 @@ export class PipelineStack extends cdk.Stack {
             commands: [
               'npm run build',
               'ls',
+              'ls docs/.vitepress/dist',
             ],
           },
         },
