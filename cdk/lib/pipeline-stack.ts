@@ -89,7 +89,7 @@ export class PipelineStack extends cdk.Stack {
       logFilePrefix: 'cloudfront-logs/',
     });
 
-    // Import the hosted zone using both the exported zone ID and providing the zone name
+    // Import the hosted zone using both the exported zone ID and providing the zone name prod
     const hostedZoneProd = route53.HostedZone.fromHostedZoneAttributes(this, 'HelpCenterHostedZoneProd', {
       hostedZoneId: cdk.Fn.importValue('prod-zone-id'),
       zoneName: 'sairis.ai'  // You need to provide the root domain name here
