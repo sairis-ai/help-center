@@ -1,0 +1,194 @@
+import type { Construct } from 'constructs'
+import * as cdk from 'aws-cdk-lib'
+import { aws_cloudfront as cloudfront, aws_codebuild as codebuild, aws_codepipeline as codepipeline, aws_codepipeline_actions as codepipeline_actions, aws_s3 as s3, SecretValue } from 'aws-cdk-lib'
+import { PipelineType } from 'aws-cdk-lib/aws-codepipeline'
+import { S3Origin } from 'aws-cdk-lib/aws-cloudfront-origins'
+
+//
+
+export class PipelineStack extends cdk.Stack {
+  constructor(scope: Construct, id: string, props?: cdk.StackProps) {
+    super(scope, id, props)
+
+    const helpCenterBucketArtifact = new s3.Bucket(this, 'HelpCenterBucketArtifact', {
+      bucketName: 'help-center-bucket-artifact',
+      blockPublicAccess: s3.BlockPublicAccess.BLOCK_ALL,
+      encryption: s3.BucketEncryption.S3_MANAGED,
+      enforceSSL: true,
+      versioned: true,
+      removalPolicy: cdk.RemovalPolicy.DESTROY,
+    })
+
+    
+    const helpCenterBucket = new s3.Bucket(this, 'SairisHelpCenterBucket', {
+      bucketName: 'help-center-bucket',
+      blockPublicAccess: s3.BlockPublicAccess.BLOCK_ALL,
+      encryption: s3.BucketEncryption.S3_MANAGED,
+      enforceSSL: true,
+      versioned: true,
+      removalPolicy: cdk.RemovalPolicy.DESTROY,
+    })
+    
+
+    // Create CloudFront origin access identity for S3 bucket access
+    const originAccessIdentity = new cloudfront.OriginAccessIdentity(this, 'HelpCenterOAI', {
+      comment: 'Access identity for help center distribution',
+    });
+
+    // Grant the OAI read access to the bucket
+    helpCenterBucket.grantRead(originAccessIdentity);
+
+    // Create a new CloudFront distribution
+    const helpCenterDistribution = new cloudfront.Distribution(this, 'HelpCenterDistribution', {
+      defaultRootObject: 'index.html',
+      defaultBehavior: {
+        origin: new S3Origin(helpCenterBucket, {
+          originAccessIdentity,
+        }),
+        viewerProtocolPolicy: cloudfront.ViewerProtocolPolicy.REDIRECT_TO_HTTPS,
+        allowedMethods: cloudfront.AllowedMethods.ALLOW_GET_HEAD_OPTIONS,
+        cachedMethods: cloudfront.CachedMethods.CACHE_GET_HEAD_OPTIONS,
+        cachePolicy: cloudfront.CachePolicy.CACHING_OPTIMIZED,
+      },
+      errorResponses: [
+        {
+          httpStatus: 404,
+          responseHttpStatus: 200,
+          responsePagePath: '/index.html',
+          ttl: cdk.Duration.minutes(0),
+        },
+        {
+          httpStatus: 403,
+          responseHttpStatus: 200,
+          responsePagePath: '/index.html',
+          ttl: cdk.Duration.minutes(0),
+        },
+      ],
+      priceClass: cloudfront.PriceClass.PRICE_CLASS_100,
+      enableLogging: true,
+      logBucket: new s3.Bucket(this, 'HelpCenterLogsBucket', {
+        blockPublicAccess: s3.BlockPublicAccess.BLOCK_ALL,
+        encryption: s3.BucketEncryption.S3_MANAGED,
+        enforceSSL: true,
+        removalPolicy: cdk.RemovalPolicy.DESTROY,
+      }),
+      logFilePrefix: 'cloudfront-logs/',
+    });
+
+      
+    
+    const pipeline = new codepipeline.Pipeline(this, 'Pipeline', {
+      pipelineName: `HelpCenterPipeline`,
+      restartExecutionOnUpdate: true,
+      pipelineType: PipelineType.V2,
+      artifactBucket: helpCenterBucketArtifact,
+
+    })
+
+    const outputSources = new codepipeline.Artifact()
+    const outputBuilds = new codepipeline.Artifact()
+
+    pipeline.addStage({
+      stageName: 'Source',
+      actions: [
+        new codepipeline_actions.GitHubSourceAction({
+          actionName: 'MergedInGit',
+          owner: 'sairis-ai',
+          repo: 'help-center',
+          oauthToken: SecretValue.secretsManager('GIT_HUB2'),
+          branch: 'main',
+          output: outputSources,
+          trigger: codepipeline_actions.GitHubTrigger.WEBHOOK,
+        }),
+      ],
+    })
+
+    const invalidateHelpCenter = new codebuild.PipelineProject(this, `InvalidateHelpCenter`, {
+      buildSpec: codebuild.BuildSpec.fromObject({
+        version: '0.2',
+        phases: {
+          build: {
+            commands: [
+
+              `aws cloudfront create-invalidation --distribution-id ${helpCenterDistribution.distributionId} --paths "/*"`,
+              // Choose whatever files or paths you'd like, or all files as specified here
+            ],
+          },
+        },
+      }),
+      environmentVariables: {
+        CLOUDFRONT_ID: { value: helpCenterDistribution.distributionId },
+      },
+    })
+
+   
+    const buildProject = new codebuild.PipelineProject(this, 'Build HelpCenter SPA', {
+      projectName: `HelpCenterSPA`,
+      buildSpec: codebuild.BuildSpec.fromObject({
+        version:
+          '0.2',
+        phases:
+        {
+          install:
+          {
+            commands: [
+              // 'npm --version',
+              // 'node --version',
+              'export NODE_OPTIONS=--max_old_space_size=6000',
+              'npm install n',
+              'n 20',
+              'node --version',
+              'npm install',
+            ],
+          },
+          build:
+          {
+            commands: [
+              'npm run build',
+              'ls',
+            ],
+          },
+        },
+
+        artifacts: { files: 'dist/**/*' },
+      }),
+      environment: {
+        buildImage: codebuild.LinuxArmBuildImage.AMAZON_LINUX_2_STANDARD_3_0,
+      },
+    })
+
+    pipeline.addStage({
+      stageName: 'Build',
+      actions: [
+        new codepipeline_actions.CodeBuildAction({
+          actionName: 'HelpCenterBuild',
+          project: buildProject,
+          input: outputSources,
+          outputs: [outputBuilds],
+        }),
+      ],
+    })
+
+    // here we will deploy and invalidate the cloudfront cache
+    pipeline.addStage({
+      stageName: 'DeployHelpCenter',
+      actions: [
+
+        new codepipeline_actions.S3DeployAction({
+          actionName: 'HelpCenterDeploy',
+          input: outputBuilds,
+          bucket: helpCenterBucket,
+          runOrder: 1,
+        }),
+        new codepipeline_actions.CodeBuildAction({
+          actionName: 'HelpCenterInvalidateCache',
+          project: invalidateHelpCenter,
+          input: outputBuilds,
+          runOrder: 2,
+        }),
+      ],
+    })
+
+    helpCenterDistribution.grantCreateInvalidation(invalidateHelpCenter)
+  }
+}
