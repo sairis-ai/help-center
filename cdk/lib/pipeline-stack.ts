@@ -11,7 +11,7 @@ export class PipelineStack extends cdk.Stack {
     super(scope, id, props)
 
     const helpCenterBucketArtifact = new s3.Bucket(this, 'HelpCenterBucketArtifact', {
-      bucketName: 'help-center-bucket-artifact',
+      bucketName: 'sairis-help-center-bucket-artifact',
       blockPublicAccess: s3.BlockPublicAccess.BLOCK_ALL,
       encryption: s3.BucketEncryption.S3_MANAGED,
       enforceSSL: true,
@@ -20,8 +20,8 @@ export class PipelineStack extends cdk.Stack {
     })
 
     
-    const helpCenterBucket = new s3.Bucket(this, 'SairisHelpCenterBucket', {
-      bucketName: 'help-center-bucket',
+    const helpCenterBucket = new s3.Bucket(this, 'HelpCenterBucket', {
+      bucketName: 'sairis-help-center-bucket',
       blockPublicAccess: s3.BlockPublicAccess.BLOCK_ALL,
       encryption: s3.BucketEncryption.S3_MANAGED,
       enforceSSL: true,
@@ -67,10 +67,12 @@ export class PipelineStack extends cdk.Stack {
       priceClass: cloudfront.PriceClass.PRICE_CLASS_100,
       enableLogging: true,
       logBucket: new s3.Bucket(this, 'HelpCenterLogsBucket', {
+        bucketName: 'sairis-help-center--logs-bucket',
         blockPublicAccess: s3.BlockPublicAccess.BLOCK_ALL,
         encryption: s3.BucketEncryption.S3_MANAGED,
         enforceSSL: true,
         removalPolicy: cdk.RemovalPolicy.DESTROY,
+        objectOwnership: s3.ObjectOwnership.OBJECT_WRITER,
       }),
       logFilePrefix: 'cloudfront-logs/',
     });
