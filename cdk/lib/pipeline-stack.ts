@@ -1,8 +1,16 @@
-import type { Construct } from 'constructs'
 import * as cdk from 'aws-cdk-lib'
-import { aws_cloudfront as cloudfront, aws_codebuild as codebuild, aws_codepipeline as codepipeline, aws_codepipeline_actions as codepipeline_actions, aws_s3 as s3, SecretValue } from 'aws-cdk-lib'
-import { PipelineType } from 'aws-cdk-lib/aws-codepipeline'
+import {
+  aws_certificatemanager as acm,
+  aws_cloudfront as cloudfront, aws_codebuild as codebuild, aws_codepipeline as codepipeline,
+  aws_codepipeline_actions as codepipeline_actions,
+  aws_route53 as route53,
+  aws_s3 as s3,
+  SecretValue,
+  aws_route53_targets as targets
+} from 'aws-cdk-lib'
 import { S3Origin } from 'aws-cdk-lib/aws-cloudfront-origins'
+import { PipelineType } from 'aws-cdk-lib/aws-codepipeline'
+import type { Construct } from 'constructs'
 
 //
 
@@ -19,7 +27,7 @@ export class PipelineStack extends cdk.Stack {
       removalPolicy: cdk.RemovalPolicy.DESTROY,
     })
 
-    
+
     const helpCenterBucket = new s3.Bucket(this, 'HelpCenterBucket', {
       bucketName: 'sairis-help-center-bucket',
       blockPublicAccess: s3.BlockPublicAccess.BLOCK_ALL,
@@ -28,7 +36,7 @@ export class PipelineStack extends cdk.Stack {
       versioned: true,
       removalPolicy: cdk.RemovalPolicy.DESTROY,
     })
-    
+
 
     // Create CloudFront origin access identity for S3 bucket access
     const originAccessIdentity = new cloudfront.OriginAccessIdentity(this, 'HelpCenterOAI', {
@@ -40,7 +48,11 @@ export class PipelineStack extends cdk.Stack {
 
     // Create a new CloudFront distribution
     const helpCenterDistribution = new cloudfront.Distribution(this, 'HelpCenterDistribution', {
+      comment: 'Sairis Help Center',
       defaultRootObject: 'index.html',
+      domainNames: ['help.sairis.com'], // Replace with your actual domain
+      certificate: acm.Certificate.fromCertificateArn(this, 'HelpCenterCertificate',
+        cdk.Fn.importValue('prod-certificate-arn')),
       defaultBehavior: {
         origin: new S3Origin(helpCenterBucket, {
           originAccessIdentity,
@@ -77,8 +89,17 @@ export class PipelineStack extends cdk.Stack {
       logFilePrefix: 'cloudfront-logs/',
     });
 
-      
-    
+    // Import the hosted zone using the exported zone ID
+    const hostedZone = route53.HostedZone.fromHostedZoneId(this, 'HelpCenterHostedZone',
+      cdk.Fn.importValue('prod-zone-id'));
+
+    // Create the DNS record pointing to the CloudFront distribution
+    new route53.ARecord(this, 'HelpCenterDnsRecord', {
+      zone: hostedZone,
+      recordName: 'help', // Creates 'help.sairis.com'
+      target: route53.RecordTarget.fromAlias(new targets.CloudFrontTarget(helpCenterDistribution)),
+    });
+
     const pipeline = new codepipeline.Pipeline(this, 'Pipeline', {
       pipelineName: `HelpCenterPipeline`,
       restartExecutionOnUpdate: true,
@@ -123,7 +144,7 @@ export class PipelineStack extends cdk.Stack {
       },
     })
 
-   
+
     const buildProject = new codebuild.PipelineProject(this, 'Build HelpCenter SPA', {
       projectName: `HelpCenterSPA`,
       buildSpec: codebuild.BuildSpec.fromObject({
