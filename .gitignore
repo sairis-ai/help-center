@@ -1,4 +1,4 @@
 # Build outputs
 docs/.vitepress/cache
 node_modules/
-docs
+docs/.vitepress/dist/
