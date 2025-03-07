@@ -46,13 +46,18 @@ export class PipelineStack extends cdk.Stack {
     // Grant the OAI read access to the bucket
     helpCenterBucket.grantRead(originAccessIdentity);
 
+    const certificate = acm.Certificate.fromCertificateArn(
+      this,
+      'HelpCenterCertificate',
+      'arn:aws:acm:us-east-1:884568634535:certificate/fdf2b4ad-c561-48ab-bc43-c63f460d1b2e'
+    );
+
     // Create a new CloudFront distribution
     const helpCenterDistribution = new cloudfront.Distribution(this, 'HelpCenterDistribution', {
       comment: 'Sairis Help Center',
       defaultRootObject: 'index.html',
-      domainNames: ['help.sairis.ai'],
-      certificate: acm.Certificate.fromCertificateArn(this, 'HelpCenterCertificate',
-        cdk.Fn.importValue('prod-certificate-arn')),
+      domainNames: ['help.sairis.ai', 'help.dev.sairis.ai', 'help.test.sairis.ai', 'help.stage.sairis.ai'],
+      certificate: certificate,
       defaultBehavior: {
         origin: new S3Origin(helpCenterBucket, {
           originAccessIdentity,
@@ -108,12 +113,11 @@ export class PipelineStack extends cdk.Stack {
       zoneName: 'dev.sairis.ai'  // The dev subdomain zone name
     });
 
-    // Create a CNAME record pointing help.dev.sairis.ai to the CloudFront distribution
-    new route53.CnameRecord(this, 'HelpCenterDnsRecordDev', {
+    // Create the DNS record pointing to the CloudFront distribution
+    new route53.ARecord(this, 'HelpCenterDnsRecordDev', {
       zone: hostedZoneDev,
       recordName: 'help', // Creates 'help.dev.sairis.ai'
-      domainName: helpCenterDistribution.distributionDomainName,
-      ttl: cdk.Duration.minutes(5)
+      target: route53.RecordTarget.fromAlias(new targets.CloudFrontTarget(helpCenterDistribution)),
     });
 
     // Import the test hosted zone using both the exported zone ID and providing the zone name
@@ -122,12 +126,11 @@ export class PipelineStack extends cdk.Stack {
       zoneName: 'test.sairis.ai'  // The test subdomain zone name
     });
 
-    // Create a CNAME record pointing help.test.sairis.ai to the CloudFront distribution
-    new route53.CnameRecord(this, 'HelpCenterDnsRecordTest', {
+    // Create the DNS record pointing to the CloudFront distribution
+    new route53.ARecord(this, 'HelpCenterDnsRecordTest', {
       zone: hostedZoneTest,
       recordName: 'help', // Creates 'help.test.sairis.ai'
-      domainName: helpCenterDistribution.distributionDomainName,
-      ttl: cdk.Duration.minutes(5)
+      target: route53.RecordTarget.fromAlias(new targets.CloudFrontTarget(helpCenterDistribution)),
     });
 
     // Import the stage hosted zone using both the exported zone ID and providing the zone name
@@ -136,12 +139,11 @@ export class PipelineStack extends cdk.Stack {
       zoneName: 'stage.sairis.ai'  // The stage subdomain zone name
     });
 
-    // Create a CNAME record pointing help.stage.sairis.ai to the CloudFront distribution
-    new route53.CnameRecord(this, 'HelpCenterDnsRecordStage', {
+    // Create the DNS record pointing to the CloudFront distribution
+    new route53.ARecord(this, 'HelpCenterDnsRecordStage', {
       zone: hostedZoneStage,
       recordName: 'help', // Creates 'help.stage.sairis.ai'
-      domainName: helpCenterDistribution.distributionDomainName,
-      ttl: cdk.Duration.minutes(5)
+      target: route53.RecordTarget.fromAlias(new targets.CloudFrontTarget(helpCenterDistribution)),
     });
 
     const pipeline = new codepipeline.Pipeline(this, 'Pipeline', {
