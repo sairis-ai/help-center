@@ -36,15 +36,15 @@ This dialog appears when:
 
 ![homepage](/images/knowledge-base-new.png)
 
-The Knowledge Base Dialog is divided into two main columns:
+The Knowledge Base Dialog is divided into two main sections:
 
-**Left Column**: Contains basic information fields
+**Top/Main Section**: Contains basic information fields
 - Name and initials
 - Description
 - Group access settings
 - Topic and tag selection
 
-**Right Column**: Contains AI and search configuration
+**Secondary (AI Configuration) Section**: Contains AI and search configuration
 - AI foundation model selection
 - Creativity settings
 - System instructions
@@ -126,3 +126,11 @@ Control how creative or precise the AI responses should be:
 1. **Creativity** (Required):
    - Options: "Creative," "Balanced," or "Precise"
    - Creative: More varied and imaginative
+
+2. **KB Search Settings**
+   - Limits 
+  
+3. **Other KB Settings**
+   - Allow other uses to copy this KB
+   - Toggle on to allow KB to be shown in the main AI selection list
+   - Toggle on to allow KB to be shown on the users HomePage 

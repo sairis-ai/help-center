@@ -50,3 +50,11 @@ We probably want to have a more detailed explanation about blueprints, examples,
 ### Blueprint Builder
 #### Knowledge Base Settings
 - What is the difference between the 'Allow General Knowledge of AI..." and the LLM General Knowledge
+
+
+## Knowledge Bases
+### Knowledge Base List 
+- AI Sync and Embedding >> Do we need to explain what vectorizing is? 
+  
+
+  What happens if you have a Haiku KB, but you point a Sonnet AI BluePrint model at it?  Or vice versa? 

@@ -81,6 +81,34 @@ To organize the knowledge base list:
 2. Click again to toggle between ascending and descending order
 3. Click a third time to remove sorting
 
+## Knowledge Base Related Actions
+
+Each knowledge base has additional actions accessible via buttons in the Actions column:
+
+### Viewing KB Content
+
+![homepage](/images/knowledge-base-actions.png)
+
+To view and manage content within a knowledge base:
+1. Click the palette icon (first icon in Actions column)
+2. You'll be redirected to the Content List View filtered for this knowledge base
+3. From there you can manage all documents and content items in the knowledge base
+
+### Running Test Cases
+
+To evaluate AI performance with a specific knowledge base:
+1. Click the gauge icon (second icon in Actions column)
+2. You'll be redirected to the Test Case page for this knowledge base
+3. Create or run tests to evaluate how well the AI handles queries related to this content
+
+### AI Sync and Embedding
+
+To process and update the AI embeddings for knowledge base content:
+1. Click the microchip-AI icon (third icon in Actions column)
+2. You'll be redirected to the File Queue status page
+3. Here you can monitor and manage the synchronization of content with the AI system
+4. This process ensures content is properly vectorized for accurate retrieval
+
 ## Managing Knowledge Bases
 
 ### Creating a New Knowledge Base
@@ -94,6 +122,7 @@ To create a new knowledge base:
    - **Description**: Explanation of the knowledge base's purpose
    - **Topic Tag**: Optional categorization tag
 4. Click "Save" to create the knowledge base
+5. See [Knowledge Base Settings](/Administration/AI-Management/Knowledge-Bases/knowledge-base-list) for more details on Knowledge Base settings fields
 
 ### Editing Knowledge Base Details
 
@@ -124,34 +153,6 @@ To delete a knowledge base:
    - A confirmation dialog appears
    - Click "Delete" to remove the knowledge base
 4. A success notification confirms when deletion is complete
-
-## Knowledge Base Related Actions
-
-Each knowledge base has additional actions accessible via buttons in the Actions column:
-
-### Viewing KB Content
-
-![homepage](/images/knowledge-base-actions.png)
-
-To view and manage content within a knowledge base:
-1. Click the palette icon (first icon in Actions column)
-2. You'll be redirected to the Content List View filtered for this knowledge base
-3. From there you can manage all documents and content items in the knowledge base
-
-### Running Test Cases
-
-To evaluate AI performance with a specific knowledge base:
-1. Click the gauge icon (second icon in Actions column)
-2. You'll be redirected to the Test Case page for this knowledge base
-3. Create or run tests to evaluate how well the AI handles queries related to this content
-
-### AI Sync and Embedding
-
-To process and update the AI embeddings for knowledge base content:
-1. Click the microchip-AI icon (third icon in Actions column)
-2. You'll be redirected to the File Queue status page
-3. Here you can monitor and manage the synchronization of content with the AI system
-4. This process ensures content is properly vectorized for accurate retrieval
 
 
 ## Data Management
