@@ -34,6 +34,9 @@
 
 The Web Link Manager allows you to create and manage hyperlinks to external websites and applications, complete with customized icons and styling. These links can be used throughout the AI Assistant platform and in LaunchPad interfaces, providing users with quick access to important resources. This guide explains how to create, customize, and manage web links effectively.
 
+Creating an Web Link is just a way to create a hyperlink to a url with an icon and design. These Web Links can be put into LaunchPad so users have quick access to your company's web apps.
+
+
 ## Accessing Web Link Manager
 
 The Web Link Manager is accessible to users with specific roles:

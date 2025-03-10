@@ -204,6 +204,7 @@ Blueprint access is controlled through group assignments:
 4. Additional groups are represented by a "+N" indicator
 5. Hovering over group avatars shows the full group name
 6. Clicking the group filter allows filtering by specific group assignment
+7. Note that assigning Groups is managed via the Share tab once clicking on a Blueprint
 
 ### Understanding Blueprint Metadata
 
