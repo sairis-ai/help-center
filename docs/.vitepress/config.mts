@@ -52,7 +52,7 @@ export default defineConfig({
                   {text: 'Knowledge Base Settings',link: '/Administration/AI-Management/Knowledge-Bases/knowledge-base'}
                 ]
               }, 
-              {text: 'Test Cases', link: '/Administration/Test-Cases/ai-test-case-view'}, 
+              // {text: 'Test Cases', link: '/Administration/Test-Cases/ai-test-case-view'}, 
               {text: 'Settings', collapsed: true, items:
                 [
                   {text: 'Launch Pad',link: '/Administration/AI-Management/Settings/launchpad'},

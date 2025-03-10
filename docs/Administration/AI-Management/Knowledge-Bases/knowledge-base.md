@@ -19,7 +19,7 @@
 
 ## Introduction
 
-The Knowledge Base Configuration dialog allows administrators to create and edit knowledge bases within the AI Assistant platform. A knowledge base (KB) is a collection of content that the AI uses to provide answers to user queries. This guide explains how to configure knowledge bases effectively using the KB Dialog interface.
+The AI Knowledge Base Dialog provides an interface for creating and managing Knowledge Bases (KBs) - specialized collections of information that your AI can access when responding to questions. This form-based component allows administrators and content managers to configure how knowledge bases appear, what information they contain, and how the AI processes that information when generating responses. Well-configured knowledge bases are essential for providing accurate and relevant AI responses that leverage your organization's specific information.
 
 ## Accessing Knowledge Base Configuration
 
@@ -27,10 +27,13 @@ The Knowledge Base Configuration dialog is accessible to users with specific rol
 - Admin
 - Content
 - Manager
+- 
+To access this dialog:
+1. Navigate to the AI section in the main menu
+2. Select "Knowledge Bases" from the dropdown
+3. Click "Create New" button or select "Edit" on an existing KB
+4. The dialog opens as an overlay or dedicated page
 
-This dialog appears when:
-- Creating a new knowledge base by clicking "Add KB" in the Knowledge Base List View
-- Editing an existing knowledge base by clicking its name or the edit button
 
 ## Knowledge Base Dialog Overview
 
@@ -39,51 +42,53 @@ This dialog appears when:
 The Knowledge Base Dialog is divided into two main sections:
 
 **Top/Main Section**: Contains basic information fields
-- Name and initials
-- Description
-- Group access settings
-- Topic and tag selection
+- Knowledge Base Name and Initials
+- Description field
+- Group Access settings
+- Topic and Tags selectors
 
 **Secondary (AI Configuration) Section**: Contains AI and search configuration
-- AI foundation model selection
+- AI Model selection
 - Creativity settings
-- System instructions
-- Search configuration parameters
-- Sharing and visibility toggles
+- System Instructions
+- KB Search configuration
+- Publishing options
 
 ## Basic Information Section
 
-### Name and Initials
+The fundamental settings for your knowledge base:
 
-1. **Name** (Required):
-   - The primary identifier for your knowledge base
-   - Should be descriptive and unique
-   - Appears in the knowledge base list and selection dropdowns
-   - Maximum length: 255 characters
+1. **Name**:
+   - Enter a descriptive name for the knowledge base
+   - Maximum 255 characters
+   - This name appears in KB selection menus
+   - Required field
 
-2. **Initials** (Required):
-   - Two-character identifier used for the knowledge base avatar
-   - Automatically generated from the first two letters of the name
-   - Can be manually overridden
-   - Used in visual representations throughout the system
-
-### Description
-
+2. **Initials**:
+   - 1-2 character abbreviation for the knowledge base
+   - Auto-generates from the first two letters of the name
+   - Used in KB avatars and compact displays
+   - Can be manually edited
+   - Required field
+3. **Description**:
 The description field provides context about the knowledge base's purpose and content:
-- Helps users understand what information the KB contains
-- Appears in the knowledge base list and selection interfaces
-- Use clear, concise language explaining the KB's scope and use cases
-- Optional but strongly recommended
+   - Detailed description of the knowledge base purpose and content
+   - Appears in KB selection interfaces
+   - Helps users understand when to use this KB
+   - Optional but recommended
+
 
 ### Group Access
 
 Group Access controls which users can access this knowledge base:
 
 1. **Group Selection**:
-   - Choose from existing groups in the system
-   - Multiple groups can be selected
-   - Only users belonging to selected groups will see this knowledge base
-   - Groups are displayed as a tag list for easy management
+   - Click in the Group Access field
+   - A dropdown menu appears showing available groups
+   - Select one or more groups to grant access
+   - Selected groups appear as chips in the field
+   - Click the X on any chip to remove that group
+   - Empty selection means all users can access (if permissions allow)
 
 2. **Access Implications**:
    - Adding many groups increases visibility but may expose sensitive information
@@ -109,28 +114,176 @@ Topics and tags help organize and categorize knowledge bases:
 
 ## AI Configuration Section
 
-### Foundation Model Selection
+Configure how the AI processes information in this knowledge base:
 
-Choose the AI model that will power this knowledge base:
+1. **AI Model**:
+   - Select from available models (e.g., "haiku", "sonnet")
+   - Different models offer varying capabilities and processing speeds
+   - Required field
+   - Default is "haiku"
 
-1. **AI Model** (Required):
-   - Options: "haiku" or "sonnet"
-   - Haiku: Optimized for speed and efficiency
-   - Sonnet: Optimized for depth and complexity
-   - Selection affects response quality and processing time
+2. **Creativity**:
+   - Choose from "Creative", "Balanced", or "Precise"
+   - Controls how strictly the AI adheres to source material
+   - "Creative" allows more flexibility in responses
+   - "Precise" prioritizes accuracy over creative expression
+   - Required field
 
-### Creativity Settings
+3. **Instructions**:
+   - System instructions that guide AI behavior
+   - Define the assistant's role, tone, and limitations
+   - Can include specialized knowledge domains
+   - 30,000 character maximum
+   - Optional field (system provides defaults)
 
-Control how creative or precise the AI responses should be:
+### Search Configuration
 
-1. **Creativity** (Required):
-   - Options: "Creative," "Balanced," or "Precise"
-   - Creative: More varied and imaginative
+Control how the AI searches and uses the knowledge base content:
 
-2. **KB Search Settings**
-   - Limits 
-  
-3. **Other KB Settings**
-   - Allow other uses to copy this KB
-   - Toggle on to allow KB to be shown in the main AI selection list
-   - Toggle on to allow KB to be shown on the users HomePage 
+1. **KB Search Results**:
+   - Number of results to include when answering questions
+   - Range: 1-100
+   - Higher values provide more comprehensive answers
+   - Lower values create more focused responses
+   - Default: 35
+
+2. **KB Results Match Score**:
+   - Minimum relevance score (0-100) for included results
+   - Higher values ensure only highly relevant content is used
+   - Lower values include more content with less strict matching
+   - Recommended: 60 or higher
+   - Default: 60
+
+### Publishing Options
+
+Control visibility and sharing options for the knowledge base:
+
+1. **Allow Copies**:
+   - Toggle switch to enable/disable copying
+   - When enabled, others can create derivative KBs
+   - When disabled, the KB cannot be duplicated
+   - Default: Off
+
+2. **Publish in Quick List**:
+   - Toggle to show in the main AI Selector dropdown
+   - Makes the KB more easily accessible
+   - Reserved for frequently used KBs
+   - Default: Off
+
+3. **Publish on Home Page**:
+   - Toggle to display on users' home pages
+   - Increases visibility and promotes usage
+   - Use for important or newly created KBs
+   - Default: Off
+
+## Advanced Settings
+
+Several advanced settings can be configured:
+
+1. **System Instructions**:
+   - Detailed guidelines for the AI
+   - Can include specific instructions on how to use the KB content
+   - May define constraints or special handling of information
+   - Best used by experienced administrators
+
+2. **Match Score Tuning**:
+   - Adjusting the match score affects response quality
+   - Values around 60-70 work well for most cases
+   - Below 50 may include irrelevant information
+   - Above 80 may exclude useful but slightly different content
+   - 
+## Saving Your Changes
+
+To save your knowledge base configuration:
+
+1. Review all settings for accuracy
+2. Click the "Submit Knowledge Base" button at the bottom
+3. The system validates your inputs
+4. If validation succeeds:
+   - A success message appears
+   - The dialog closes
+   - The KB list updates with your changes
+5. If validation fails:
+   - Error messages appear near the problematic fields
+   - Fix the issues and submit again
+
+
+## Knowledge Base Permissions
+
+Knowledge base access is controlled through:
+
+1. **Role-Based Access**:
+   - Only users with proper roles can create/edit KBs
+   - Admin, Content, and Manager roles have access
+
+2. **Group-Based Access**:
+   - KBs can be restricted to specific groups
+   - Users must belong to allowed groups to access
+   - Empty group selection makes KB available to all users
+   - 
+## Best Practices
+
+For optimal knowledge base configuration:
+
+1. **Naming Conventions**:
+   - Use clear, descriptive names
+   - Include the subject matter in the name
+   - Choose distinct initials for easy recognition
+   - Avoid generic names like "Test KB" or "New KB"
+
+2. **Effective Descriptions**:
+   - Describe the content and purpose
+   - Mention intended use cases
+   - Note any special features or limitations
+   - Help users decide if this KB is appropriate for their needs
+
+3. **AI Model Selection**:
+   - Use "haiku" for faster, more economical responses
+   - Use "sonnet" for more nuanced, complex topics
+   - Match the model to your content complexity
+
+4. **Group Access Management**:
+   - Be deliberate about access restrictions
+   - Consider creating specialized KBs for different departments
+   - Review access settings periodically
+
+5. **Search Configuration**:
+   - For technical or precise content, use higher match scores (70+)
+   - For general information, standard scores (60) work well
+   - Test and adjust based on response quality
+
+## Troubleshooting
+
+**Issue**: Knowledge base creation fails
+- Check for required fields (Name, Initials, AI Model, Creativity)
+- Ensure the name is unique
+- Verify you have the proper permissions
+- Check for error messages in the response
+
+**Issue**: Groups don't appear in the selection menu
+- Wait a moment as groups may still be loading
+- Verify you have permissions to see groups
+- Check if your organization has configured groups
+- Try refreshing the page
+
+**Issue**: Saved settings don't affect AI responses
+- Ensure you've clicked "Submit Knowledge Base" to save changes
+- Allow time for settings to propagate (especially for large KBs)
+- Verify that users have the necessary access permissions
+- Check if the KB is properly indexed (see Embedding Status)
+
+**Issue**: System instructions not taking effect
+- Instructions have a 30,000 character limit
+- Very complex instructions may be truncated
+- Test with simpler instructions first
+- Ensure instructions are clear and don't contradict each other
+
+**Issue**: Cannot see "Submit Knowledge Base" button
+- Scroll to the bottom of the form
+- Check if your screen resolution hides the button
+- Try a different browser if the issue persists
+- Verify you have edit permissions for knowledge bases
+
+---
+
+For additional assistance with Knowledge Base configuration, please contact your system administrator or refer to the platform documentation.
