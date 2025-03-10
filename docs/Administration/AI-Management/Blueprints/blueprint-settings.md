@@ -317,7 +317,7 @@ Several settings adjust how the AI responds:
    - When disabled (default), filters offensive content
    - Consider your audience and use case when configuring
 
-### Web Integration
+### Content Sources
 
 Control how the AI interacts with external web resources:
 
@@ -335,20 +335,24 @@ Control how the AI interacts with external web resources:
 
 Configure how the AI uses your organization's knowledge:
 
-1. **Knowledge Base Selection**:
+1. **Allow General KB answers**:
+   - When enabled, allows AI to use its built-in knowledge
+   - When disabled, AI relies only on specified content sources
+   - Use off setting when answers must come only from approved content
+
+2. **KB Search & Score Parameters**:
+   - **KB Search Results**: Number of records to retrieve (1-500)
+   - **KB Min Score Results**: Minimum relevance threshold (percentage)
+   - Higher thresholds provide more relevant but fewer results
+  
+3. **Content Selection**:
    - Choose specific knowledge bases for the Blueprint
    - Filter and search available KBs using the search box
    - Selected KBs appear as blue chips in the preview area
-
-2. **Content Selection**:
    - Choose specific content items (documents, files) for the Blueprint
    - Filter and search available content using the search box
    - Selected content appears as white chips in the preview area
 
-3. **Search Parameters**:
-   - **KB Search Results**: Number of records to retrieve (1-500)
-   - **KB Min Score Results**: Minimum relevance threshold (percentage)
-   - Higher thresholds provide more relevant but fewer results
 
 ### Web Pages Configuration
 

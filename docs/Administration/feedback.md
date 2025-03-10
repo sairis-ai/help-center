@@ -47,3 +47,6 @@ We probably want to have a more detailed explanation about blueprints, examples,
 #### Model Selection
 - You list Haiku and Sonnet, but we have 6 displayed, do we need to explain all these here?
     -- You do have more Information for the user under the "i" ,information button
+### Blueprint Builder
+#### Knowledge Base Settings
+- What is the difference between the 'Allow General Knowledge of AI..." and the LLM General Knowledge
