@@ -16,6 +16,14 @@ export default defineConfig({
   //   ],
 
   themeConfig: {
+    search: {
+      provider: 'algolia',
+      options: {
+        appId: 'GHBPJGLDFI',
+        apiKey: '45d97a19ad7a3e508dc49efff031e5cf',
+        indexName: 'help-sairis'
+      }
+    },
     sidebar: [
       {text: 'Home', link: '/Assistant/assistant-home' },
       {text: 'User Content', link: '/Assistant/assistant-home' },
