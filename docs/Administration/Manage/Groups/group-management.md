@@ -54,6 +54,48 @@ The Smart Groups interface consists of these key components:
 4. **Data Table**: Displays group information in a scrollable, sortable table
 5. **Empty State**: Information displayed when no groups match current filters
 
+### Viewing Group Members
+
+To see which users belong to a Smart Group:
+
+![homepage](/images/smart-groups-actions.png)
+
+1. Click the users icon (people) in the Actions column
+2. The Group Members dialog will open
+3. All users matching the group's criteria will be displayed
+4. Close the dialog when finished
+   
+### Editing Smart Groups
+
+To edit an existing Smart Group:
+
+![homepage](/images/smart-groups-actions.png)
+
+1. Click on the group name or the pencil icon in the Actions column
+2. The Smart Group Dialog will open with the current settings
+3. Make necessary changes
+4. Click "Save" to update the Smart Group
+
+### Deleting Smart Groups
+
+To delete a Smart Group:
+
+![homepage](/images/smart-groups-actions.png)
+
+1. Click the trash icon in the Actions column
+2. A confirmation dialog will appear asking "Are you sure you want to delete [group_name]?"
+3. Click "Delete" to confirm or "Cancel" to abort
+4. A success notification will appear when deletion is complete
+
+### Exporting Group Data
+
+To export the Smart Groups list to Excel:
+
+1. Click the "Export to Excel" button (external link icon)
+2. Confirm the export in the dialog that appears
+3. The browser will download a CSV file
+4. The export includes all currently visible groups (respects active filters)
+
 ## Navigating the Smart Groups List
 
 ### Sorting Groups
@@ -100,48 +142,20 @@ To create a new Smart Group:
    - Membership rules and conditions
 4. Click "Save" to create the Smart Group
 
-### Viewing Group Members
+### Smart Group Dialog/Rules
 
-To see which users belong to a Smart Group:
+The Smart Group Dialog provides powerful tools for defining group membership:
 
-![homepage](/images/smart-groups-actions.png)
+1. **Membership Rules**:
+   - Create complex query conditions
+   - Combine multiple criteria with AND/OR logic
+   - Preview membership results
 
-1. Click the users icon (people) in the Actions column
-2. The Group Members dialog will open
-3. All users matching the group's criteria will be displayed
-4. Close the dialog when finished
-   
-### Editing Smart Groups
-
-To edit an existing Smart Group:
-
-![homepage](/images/smart-groups-actions.png)
-
-1. Click on the group name or the pencil icon in the Actions column
-2. The Smart Group Dialog will open with the current settings
-3. Make necessary changes
-4. Click "Save" to update the Smart Group
-
-### Deleting Smart Groups
-
-To delete a Smart Group:
-
-![homepage](/images/smart-groups-actions.png)
-
-1. Click the trash icon in the Actions column
-2. A confirmation dialog will appear asking "Are you sure you want to delete [group_name]?"
-3. Click "Delete" to confirm or "Cancel" to abort
-4. A success notification will appear when deletion is complete
-
-### Exporting Group Data
-
-To export the Smart Groups list to Excel:
-
-1. Click the "Export to Excel" button (external link icon)
-2. Confirm the export in the dialog that appears
-3. The browser will download a CSV file
-4. The export includes all currently visible groups (respects active filters)
-
+2. **Manual Adjustments**:
+   - Force include specific users
+   - Force exclude specific users
+   - Override query results
+  
 ## Understanding Smart Group Information
 
 The Smart Groups list displays the following information for each group:
@@ -151,27 +165,6 @@ The Smart Groups list displays the following information for each group:
 3. **Description**: Information about the group's purpose
 4. **Users**: Badge showing the number of users in the group
 5. **Actions**: Interactive buttons for viewing members, editing, and deleting
-
-## Advanced Features
-
-### Smart Group Dialog
-
-The Smart Group Dialog provides powerful tools for defining group membership:
-
-1. **Basic Information**:
-   - Group name
-   - Description
-   - Visual indicators (colors, icons)
-
-2. **Membership Rules**:
-   - Create complex query conditions
-   - Combine multiple criteria with AND/OR logic
-   - Preview membership results
-
-3. **Manual Adjustments**:
-   - Force include specific users
-   - Force exclude specific users
-   - Override query results
 
 ### State Persistence
 

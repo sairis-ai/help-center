@@ -74,6 +74,8 @@ The Smart Group Builder tab provides a powerful query interface for defining mem
    - **OR**: Any matching condition will include a user
    - **Nested Conditions**: Create complex logic by combining AND/OR groups
 
+![homepage](/images/smart-groups-example.png)
+
 3. **Help Panel**: Toggle-able information explaining how to use the query builder
    - Explains the function of AND/OR logic
    - Describes how to add, remove, and clone conditions
@@ -111,9 +113,13 @@ The system tracks and displays changes to group membership when updating an exis
    - Appears as a tab when users are added
    - Displays a count badge with the number of additions
 
+![homepage](/images/smart-groups-user-added.png)
+
 2. **Users Removed**: Shows users removed from the group after a rule change
    - Appears as a tab when users are removed
    - Displays a count badge with the number of removals
+
+![homepage](/images/smart-groups-user-removed.png)
 
 3. **Success Message**: After saving, displays a summary of membership changes
    - Total users in the group
