@@ -14,9 +14,7 @@ hero:
 features:
   - title: Application Overview
     details: Learn key concepts about the platform 
-  - title: How To's
-    details: When you just want to perform a certain task
-  - title: Video Resources
-    details: Watch videos about advanced features and ways to use the app
----
+  - title: Best Practices and Troubleshooting
+    details: When you just want to figure something out
+--- 
 
