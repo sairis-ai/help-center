@@ -56,5 +56,34 @@ We probably want to have a more detailed explanation about blueprints, examples,
 ### Knowledge Base List 
 - AI Sync and Embedding >> Do we need to explain what vectorizing is? 
   
-
   What happens if you have a Haiku KB, but you point a Sonnet AI BluePrint model at it?  Or vice versa? 
+
+## AI Settings
+
+### Topics
+- The 'help' button doesn't do anything
+
+### Tags
+- The 'help' button doesn't do anything
+  
+### LLMs
+- Excellent deep explanations and tables.  But curious if we shouldn't have a top two suggestion to 'get started'
+
+### Roles
+- The 'help' button doesn't do anything
+- Still need to run auto generated output
+
+### Bans
+- The 'help' button doesn't do anything
+
+
+## Users
+
+### User Management
+- I noticed it says to fill out required fields but it takes trial and error to know which ones are required? So you fill out username and then find out that First, Last, and email are required.
+
+### User Groups 
+- the view isn't displaying correctly and isn't showing that i'm in groups I should be in
+![homepage](/images-feedback/sg-user-empty1.png)
+- [Smart Groups] Users in group count shows a number, but when you click to see who it is, you can't see the users.
+![homepage](/images-feedback/sg-user-empty.png)
