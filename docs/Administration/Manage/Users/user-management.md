@@ -52,6 +52,14 @@ The User List interface consists of these key components:
    - Clear filters
    - Export to Excel
 
+### Exporting User Data
+
+To export the user list to Excel:
+1. Click the "Export" button (external link icon)
+2. Confirm the export in the dialog that appears
+3. The browser will download a CSV file
+4. The export includes all currently visible users (respects active filters)
+   
 ## Navigating the User List
 
 ### Sorting Users
@@ -72,7 +80,7 @@ There are multiple ways to filter the user list:
    - The system will search across display name, first name, last name, username, and organization fields
 
 2. **Column Filters**:
-   - Each column has a filter menu accessible by clicking the filter icon in the column header
+   - Some columns have a filter menu accessible by clicking the filter icon in the column header
    - Organization field: Select from a dropdown of available organizations
    - Access Level field: Select from User, Manager, Content, or Admin
    - Updated field: Select a date with the calendar picker
@@ -92,7 +100,7 @@ The interface provides quick filter buttons for common filtering needs:
 
 ## User Management Actions
 
-### Creating a New User
+### Creating a New User Profile
 
 To create a new user:
 
@@ -100,7 +108,7 @@ To create a new user:
 
 1. Click the "+ User" button in the top-right corner
 2. You'll be redirected to the user profile page with empty fields
-3. Complete the required information
+3. Complete the required information (First, Last, Username, Email)
 4. Click "Submit" to create the user
 
 ### Viewing and Editing User Profiles
@@ -110,14 +118,6 @@ To view or edit a user's profile:
 2. You'll be redirected to that user's profile page
 3. Make necessary changes
 4. Click "Submit" to save changes
-
-### Exporting User Data
-
-To export the user list to Excel:
-1. Click the "Export" button (external link icon)
-2. Confirm the export in the dialog that appears
-3. The browser will download a CSV file
-4. The export includes all currently visible users (respects active filters)
 
 ## Understanding User Information
 

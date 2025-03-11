@@ -63,7 +63,7 @@ The top section of the form contains fields for essential user identity informat
   - No spaces or special characters allowed
   - Length between 2-128 characters
   - Cannot be changed after user creation
-- **Display Name**: How the user appears in the system (auto-generated from first and last names)
+- **Display Name/Username (Required)**: How the user appears in the system (auto-generated from first and last names)
 
 ### Employment Information
 
@@ -120,7 +120,7 @@ To control whether a user can access the system:
 
 The password management dialog provides options for handling user credentials:
 
-1. Click the "Password" button to open the password management dialog
+1. Once selecting an existing user, click the "Password" button to open the password management dialog
 2. Three options are available:
 
    - **Force Password Reset**: 
@@ -135,8 +135,9 @@ The password management dialog provides options for handling user credentials:
      - Click "Send Re-Invite" to initiate this process
 
    - **Self-Service Password Reset**:
-     - Information about the standard "Forgot Password" process
+     - Information about the standard "Forgot your Password" process
      - No action required from administrators
+  ![homepage](/images/user-forgot-password.png)
 
 ### Re-inviting Users
 

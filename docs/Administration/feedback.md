@@ -87,3 +87,11 @@ We probably want to have a more detailed explanation about blueprints, examples,
 ![homepage](/images-feedback/sg-user-empty1.png)
 - [Smart Groups] Users in group count shows a number, but when you click to see who it is, you can't see the users.
 ![homepage](/images-feedback/sg-user-empty.png)
+- Groups Troubleshooting - what does this mean?  "Review error messages in the toast notifications"
+
+### User Personal 
+- I don't understand where the 'Reports To' is coming from?  I thought it was those users that were 'manager', but don't even see these users in the drop down in the 'Users' list.
+
+### User Logins
+- I don't understand the 12-31 date displayed? 
+![homepage](/images-feedback/user-login-count.png)

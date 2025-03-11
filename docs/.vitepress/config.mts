@@ -21,7 +21,7 @@ export default defineConfig({
       options: {
         appId: 'GHBPJGLDFI',
         apiKey: '45d97a19ad7a3e508dc49efff031e5cf',
-        indexName: 'help-sairis'
+        indexName: 'help-sairis',
       }
     },
     sidebar: [
