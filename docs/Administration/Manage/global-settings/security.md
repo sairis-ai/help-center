@@ -302,6 +302,7 @@ For optimal security configuration:
 - Check for any extraneous characters or encoding issues
 - Verify the document is from a trusted provider
 - Confirm the document includes all required elements
+- Check with your internal IT department to confirm SAML settings
 
 **Issue**: "Provider not found" error during login
 - Check identifiers configuration for domain routing

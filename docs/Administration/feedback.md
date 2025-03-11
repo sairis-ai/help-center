@@ -95,3 +95,4 @@ We probably want to have a more detailed explanation about blueprints, examples,
 ### User Logins
 - I don't understand the 12-31 date displayed? 
 ![homepage](/images-feedback/user-login-count.png)
+
