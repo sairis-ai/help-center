@@ -25,9 +25,15 @@ export default defineConfig({
       }
     },
     sidebar: [
+      {text: 'Getting Started', collapsed: true, items: 
+        [
+          {text: 'Onboarding Experience', link: '/Getting-Started/onboarding' },
+          {text: 'Quick Start', link: '/Getting-Started/quick-start' }      
+        ]
+      },
       {text: 'Home', link: '/Assistant/assistant-home' },
       {text: 'User Content', link: '/Assistant/assistant-home' },
-      {text: 'Assistant', collapsed: false, items: 
+      {text: 'Assistant', collapsed: true, items: 
         [
           {text: 'Launchpad', link: '/Assistant/launchpad' },
           {text: 'Assistant Home', link: '/Assistant/assistant-home' },
@@ -85,7 +91,7 @@ export default defineConfig({
           {text: 'Devices', link: 'Administration/Dashboard-Insights/devices'}
           ]
         },
-      {text: 'Manage', collapsed: true, items: 
+      {text: 'Manage', collapsed: false, items: 
         [ 
           {text: 'Users', collapsed: true, items: 
             [
@@ -95,7 +101,8 @@ export default defineConfig({
               {text: 'User Privileges', link: '/Administration/Manage/Users/user-privileges'},
               {text: 'User Preferences', link: '/Administration/Manage/Users/user-preferences'},
               {text: 'User Personal', link: '/Administration/Manage/Users/user-personal'},
-              {text: 'User Activities', link: '/Administration/Manage/Users/user-activities'}
+              {text: 'User Activities', link: '/Administration/Manage/Users/user-activities'},
+              {text: 'User Tutorials', link: '/Administration/Manage/Users/create-user-tutorials'}
             ]
           }, 
           {text: 'Groups', collapsed: true, items: 

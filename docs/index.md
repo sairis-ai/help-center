@@ -16,5 +16,8 @@ features:
     details: Learn key concepts about the platform 
   - title: Best Practices and Troubleshooting
     details: When you just want to figure something out
+  - title: Tutorial Videos
+    details: Instructional video's on 'how to'
+    
 --- 
 
