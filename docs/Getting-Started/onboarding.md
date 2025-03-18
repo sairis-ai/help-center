@@ -8,3 +8,6 @@ Welcome to Sairis! You're about to watch a quick video that’ll walk you throug
     <iframe src="../videos/mastering-sairis-a-seamless-onboarding-experience.mp4" loading="lazy" title="Creating Users in Sairis" allowfullscreen allow="encrypted-media; fullscreen;" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0; margin: 0; overflow:hidden;">
 </iframe>
 </div>
+
+another version >>
+<video controls="controls" src="../videos/mastering-sairis-a-seamless-onboarding-experience.mp4" />
