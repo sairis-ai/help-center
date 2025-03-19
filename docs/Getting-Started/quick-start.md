@@ -2,17 +2,37 @@
 
 ## Tutorials
 
-The following is a quick guide to get you up and running with Sairis as quickly as possible.  Each video will build on the next and walk you through in sequence how to get up and running on your new Sairis platform quickly.
+The following is a quick guide to get you up and running with Sairis as quickly as possible.  Each video will build on the next and walk you through in sequence how to get up and running on your new Sairis platform quickly.  We believe the below is the fastest path to getting your system up and running. So we'll show you how to do it!
 
 ### Creating Users
+
+We start with users, and at first you will probably create other Admin users, to help you setup your system.
 
 <video controls="controls" src="../videos/creating-users-in-sairis.mp4" />
 
 ### Creating Groups
 
+Next we start creating groups, these will be used for controlling access to content and your user permissions.
+
 <video controls="controls" src="../videos/creating-groups-in-sairis.mp4" />
 
 ### Creating Knowledge Bases
 
+We move on to Knowledge Bases, the grouping of content, controlled by Groups.  These will be logical buckets of information, based on the needs and operations of your organization.
+
 <video controls="controls" src="../videos/creating-knowledge-base-in-sairis.mp4" />
+
+### Uploading Content
+
+Following your creation of Knowledge Bases, you are now ready to load your content in those KB's, this will be your data that you wish to feed to the AI.
+
+<em><font color="blue">video coming soon</font></em>
+<!-- <video controls="controls" src="../videos/creating-knowledge-base-in-sairis.mp4" /> --> 
+
+### Creating Blueprints
+
+With all the above setup, we finally work on constructing your blueprints.  Blueprints define how the AI assistant behaves, what knowledge it can access, and how it interacts with users.
+
+<em><font color="blue">video coming soon</font></em>
+<!-- <video controls="controls" src="../videos/creating-knowledge-base-in-sairis.mp4" /> --> 
 

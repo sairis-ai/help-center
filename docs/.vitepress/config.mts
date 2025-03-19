@@ -108,7 +108,8 @@ export default defineConfig({
           {text: 'Groups', collapsed: true, items: 
             [  
               {text: 'Group Management', link: '/Administration/Manage/Groups/group-management'},
-              {text: 'Create Groups', link: '/Administration/Manage/Groups/smart-group'}
+              {text: 'Create Groups', link: '/Administration/Manage/Groups/smart-group'},
+              {text: 'Group Tutorials', link: '/Administration/Manage/Groups/create-group-tutorials'}
             ]
           }, 
           {text: 'Global Settings',collapsed: true, items: 
