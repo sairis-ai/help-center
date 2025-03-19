@@ -57,7 +57,8 @@ export default defineConfig({
               {text: 'Blueprints', collapsed: true, items:
                 [
                   {text: 'Blueprint List',link: '/Administration/AI-Management/Blueprints/blueprint-list-view'},
-                  {text: 'Blueprint Settings',link: '/Administration/AI-Management/Blueprints/blueprint-settings'}
+                  {text: 'Blueprint Settings',link: '/Administration/AI-Management/Blueprints/blueprint-settings'},
+                  {text: 'Prompt Engineering',link: '/Administration/AI-Management/Blueprints/prompt-engineering'}            
                 ]
               },              
               {text: 'Knowledge Bases', collapsed: true, items:

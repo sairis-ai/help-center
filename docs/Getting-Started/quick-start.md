@@ -27,12 +27,12 @@ We move on to Knowledge Bases, the grouping of content, controlled by Groups.  T
 Following your creation of Knowledge Bases, you are now ready to load your content in those KB's, this will be your data that you wish to feed to the AI.
 
 <em><font color="blue">video coming soon</font></em>
-<!-- <video controls="controls" src="../videos/creating-knowledge-base-in-sairis.mp4" /> --> 
+<!-- <video controls="controls" src="../videos/uploading-content-in-sairis.mp4" /> --> 
 
 ### Creating Blueprints
 
 With all the above setup, we finally work on constructing your blueprints.  Blueprints define how the AI assistant behaves, what knowledge it can access, and how it interacts with users.
 
 <em><font color="blue">video coming soon</font></em>
-<!-- <video controls="controls" src="../videos/creating-knowledge-base-in-sairis.mp4" /> --> 
+<!-- <video controls="controls" src="../videos/creating-blueprints-in-sairis.mp4" /> --> 
 

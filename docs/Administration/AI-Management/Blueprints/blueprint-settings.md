@@ -42,7 +42,7 @@
 
 ## Introduction
 
-AI Blueprints allow administrators and content creators to define customized AI experiences with specific knowledge bases, web resources, instructions, and conversation flows. Blueprints serve as reusable configurations that can be shared with users to ensure consistent AI interactions tailored to specific needs or departments.
+AI Blueprints allow administrators and content creators to define a customized AI experiences with specific knowledge bases, web resources, instructions, and conversation flows. Blueprints serve as reusable configurations that can be shared with users to ensure consistent AI interactions tailored to specific needs or departments.
 
 ## Accessing Blueprint Configuration
 
