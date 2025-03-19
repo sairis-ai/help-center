@@ -27,8 +27,8 @@ export default defineConfig({
     sidebar: [
       {text: 'Getting Started', collapsed: true, items: 
         [
-          {text: 'Onboarding Experience', link: '/Getting-Started/onboarding' },
-          {text: 'Quick Start', link: '/Getting-Started/quick-start' }      
+          {text: '<span style="color:rgb(140,3,252)">&#9671;</span> Onboarding Experience', link: '/Getting-Started/onboarding' },
+          {text: '<span style="color:rgb(140,3,252)">&#9671;</span> Quick Start', link: '/Getting-Started/quick-start' }      
         ]
       },
       {text: 'Home', link: '/Assistant/assistant-home' },
@@ -51,21 +51,23 @@ export default defineConfig({
                   {text: 'Content Manager', link: '/Administration/AI-Management/Content/content-management'},
                   {text: 'Card', link: '/Administration/AI-Management/Content/card-designer'},
                   {text: 'File Manager', link: '/Administration/AI-Management/Content/document-uploads'},
-                  {text: 'Web Link', link: '/Administration/AI-Management/Content/web-links'}
+                  {text: 'Web Link', link: '/Administration/AI-Management/Content/web-links'},
+                  {text: '<span style="color:rgb(140,3,252)">&#9671;</span> Content Tutorials', link: '/Administration/AI-Management/Content/content-tutorial'}
                 ]
               },
               {text: 'Blueprints', collapsed: true, items:
                 [
                   {text: 'Blueprint List',link: '/Administration/AI-Management/Blueprints/blueprint-list-view'},
                   {text: 'Blueprint Settings',link: '/Administration/AI-Management/Blueprints/blueprint-settings'},
-                  {text: 'Prompt Engineering',link: '/Administration/AI-Management/Blueprints/prompt-engineering'}            
+                  {text: 'Prompt Engineering',link: '/Administration/AI-Management/Blueprints/prompt-engineering'},
+                  {text: '<span style="color:rgb(140,3,252)">&#9671;</span> Blueprint Tutorials',link: '/Administration/AI-Management/Blueprints/create-blueprint-tutorial'}            
                 ]
               },              
               {text: 'Knowledge Bases', collapsed: true, items:
                 [
                   {text: 'Knowledge Base List',link: '/Administration/AI-Management/Knowledge-Bases/knowledge-base-list'},
                   {text: 'Knowledge Base Settings',link: '/Administration/AI-Management/Knowledge-Bases/knowledge-base'},
-                  {text: 'Knowledge Base Tutorials',link: '/Administration/AI-Management/Knowledge-Bases/create-kb-tutorial'},
+                  {text: '<span style="color:rgb(140,3,252)">&#9671;</span> Knowledge Base Tutorials',link: '/Administration/AI-Management/Knowledge-Bases/create-kb-tutorial'},
                 ]
               }, 
               // {text: 'Test Cases', link: '/Administration/Test-Cases/ai-test-case-view'}, 
@@ -104,14 +106,14 @@ export default defineConfig({
               {text: 'User Preferences', link: '/Administration/Manage/Users/user-preferences'},
               {text: 'User Personal', link: '/Administration/Manage/Users/user-personal'},
               {text: 'User Activities', link: '/Administration/Manage/Users/user-activities'},
-              {text: 'User Tutorials', link: '/Administration/Manage/Users/create-user-tutorials'}
+              {text: '<span style="color:rgb(140,3,252)">&#9671;</span> User Tutorials', link: '/Administration/Manage/Users/create-user-tutorials'}
             ]
           }, 
           {text: 'Groups', collapsed: true, items: 
             [  
               {text: 'Group Management', link: '/Administration/Manage/Groups/group-management'},
               {text: 'Create Groups', link: '/Administration/Manage/Groups/smart-group'},
-              {text: 'Group Tutorials', link: '/Administration/Manage/Groups/create-group-tutorials'}
+              {text: '<span style="color:rgb(140,3,252)">&#9671;</span> Group Tutorials', link: '/Administration/Manage/Groups/create-group-tutorials'}
             ]
           }, 
           {text: 'Global Settings',collapsed: true, items: 

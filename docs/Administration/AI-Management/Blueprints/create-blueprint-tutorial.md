@@ -1,6 +1,6 @@
-# Video Tutorials for Knowledge Base Management in Sairis
+# Video Tutorials for Blueprint Management in Sairis
 
-## Creating Users
+## Creating Blueprints
 
 <video width="800" height="600" controls>
   <source src="/videos/creating-blueprints-in-sairis.mp4" type="video/mp4">
