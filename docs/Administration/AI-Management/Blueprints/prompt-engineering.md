@@ -17,8 +17,9 @@ To effectively structure AI prompts, consider these elements: Role, Task, Requir
 - Example: "Start by asking the prospect about their current challenges." 
 - Other examples: "Explain the concept in simple terms," "Use bullet points to organize the information," "Provide a step-by-step guide" 
 
-### Examples of Prompt Structures:
-- Example 1 (Sales AI):
+## Examples of Prompt Structures:
+
+### Example 1 (Sales AI):
 - Role: "You are an experienced sales development representative."
 - Task: "Follow up with potential clients."
 - Requirements: "Always maintain a professional and friendly tone."
