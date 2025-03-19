@@ -64,7 +64,8 @@ export default defineConfig({
               {text: 'Knowledge Bases', collapsed: true, items:
                 [
                   {text: 'Knowledge Base List',link: '/Administration/AI-Management/Knowledge-Bases/knowledge-base-list'},
-                  {text: 'Knowledge Base Settings',link: '/Administration/AI-Management/Knowledge-Bases/knowledge-base'}
+                  {text: 'Knowledge Base Settings',link: '/Administration/AI-Management/Knowledge-Bases/knowledge-base'},
+                  {text: 'Knowledge Base Tutorials',link: '/Administration/AI-Management/Knowledge-Bases/create-kb-tutorial'},
                 ]
               }, 
               // {text: 'Test Cases', link: '/Administration/Test-Cases/ai-test-case-view'}, 
