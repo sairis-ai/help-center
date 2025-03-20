@@ -1,16 +1,5 @@
 # Sairis.ai
 
-## Company Profile
-
-### Basic Information
-
-| Attribute | Details |
-|:----------|:--------|
-| Company Name | Sairis AI |
-| Website | www.sairis.ai |
-| Primary Contact | Greg Menard |
-| Contact Email | gmenard@sairis.ai |
-
 ## Website Structure
 
 ### Key Sections
@@ -78,7 +67,14 @@
 - Unbiased response generation
 - Transparent communication
 
-## Contact Information
+## Company Profile
 
-- **Email:** gmenard@sairis.ai
-- **Website:** www.sairis.ai
+### Basic Information
+
+| Attribute | Details |
+|:----------|:--------|
+| Company Name | Sairis AI |
+| Website | www.sairis.ai |
+| Primary Contact | Greg Menard |
+| Contact Email | gmenard@sairis.ai |
+

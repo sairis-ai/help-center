@@ -33,8 +33,6 @@ export default defineConfig({
           {text: '<span style="color:rgb(140,3,252)">&#9734;</span> Quick Start', link: '/Getting-Started/quick-start' }   
         ]
       },
-      {text: 'Home', link: '/Assistant/assistant-home' },
-      {text: 'User Content', link: '/Assistant/assistant-home' },
       {text: 'Assistant', collapsed: true, items: 
         [
           {text: 'Launchpad', link: '/Assistant/launchpad' },
@@ -46,7 +44,7 @@ export default defineConfig({
           {text: 'Content Panel', link: '/Assistant/content-panel' }          
         ]
       },
-      {text: 'AI Management', collapsed: false, items: 
+      {text: 'AI Management', collapsed: true, items: 
             [ 
               {text: 'AI Content', collapsed: true, items:
                 [
@@ -61,7 +59,6 @@ export default defineConfig({
                 [
                   {text: 'Blueprint List',link: '/Administration/AI-Management/Blueprints/blueprint-list-view'},
                   {text: 'Blueprint Settings',link: '/Administration/AI-Management/Blueprints/blueprint-settings'},
-                  {text: 'Prompt Engineering',link: '/Administration/AI-Management/Blueprints/prompt-engineering'},
                   {text: '<span style="color:rgb(140,3,252)">&#9734;</span> Blueprint Tutorials',link: '/Administration/AI-Management/Blueprints/create-blueprint-tutorial'}            
                 ]
               },              
@@ -97,7 +94,7 @@ export default defineConfig({
           {text: 'Devices', link: 'Administration/Dashboard-Insights/devices'}
           ]
         },
-      {text: 'Manage', collapsed: false, items: 
+      {text: 'Manage', collapsed: true, items: 
         [ 
           {text: 'Users', collapsed: true, items: 
             [
@@ -128,21 +125,26 @@ export default defineConfig({
           }
         ] 
       },
-      {
-        text: 'View - User Menu', link: '/Administration/View/Users'
+      // {         text: 'View - User Menu', link: '/Administration/View/Users'       },
+      {text: 'End User Features', collapsed: true, items: 
+        [
+          {text: 'Home', link: '/Assistant/assistant-home' },
+          {text: 'User Content', link: '/Assistant/assistant-home' },
+        ]
       },
-      {
-        text: 'Tenant', collapsed: true,items: 
-        [ 
-          {text: 'Tenant Management', link: '/Administration/Tenant/tenant-management'},
-          {text: 'Tenant Profile', link: '/Administration/Tenant/tenant-profile'}
-        ] 
-      },
+      // {
+      //  text: 'Tenant', collapsed: true,items: 
+      //  [ 
+      //    {text: 'Tenant Management', link: '/Administration/Tenant/tenant-management'},
+      //    {text: 'Tenant Profile', link: '/Administration/Tenant/tenant-profile'}
+      //  ] 
+      // },
       {
         text: 'Courses', collapsed: true, items: 
         [ 
           {text: 'Prompt Engineering', collapsed: true, link: '/Courses/prompt-engineering', items: 
           [  
+            {text: 'Prompt Configuration Guide',link: '/Administration/AI-Management/Blueprints/prompt-engineering'},
             {text: '101', link: ''},
             {text: '102', link: ''},
             {text: '103', link: '/Courses/ai-instructions-101'},
