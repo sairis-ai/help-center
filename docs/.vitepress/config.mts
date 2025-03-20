@@ -15,6 +15,8 @@ export default defineConfig({
   //     { text: 'Admin Portal', link: '../public-docs' },
   //   ],
 
+  //  Another way to present star bullets ----  {text: '<span style="color:rgb(140,3,252)">☆</span> Quick Start', link: '/Getting-Started/quick-start' }
+
   themeConfig: {
     search: {
       provider: 'algolia',
@@ -28,8 +30,7 @@ export default defineConfig({
       {text: 'Getting Started', collapsed: true, items: 
         [
           {text: '<span style="color:rgb(140,3,252)">&#9734;</span> Onboarding Experience', link: '/Getting-Started/onboarding' },
-          {text: '<span style="color:rgb(140,3,252)">&#9734;</span> Quick Start', link: '/Getting-Started/quick-start' },   
-          {text: '<span style="color:rgb(140,3,252)">☆</span> Quick Start', link: '/Getting-Started/quick-start' }
+          {text: '<span style="color:rgb(140,3,252)">&#9734;</span> Quick Start', link: '/Getting-Started/quick-start' }   
         ]
       },
       {text: 'Home', link: '/Assistant/assistant-home' },
