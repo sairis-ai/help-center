@@ -69,7 +69,7 @@ export default defineConfig({
                 [
                   {text: 'Knowledge Base List',link: '/Administration/AI-Management/Knowledge-Bases/knowledge-base-list'},
                   {text: 'Knowledge Base Settings',link: '/Administration/AI-Management/Knowledge-Bases/knowledge-base'},
-                  {text: '<span style="color:rgb(140,3,252)">&#9734;</span> Knowledge Base Tutorials',link: '/Administration/AI-Management/Knowledge-Bases/create-kb-tutorial'},
+                  {text: '<span style="color:rgb(140,3,252)">&#9734;</span> KB Tutorials',link: '/Administration/AI-Management/Knowledge-Bases/create-kb-tutorial'},
                 ]
               }, 
               // {text: 'Test Cases', link: '/Administration/Test-Cases/ai-test-case-view'}, 
