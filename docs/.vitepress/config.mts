@@ -132,10 +132,24 @@ export default defineConfig({
         text: 'View - User Menu', link: '/Administration/View/Users'
       },
       {
-        text: 'Tenant', collapsed: false,items: 
+        text: 'Tenant', collapsed: true,items: 
         [ 
           {text: 'Tenant Management', link: '/Administration/Tenant/tenant-management'},
           {text: 'Tenant Profile', link: '/Administration/Tenant/tenant-profile'}
+        ] 
+      },
+      {
+        text: 'Courses', collapsed: true, items: 
+        [ 
+          {text: 'Prompt Engineering', collapsed: true, link: '/Courses/prompt-engineering', items: 
+          [  
+            {text: '101', link: ''},
+            {text: '102', link: ''},
+            {text: '103', link: '/Courses/ai-instructions-101'},
+            {text: '104', link: ''}
+          ]
+        },
+          {text: 'Coming Soon'}
         ] 
       }
     ],
