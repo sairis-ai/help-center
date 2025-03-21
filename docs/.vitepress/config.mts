@@ -140,15 +140,15 @@ export default defineConfig({
       //  ] 
       // },
       {
-        text: 'Courses', collapsed: true, items: 
+        text: '<span style="color:rgb(140,3,252)">&#128214;</span> Courses', collapsed: true, items: 
         [ 
           {text: 'Prompt Engineering', collapsed: true, link: '/Courses/prompt-engineering', items: 
           [  
             {text: 'Prompt Configuration Guide',link: '/Administration/AI-Management/Blueprints/prompt-engineering'},
-            {text: '101', link: ''},
-            {text: '102', link: ''},
-            {text: '103', link: '/Courses/ai-instructions-101'},
-            {text: '104', link: ''}
+            {text: '<span style="color:rgb(140,3,252)">&#128214;</span> 101', link: ''},
+            {text: '<span style="color:rgb(140,3,252)">&#128214;</span> 102', link: ''},
+            {text: '<span style="color:rgb(140,3,252)">&#128214;</span> 103', link: '/Courses/ai-instructions-101'},
+            {text: '<span style="color:rgb(140,3,252)">&#128214;</span> 104', link: ''}
           ]
         },
           {text: 'Coming Soon'}
