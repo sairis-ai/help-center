@@ -1,12 +1,10 @@
-# Courses for Prompt Engineering
+# Welcome to Prompt Engineering
 
-## Introduction and Course Breakdown
+Quickly understanding what Prompt Engineering is, how it works, and why it's important for you to understand.
 
-<em><font color="blue">video coming soon</font></em>
-
-<!-- <video width="800" height="600" allow="fullscreen" controls>
-  <source src="../videos/creating-blueprints-in-sairis.mp4" type="video/mp4">
-</video> -->
+<video width="800" height="600" allow="fullscreen" controls>
+  <source src="../videos/mastering-prompt-engineering-with-sairis.mp4" type="video/mp4">
+</video>
 
 
 

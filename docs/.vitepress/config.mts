@@ -144,15 +144,16 @@ export default defineConfig({
         [ 
           {text: 'Prompt Engineering', collapsed: true, link: '/Courses/prompt-engineering', items: 
           [  
-            {text: 'Prompt Configuration Guide',link: '/Administration/AI-Management/Blueprints/prompt-engineering'},
-            {text: '<span style="color:rgb(140,3,252)">&#128214;</span> 101', link: '/Courses/101-what-is-prompt-engineering'},
-            {text: '<span style="color:rgb(140,3,252)">&#128214;</span> 102', link: '/Courses/102-writing-clear-user-inputs'},
-            {text: '<span style="color:rgb(140,3,252)">&#128214;</span> 103', link: '/Courses/103-AI-instructions'},
-            {text: '<span style="color:rgb(140,3,252)">&#128214;</span> 104', link: '/Courses/104-prompt-design-patterns'},
-            {text: '<span style="color:rgb(140,3,252)">&#128214;</span> 105', link: '/Courses/105-testing-&-refining-prompts'},
-            {text: '<span style="color:rgb(140,3,252)">&#128214;</span> 106', link: '/Courses/106-context-vs-RAG'},
-            {text: '<span style="color:rgb(140,3,252)">&#128214;</span> 107', link: '/Courses/107-managing-context-in-prompts'},
-            {text: '<span style="color:rgb(140,3,252)">&#128214;</span> 108', link: '/Courses/108-working-with-knowledge'}
+            {text: '<span style="color:rgb(140,3,252)">&#9734</span> Welcome to Prompt Engineering (PE)',link: '/Courses/prompt-engineering'},
+            {text: '<span style="color:rgb(140,3,252)">&#128214;</span> 100 - Intro to PE',link: '/Courses/100-intro-to-prompt-engineering'},
+            {text: '<span style="color:rgb(140,3,252)">&#128214;</span> 101 - What is PE?', link: '/Courses/101-what-is-prompt-engineering'},
+            {text: '<span style="color:rgb(140,3,252)">&#128214;</span> 102 - Inputs', link: '/Courses/102-writing-clear-user-inputs'},
+            {text: '<span style="color:rgb(140,3,252)">&#128214;</span> 103 - Instructions', link: '/Courses/103-AI-instructions'},
+            {text: '<span style="color:rgb(140,3,252)">&#128214;</span> 104 - Design', link: '/Courses/104-prompt-design-patterns'},
+            {text: '<span style="color:rgb(140,3,252)">&#128214;</span> 105 - Testing & Refining', link: '/Courses/105-testing-&-refining-prompts'},
+            {text: '<span style="color:rgb(140,3,252)">&#128214;</span> 106 - Context vs RAG', link: '/Courses/106-context-vs-RAG'},
+            {text: '<span style="color:rgb(140,3,252)">&#128214;</span> 107 - Managing Context', link: '/Courses/107-managing-context-in-prompts'},
+            {text: '<span style="color:rgb(140,3,252)">&#128214;</span> 108 - Working with Knowledge', link: '/Courses/108-working-with-knowledge'}
           ]
         },
           {text: 'Coming Soon'}
