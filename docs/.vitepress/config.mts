@@ -144,7 +144,7 @@ export default defineConfig({
         [ 
           {text: 'Prompt Engineering', collapsed: true, link: '/Courses/prompt-engineering', items: 
           [  
-            {text: '<span style="color:rgb(140,3,252)">&#9734</span> Welcome to Prompt Engineering (PE)',link: '/Courses/prompt-engineering'},
+            // {text: '<span style="color:rgb(140,3,252)">&#9734</span> Welcome to Prompt Engineering (PE)',link: '/Courses/prompt-engineering'},
             {text: '<span style="color:rgb(140,3,252)">&#128214;</span> 100 - Intro to PE',link: '/Courses/100-intro-to-prompt-engineering'},
             {text: '<span style="color:rgb(140,3,252)">&#128214;</span> 101 - What is PE?', link: '/Courses/101-what-is-prompt-engineering'},
             {text: '<span style="color:rgb(140,3,252)">&#128214;</span> 102 - Inputs', link: '/Courses/102-writing-clear-user-inputs'},
