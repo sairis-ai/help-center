@@ -3,28 +3,28 @@
 layout: home
 
 hero:
-  image: /logo_dark.png
+  image: "/logo_dark.png"
   name: "Sairis"
   text: "Help Center"
   tagline: Generative AI Enablement
   actions:
     - theme: brand
       text: Get Started
-      link: /sairis-overview
+      link: "/sairis-overview"
 
 features:
   - title: Application Overview
     details: Learn key concepts about the platform 
     icon: 
-        src: /home.png
+        src: "/home.png"
   - title: Best Practices and Troubleshooting
     details: When you just want to figure something out
     icon: 
-      src: /best.png
+      src: "/best.png"
   - title: Tutorial Videos
     details: Instructional video's on 'how to'
     icon: 
-      src: /videos.png
+      src: "/videos.png"
     
 --- 
 
