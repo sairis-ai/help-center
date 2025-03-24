@@ -1,6 +1,9 @@
 import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
+
+
+
 export default defineConfig({
   title: "Sairis",
   description: "Help Center",
@@ -18,6 +21,10 @@ export default defineConfig({
   //  Another way to present star bullets ----  {text: '<span style="color:rgb(140,3,252)">☆</span> Quick Start', link: '/Getting-Started/quick-start' }
 
   themeConfig: {
+    logo: {
+      light: '/mark-light.png',
+      dark: '/mark-dark.png'
+    },
     search: {
       provider: 'algolia',
       options: {
@@ -108,6 +115,7 @@ export default defineConfig({
               {text: '<span style="color:rgb(140,3,252)">&#9734;</span> User Tutorials', link: '/Administration/Manage/Users/create-user-tutorials'}
             ]
           }, 
+          {text: 'Roles', link: '/Administration/Manage/roles' },
           {text: 'Groups', collapsed: true, items: 
             [  
               {text: 'Group Management', link: '/Administration/Manage/Groups/group-management'},
