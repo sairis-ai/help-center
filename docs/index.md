@@ -1,16 +1,20 @@
 ---
+
 # https://vitepress.dev/reference/default-theme-home-page
 layout: home
 
 hero:
   image: "/images/logo_dark.png"
-  name: "Sairis"
+  name: "Web App"
   text: "Help Center"
   tagline: Generative AI Enablement
   actions:
     - theme: brand
       text: Get Started
       link: "/sairis-overview"
+    - theme: brand
+      text: Courses
+      link: "/Courses/100-intro-prompt-engineering"
 
 features:
   - title: Application Overview
