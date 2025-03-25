@@ -166,7 +166,17 @@ export default defineConfig({
         },
           {text: 'Coming Soon'}
         ] 
-      }
+      },
+      {
+        text: '<span style="color:rgb(140,3,252)">&#9734;</span> Tutorials', link: '/Courses/Courses', collapsed: true, items: 
+        [ 
+          {text: '<span style="color:rgb(140,3,252)">&#9734;</span> Users', link: '/Administration/Manage/Users/create-user-tutorials'},
+          {text: '<span style="color:rgb(140,3,252)">&#9734;</span> Groups', link: '/Administration/Manage/Groups/create-group-tutorials'},
+          {text: '<span style="color:rgb(140,3,252)">&#9734;</span> Content', link: '/Administration/AI-Management/Content/content-tutorial'},
+          {text: '<span style="color:rgb(140,3,252)">&#9734;</span> KB Tutorials',link: '/Administration/AI-Management/Knowledge-Bases/create-kb-tutorial'},
+          {text: '<span style="color:rgb(140,3,252)">&#9734;</span> Blueprint Tutorials',link: '/Administration/AI-Management/Blueprints/create-blueprint-tutorial'}    
+          ]
+      },
     ],
   }
 })
