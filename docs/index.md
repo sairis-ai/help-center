@@ -14,7 +14,7 @@ hero:
       link: "/sairis-overview"
     - theme: brand
       text: Courses
-      link: "/Courses/100-intro-prompt-engineering"
+      link: "../Courses/100-intro-prompt-engineering"
 
 features:
   - title: Application Overview
