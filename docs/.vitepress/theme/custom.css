@@ -7,6 +7,8 @@
     --vp-home-hero-image-filter: blur(68px);
 
     --vp-button-brand-bg: var(#25294f) !important;
+    --vp-c-indigo-3: #25294f;
+
   }
 
   .image-bg {
@@ -16,6 +18,10 @@
     background-image: var(--vp-home-hero-image-background-image);
     filter: var(--vp-home-hero-image-filter);
     /* transform: translate(-50%, -50%); */
+  }
+
+  .dark {
+    --vp-c-indigo-3: #25294f;
   }
 
   .dark .VPFeature {
