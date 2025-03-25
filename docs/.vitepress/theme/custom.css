@@ -11,15 +11,6 @@
 
   }
 
-  .image-bg {
-    /* background-color: green !important; */
-    /* background-image: var(--vp-home-hero-image-background-image); */
-    /* filter: var(--vp-home-hero-image-filter); */
-    background-image: var(--vp-home-hero-image-background-image);
-    filter: var(--vp-home-hero-image-filter);
-    /* transform: translate(-50%, -50%); */
-  }
-
   .dark {
     --vp-c-indigo-3: #25294f;
   }
@@ -35,13 +26,12 @@
   .VPButton.brand {
     border-color: var(--vp-button-brand-border);
     color: var(--vp-button-brand-text);
-    /* background-color: var(#25294f); */
-    background-color: #25294f;
-    }
+    background-color: var(#25294f); 
+    /* background-color: #25294f; */
+   }
 
-  @media (min-width: 960px) {
-    .image-bg[data-v-72cc4481] {
-        width: 420px;
-        height: 400px;
-    }
+  .image-bg[data-v-72cc4481] {
+    width: 420px;
+    height: 400px;
   }
+
