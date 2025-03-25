@@ -6,6 +6,7 @@
     --vp-home-hero-image-background-image: linear-gradient(-45deg, #41d1ff 40%, #bd34fe 30%);
     --vp-home-hero-image-filter: blur(68px);
 
+
   }
 
   .image-bg {
@@ -21,6 +22,19 @@
     background-color: #292a2a !important;
   }
 
-  .VPFeature[data-v-549c013f]  {
+  .VPFeature  {
     background-color: #e7e7e9;
+  }
+
+  .VPButton.brand {
+    border-color: var(--vp-button-brand-border);
+    color: var(--vp-button-brand-text);
+    background-color: #25294f !important;
+    }
+
+    @media (min-width: 960px) {
+      .image-bg[data-v-72cc4481] {
+          width: 420px;
+          height: 320px;
+      }
   }
