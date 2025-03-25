@@ -10,11 +10,14 @@ hero:
   tagline: Generative AI Enablement
   actions:
     - theme: brand
-      text: Get Started
-      link: "/sairis-overview"
+      text: Onboarding
+      link: "/Getting-Started/onboarding"
+    - theme: brand
+      text: Admin Get Started
+      link: "/Getting-Started/quick-start"
     - theme: brand
       text: Courses
-      link: "../Courses/100-intro-prompt-engineering"
+      link: "../Courses/courses"
 
 features:
   - title: Application Overview

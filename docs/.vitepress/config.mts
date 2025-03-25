@@ -148,7 +148,7 @@ export default defineConfig({
       //  ] 
       // },
       {
-        text: '<span style="color:rgb(140,3,252)">&#128214;</span> Courses', collapsed: true, items: 
+        text: '<span style="color:rgb(140,3,252)">&#128214;</span> Courses', link: '/Courses/Courses', collapsed: true, items: 
         [ 
           {text: 'Prompt Engineering', collapsed: true, link: '/Courses/prompt-engineering', items: 
           [  

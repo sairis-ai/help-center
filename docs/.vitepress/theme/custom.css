@@ -19,3 +19,8 @@
     transform: translate(-50%, -50%);
   }
 
+  .dark .VPFeature {
+    background-color: #292a2a;
+  }
+
+  
