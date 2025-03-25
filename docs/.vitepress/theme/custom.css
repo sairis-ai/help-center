@@ -18,6 +18,9 @@
   }
 
   .dark .VPFeature {
-    background-color: #292a2a;
+    background-color: #292a2a !important;
   }
 
+  .VPFeature[data-v-549c013f]  {
+    background-color: #e7e7e9;
+  }
