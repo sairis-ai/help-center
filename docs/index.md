@@ -7,7 +7,7 @@ hero:
   image: "/images/wordmark_dark.png"
   name: "Web App"
   text: "Help Center"
-  tagline: Generative AI Enablement Across Your Workforce
+  tagline: Generative AI Enablement
   actions:
     - theme: brand
       text: Onboarding
