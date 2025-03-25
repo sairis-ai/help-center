@@ -4,7 +4,7 @@
 layout: home
 
 hero:
-  image: "/images/logo_dark.png"
+  image: "/images/wordmark_dark.png"
   name: "Web App"
   text: "Help Center"
   tagline: Generative AI Enablement Across Your Workforce
