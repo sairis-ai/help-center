@@ -22,8 +22,8 @@ export default defineConfig({
 
   themeConfig: {
     logo: {
-      light: '/mark-light.png',
-      dark: '/mark-dark.png'
+      light: '/images/mark-light.png',
+      dark: '/images/mark-dark.png'
     },
     search: {
       provider: 'algolia',
