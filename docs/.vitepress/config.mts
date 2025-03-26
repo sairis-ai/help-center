@@ -14,7 +14,7 @@ export default defineConfig({
   //   // https://vitepress.dev/reference/default-theme-config
   //   nav: [
   //     { text: 'Get Started', link: '/sairis-overview' },
-  //     { text: 'Assistant', link: '/sairis-overview' },
+  //     { text: 'assistant', link: '/sairis-overview' },
   //     { text: 'Admin Portal', link: '../public-docs' },
   //   ],
 
@@ -33,164 +33,161 @@ export default defineConfig({
     {
     '/admin/': 
     [
-      {text: 'Getting Started', collapsed: true, items: 
-        [
-          {text: '<span style="color:rgb(140,3,252)">&#9734;</span> Onboarding Experience', link: '/admin/Getting-Started/onboarding' },
-          {text: '<span style="color:rgb(140,3,252)">&#9734;</span> Quick Start', link: '/admin/Getting-Started/quick-start' }   
-        ]
-      },
-      {text: 'AI Management', collapsed: true, items: 
+      {text: 'AI management', collapsed: true, items: 
             [ 
               {text: 'AI Content', collapsed: true, items:
                 [
-                  {text: 'Content Manager', link: '/admin/Administration/AI-Management/Content/content-management'},
-                  {text: 'Card', link: '/admin/Administration/AI-Management/Content/card-designer'},
-                  {text: 'File Manager', link: '/admin/Administration/AI-Management/Content/document-uploads'},
-                  {text: 'Web Link', link: '/admin/Administration/AI-Management/Content/web-links'},
-                  {text: '<span style="color:rgb(140,3,252)">&#9734;</span> Content Tutorials', link: '/admin/Administration/AI-Management/Content/content-tutorial'}
+                  {text: 'Content manager', link: '/admin/administration/ai-management/content/content-management'},
+                  {text: 'Card', link: '/admin/administration/ai-management/content/card-designer'},
+                  {text: 'File manager', link: '/admin/administration/ai-management/content/document-uploads'},
+                  {text: 'Web Link', link: '/admin/administration/ai-management/content/web-links'},
+                  {text: '<span style="color:rgb(140,3,252)">&#9734;</span> content Tutorials', link: '/admin/administration/ai-management/content/content-tutorial'}
                 ]
               },
               {text: 'Blueprints', collapsed: true, items:
                 [
-                  {text: 'Blueprint List',link: '/admin/Administration/AI-Management/Blueprints/blueprint-list-view'},
-                  {text: 'Blueprint Settings',link: '/admin/Administration/AI-Management/Blueprints/blueprint-settings'},
-                  {text: '<span style="color:rgb(140,3,252)">&#9734;</span> Blueprint Tutorials',link: '/admin/Administration/AI-Management/Blueprints/create-blueprint-tutorial'}            
+                  {text: 'Blueprint List',link: '/admin/administration/ai-management/Blueprints/blueprint-list-view'},
+                  {text: 'Blueprint settings',link: '/admin/administration/ai-management/Blueprints/blueprint-settings'},
+                  {text: '<span style="color:rgb(140,3,252)">&#9734;</span> Blueprint Tutorials',link: '/admin/administration/ai-management/Blueprints/create-blueprint-tutorial'}            
                 ]
               },              
               {text: 'Knowledge Bases', collapsed: true, items:
                 [
-                  {text: 'Knowledge Base List',link: '/admin/Administration/AI-Management/Knowledge-Bases/knowledge-base-list'},
-                  {text: 'Knowledge Base Settings',link: '/admin/Administration/AI-Management/Knowledge-Bases/knowledge-base'},
-                  {text: '<span style="color:rgb(140,3,252)">&#9734;</span> KB Tutorials',link: '/admin/Administration/AI-Management/Knowledge-Bases/create-kb-tutorial'},
+                  {text: 'Knowledge Base List',link: '/admin/administration/ai-management/knowledge-bases/knowledge-base-list'},
+                  {text: 'Knowledge Base settings',link: '/admin/administration/ai-management/knowledge-bases/knowledge-base'},
+                  {text: '<span style="color:rgb(140,3,252)">&#9734;</span> KB Tutorials',link: '/admin/administration/ai-management/knowledge-bases/create-kb-tutorial'},
                 ]
               }, 
-              // {text: 'Test Cases', link: '/admin/Administration/Test-Cases/ai-test-case-view'}, 
-              {text: 'Settings', collapsed: true, items:
+              // {text: 'Test Cases', link: '/admin/administration/Test-Cases/ai-test-case-view'}, 
+              {text: 'settings', collapsed: true, items:
                 [
-                  {text: 'Launch Pad',link: '/admin/Administration/AI-Management/Settings/launchpad'},
-                  {text: 'Topics',link: '/admin/Administration/AI-Management/Settings/topics'},
-                  {text: 'Tags',link: '/admin/Administration/AI-Management/Settings/tags'},
-                  // {text: 'Understanding LLM\'s',link: '/admin/Administration/AI-Management/Settings/llm'},
-                  {text: 'LLM\'s',link: '/admin/Administration/AI-Management/Settings/large-language-models'},
-                  {text: 'Roles',link: '/admin/Administration/AI-Management/Settings/roles'},
-                  {text: 'Bans',link: '/admin/Administration/AI-Management/Settings/bans'}
+                  {text: 'Launch Pad',link: '/admin/administration/ai-management/settings/launchpad'},
+                  {text: 'Topics',link: '/admin/administration/ai-management/settings/topics'},
+                  {text: 'Tags',link: '/admin/administration/ai-management/settings/tags'},
+                  // {text: 'Understanding LLM\'s',link: '/admin/administration/ai-management/settings/llm'},
+                  {text: 'LLM\'s',link: '/admin/administration/ai-management/settings/large-language-models'},
+                  {text: 'Roles',link: '/admin/administration/ai-management/settings/roles'},
+                  {text: 'Bans',link: '/admin/administration/ai-management/settings/bans'}
                 ]
               },
             ]         
       },
       {text: 'Dashboard Insights', collapsed: true, items: 
         [ 
-          {text: 'Platform', link: '/admin/Administration/Dashboard-Insights/platform'}, 
-          {text: 'Tokens', link: '/admin/Administration/Dashboard-Insights/tokens'}, 
-          {text: 'KB\'s', link: '/admin/Administration/Dashboard-Insights/kbs'},
-          {text: 'Content', link: '/admin/Administration/Dashboard-Insights/content'},
-          {text: 'Usage', link: '/admin/Administration/Dashboard-Insights/usage'},
-          {text: 'Logins', link: '/admin/Administration/Dashboard-Insights/logins'},
-          {text: 'Devices', link: '/admin/Administration/Dashboard-Insights/devices'}
+          {text: 'Platform', link: '/admin/administration/dashboard-insights/platform'}, 
+          {text: 'Tokens', link: '/admin/administration/dashboard-insights/tokens'}, 
+          {text: 'KB\'s', link: '/admin/administration/dashboard-insights/kbs'},
+          {text: 'content', link: '/admin/administration/dashboard-insights/content'},
+          {text: 'Usage', link: '/admin/administration/dashboard-insights/usage'},
+          {text: 'Logins', link: '/admin/administration/dashboard-insights/logins'},
+          {text: 'Devices', link: '/admin/administration/dashboard-insights/devices'}
           ]
         },
-      {text: 'Manage', collapsed: true, items: 
+      {text: 'manage', collapsed: true, items: 
         [ 
-          {text: 'Users', collapsed: true, items: 
+          {text: 'users', collapsed: true, items: 
             [
-              {text: 'User Management', link: '/admin/Administration/Manage/Users/user-management'},
-              {text: 'User Profile', link: '/admin/Administration/Manage/Users/user-profile'},
-              {text: 'User Groups', link: '/admin/Administration/Manage/Users/user-groups'},
-              {text: 'User Privileges', link: '/admin/Administration/Manage/Users/user-privileges'},
-              {text: 'User Preferences', link: '/admin/Administration/Manage/Users/user-preferences'},
-              {text: 'User Personal', link: '/admin/Administration/Manage/Users/user-personal'},
-              {text: 'User Activities', link: '/admin/Administration/Manage/Users/user-activities'},
-              {text: '<span style="color:rgb(140,3,252)">&#9734;</span> User Tutorials', link: '/admin/Administration/Manage/Users/create-user-tutorials'}
+              {text: 'User management', link: '/admin/administration/manage/users/user-management'},
+              {text: 'User Profile', link: '/admin/administration/manage/users/user-profile'},
+              {text: 'User Groups', link: '/admin/administration/manage/users/user-groups'},
+              {text: 'User Privileges', link: '/admin/administration/manage/users/user-privileges'},
+              {text: 'User Preferences', link: '/admin/administration/manage/users/user-preferences'},
+              {text: 'User Personal', link: '/admin/administration/manage/users/user-personal'},
+              {text: 'User Activities', link: '/admin/administration/manage/users/user-activities'},
+              {text: '<span style="color:rgb(140,3,252)">&#9734;</span> User Tutorials', link: '/admin/administration/manage/users/create-user-tutorials'}
             ]
           }, 
-          {text: 'Roles', link: '/Administration/Manage/roles' },
+          {text: 'Roles', link: '/administration/manage/roles' },
           {text: 'Groups', collapsed: true, items: 
             [  
-              {text: 'Group Management', link: '/admin/Administration/Manage/Groups/group-management'},
-              {text: 'Create Groups', link: '/admin/Administration/Manage/Groups/smart-group'},
-              {text: '<span style="color:rgb(140,3,252)">&#9734;</span> Group Tutorials', link: '/admin/Administration/Manage/Groups/create-group-tutorials'}
+              {text: 'Group management', link: '/admin/administration/manage/Groups/group-management'},
+              {text: 'Create Groups', link: '/admin/administration/manage/Groups/smart-group'},
+              {text: '<span style="color:rgb(140,3,252)">&#9734;</span> Group Tutorials', link: '/admin/administration/manage/Groups/create-group-tutorials'}
             ]
           }, 
-          {text: 'Global Settings',collapsed: true, items: 
+          {text: 'Global settings',collapsed: true, items: 
             [  
-              {text: 'Branding', link: '/admin/Administration/Manage/global-settings/branding'},
-              {text: 'Security', link: '/admin/Administration/Manage/global-settings/security'},
-              {text: 'Features', link: '/admin/Administration/Manage/global-settings/features'},
-              {text: 'Messaging', link: '/admin/Administration/Manage/global-settings/messaging'}
+              {text: 'Branding', link: '/admin/administration/manage/global-settings/branding'},
+              {text: 'Security', link: '/admin/administration/manage/global-settings/security'},
+              {text: 'Features', link: '/admin/administration/manage/global-settings/features'},
+              {text: 'Messaging', link: '/admin/administration/manage/global-settings/messaging'}
             ]
           }
         ] 
       },
-      // {         text: 'View - User Menu', link: '/admin/Administration/View/Users'       },
+      // {         text: 'View - User Menu', link: '/admin/administration/View/users'       },
       {text: 'End User Features', collapsed: true, items: 
         [
-          {text: 'Home', link: '/admin/Assistant/assistant-home' },
-          {text: 'User Content', link: '/admin/Assistant/assistant-home' },
+          {text: 'Home', link: '/admin/assistant/assistant-home' },
+          {text: 'User content', link: '/admin/assistant/assistant-home' },
         ]
       },
       // {
       //  text: 'Tenant', collapsed: true,items: 
       //  [ 
-      //    {text: 'Tenant Management', link: '/admin/Administration/Tenant/tenant-management'},
-      //    {text: 'Tenant Profile', link: '/admin/Administration/Tenant/tenant-profile'}
+      //    {text: 'Tenant management', link: '/admin/administration/Tenant/tenant-management'},
+      //    {text: 'Tenant Profile', link: '/admin/administration/Tenant/tenant-profile'}
       //  ] 
       // },
-      {
-        text: '<span style="color:rgb(140,3,252)">&#128214;</span> Courses', link: '/admin/Courses/Courses', collapsed: true, items: 
-        [ 
-          {text: 'Prompt Engineering', collapsed: true, link: '/Courses/prompt-engineering', items: 
-          [  
-            // {text: '<span style="color:rgb(140,3,252)">&#9734</span> Welcome to Prompt Engineering (PE)',link: '/Courses/prompt-engineering'},
-            {text: '<span style="color:rgb(140,3,252)">&#128214;</span> 100 - Intro to PE',link: '/admin/Courses/100-intro-to-prompt-engineering'},
-            {text: '<span style="color:rgb(140,3,252)">&#128214;</span> 101 - What is PE?', link: '/admin/Courses/101-what-is-prompt-engineering'},
-            {text: '<span style="color:rgb(140,3,252)">&#128214;</span> 102 - Inputs', link: '/admin/Courses/102-writing-clear-user-inputs'},
-            {text: '<span style="color:rgb(140,3,252)">&#128214;</span> 103 - Instructions', link: '/admin/Courses/103-AI-instructions'},
-            {text: '<span style="color:rgb(140,3,252)">&#128214;</span> 104 - Design', link: '/admin/Courses/104-prompt-design-patterns'},
-            {text: '<span style="color:rgb(140,3,252)">&#128214;</span> 105 - Testing & Refining', link: '/admin/Courses/105-testing-&-refining-prompts'},
-            {text: '<span style="color:rgb(140,3,252)">&#128214;</span> 106 - Context vs RAG', link: '/admin/Courses/106-context-vs-RAG'},
-            {text: '<span style="color:rgb(140,3,252)">&#128214;</span> 107 - Managing Context', link: '/admin/Courses/107-managing-context-in-prompts'},
-            {text: '<span style="color:rgb(140,3,252)">&#128214;</span> 108 - Working with Knowledge', link: '/admin/Courses/108-working-with-knowledge'}
-          ]
-        },
-          {text: 'Coming Soon'}
-        ] 
-      },
-      {
-        text: '<span style="color:rgb(140,3,252)">&#9734;</span> Tutorials', link: '/Courses/Courses', collapsed: true, items: 
-        [ 
-          {text: '<span style="color:rgb(140,3,252)">&#9734;</span> Users', link: '/admin/Administration/Manage/Users/create-user-tutorials'},
-          {text: '<span style="color:rgb(140,3,252)">&#9734;</span> Groups', link: '/admin/Administration/Manage/Groups/create-group-tutorials'},
-          {text: '<span style="color:rgb(140,3,252)">&#9734;</span> Content', link: '/admin/Administration/AI-Management/Content/content-tutorial'},
-          {text: '<span style="color:rgb(140,3,252)">&#9734;</span> KB Tutorials',link: '/admin/Administration/AI-Management/Knowledge-Bases/create-kb-tutorial'},
-          {text: '<span style="color:rgb(140,3,252)">&#9734;</span> Blueprint Tutorials',link: '/admin/Administration/AI-Management/Blueprints/create-blueprint-tutorial'}    
-          ]
-      },
+    
     ],
-    'user/': 
+    '/user/': 
     [
-      {text: 'Getting Started', collapsed: true, items: 
+      {text: 'assistant', collapsed: true, items: 
         [
-          {text: '<span style="color:rgb(140,3,252)">&#9734;</span> Onboarding Experience', link: '/admin/Getting-Started/onboarding' }
-        ]
-      },
-      {text: '<span style="color:rgb(140,3,252)">&#9734;</span> Getting Started Too', link: '/admin/Getting-Started/onboarding'      
-      },
-      {text: 'Assistant', collapsed: true, items: 
-        [
-          {text: 'Launchpad', link: '/user/Assistant/launchpad' },
-          {text: 'Assistant Home', link: '/user/Assistant/assistant-home' },
-          {text: 'Assistant Overview', link: '/user/Assistant/assistant-overview' },
-          {text: 'Chat History', link: '/user/Assistant/chat-history' },
-          {text: 'Settings', link: '/user/Assistant/chat-settings' },
-          {text: 'Chat Tokens', link: '/user/Assistant/chat-token-counts' },
-          {text: 'Content Panel', link: '/user/Assistant/content-panel' }          
+          {text: 'Launchpad', link: '/user/assistant/launchpad' },
+          {text: 'Assistant Home', link: '/user/assistant/assistant-home' },
+          {text: 'Assistant Overview', link: '/user/assistant/assistant-overview' },
+          {text: 'Chat History', link: '/user/assistant/chat-history' },
+          {text: 'settings', link: '/user/assistant/chat-settings' },
+          {text: 'Chat Tokens', link: '/user/assistant/chat-token-counts' },
+          {text: 'content Panel', link: '/user/assistant/content-panel' }          
         ]
       },
       {text: 'Search', collapsed: true, items: 
         [
-          {text: 'Launchpad', link: '/user/Search/user-search' }          
+          {text: 'Launchpad', link: '/user/search/user-search' }          
         ]
       }
+    ],
+    '/general/': 
+    [
+      {text: 'Getting Started', collapsed: true, items: 
+        [
+          {text: '<span style="color:rgb(140,3,252)">&#9734;</span> Onboarding Experience', link: '/general/getting-started/onboarding' },
+          {text: '<span style="color:rgb(140,3,252)">&#9734;</span> Quick Start', link: '/general/getting-started/quick-start' }   
+        ]
+      },
+      {
+        text: '<span style="color:rgb(140,3,252)">&#128214;</span> Learn', link: '/general/learn/courses', collapsed: true, items: 
+        [ 
+          {text: 'Prompt Engineering', collapsed: true, link: '/general/learn/prompt-engineering', items: 
+          [  
+            // {text: '<span style="color:rgb(140,3,252)">&#9734</span> Welcome to Prompt Engineering (PE)',link: '/learn/prompt-engineering'},
+            {text: '<span style="color:rgb(140,3,252)">&#128214;</span> 100 - Intro to PE',link: '/general/learn/100-intro-to-prompt-engineering'},
+            {text: '<span style="color:rgb(140,3,252)">&#128214;</span> 101 - What is PE?', link: '/general/learn/101-what-is-prompt-engineering'},
+            {text: '<span style="color:rgb(140,3,252)">&#128214;</span> 102 - Inputs', link: '/general/learn/102-writing-clear-user-inputs'},
+            {text: '<span style="color:rgb(140,3,252)">&#128214;</span> 103 - Instructions', link: '/general/learn/103-AI-instructions'},
+            {text: '<span style="color:rgb(140,3,252)">&#128214;</span> 104 - Design', link: '/general/learn/104-prompt-design-patterns'},
+            {text: '<span style="color:rgb(140,3,252)">&#128214;</span> 105 - Testing & Refining', link: '/general/learn/105-testing-&-refining-prompts'},
+            {text: '<span style="color:rgb(140,3,252)">&#128214;</span> 106 - Context vs RAG', link: '/general/learn/106-context-vs-RAG'},
+            {text: '<span style="color:rgb(140,3,252)">&#128214;</span> 107 - Managing Context', link: '/general/learn/107-managing-context-in-prompts'},
+            {text: '<span style="color:rgb(140,3,252)">&#128214;</span> 108 - Working with Knowledge', link: '/general/learn/108-working-with-knowledge'}
+          ]
+        },
+          {text: 'More Coming Soon'}
+        ] 
+      },
+      {
+        text: '<span style="color:rgb(140,3,252)">&#9734;</span> Tutorials', link: '/learn/courses', collapsed: true, items: 
+        [ 
+          {text: '<span style="color:rgb(140,3,252)">&#9734;</span> Users', link: '/general/tutorials/create-user-tutorials'},
+          {text: '<span style="color:rgb(140,3,252)">&#9734;</span> Groups', link: '/general/tutorials/create-group-tutorials'},
+          {text: '<span style="color:rgb(140,3,252)">&#9734;</span> Content', link: '/general/tutorials/content-tutorial'},
+          {text: '<span style="color:rgb(140,3,252)">&#9734;</span> KB\'s', link: '/general/tutorials/create-kb-tutorial'},
+          {text: '<span style="color:rgb(140,3,252)">&#9734;</span> Blueprints', link: '/general/tutorials/create-blueprint-tutorial'}    
+          ]
+      },
     ]
     },
   }

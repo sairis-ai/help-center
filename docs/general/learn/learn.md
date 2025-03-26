@@ -1,3 +1,3 @@
-# Welcome to Sairis Courses
+# Welcome to Sairis Learning
 
 Dive into a world of learning with confidence! Our Help section provides a growing collection of Courses, where we catalog a wide range of teachings and trainings designed to inspire and empower. Whether you're here to explore new skills, master a subject, or simply get started, we’ve got you covered with clear guidance, tips, and support. Let’s make your learning journey seamless and rewarding—start exploring today!

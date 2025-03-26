@@ -16,7 +16,7 @@ Develop structured guidelines that optimize AI-generated outputs.
  
 3. **Create and manage instructions in Sairis using Blueprints**  
 Save, refine, and share instructions to standardize AI behavior across teams.   
- 
+
  
 ## Core Components of Instructions   
 
