@@ -53,9 +53,9 @@ export default defineConfig({
               },
               {text: 'Blueprints', collapsed: true, items:
                 [
-                  {text: 'Blueprint List', link: '/admin/administration/ai-management/Blueprints/blueprint-list-view'},
-                  {text: 'Blueprint Settings', link: '/admin/administration/ai-management/Blueprints/blueprint-settings'},
-                  {text: '<span style="color:rgb(140,3,252)">&#9734;</span> Blueprint Tutorials', link: '/admin/administration/ai-management/Blueprints/create-blueprint-tutorial'}            
+                  {text: 'Blueprint List', link: '/admin/administration/ai-management/blueprints/blueprint-list-view'},
+                  {text: 'Blueprint Settings', link: '/admin/administration/ai-management/blueprints/blueprint-settings'},
+                  {text: '<span style="color:rgb(140,3,252)">&#9734;</span> Blueprint Tutorials', link: '/admin/administration/ai-management/blueprints/create-blueprint-tutorial'}            
                 ]
               },              
               {text: 'Knowledge Bases', collapsed: true, items:
