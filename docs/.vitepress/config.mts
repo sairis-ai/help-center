@@ -29,6 +29,13 @@ export default defineConfig({
         indexName: 'help-sairis',
       }
     },
+
+    nav: [
+     { text: 'Admins', link: '/admin/Administration/administration-home'},
+     { text: 'End Users', link: '/user/assistant/assistant-home'},
+     { text: 'Learning', link: '/general/learn/learn'}
+    ],
+  
     sidebar: 
     {
     '/admin/': 

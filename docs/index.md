@@ -5,6 +5,8 @@ layout: home
 
 hero:
   # image: "/images/wordmark_dark.png"
+  # image: "/images/ai-ipad.png"
+  image: "/images/gen-ai.png"
   name: "Sairis"
   text: "Help Center"
   tagline: Generative AI Enablement
