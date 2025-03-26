@@ -1,5 +1,5 @@
 # Content Search User Guide
-
+<!--
 ## Table of Contents
 - [Content Search User Guide](#content-search-user-guide)
   - [Table of Contents](#table-of-contents)
@@ -27,6 +27,7 @@
   - [Loading States](#loading-states)
   - [Best Practices](#best-practices)
   - [Troubleshooting](#troubleshooting)
+  -->
 
 ## Introduction
 

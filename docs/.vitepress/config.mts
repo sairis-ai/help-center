@@ -103,7 +103,7 @@ export default defineConfig({
               {text: '<span style="color:rgb(140,3,252)">&#9734;</span> User Tutorials', link: '/admin/administration/manage/users/create-user-tutorials'}
             ]
           }, 
-          {text: 'Roles', link: '/administration/manage/roles' },
+          {text: 'Roles', link: '/admin/administration/manage/roles' },
           {text: 'Groups', collapsed: true, items: 
             [  
               {text: 'Group management', link: '/admin/administration/manage/Groups/group-management'},
@@ -157,7 +157,7 @@ export default defineConfig({
         ]
       },
       {
-        text: '<span style="color:rgb(140,3,252)">&#128214;</span> Learn', link: '/general/learn/courses', collapsed: true, items: 
+        text: '<span style="color:rgb(140,3,252)">&#128214;</span> Learn', collapsed: true, items: 
         [ 
           {text: 'Prompt Engineering', collapsed: true, link: '/general/learn/prompt-engineering', items: 
           [  
@@ -176,7 +176,7 @@ export default defineConfig({
         ] 
       },
       {
-        text: '<span style="color:rgb(140,3,252)">&#9734;</span> Tutorials', link: '/learn/courses', collapsed: true, items: 
+        text: '<span style="color:rgb(140,3,252)">&#9734;</span> Tutorials', collapsed: true, items: 
         [ 
           {text: '<span style="color:rgb(140,3,252)">&#9734;</span> Users', link: '/general/tutorials/create-user-tutorials'},
           {text: '<span style="color:rgb(140,3,252)">&#9734;</span> Groups', link: '/general/tutorials/create-group-tutorials'},
