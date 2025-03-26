@@ -4,8 +4,8 @@
 layout: home
 
 hero:
-  image: "/images/wordmark_dark.png"
-  name: "Web App"
+  # image: "/images/wordmark_dark.png"
+  name: "Sairis"
   text: "Help Center"
   tagline: Generative AI Enablement
   actions:
