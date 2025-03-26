@@ -22,10 +22,10 @@
   }
 
   .VPImage.image-src  {
-    width: 300px; /* Or any desired width */
-    height: 300px; /* Or any desired height */
-    border-radius: 50%; /* Make the image circular */
-    object-fit: contain; /* Ensure the image covers the container */
+    /* width: 300px; Or any desired width */
+    /* height: 300px; Or any desired height */
+    /* border-radius: 50%; Make the image circular */
+    /* object-fit: contain; Ensure the image covers the container */
     filter: drop-shadow(5px 5px 10px #000000);
   }
 

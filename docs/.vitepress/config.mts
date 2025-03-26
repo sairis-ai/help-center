@@ -31,7 +31,7 @@ export default defineConfig({
     },
 
     nav: [
-     { text: 'Admins', link: '/admin/Administration/administration-home'},
+     { text: 'Admins', link: '/admin/administration/administration-home'},
      { text: 'End Users', link: '/user/assistant/assistant-home'},
      { text: 'Learning', link: '/general/learn/learn'}
     ],
@@ -44,9 +44,9 @@ export default defineConfig({
             [ 
               {text: 'AI Content', collapsed: true, items:
                 [
-                  {text: 'Content manager', link: '/admin/administration/ai-management/content/content-management'},
+                  {text: 'Content Manager', link: '/admin/administration/ai-management/content/content-management'},
                   {text: 'Card', link: '/admin/administration/ai-management/content/card-designer'},
-                  {text: 'File manager', link: '/admin/administration/ai-management/content/document-uploads'},
+                  {text: 'File Manager', link: '/admin/administration/ai-management/content/document-uploads'},
                   {text: 'Web Link', link: '/admin/administration/ai-management/content/web-links'},
                   {text: '<span style="color:rgb(140,3,252)">&#9734;</span> Content Tutorials', link: '/admin/administration/ai-management/content/content-tutorial'}
                 ]

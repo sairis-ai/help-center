@@ -1,25 +1,25 @@
 ---
+# image: "/images/wordmark_dark.png"
+# image: "/images/ai-ipad.png"
 
 # https://vitepress.dev/reference/default-theme-home-page
 layout: home
 
 hero:
-  # image: "/images/wordmark_dark.png"
-  # image: "/images/ai-ipad.png"
-  image: "/images/gen-ai.png"
+  image: "/images/ai-stock.png"
   name: "Sairis"
   text: "Help Center"
   tagline: Generative AI Enablement
   actions:
     - theme: brand
       text: Onboarding
-      link: "/general/Getting-Started/onboarding"
+      link: "/general/getting-started/onboarding"
     - theme: brand
       text: Admins
-      link: "/admin/Administration/administration-home"
+      link: "/admin/administration/administration-home"
     - theme: brand
       text: End Users
-      link: "/user/Assistant/assistant-home"
+      link: "/user/assistant/assistant-home"
     - theme: brand
       text: Learning
       link: "/general/learn/learn"
