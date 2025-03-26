@@ -26,10 +26,10 @@
     height: 240px; 
     border-radius: 50%; /* Make the image circular */
     object-fit: contain; /* Ensure the image covers the container */
-    filter: drop-shadow(5px 5px 10px #000000);
+    filter: drop-shadow(1px 1px 5px #a09f9f);
   }
 
-  .VPFeature  {
+    .VPFeature  {
     background-color: #e7e7e9;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   }
