@@ -33,7 +33,7 @@ export default defineConfig({
     {
     '/admin/': 
     [
-      {text: 'AI management', collapsed: true, items: 
+      {text: 'AI Management', collapsed: true, items: 
             [ 
               {text: 'AI Content', collapsed: true, items:
                 [
@@ -41,33 +41,32 @@ export default defineConfig({
                   {text: 'Card', link: '/admin/administration/ai-management/content/card-designer'},
                   {text: 'File manager', link: '/admin/administration/ai-management/content/document-uploads'},
                   {text: 'Web Link', link: '/admin/administration/ai-management/content/web-links'},
-                  {text: '<span style="color:rgb(140,3,252)">&#9734;</span> content Tutorials', link: '/admin/administration/ai-management/content/content-tutorial'}
+                  {text: '<span style="color:rgb(140,3,252)">&#9734;</span> Content Tutorials', link: '/admin/administration/ai-management/content/content-tutorial'}
                 ]
               },
               {text: 'Blueprints', collapsed: true, items:
                 [
-                  {text: 'Blueprint List',link: '/admin/administration/ai-management/Blueprints/blueprint-list-view'},
-                  {text: 'Blueprint settings',link: '/admin/administration/ai-management/Blueprints/blueprint-settings'},
-                  {text: '<span style="color:rgb(140,3,252)">&#9734;</span> Blueprint Tutorials',link: '/admin/administration/ai-management/Blueprints/create-blueprint-tutorial'}            
+                  {text: 'Blueprint List', link: '/admin/administration/ai-management/Blueprints/blueprint-list-view'},
+                  {text: 'Blueprint Settings', link: '/admin/administration/ai-management/Blueprints/blueprint-settings'},
+                  {text: '<span style="color:rgb(140,3,252)">&#9734;</span> Blueprint Tutorials', link: '/admin/administration/ai-management/Blueprints/create-blueprint-tutorial'}            
                 ]
               },              
               {text: 'Knowledge Bases', collapsed: true, items:
                 [
                   {text: 'Knowledge Base List',link: '/admin/administration/ai-management/knowledge-bases/knowledge-base-list'},
                   {text: 'Knowledge Base settings',link: '/admin/administration/ai-management/knowledge-bases/knowledge-base'},
-                  {text: '<span style="color:rgb(140,3,252)">&#9734;</span> KB Tutorials',link: '/admin/administration/ai-management/knowledge-bases/create-kb-tutorial'},
+                  {text: '<span style="color:rgb(140,3,252)">&#9734;</span> KB Tutorials', link: '/admin/administration/ai-management/knowledge-bases/create-kb-tutorial'},
                 ]
               }, 
               // {text: 'Test Cases', link: '/admin/administration/Test-Cases/ai-test-case-view'}, 
-              {text: 'settings', collapsed: true, items:
+              {text: 'Settings', collapsed: true, items:
                 [
-                  {text: 'Launch Pad',link: '/admin/administration/ai-management/settings/launchpad'},
-                  {text: 'Topics',link: '/admin/administration/ai-management/settings/topics'},
-                  {text: 'Tags',link: '/admin/administration/ai-management/settings/tags'},
-                  // {text: 'Understanding LLM\'s',link: '/admin/administration/ai-management/settings/llm'},
-                  {text: 'LLM\'s',link: '/admin/administration/ai-management/settings/large-language-models'},
-                  {text: 'Roles',link: '/admin/administration/ai-management/settings/roles'},
-                  {text: 'Bans',link: '/admin/administration/ai-management/settings/bans'}
+                  {text: 'Launch Pad', link: '/admin/administration/ai-management/settings/launchpad'},
+                  {text: 'Topics', link: '/admin/administration/ai-management/settings/topics'},
+                  {text: 'Tags', link: '/admin/administration/ai-management/settings/tags'},
+                  {text: 'LLM\'s', link: '/admin/administration/ai-management/settings/large-language-models'},
+                  {text: 'Roles', link: '/admin/administration/ai-management/settings/roles'},
+                  {text: 'Bans', link: '/admin/administration/ai-management/settings/bans'}
                 ]
               },
             ]         
@@ -77,15 +76,15 @@ export default defineConfig({
           {text: 'Platform', link: '/admin/administration/dashboard-insights/platform'}, 
           {text: 'Tokens', link: '/admin/administration/dashboard-insights/tokens'}, 
           {text: 'KB\'s', link: '/admin/administration/dashboard-insights/kbs'},
-          {text: 'content', link: '/admin/administration/dashboard-insights/content'},
+          {text: 'Content', link: '/admin/administration/dashboard-insights/content'},
           {text: 'Usage', link: '/admin/administration/dashboard-insights/usage'},
           {text: 'Logins', link: '/admin/administration/dashboard-insights/logins'},
           {text: 'Devices', link: '/admin/administration/dashboard-insights/devices'}
           ]
         },
-      {text: 'manage', collapsed: true, items: 
+      {text: 'Manage', collapsed: true, items: 
         [ 
-          {text: 'users', collapsed: true, items: 
+          {text: 'Users', collapsed: true, items: 
             [
               {text: 'User management', link: '/admin/administration/manage/users/user-management'},
               {text: 'User Profile', link: '/admin/administration/manage/users/user-profile'},
@@ -115,13 +114,6 @@ export default defineConfig({
           }
         ] 
       },
-      // {         text: 'View - User Menu', link: '/admin/administration/View/users'       },
-      {text: 'End User Features', collapsed: true, items: 
-        [
-          {text: 'Home', link: '/admin/assistant/assistant-home' },
-          {text: 'User content', link: '/admin/assistant/assistant-home' },
-        ]
-      },
       // {
       //  text: 'Tenant', collapsed: true,items: 
       //  [ 
@@ -129,7 +121,6 @@ export default defineConfig({
       //    {text: 'Tenant Profile', link: '/admin/administration/Tenant/tenant-profile'}
       //  ] 
       // },
-    
     ],
     '/user/': 
     [
@@ -163,7 +154,6 @@ export default defineConfig({
         [ 
           {text: 'Prompt Engineering', collapsed: true, link: '/general/learn/prompt-engineering', items: 
           [  
-            // {text: '<span style="color:rgb(140,3,252)">&#9734</span> Welcome to Prompt Engineering (PE)',link: '/learn/prompt-engineering'},
             {text: '<span style="color:rgb(140,3,252)">&#128214;</span> 100 - Intro to PE',link: '/general/learn/100-intro-to-prompt-engineering'},
             {text: '<span style="color:rgb(140,3,252)">&#128214;</span> 101 - What is PE?', link: '/general/learn/101-what-is-prompt-engineering'},
             {text: '<span style="color:rgb(140,3,252)">&#128214;</span> 102 - Inputs', link: '/general/learn/102-writing-clear-user-inputs'},
