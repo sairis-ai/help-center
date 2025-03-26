@@ -39,7 +39,7 @@ The LaunchPad allows you to:
 
 The LaunchPad consists of several key components:
 
-![homepage](../../../images/launchpad-settings.png)
+![homepage](/images/launchpad-settings.png)
 
 1. **Header Area**: Contains your personalized greeting and global search bar
 2. **Toggle Control**: Enables or disables the entire LaunchPad functionality

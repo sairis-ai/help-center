@@ -122,7 +122,7 @@ To create a new knowledge base:
    - **Description**: Explanation of the knowledge base's purpose
    - **Topic Tag**: Optional categorization tag
 4. Click "Save" to create the knowledge base
-5. See [Knowledge Base Settings](/Administration/AI-Management/Knowledge-Bases/knowledge-base-list) for more details on Knowledge Base settings fields
+5. See [Knowledge Base Settings](/admin/Administration/AI-Management/Knowledge-Bases/knowledge-base-list) for more details on Knowledge Base settings fields
 
 ### Editing Knowledge Base Details
 

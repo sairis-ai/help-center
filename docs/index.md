@@ -11,13 +11,16 @@ hero:
   actions:
     - theme: brand
       text: Onboarding
-      link: "/Getting-Started/onboarding"
+      link: "/admin/Getting-Started/onboarding"
     - theme: brand
-      text: Admin Get Started
-      link: "/Getting-Started/quick-start"
+      text: Admins
+      link: "/admin/Getting-Started/quick-start"
+    - theme: brand
+      text: End Users
+      link: "/user/Assistant/assistant-home"
     - theme: brand
       text: Courses
-      link: "../Courses/courses"
+      link: "/admin/Courses/courses"
 
 features:
   - title: Application Overview

@@ -139,7 +139,7 @@ To select the AI foundation model:
 ![homepage](/images/assistant-model.png)
 
 Before selecting or changing your Language Model you may wish to review the differences between the models.
-[Understanding Large Language Models](/Administration/AI-Management/Settings/llm)
+[Understanding Large Language Models](/admin/Administration/AI-Management/Settings/llm)
 
 1. Click on the model name box
 2. The LLM selector dialog opens

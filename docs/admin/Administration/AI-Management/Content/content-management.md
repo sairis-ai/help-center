@@ -196,7 +196,7 @@ To view or edit an existing content item:
    - Cards open in the card designer
    - Links open in the link editor
   
-  Please see [File Manager](/Administration/AI-Management/Content/document-uploads.html#file-management), and View Existing Files for detailed information 
+  Please see [File Manager](/admin/Administration/AI-Management/Content/document-uploads.html#file-management), and View Existing Files for detailed information 
 
 
 ## Content Operations
@@ -232,7 +232,7 @@ Documents can be various file types:
 - **Media Files**: MP4 videos, MP3 audio
 - **Code/Markup**: HTML, Markdown
 
-Please see [File Manager User Guide](/Administration/AI-Management/Content/document-uploads) for information on uploading and managing files
+Please see [File Manager User Guide](/admin/Administration/AI-Management/Content/document-uploads) for information on uploading and managing files
 
 Documents are processed by the AI and their content becomes searchable in knowledge bases.
 
@@ -247,7 +247,7 @@ Cards are rich content items created in the platform:
 - Often used for frequently accessed information
 - Appear in the AI interface as structured responses
 
-Please see [AI Card Designer User Guide](/Administration/AI-Management/Content/card-designer) for information on managing cards
+Please see [AI Card Designer User Guide](/admin/Administration/AI-Management/Content/card-designer) for information on managing cards
 
 ### Web Links
 
@@ -260,7 +260,7 @@ Web links point to external resources:
 - Include title, description, and URL
 - Can be categorized with topics and tags
 
-Please see [Web Link Manager User Guide](/Administration/AI-Management/Content/card-designer) for information on managing web links
+Please see [Web Link Manager User Guide](/admin/Administration/AI-Management/Content/card-designer) for information on managing web links
 
 ### Assets
 
@@ -273,7 +273,7 @@ Assets are supporting files:
 - Stored in the asset library
 - Not directly processed by AI but support other content
 
-Please see [File Manager User Guide](/Administration/AI-Management/Content/document-uploads) for information on uploading and managing assets
+Please see [File Manager User Guide](/admin/Administration/AI-Management/Content/document-uploads) for information on uploading and managing assets
 
 ### Other Content Types
 
