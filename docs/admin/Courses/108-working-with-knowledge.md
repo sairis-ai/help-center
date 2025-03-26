@@ -39,7 +39,7 @@ RAG is an **AI-powered search capability** that enables **retrieval of external 
  
 | **Feature** | **RAG (Retrieval-Augmented Generation)** | **Built-in AI Knowledge** | 
 |:-----------|:---------------------------------|:--------------------| 
-| **Source** | Selectable knowledge bases, documents, or databases | AI '92s pre-trained general knowledge | 
+| **Source** | Selectable knowledge bases, documents, or databases | AI's pre-trained general knowledge | 
 | **Customization** | Fully controlled by the user | Limited to what the AI model was trained on | 
 | **Updates** | Dynamically pulls the latest information | Static until the AI model is retrained | 
 | **Scope** | Business-specific knowledge retrieval | Broader, general knowledge | 
@@ -49,7 +49,7 @@ RAG is an **AI-powered search capability** that enables **retrieval of external 
 > - **Without RAG:** AI provides **general knowledge** about PTO policies.   
 > - **With RAG enabled:** AI retrieves **your company's official PTO policy document** and provides a precise answer.   
  
-> **Pro Tip:** If AI is giving outdated or incorrect information, check whether a Knowledge Base or Individual Content is selected and if the correct knowledge bases are selected. Review the citations to see where the information is coming, including which file the information came from. It '92s possible the individual file that Sairis is retrieving information from may be out of date.   
+> **Pro Tip:** If AI is giving outdated or incorrect information, check whether a Knowledge Base or Individual Content is selected and if the correct knowledge bases are selected. Review the citations to see where the information is coming, including which file the information came from. It's possible the individual file that Sairis is retrieving information from may be out of date.   
  
  
 ## Selecting Knowledge Bases in Sairis   
@@ -57,10 +57,10 @@ RAG is an **AI-powered search capability** that enables **retrieval of external 
 Sairis allows users to **choose which knowledge bases** AI can search, ensuring AI only retrieves **approved** and **relevant** information.   
  
 ### **Steps for Selecting AI-Searchable Knowledge Bases**   
-1. **Identify business-critical knowledge**  '96 Determine which **documents, policies, and resources** AI should access.   
-2. **Enable RAG for selected sources**  '96 Choose the **knowledge bases and specific files** that AI can reference.   
-3. **Set permissions for AI access**  '96 Control who can modify or expand AI-searchable knowledge bases.   
-4. **Test AI retrieval accuracy**  '96 Run test queries to confirm AI is pulling relevant information.   
+1. **Identify business-critical knowledge** - Determine which **documents, policies, and resources** AI should access.   
+2. **Enable RAG for selected sources** - Choose the **knowledge bases and specific files** that AI can reference.   
+3. **Set permissions for AI access** - Control who can modify or expand AI-searchable knowledge bases.   
+4. **Test AI retrieval accuracy** - Run test queries to confirm AI is pulling relevant information.   
  
 > **Example: Enabling RAG for a Sales Team**   
 > - A sales manager **enables RAG** for product documentation and pricing sheets.   
@@ -78,7 +78,7 @@ To **ensure AI delivers high-quality responses**, follow these best practices wh
 - **Avoid redundant or conflicting sources** to prevent inaccurate retrieval.   
  
 ### **2. Enable RAG Selectively**   
-- **Allow AI to search only necessary files** '97too much data can lead to irrelevant results.   
+- **Allow AI to search only necessary files**-too much data can lead to irrelevant results.   
 - **Restrict access to confidential knowledge** when needed.   
 - **Regularly audit which sources are AI-searchable** to maintain relevance.   
  
@@ -122,4 +122,4 @@ To **ensure AI delivers high-quality responses**, follow these best practices wh
 - **Users control which knowledge bases and files AI can access**, improving precision and security.   
 - **Optimizing RAG search settings ensures AI provides reliable, accurate, and useful responses.**   
  
-By effectively managing **AI knowledge retrieval in Sairis**, organizations can **streamline information access, enhance AI reliability, and empower teams with instant, accurate insights.**  }
+By effectively managing **AI knowledge retrieval in Sairis**, organizations can **streamline information access, enhance AI reliability, and empower teams with instant, accurate insights.**  

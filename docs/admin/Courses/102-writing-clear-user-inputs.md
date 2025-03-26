@@ -2,7 +2,7 @@
 **Prompt Engineering 102**   
  
 ## Introduction   
-Effective communication with AI starts with well-crafted user input prompts. The clearer and more structured your prompts, the more accurate and useful the AI '92s responses will be. By following key principles of clarity, structure, and specificity, you can eliminate ambiguity, reduce the need for follow-ups, and consistently generate high-quality AI outputs in Sairis.   
+Effective communication with AI starts with well-crafted user input prompts. The clearer and more structured your prompts, the more accurate and useful the AI's responses will be. By following key principles of clarity, structure, and specificity, you can eliminate ambiguity, reduce the need for follow-ups, and consistently generate high-quality AI outputs in Sairis.   
  
 ### Learning Objectives   
  
@@ -24,20 +24,20 @@ User input prompts are the direct commands or questions given to AI. A well-stru
 ### **Clarity Elements**   
 Clarity ensures that AI-generated responses are relevant, precise, and actionable. By incorporating these elements into your prompts, you can avoid vague or misleading outputs.   
  
-- **Specific Objectives**  '96 Define exactly what you want the AI to accomplish to avoid vague responses.   
-- **Clear Context**  '96 Provide relevant details to help the AI understand the full picture.   
-- **Precise Language**  '96 Avoid ambiguous wording to ensure accurate responses.   
-- **Defined Scope**  '96 Set clear boundaries for the AI's response to keep it focused.   
-- **Expected Output Format**  '96 Specify how you want the information presented (e.g., bullet points, paragraphs, or tables).   
+- **Specific Objectives** - Define exactly what you want the AI to accomplish to avoid vague responses.   
+- **Clear Context** - Provide relevant details to help the AI understand the full picture.   
+- **Precise Language** - Avoid ambiguous wording to ensure accurate responses.   
+- **Defined Scope** - Set clear boundaries for the AI's response to keep it focused.   
+- **Expected Output Format** - Specify how you want the information presented (e.g., bullet points, paragraphs, or tables).   
  
 ### **Structure Components**   
 A structured prompt helps the AI process information effectively and deliver well-organized responses. Use these components to create prompts that guide the AI with clarity and precision.   
  
-- **Task Description**  '96 Clearly state what you want the AI to do.   
-- **Required Information**  '96 Provide any necessary details to guide the AI.   
-- **Constraints or Limitations**  '96 Define any boundaries or restrictions on the AI's response.   
-- **Desired Format**  '96 Specify whether the response should be structured as a list, paragraph, or summary.   
-- **Priority Indicators**  '96 Highlight key focus areas for AI-generated outputs.   
+- **Task Description** - Clearly state what you want the AI to do.   
+- **Required Information** - Provide any necessary details to guide the AI.   
+- **Constraints or Limitations** - Define any boundaries or restrictions on the AI's response.   
+- **Desired Format** - Specify whether the response should be structured as a list, paragraph, or summary.   
+- **Priority Indicators** - Highlight key focus areas for AI-generated outputs.   
  
  
 ## Specific vs. Vague Prompts   
@@ -62,7 +62,7 @@ Even well-intended prompts can fail if they lack clarity, context, or structure.
 | Missing context | AI lacks critical information to generate a meaningful output | Include relevant details such as goals, constraints, or audience | 
 | Overly complex requests | AI may struggle to process multiple tasks at once | Break down complex tasks into simpler steps | 
 | Conflicting requirements | AI may not know which instruction to prioritize | Keep instructions consistent and aligned | 
-| Unclear priorities | AI may emphasize less relevant details | Indicate what '92s most important in the response | 
+| Unclear priorities | AI may emphasize less relevant details | Indicate what's most important in the response | 
  
 ### **Best Practices**   
 Applying best practices helps create prompts that consistently generate high-quality responses. Follow these guidelines for better AI interactions.   
@@ -122,4 +122,4 @@ A well-structured prompt is essential for maximizing AI efficiency and ensuring 
 - Avoid vague, ambiguous, or overly complex prompts to minimize misunderstandings.   
 - Save effective prompts in Blueprints and Conversation Starters for consistent and reusable AI interactions.   
  
-By applying these principles, you can ensure that every AI interaction in Sairis delivers high-quality, consistent, and reliable results.  }
+By applying these principles, you can ensure that every AI interaction in Sairis delivers high-quality, consistent, and reliable results.  

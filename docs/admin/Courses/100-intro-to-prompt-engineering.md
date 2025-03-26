@@ -71,4 +71,4 @@ No prior experience with prompt engineering is required\'97this course provides 
 
 Start with **Lesson 1: Sairis Introduction to Prompt Engineering** to explore the fundamentals of AI prompts.  
 
-By the end of this course, you'll have the skills to **craft, refine, and optimize prompts** that make AI work more effectively for your organization. \uc0\u55357 \u56960   }
+By the end of this course, you'll have the skills to **craft, refine, and optimize prompts** that make AI work more effectively for your organization. 

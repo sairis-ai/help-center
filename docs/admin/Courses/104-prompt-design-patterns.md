@@ -109,10 +109,10 @@ Different tasks benefit from different prompting techniques. The table below sug
 Providing relevant context in a prompt **enhances AI accuracy and relevance**. Adding essential elements ensures **more precise and useful responses.**   
  
 ### **Essential Context Elements**   
-- **Background Information**  '96 Provide necessary details about the task or subject.   
-- **Relevant Constraints**  '96 Define limitations such as time, word count, or scope.   
-- **Target Audience**  '96 Indicate who the AI response is intended for.   
-- **Time/Resource Limitations**  '96 Specify constraints related to deadlines, budgets, or available data.   
+- **Background Information** - Provide necessary details about the task or subject.   
+- **Relevant Constraints** - Define limitations such as time, word count, or scope.   
+- **Target Audience** - Indicate who the AI response is intended for.   
+- **Time/Resource Limitations** - Specify constraints related to deadlines, budgets, or available data.   
  
 > **Pro Tip:** Adding structured background context helps AI generate **more precise** and **goal-aligned** responses, especially in business-critical use cases.   
  
@@ -158,4 +158,4 @@ Prompt design patterns **significantly improve AI responses** by structuring pro
 - **Apply Chain of Thought prompting** for logical breakdowns and strategic decision-making.   
 - **Incorporate context elements** to refine AI outputs and align responses with business needs.   
  
-By leveraging **effective prompt design patterns** in Sairis, users can **improve AI accuracy, streamline workflows, and generate more impactful business insights.**  }
+By leveraging **effective prompt design patterns** in Sairis, users can **improve AI accuracy, streamline workflows, and generate more impactful business insights.**  

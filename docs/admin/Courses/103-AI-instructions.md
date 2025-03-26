@@ -22,27 +22,27 @@ Save, refine, and share instructions to standardize AI behavior across teams.
 
 Instructions can be customized for **individual conversations** to fine-tune AI behavior on the fly or saved as **Blueprints** to create **consistent, repeatable AI workflows** across teams. Mastering the creation and management of instructions in Sairis helps ensure that AI interactions align with business objectives, industry standards, and user expectations.   
  
-> **Pro Tip:** Customize AI instructions within an individual conversation to fine-tune the AI '92s behavior and get the response you want. Once you '92ve crafted the ideal instruction, save it in a **Blueprint** for easy reuse in future tasks!   
+> **Pro Tip:** Customize AI instructions within an individual conversation to fine-tune the AI's behavior and get the response you want. Once you '92ve crafted the ideal instruction, save it in a **Blueprint** for easy reuse in future tasks!   
  
- Well-crafted AI instructions ensure that AI responses remain **consistent, relevant, and aligned with specific business needs.** Essential elements define the AI '92s role, format, and behavioral expectations, while optional elements help refine responses for specialized use cases.   
+ Well-crafted AI instructions ensure that AI responses remain **consistent, relevant, and aligned with specific business needs.** Essential elements define the AI's role, format, and behavioral expectations, while optional elements help refine responses for specialized use cases.   
  
 ### **Essential Elements**   
 These core components create clear, structured, and predictable AI responses.   
  
-- **Role and Context Definition**  '96 Clearly define the AI's function and purpose in a conversation.   
-- **Response Format Requirements**  '96 Specify how responses should be structured (e.g., bullet points, paragraphs, tables).   
-- **Behavioral Guidelines**  '96 Set expectations for tone, professionalism, and response style.   
-- **Output Parameters**  '96 Define constraints such as response length, level of detail, or complexity.   
-- **Task-Specific Rules**  '96 Provide step-by-step instructions or domain-specific requirements.   
+- **Role and Context Definition** - Clearly define the AI's function and purpose in a conversation.   
+- **Response Format Requirements** - Specify how responses should be structured (e.g., bullet points, paragraphs, tables).   
+- **Behavioral Guidelines** - Set expectations for tone, professionalism, and response style.   
+- **Output Parameters** - Define constraints such as response length, level of detail, or complexity.   
+- **Task-Specific Rules** - Provide step-by-step instructions or domain-specific requirements.   
  
 ### **Optional Elements**   
 These additional components refine AI behavior for specialized applications.   
  
-- **Industry-Specific Terminology**  '96 Ensure AI uses precise language relevant to your field.   
-- **Compliance Requirements**  '96 Align responses with regulatory or company policies.   
-- **Time and Date Handling**  '96 Standardize how AI processes and formats dates.   
-- **Language Style Preferences**  '96 Define tone, formality, and complexity of responses.   
-- **Data Processing Rules**  '96 Specify how AI should handle numerical or structured data.   
+- **Industry-Specific Terminology** - Ensure AI uses precise language relevant to your field.   
+- **Compliance Requirements** - Align responses with regulatory or company policies.   
+- **Time and Date Handling** - Standardize how AI processes and formats dates.   
+- **Language Style Preferences** - Define tone, formality, and complexity of responses.   
+- **Data Processing Rules** - Specify how AI should handle numerical or structured data.   
  
  
 ## Best Practices for Writing Instructions   
@@ -66,11 +66,11 @@ A structured approach to writing and managing instructions ensures **scalability
 ### **Writing Process**   
 Follow these steps to design effective AI instructions:   
  
-1. **Define the desired outcome**  '96 Clearly outline what the AI should produce.   
-2. **List required behaviors**  '96 Establish tone, format, and response expectations.   
-3. **Specify format requirements**  '96 Determine whether the response should be structured as a list, paragraph, table, or another format.   
-4. **Test and refine**  '96 Run sample AI interactions to verify output quality.   
-5. **Document successful patterns**  '96 Keep a record of effective instructions for reuse.   
+1. **Define the desired outcome** - Clearly outline what the AI should produce.   
+2. **List required behaviors** - Establish tone, format, and response expectations.   
+3. **Specify format requirements** - Determine whether the response should be structured as a list, paragraph, table, or another format.   
+4. **Test and refine** - Run sample AI interactions to verify output quality.   
+5. **Document successful patterns** - Keep a record of effective instructions for reuse.   
  
 ### **Saving Instructions in Blueprints**   
 Blueprints allow teams to **save and reuse effective instructions** for standardizing AI interactions across an organization.   
@@ -118,4 +118,4 @@ A well-crafted instruction acts as a **blueprint for AI behavior**, ensuring out
 - **Layer guidelines logically** to refine AI interactions without overcomplicating them.   
 - **Test and adjust instructions** before implementing them at scale.   
  
-By following these best practices, you can **optimize AI interactions in Sairis**, ensuring that AI-powered responses meet your exact business needs with clarity and precision.  }
+By following these best practices, you can **optimize AI interactions in Sairis**, ensuring that AI-powered responses meet your exact business needs with clarity and precision.  

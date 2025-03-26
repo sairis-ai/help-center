@@ -31,9 +31,9 @@ Context plays a **critical role** in shaping AI behavior and ensuring that respo
 ### **1. Context in Metaprompts (Instructions)**   
 This refers to **predefined guidance given to the AI** that **persists across interactions** within a session. It includes:   
  
-- **Role definitions**  '96 Assigning the AI a specific function (e.g., "You are a legal assistant providing contract summaries.").   
-- **Behavioral guidelines**  '96 Ensuring AI follows specific rules (e.g., "Always provide responses in a professional tone.").   
-- **Response structure formatting**  '96 Standardizing output consistency (e.g., "Summarize findings in three key bullet points.").   
+- **Role definitions** - Assigning the AI a specific function (e.g., "You are a legal assistant providing contract summaries.").   
+- **Behavioral guidelines** - Ensuring AI follows specific rules (e.g., "Always provide responses in a professional tone.").   
+- **Response structure formatting** - Standardizing output consistency (e.g., "Summarize findings in three key bullet points.").   
  
 > **Example:**   
 > ``` 
@@ -50,7 +50,7 @@ The AI **remembers previous exchanges** within a session, allowing it to **build
 > **Example:**   
 > - **User (Message 1):** "Summarize the key findings from the annual sales report."   
 > - **AI Response:** "The report highlights a 12% revenue increase, improved conversion rates, and market expansion into two new regions."   
-> - **User (Message 2):** "Great. Can you now compare this to last year '92s performance?"   
+> - **User (Message 2):** "Great. Can you now compare this to last year's performance?"   
 > - **AI understands the request because the prior message is still within the conversation's context.**   
  
 > **Pro Tip:** If your AI forgets key details mid-conversation, **restate necessary context within your prompt** to improve accuracy.   
@@ -58,7 +58,7 @@ The AI **remembers previous exchanges** within a session, allowing it to **build
  
 ## Understanding RAG (Retrieval-Augmented Generation)   
  
-RAG enhances AI '92s ability to **pull relevant information from external sources** instead of relying solely on **conversation memory** or **pre-trained knowledge.**   
+RAG enhances AI's ability to **pull relevant information from external sources** instead of relying solely on **conversation memory** or **pre-trained knowledge.**   
  
 ### **How RAG Works in Sairis**   
 1. **Users select knowledge bases (information domains) to be AI-searchable.**   
@@ -71,7 +71,7 @@ RAG enhances AI '92s ability to **pull relevant information from external source
 **Enhances AI expertise** beyond pre-trained general knowledge.   
  
 > **Example:**   
-> - **User Input (with RAG enabled):** "What is our company '92s current PTO policy?"   
+> - **User Input (with RAG enabled):** "What is our company's current PTO policy?"   
 > - **AI searches the HR knowledge base and retrieves the latest policy document.**   
 > - **AI Response:** "According to the latest HR guidelines, employees receive 20 PTO days per year, with an option to carry over up to 5 days."   
  
@@ -141,4 +141,4 @@ RAG enhances AI '92s ability to **pull relevant information from external source
 - **Use RAG when AI must retrieve factual, up-to-date knowledge from external sources.**   
 - **Optimizing context structuring and RAG retrieval ensures AI accuracy, consistency, and efficiency.**   
  
-By mastering **when and how to use context vs. RAG**, you can **fine-tune AI performance in Sairis**, ensuring that responses align with both **business processes and knowledge governance.**  }
+By mastering **when and how to use context vs. RAG**, you can **fine-tune AI performance in Sairis**, ensuring that responses align with both **business processes and knowledge governance.**  

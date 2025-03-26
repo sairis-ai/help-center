@@ -4,8 +4,8 @@
 ## Introduction   
 Managing context effectively within prompts is **critical for shaping AI responses** that are relevant, accurate, and aligned with business objectives. In Sairis, **context exists in two primary forms**:   
  
-1. **Instruction-based context**  '96 Defined in **metaprompts (Instructions)** to shape AI behavior and guide responses.   
-2. **Conversation history**  '96 The **inputs and outputs within a chat session**, which the AI remembers within each chat conversation.   
+1. **Instruction-based context** - Defined in **metaprompts (Instructions)** to shape AI behavior and guide responses.   
+2. **Conversation history** - The **inputs and outputs within a chat session**, which the AI remembers within each chat conversation.   
  
 By structuring prompts **with the right amount of context**, users can **enhance AI comprehension, minimize ambiguity, and maintain response consistency across interactions.**   
  
@@ -65,7 +65,7 @@ The AI remembers **previous exchanges within a session**, allowing it to **carry
  
 ## Structuring Context Within Prompts   
  
-Context **should be clear and structured** to ensure AI understands **exactly what '92s needed** without confusion. Here '92s how to include **context effectively** in prompts:   
+Context **should be clear and structured** to ensure AI understands **exactly what's needed** without confusion. Here's how to include **context effectively** in prompts:   
  
 ### **1. Layering Context Effectively**   
 Organize prompts into **logical sections** to ensure clarity and completeness.   
@@ -114,7 +114,7 @@ When engaging in **multi-step interactions**, AI **gradually loses access to ear
 > ``` 
 > User: "Summarize our Q1 sales performance."   
 > AI: "Q1 sales grew 12%, driven by increased demand for our flagship product."   
-> User: "Now compare that to last year '92s Q1 and highlight key differences."   
+> User: "Now compare that to last year's Q1 and highlight key differences."   
 > ```   
 > AI retains the initial **Q1 sales data** and **builds on it** for comparison.   
  
@@ -132,7 +132,7 @@ When engaging in **multi-step interactions**, AI **gradually loses access to ear
 - Separate sections with **line breaks or structured numbering.**   
  
 ### **3. Balance Conversation Memory with Explicit Prompts**   
-- AI **forgets past conversations** when a session ends '97use **Blueprints for repeatable context.**   
+- AI **forgets past conversations** when a session ends-use **Blueprints for repeatable context.**   
 - If long-term memory is required, **store key details in structured prompts.**   
  
 > **Pro Tip:** If AI starts **drifting off-topic,** refine the prompt by restating context concisely.   
@@ -173,4 +173,4 @@ When engaging in **multi-step interactions**, AI **gradually loses access to ear
 - **Reintroduce key details in multi-turn conversations** to maintain AI awareness.   
 - **Balance context inclusion to keep prompts clear, structured, and effective.**   
  
-By mastering **context management in Sairis**, you can ensure AI-generated responses are **accurate, relevant, and aligned with your business needs.**  }
+By mastering **context management in Sairis**, you can ensure AI-generated responses are **accurate, relevant, and aligned with your business needs.**  
