@@ -7,8 +7,7 @@ layout: home
 
 hero:
   image: "/images/sairis-home-icon-light.svg"
-  name: " "
-  # name: "Sairis"
+  name: "Sairis"
   text: "Help Center"
   tagline: Generative AI Enablement
   actions:

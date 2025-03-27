@@ -1,47 +1,59 @@
-:root {
+  :root 
+  {
     /* --vp-home-hero-name-color: white;  */
-    --vp-home-hero-name-color: transparent;
+    /* --vp-home-hero-name-color: transparent; */
     --vp-home-hero-name-background: linear-gradient(-45deg, #9c9cc0 40%, #7c7aa1 80%);
-
+    
     /* --vp-home-hero-image-background-image: radial-gradient(circle, #0f1143, #3e3b6b, #6c6a95, #9c9cc0, #d0d1ed); */
     /* --vp-home-hero-image-background-image: linear-gradient(to bottom, #090a28, #101431, #181a3a, #202143, #28284c, #312f55, #39375f, #423f68, #4c4973, #57547e, #615f8a, #6c6a95); */
     --vp-home-hero-image-filter: blur(68px);
   }
 
-  .name.clip {
-      /* font-size: 44px !important; */
-      display: inline-block !important;
-      background-image: url(https://help.sairis.ai/images/sairis_wordmark-light.svg);
-      background-repeat: no-repeat;
-      width: 200px;
-      height: 50px;
+  .name.clip 
+  {
+    font-size: 44px;
+    -webkit-text-fill-color: #b6a2da;
+    /* background-image: url(/images/sairis_wordmark-light.svg) !important; */
+     }
+
+  @media (prefers-color-scheme: dark) 
+  {
+    .VPImage.image-src {
+        --image-src: url('/images/sairis-home-icon-dark.svg');
+    }
   }
 
-  .dark .VPFeature {
+  .dark .VPFeature 
+  {
     background-color: #292a2a !important;
     border: 1px solid #3a3939;
   }
 
-  .VPImage.image-src  {
+  .VPImage.image-src  
+  {
     width: 320px; 
     height: 320px; 
     border-radius: 50%; /* Make the image circular */
     object-fit: contain; /* Ensure the image covers the container */
     filter: drop-shadow(1px 1px 5px #a09f9f);
+    /* content: url('/images/sairis-home-icon-light.svg');   */
   }
-
-    .VPFeature  {
+ 
+  .VPFeature  
+  {
     background-color: #e7e7e9;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   }
 
-  .VPButton.medium.brand {
+  .VPButton.medium.brand 
+  {
     border-color: var(--vp-button-brand-border);
     color: var(--vp-button-brand-text);
     background-color: #25294f !important; 
    }
 
-  .image-bg {
+  .image-bg 
+  {
     width: 1620px !important;
     height: 1120px !important;
   }
