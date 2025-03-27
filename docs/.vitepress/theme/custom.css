@@ -12,8 +12,18 @@
   .name.clip 
   {
     font-size: 44px;
-    /* -webkit-text-fill-color: #b6a2da; */
-    /* background-image: url(/images/sairis_wordmark-light.svg) !important; */
+
+    /* background-image: url(./images/sairis_wordmark-light.svg) !important; Ensure image loads */
+    /* background-repeat: no-repeat !important;                            Prevent repeating */
+    /* width: var(--logo-width, 200px) !important;                        Force width */
+    /* height: 50px !important;                                           Force height */
+    /* display: inline-block !important;                                  Ensure block behavior */
+    /* text-indent: 100% !important;                                      Hide text */
+    /* white-space: nowrap !important;                                    Prevent wrapping */
+    /* overflow: hidden !important;                                       Hide overflow */
+    /* background-size: contain !important;                               Scale image */
+    /* background-position: center !important; */
+
      }
 
   @media (prefers-color-scheme: dark) 
