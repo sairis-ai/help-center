@@ -1,15 +1,12 @@
 :root {
     /* --vp-home-hero-name-color: white;  */
     --vp-home-hero-name-color: transparent;
-    /* --vp-home-hero-name-background: -webkit-linear-gradient(120deg,#41d1ff 40%, #bd34fe 20%); */
     --vp-home-hero-name-background: linear-gradient(-45deg, #9c9cc0 40%, #7c7aa1 80%);
+    
     /* --vp-home-hero-image-background-image: linear-gradient(-90deg, #7f5280 30%, #32369b 30%); */
-    /* --vp-home-hero-image-background-image: radial-gradient(circle, #7f5280 30%, #32369b 30%); */   
     /* --vp-home-hero-image-background-image: radial-gradient(circle, #0f1143, #3e3b6b, #6c6a95, #9c9cc0, #d0d1ed); */
     /* --vp-home-hero-image-background-image: linear-gradient(to bottom, #090a28, #101431, #181a3a, #202143, #28284c, #312f55, #39375f, #423f68, #4c4973, #57547e, #615f8a, #6c6a95); */
-
     --vp-home-hero-image-filter: blur(68px);
- 
   }
 
   .name {
