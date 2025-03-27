@@ -8,8 +8,13 @@
     --vp-home-hero-image-filter: blur(68px);
   }
 
-  .name {
-      font-size: 44px !important;
+  .name.clip {
+      /* font-size: 44px !important; */
+      display: inline-block !important;
+      background-image: url(https://help.sairis.ai/images/sairis_wordmark-light.svg);
+      background-repeat: no-repeat;
+      width: 200px;
+      height: 50px;
   }
 
   .dark .VPFeature {
@@ -18,8 +23,8 @@
   }
 
   .VPImage.image-src  {
-    width: 240px; 
-    height: 240px; 
+    width: 320px; 
+    height: 320px; 
     border-radius: 50%; /* Make the image circular */
     object-fit: contain; /* Ensure the image covers the container */
     filter: drop-shadow(1px 1px 5px #a09f9f);
