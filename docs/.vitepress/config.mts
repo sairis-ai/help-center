@@ -40,7 +40,7 @@ export default defineConfig({
     {
     '/admin/': 
     [
-      {text: 'AI Management', collapsed: true, items: 
+      {text: 'AI Management', collapsed: false, items: 
             [ 
               {text: 'AI Content', collapsed: true, items:
                 [
@@ -89,7 +89,7 @@ export default defineConfig({
           {text: 'Devices', link: '/admin/administration/dashboard-insights/devices'}
           ]
         },
-      {text: 'Manage', collapsed: true, items: 
+      {text: 'Manage', collapsed: false, items: 
         [ 
           {text: 'Users', collapsed: true, items: 
             [
@@ -131,7 +131,7 @@ export default defineConfig({
     ],
     '/user/': 
     [
-      {text: 'assistant', collapsed: true, items: 
+      {text: 'Assistant', collapsed: false, items: 
         [
           {text: 'Launchpad', link: '/user/assistant/launchpad' },
           {text: 'Assistant Home', link: '/user/assistant/assistant-home' },
@@ -142,7 +142,7 @@ export default defineConfig({
           {text: 'content Panel', link: '/user/assistant/content-panel' }          
         ]
       },
-      {text: 'Search', collapsed: true, items: 
+      {text: 'Search', collapsed: false, items: 
         [
           {text: 'Launchpad', link: '/user/search/user-search' }          
         ]
@@ -150,7 +150,7 @@ export default defineConfig({
     ],
     '/general/': 
     [
-      {text: 'Getting Started', collapsed: true, items: 
+      {text: 'Getting Started', collapsed: false, items: 
         [
           {text: '<span style="color:rgb(140,3,252)">&#9734;</span> Onboarding Experience', link: '/general/getting-started/onboarding' },
           {text: '<span style="color:rgb(140,3,252)">&#9734;</span> Quick Start', link: '/general/getting-started/quick-start' }   
@@ -176,7 +176,7 @@ export default defineConfig({
         ] 
       },
       {
-        text: '<span style="color:rgb(140,3,252)">&#9734;</span> Tutorials', collapsed: true, items: 
+        text: '<span style="color:rgb(140,3,252)">&#9734;</span> Tutorials', collapsed: false, items: 
         [ 
           {text: '<span style="color:rgb(140,3,252)">&#9734;</span> Users', link: '/general/tutorials/create-user-tutorials'},
           {text: '<span style="color:rgb(140,3,252)">&#9734;</span> Groups', link: '/general/tutorials/create-group-tutorials'},
