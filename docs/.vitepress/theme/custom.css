@@ -11,12 +11,14 @@
 
   .name.clip 
   {
-    font-size: 44px;
+    /* font-size: 44px; */
 
-    /* background-image: url(./images/sairis_wordmark-light.svg) !important; Ensure image loads */
-    /* background-repeat: no-repeat !important;                            Prevent repeating */
-    /* width: var(--logo-width, 200px) !important;                        Force width */
-    /* height: 50px !important;                                           Force height */
+    background-image: url(/images/sairis_wordmark-light.svg) !important; 
+    background-repeat: no-repeat !important;  /* background-repeat: no-repeat !important;                            Prevent repeating */
+    width: var(--logo-width, 160px) !important;                        
+    height: 50px !important;
+    background-clip: unset;  
+    -webkit-background-clip: unset;                                    
     /* display: inline-block !important;                                  Ensure block behavior */
     /* text-indent: 100% !important;                                      Hide text */
     /* white-space: nowrap !important;                                    Prevent wrapping */
@@ -26,12 +28,16 @@
 
      }
 
-  @media (prefers-color-scheme: dark) 
+  .dark 
   {
-    .VPImage.image-src {
-        --image-src: url('/images/sairis-home-icon-dark.svg');
-    }
+    --vp-c-text-1: #fdfdff;
+  }   
+  
+  .dark .name.clip 
+  {
+    background-image:  url('/images/sairis_wordmark-dark.svg') !important;
   }
+  
 
   .dark .VPFeature 
   {
