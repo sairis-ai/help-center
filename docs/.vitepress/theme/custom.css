@@ -1,7 +1,7 @@
   :root 
   {
     /* --vp-home-hero-name-color: white;  */
-    /* --vp-home-hero-name-color: transparent; */
+    --vp-home-hero-name-color: transparent;
     --vp-home-hero-name-background: linear-gradient(-45deg, #9c9cc0 40%, #7c7aa1 80%);
     
     /* --vp-home-hero-image-background-image: radial-gradient(circle, #0f1143, #3e3b6b, #6c6a95, #9c9cc0, #d0d1ed); */
@@ -12,7 +12,7 @@
   .name.clip 
   {
     font-size: 44px;
-    -webkit-text-fill-color: #b6a2da;
+    /* -webkit-text-fill-color: #b6a2da; */
     /* background-image: url(/images/sairis_wordmark-light.svg) !important; */
      }
 
