@@ -192,10 +192,7 @@ export default defineConfig({
       {text: 'LLM\'s', link: '/references/llm/llm'},
       {text: 'Release Notes', collapsed: true, items: 
         [
-          {text: 'Release 1001', link: '/references/release-notes/coming-soon' },
-          {text: 'Release 1002', link: '/references/release-notes/coming-soon' },
-          {text: 'Release 1002', link: '/references/release-notes/coming-soon' }
-      
+          {text: 'Release 1001', link: '/references/release-notes/coming-soon' }
         ]
       },
       {text: 'Legal', collapsed: true, items: 
