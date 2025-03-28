@@ -2,6 +2,10 @@
 # image: "/images/wordmark_dark.png"
 # image: "/images/ai-ipad.png"
 
+#    - theme: brand
+#      text: Onboarding
+#      link: "/general/getting-started/onboarding"
+
 # https://vitepress.dev/reference/default-theme-home-page
 layout: home
 
@@ -11,9 +15,6 @@ hero:
   text: "Help Center"
   tagline: Generative AI Enablement
   actions:
-    - theme: brand
-      text: Onboarding
-      link: "/general/getting-started/onboarding"
     - theme: brand
       text: Admins
       link: "/admin/administration/administration-home"

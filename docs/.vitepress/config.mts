@@ -33,7 +33,8 @@ export default defineConfig({
     nav: [
      { text: 'Admins', link: '/admin/administration/administration-home'},
      { text: 'End Users', link: '/user/assistant/assistant-home'},
-     { text: 'Learning', link: '/general/learn/learn'}
+     { text: 'Learning', link: '/general/learn/learn'},
+     { text: 'Reference', link: '/references/references-home'}
     ],
   
     sidebar: 
@@ -129,7 +130,7 @@ export default defineConfig({
       //  ] 
       // },
     ],
-    '/user/': 
+   '/user/': 
     [
       {text: 'Assistant', collapsed: false, items: 
         [
@@ -147,7 +148,7 @@ export default defineConfig({
           {text: 'Launchpad', link: '/user/search/user-search' }          
         ]
       }
-    ],
+    ], 
     '/general/': 
     [
       {text: 'Getting Started', collapsed: false, items: 
@@ -185,7 +186,25 @@ export default defineConfig({
           {text: '<span style="color:rgb(140,3,252)">&#9734;</span> Blueprints', link: '/general/tutorials/create-blueprint-tutorial'}    
           ]
       },
-    ]
+    ],
+    '/references/': 
+    [
+      {text: 'LLM\'s', link: '/references/llm/llm'},
+      {text: 'Release Notes', collapsed: true, items: 
+        [
+          {text: 'Release 1001', link: '/references/release-notes/coming-soon' },
+          {text: 'Release 1002', link: '/references/release-notes/coming-soon' },
+          {text: 'Release 1002', link: '/references/release-notes/coming-soon' }
+      
+        ]
+      },
+      {text: 'Legal', collapsed: true, items: 
+        [
+          {text: 'Legal Doc', link: '/references/legal/coming-soon' }          
+        ]
+      },
+      {text: 'Coming Soon - Network Status', link: '/references/network-status/coming-soon'},
+    ], 
     },
   }
 })
