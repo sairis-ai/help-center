@@ -32,7 +32,7 @@
   {
     --vp-c-text-1: #fdfdff;
   }   
-  
+
   .dark .name.clip 
   {
     background-image:  url('/images/sairis_wordmark-dark.svg') !important;
@@ -68,9 +68,9 @@
     background-color: #25294f !important; 
    }
 
-  .image-bg 
+  /* .image-bg 
   {
     width: 1620px !important;
     height: 1120px !important;
-  }
+  } */
 
