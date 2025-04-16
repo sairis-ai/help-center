@@ -61,6 +61,17 @@ The Settings Panel is organized into several key sections:
 
 ## Blueprint Management
 
+Blueprints are reusable configurations that store all your AI settings in one package for easy application across sessions. These blueprints include:
+
+- System Prompts (AI Instructions) that define tone and behavior 
+- Tool configurations for web search and news retrieval 
+- Knowledge Base attachments for specific domain expertise 
+- Content attachments for additional reference materials 
+- Model selection and parameter settings (creativity, citations, etc.) 
+
+Using Blueprints ensures consistency across sessions and allows you to quickly switch between different AI configurations without manually reconfiguring settings each time. Think of them as templates that capture your entire AI setup for specific use cases or projects.
+
+
 ### Loading Blueprints
 
 To use a saved Blueprint configuration:
@@ -112,6 +123,16 @@ Some Blueprints may be marked as secure:
 
 ## AI Instructions
 
+AI Instructions (also called System Prompts) are critical guidance you provide to the AI to control how it responds to your queries. These instructions help:
+
+- Set the AI's tone, personality, and communication style
+- Define the scope of knowledge the AI should use
+- Establish boundaries on what topics the AI should or shouldn't address
+- Specify output formats or structures for responses
+- Provide domain-specific context that helps the AI understand your needs.  
+
+Well-written instructions ensure more consistent, relevant, and accurate answers. Think of it as programming the AI's behavior and focus for your specific use case.
+
 The Instructions section controls the AI's behavior through system prompts:
 
 ![homepage](/images/assistant-blueprint-instructions.png)
@@ -132,6 +153,8 @@ Best practices for instructions:
 
 ## AI Model Configuration
 
+This is used to select a Large Language Model for your AI Request. Each model has its strengths and weaknesses. Click on Help Center to learn more about selecting a model.
+
 ### Model Selection
 
 To select the AI foundation model:
@@ -149,6 +172,11 @@ Before selecting or changing your Language Model you may wish to review the diff
 
 ### AI Mode
 
+There are two types of modes when using the Assistant.
+
+Question & Answers - This mode is used when you want to ask the AI a question and get an answer. The AI will use the knowledge base and content you have selected to answer your question.
+Agentic - This mode is used when you want the AI to act as an agent and perform tasks for you. The AI will use the knowledge base and content you have selected to perform tasks for you.
+
 Configure how the AI processes and responds to queries:
 
 ![homepage](/images/assistant-mode.png)
@@ -159,6 +187,8 @@ Configure how the AI processes and responds to queries:
    - **Tools**: Enables the use of specific tools and functions
 
 ### Web Tools
+
+Allow you to actively search the Web as well as actual News Articles. Each setting has setting like how deep you want to search and for what time period.
 
 Control the AI's access to external information:
 

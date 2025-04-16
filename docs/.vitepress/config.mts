@@ -138,7 +138,7 @@ export default defineConfig({
           {text: 'Assistant Home', link: '/user/assistant/assistant-home' },
           {text: 'Assistant Overview', link: '/user/assistant/assistant-overview' },
           {text: 'Chat History', link: '/user/assistant/chat-history' },
-          {text: 'settings', link: '/user/assistant/chat-settings' },
+          {text: 'Settings', link: '/user/assistant/chat-settings' },
           {text: 'Chat Tokens', link: '/user/assistant/chat-token-counts' },
           {text: 'content Panel', link: '/user/assistant/content-panel' }          
         ]
