@@ -155,7 +155,7 @@ Best practices for instructions:
 
 This is used to select a Large Language Model for your AI Request. Each model has its strengths and weaknesses. Click on Help Center to learn more about selecting a model.
 
-### Model Selection
+## Model Selection
 
 To select the AI foundation model:
 
@@ -170,7 +170,7 @@ Before selecting or changing your Language Model you may wish to review the diff
 4. Selected model appears in the model box with logo
 5. Different models offer varying capabilities, speeds, and costs
 
-### AI Mode
+## AI Mode
 
 There are two types of modes when using the Assistant.
 
@@ -186,7 +186,7 @@ Configure how the AI processes and responds to queries:
    - **Agentic**: More autonomous problem-solving abilities
    - **Tools**: Enables the use of specific tools and functions
 
-### Web Tools
+## Web Tools
 
 Allow you to actively search the Web as well as actual News Articles. Each setting has setting like how deep you want to search and for what time period.
 
