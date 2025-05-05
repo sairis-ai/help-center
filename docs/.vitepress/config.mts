@@ -108,13 +108,12 @@ export default defineConfig({
               {text: '<span style="color:rgb(140,3,252)">&#9734;</span> User Tutorials', link: '/admin/administration/manage/users/create-user-tutorials'}
             ]
           }, 
-          {text: 'Roles', link: '/admin/administration/manage/roles' },
           {text: 'Roles', collapsed: true, items: 
             [
-              {text: 'User management', link: '/admin/administration/manage/manage/roles/manager'},
-              {text: 'User management', link: '/admin/administration/manage/manage/roles/settings'},
-              {text: 'User management', link: '/admin/administration/manage/manage/roles/assigned-users'},
-              {text: 'User management', link: '/admin/administration/manage/manage/roles/owners'}
+              {text: 'Manager', link: '/admin/administration/manage/manage/roles/manager'},
+              {text: 'Settings', link: '/admin/administration/manage/manage/roles/settings'},
+              {text: 'Assigned Users', link: '/admin/administration/manage/manage/roles/assigned-users'},
+              {text: 'Owners', link: '/admin/administration/manage/manage/roles/owners'}
             ]
           }, 
 
