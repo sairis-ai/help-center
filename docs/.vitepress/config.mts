@@ -82,18 +82,27 @@ export default defineConfig({
               },
             ]         
       },
-      {text: 'Dashboard Insights', collapsed: true, items: 
-        [ 
-          {text: 'Dashboard Guide', link: '/admin/administration/dashboard-insights/ai-dashboard-guide'}, 
-          {text: 'Platform', link: '/admin/administration/dashboard-insights/platform'}, 
-          {text: 'Tokens', link: '/admin/administration/dashboard-insights/tokens'}, 
-          {text: 'KB\'s', link: '/admin/administration/dashboard-insights/kbs'},
-          {text: 'Content', link: '/admin/administration/dashboard-insights/content'},
-          {text: 'Usage', link: '/admin/administration/dashboard-insights/usage'},
-          {text: 'Logins', link: '/admin/administration/dashboard-insights/logins'},
-          {text: 'Devices', link: '/admin/administration/dashboard-insights/devices'}
-          ]
-        },
+      {text: 'Insights', collapsed: true, items:
+        [
+          {text: 'Dashboards', collapsed: true, items: 
+            [ 
+              {text: 'Dashboard Guide', link: '/admin/administration/insights/dashboards/ai-dashboard-guide'}, 
+              {text: 'Platform', link: '/admin/administration/insights/dashboards/platform'}, 
+              {text: 'Tokens', link: '/admin/administration/insights/dashboards/tokens'}, 
+              {text: 'KB\'s', link: '/admin/administration/insights/dashboards/kbs'},
+              {text: 'Content', link: '/admin/administration/insights/dashboards/content'},
+              {text: 'Usage', link: '/admin/administration/insights/dashboards/usage'},
+              {text: 'Logins', link: '/admin/administration/insights/dashboards/logins'},
+              {text: 'Devices', link: '/admin/administration/insights/dashboards/devices'}
+            ]
+          },
+          {text: 'Reports', collapsed: true, items: 
+            [ 
+              {text: 'User Activity', link: '/admin/administration/insights/reports/reports-user-activity'}
+            ]
+          },
+        ]   
+      },    
       {text: 'Manage', collapsed: false, items: 
         [ 
           {text: 'Users', collapsed: true, items: 
