@@ -66,7 +66,7 @@ export default defineConfig({
                 [
                   {text: 'Knowledge Base List',link: '/admin/administration/ai-management/knowledge-bases/knowledge-base-list'},
                   {text: 'Knowledge Base Settings',link: '/admin/administration/ai-management/knowledge-bases/knowledge-base'},
-                  {text: '<span style="color:rgb(140,3,252)">&#9734;</span> KB Tutorials', link: '/admin/administration/ai-management/knowledge-bases/create-kb-tutorial'},
+                  {text: '<span style="color:rgb(140,3,252)">&#9734;</span> KB Tutorials', link: '/admin/administration/ai-management/knowledge-bases/create-kb-tutorial'}
                 ]
               }, 
               // {text: 'Test Cases', link: '/admin/administration/Test-Cases/ai-test-case-view'}, 
@@ -120,7 +120,8 @@ export default defineConfig({
           {text: 'Groups', collapsed: true, items: 
             [  
               {text: 'Group Management', link: '/admin/administration/manage/groups/group-management'},
-              {text: 'Create Groups', link: '/admin/administration/manage/groups/smart-group'},
+              {text: 'Create Groups', link: '/admin/administration/manage/groups/smart-group-settings'},
+              {text: 'Group Members', link: '/admin/administration/manage/groups/smart-group-members'},
               {text: '<span style="color:rgb(140,3,252)">&#9734;</span> Group Tutorials', link: '/admin/administration/manage/groups/create-group-tutorials'}
             ]
           }, 
