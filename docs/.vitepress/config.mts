@@ -119,10 +119,10 @@ export default defineConfig({
           }, 
           {text: 'Roles', collapsed: true, items: 
             [
-              {text: 'Manager', link: '/admin/administration/manage/manage/roles/manager'},
-              {text: 'Settings', link: '/admin/administration/manage/manage/roles/settings'},
-              {text: 'Assigned Users', link: '/admin/administration/manage/manage/roles/assigned-users'},
-              {text: 'Owners', link: '/admin/administration/manage/manage/roles/owners'}
+              {text: 'Manager', link: '/admin/administration/manage/roles/manager'},
+              {text: 'Settings', link: '/admin/administration/manage/roles/settings'},
+              {text: 'Assigned Users', link: '/admin/administration/manage/roles/assigned-users'},
+              {text: 'Owners', link: '/admin/administration/manage/roles/owners'}
             ]
           }, 
 
