@@ -121,7 +121,7 @@ export default defineConfig({
             [
               {text: 'Manager', link: '/admin/administration/manage/roles/manager'},
               {text: 'Settings', link: '/admin/administration/manage/roles/settings'},
-              {text: 'Assigned Users', link: '/admin/administration/manage/roles/assigned-users'},
+              {text: 'Assigned Users', link: '/admin/administration/manage/roles/assign-users'},
               {text: 'Owners', link: '/admin/administration/manage/roles/owners'},
               {text: '<span style="color:rgb(140,3,252)">&#9734;</span> Role Tutorials', link: '/admin/administration/manage/roles/create-roles-tutorials'}
             ]
