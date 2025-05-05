@@ -90,7 +90,7 @@ export default defineConfig({
               {text: 'Platform', link: '/admin/administration/insights/dashboards/platform'}, 
               {text: 'Tokens', link: '/admin/administration/insights/dashboards/tokens'}, 
               {text: 'KB\'s', link: '/admin/administration/insights/dashboards/kbs'},
-              {text: 'Content', link: '/admin/administration/insights/dashboards/content'},
+              // {text: 'Content', link: '/admin/administration/insights/dashboards/content'},
               {text: 'Usage', link: '/admin/administration/insights/dashboards/usage'},
               {text: 'Logins', link: '/admin/administration/insights/dashboards/logins'},
               {text: 'Devices', link: '/admin/administration/insights/dashboards/devices'}
