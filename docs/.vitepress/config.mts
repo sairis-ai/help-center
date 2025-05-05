@@ -56,6 +56,7 @@ export default defineConfig({
                 [
                   {text: 'Blueprint List', link: '/admin/administration/ai-management/blueprints/blueprint-list-view'},
                   {text: 'Blueprint Settings', link: '/admin/administration/ai-management/blueprints/blueprint-settings'},
+                  {text: 'Blueprint AI Settings', link: '/admin/administration/ai-management/blueprints/blueprint-aisettings'},
                   {text: '<span style="color:rgb(140,3,252)">&#9734;</span> Blueprint Tutorials', link: '/admin/administration/ai-management/blueprints/create-blueprint-tutorial'}            
                 ]
               },              
@@ -139,7 +140,7 @@ export default defineConfig({
           {text: 'Chat History', link: '/user/assistant/chat-history' },
           {text: 'Settings', link: '/user/assistant/chat-settings' },
           {text: 'Chat Tokens', link: '/user/assistant/chat-token-counts' },
-          {text: 'Control Panel', link: '/user/assistant/content-panel' }          
+          {text: 'Control Panel', link: '/user/assistant/control-panel' }          
         ]
       },
       {text: 'Search', collapsed: false, items: 

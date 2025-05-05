@@ -1,4 +1,4 @@
-# AI Settings Panel User Guide
+# AI Assistant Settings Guide
 
 <!--
 ## Table of Contents
@@ -35,344 +35,202 @@
 
 ## Introduction
 
-The AI Settings Panel provides comprehensive control over how the AI Assistant functions, including its knowledge sources, behavior, and response style. This sidebar interface allows you to configure AI settings for the current session, load saved Blueprints, and customize the AI's capabilities to best suit your needs. This guide explains how to use each setting to optimize your AI interactions.
+The AI Assistant Settings panel allows you to customize how the AI assistant works, including which AI model it uses, what content it can access, and how it interacts with external information. These settings can be configured for individual chat sessions or saved as reusable Blueprints that can be shared with others.
 
 ## Accessing AI Settings
 
-The AI Settings Panel is accessible from the main AI Assistant interface:
-
-1. Click the settings icon in the header area of the AI Assistant
-2. The settings panel opens as a sidebar on the right side of the screen
-3. All changes made in this panel apply to the current session
-
-## AI Settings Panel Overview
-
-The Settings Panel is organized into several key sections:
+The AI Settings panel is located on the right side of the AI Assistant interface. To access it:
 
 ![homepage](/images/assistant-settings.png)
 
-1. **Header** - Contains the title and Options menu
-2. **Blueprint** - Load, save, and manage Blueprints
-3. **Instructions** - Configure AI behavior through system prompts
-4. **AI Model** - Select and configure the AI foundation model
-5. **Web Tools** - Enable web search and news capabilities
-6. **Model Settings** - Configure AI response parameters
-7. **Knowledge Sources** - Select content for the AI to reference
+1. Click the **Settings** icon in the top-right corner of the assistant interface
+2. The settings panel will slide open, displaying the current configuration
+
+## Settings Interface Overview
+
+The AI Settings interface is organized into several sections:
+
+1. **Header**: Contains the "Settings" title and options menu
+2. **Blueprint Selection**: Controls which predefined configuration is active
+3. **Instructions**: Custom guidance for how the AI should respond
+4. **AI Model Settings**: Configure which AI model is used and how it works
+5. **Web Tools**: Controls for accessing external information
+6. **Knowledge Sources**: Select specific content to inform AI responses
 
 ## Blueprint Management
 
-Blueprints are reusable configurations that store all your AI settings in one package for easy application across sessions. These blueprints include:
+Blueprints are saved configurations that can be reused across chat sessions.
 
-- System Prompts (AI Instructions) that define tone and behavior 
-- Tool configurations for web search and news retrieval 
-- Knowledge Base attachments for specific domain expertise 
-- Content attachments for additional reference materials 
-- Model selection and parameter settings (creativity, citations, etc.) 
+### Loading a Blueprint
 
-Using Blueprints ensures consistency across sessions and allows you to quickly switch between different AI configurations without manually reconfiguring settings each time. Think of them as templates that capture your entire AI setup for specific use cases or projects.
-
-
-### Loading Blueprints
-
-To use a saved Blueprint configuration:
+To use a previously created Blueprint:
 
 ![homepage](/images/assistant-blueprint.png)
 
-1. Click the dropdown icon in the Blueprint section
-2. A popup appears with available Blueprints
-3. Optionally use the search box to filter Blueprints
-4. Click on a Blueprint to load its settings
-5. All settings in the panel update to match the selected Blueprint
-
-Each Blueprint includes:
-- Avatar with initials
-- Blueprint name
-- Brief description
-- All associated AI settings
+1. Click the dropdown arrow next to the Blueprint field
+2. Search for a Blueprint by name or tags if needed
+3. Click on the desired Blueprint
+4. The settings will update to match the selected Blueprint
 
 ### Saving Blueprint Changes
 
-When you modify settings from a loaded Blueprint:
+If you modify settings from a loaded Blueprint:
 
-1. A "Blueprint Changed" warning appears
-2. The warning indicates settings no longer match the original Blueprint
-3. Click the "Save" button in the warning or at the top of the Blueprint section
-4. Confirm saving in the dialog that appears
-5. The Blueprint is updated with your current settings
+1. A warning message will appear indicating the Blueprint has changed
+2. Click "Show Diff" to see exactly what settings were changed
+3. Click "Save" to update the original Blueprint with your changes
 
-**Note**: You must have ownership permissions to save changes to a Blueprint.
+**Note**: Some Blueprints may be read-only or locked if they are managed by a Knowledge Base or if you don't have edit permissions.
 
-### Viewing Blueprint Differences
+## Customizing AI Instructions
 
-To see what changes you've made to a Blueprint:
-
-1. Click "Show Diff" in the warning message when a Blueprint has been modified
-2. A dialog opens showing a comparison between:
-   - Original Blueprint settings
-   - Current modified settings
-3. Review the differences before deciding to save
-
-### Secure Blueprints
-
-Some Blueprints may be marked as secure:
-
-1. Secure Blueprints show a lockout screen when you don't have ownership
-2. The message indicates "The author of this Blueprint has made the settings a secret"
-3. You can still use the Blueprint but cannot view or edit its settings
-4. Only owners of the Blueprint can see and modify secure settings
-
-## AI Instructions
-
-AI Instructions (also called System Prompts) are critical guidance you provide to the AI to control how it responds to your queries. These instructions help:
-
-- Set the AI's tone, personality, and communication style
-- Define the scope of knowledge the AI should use
-- Establish boundaries on what topics the AI should or shouldn't address
-- Specify output formats or structures for responses
-- Provide domain-specific context that helps the AI understand your needs.  
-
-Well-written instructions ensure more consistent, relevant, and accurate answers. Think of it as programming the AI's behavior and focus for your specific use case.
-
-The Instructions section controls the AI's behavior through system prompts:
+Instructions provide specific guidance to the AI about how it should respond to questions.
 
 ![homepage](/images/assistant-blueprint-instructions.png)
 
-1. View the current instructions in the text area
-2. Click the pencil icon to open the full Instructions editor
-3. In the editor:
-   - Read guidance about effective instructions
-   - Edit the text in the large text area
-   - Instructions guide the AI on how to respond, its role, and limitations
+To modify instructions:
 
-Best practices for instructions:
-- Be specific about the AI's role
-- Define any specialized knowledge domains
-- Set boundaries for what the AI should/shouldn't do
-- Include response format preferences
-- Keep instructions clear and concise
+1. Click the pencil icon next to "Instructions"
+2. Enter your custom instructions in the dialog that appears
+3. Specific, detailed instructions will help the AI respond more accurately
+4. Click outside the dialog to save
 
-## AI Model Configuration
+### Best Practices for Instructions
 
-This is used to select a Large Language Model for your AI Request. Each model has its strengths and weaknesses. Click on Help Center to learn more about selecting a model.
+- Be specific about the AI's role and expertise
+- Define preferred response formats or structures
+- Specify information to include or exclude
+- Establish the tone and style of responses
 
-## Model Selection
+## Configuring AI Model Settings
 
-To select the AI foundation model:
+### Selecting an AI Model
+
+To change which AI model powers the assistant:
 
 ![homepage](/images/assistant-model.png)
 
 Before selecting or changing your Language Model you may wish to review the differences between the models.
 [Understanding Large Language Models](/user/assistant/llm)
 
-1. Click on the model name box
-2. The LLM selector dialog opens
-3. Choose from available models (Claude 3 Haiku, Sonnet, etc.)
-4. Selected model appears in the model box with logo
-5. Different models offer varying capabilities, speeds, and costs
+1. Click on the model name in the AI Model section
+2. Select from available models in the dialog that appears
+3. The dialog shows information about each model's capabilities and strengths
 
-## AI Mode
+### Setting AI Mode
 
-There are two types of modes when using the Assistant.
-
-Question & Answers - This mode is used when you want to ask the AI a question and get an answer. The AI will use the knowledge base and content you have selected to answer your question.
-Agentic - This mode is used when you want the AI to act as an agent and perform tasks for you. The AI will use the knowledge base and content you have selected to perform tasks for you.
-
-Configure how the AI processes and responds to queries:
+Choose between two fundamental modes of operation:
 
 ![homepage](/images/assistant-mode.png)
 
-1. Use the AI Mode dropdown to select:
-   - **Question & Answers**: Standard Q&A functionality
-   - **Agentic**: More autonomous problem-solving abilities
-   - **Tools**: Enables the use of specific tools and functions
+- **Question & Answers**: Simple query response without additional capabilities
+- **Agentic**: Enhanced abilities including web search, research, and reasoning
 
-## Web Tools
+### Web Tools Configuration
 
-Allow you to actively search the Web as well as actual News Articles. Each setting has setting like how deep you want to search and for what time period.
-
-Control the AI's access to external information:
+When using Agentic mode, you can enable various web tools:
 
 ![homepage](/images/assistant-web-tools.png)
 
-1. **Live Web Lookup**:
-   - Toggle the "Live Web" button on/off
-   - When enabled, adjust the number of search results (0-25) by clicking the badge
-   - Higher numbers provide more comprehensive but potentially less focused results
+#### Live Web Search
 
-2. **Live News Lookup**:
-   - Toggle the "Live News" button on/off
-   - When enabled, click the badge to configure:
-     - Number of news results (0-50)
-     - Time range for news (days in the past)
-   - Useful for questions about current events and recent developments
+1. Toggle "Live Web" on to allow the AI to search the internet
+2. Click the badge number to configure search settings
+3. Set the maximum number of search results (0-25)
 
-## Model Settings
+#### News Search
+
+1. Toggle "Live News" on to allow the AI to search recent news articles
+2. Click the badge to configure news settings
+3. Set the number of news results and how many days back to search
+
+### Model Behavior Settings
+
+Control how the AI generates responses:
 
 ![homepage](/images/assistant-model-settings.png)
 
-### General Knowledge
-
-Control whether the AI can use its pre-trained knowledge:
-
-1. Toggle "Allow LLM Answers" on/off
-2. When ON: AI can answer using both its built-in knowledge and your content
-3. When OFF: AI will only use information from your selected content sources
-4. Useful for controlling exactly where information comes from
-
-### Citations
-
-Manage how the AI attributes information sources:
-
-1. Toggle "Citations" on/off
-2. When ON: AI includes numbered references and source information
-3. When OFF: AI provides answers without explicit source attribution
-4. Citations help verify information accuracy and source reliability
-
-### Content Filters
-
-Control content appropriateness:
-
-1. Toggle "Profanity" allowed/blocked
-2. When blocked: AI filters out inappropriate language
-3. When allowed: AI may include language that would otherwise be filtered
-4. Consider your organization's policies when configuring this setting
+- **Allow LLM Answers**: When on, the AI can use its training data; when off, it will only use provided content
+- **Citations On/Off**: When on, the AI will provide sources for information
+- **Profanity**: Control whether the AI filters explicit language
 
 ## Knowledge Sources
 
-### Knowledge Bases
+### Managing Content Sources
+
+To control what information the AI can access:
 
 ![homepage](/images/assistant-kbs.png)
 
-Select knowledge repositories for the AI to use:
+1. Click "Edit Content" in the Knowledge Bases section
+2. In the dialog that appears, you'll see two panels:
+   - **Knowledge Bases**: Collections of related documents
+   - **Assigned Content**: Individual files and documents
 
-1. Expand the "Knowledge Bases" accordion
-2. View currently selected Knowledge Bases and content as chips
-3. Click "Edit Content" to open the content selection dialog
-4. In the dialog:
-   - Left panel: Select Knowledge Bases to include
-   - Right panel: Choose specific content items
-   - Use search boxes to filter options
+3. Select content by clicking on it (selected items will be highlighted)
+4. Filter available content using the search boxes
+5. Your selections are saved automatically
 
-### Content Selection
+### Configuring Knowledge Base Search
 
-In the content selection dialog:
+Fine-tune how the AI searches through knowledge bases:
 
-1. **Knowledge Bases**: Select entire knowledge repositories
-   - Each KB contains multiple documents or content items
-   - Selecting a KB includes all its content
+- **KB Search Results**: Set how many matching document chunks to retrieve (1-500)
+- **Minimum Match Score**: Set the minimum relevance threshold (1-100%)
+  - Higher values ensure more accurate but possibly fewer matches
+  - Lower values provide more comprehensive but potentially less relevant results
 
-2. **Assigned Content**: Choose specific individual content items
-   - More granular control over exactly what information is included
-   - Useful for targeted knowledge needs
+## Web Pages Configuration
 
-### Search Configuration
-
-Fine-tune how the AI searches knowledge sources:
-
-1. **KB Search Results**: Set the number of results (1-500)
-   - Higher values provide more comprehensive coverage
-   - Lower values focus on the most relevant content
-
-2. **Minimum Match Score**: Set the relevance threshold (1-500%)
-   - Higher values only include highly relevant content
-   - Lower values include more content with lower relevance
-   - Standard setting is around 60-70%
-
-### Web Pages
-
-Add specific web pages as information sources:
+When using Agentic mode, you can specify up to 15 web pages for the AI to include in its knowledge:
 
 ![homepage](/images/assistant-webpages.png)
 
-1. Expand the "Web Pages" accordion
-2. View any currently added web pages
-3. Click the "+" button to add a new web page
-4. Enter the complete URL (including https://)
-5. Up to 15 web pages can be added
-6. Remove pages by clicking the trash icon
-7. The AI will crawl these pages for information during conversations
+1. Expand the "Web Pages" accordion panel
+2. Click the + button to add a new web page
+3. Enter the complete URL including https://
+4. Add additional pages as needed
+5. Remove pages by clicking the trash icon
 
-## Advanced Features
+## Options Menu
 
-### Options Menu
+The options menu in the top-right corner provides additional actions:
 
-Access additional functionality through the three-dot menu:
+- **Show Settings Page**: Opens the full settings interface
+- **Save This Blueprint**: Saves current settings to the active Blueprint
+- **Copy to New Session**: Creates a new chat with the current settings
+- **Create New Blueprint**: Saves current settings as a new Blueprint
 
-1. **Show Settings Page**: Open the full settings interface
-2. **Save This Blueprint**: Save current settings to the active Blueprint
-3. **Copy to New Session**: Create a new chat with current settings
-4. **Create New Blueprint**: Make a new Blueprint from current settings
+## Secure Blueprints
 
-### Blueprint Ownership
+Some Blueprints may have their settings marked as secure, meaning:
 
-Blueprint permissions are based on ownership:
-
-1. Users can view and use any Blueprint
-2. Only owners can:
-   - Modify and save changes to a Blueprint
-   - View settings of secure Blueprints
-   - Delete Blueprints they own
-
-## Best Practices
-
-For effective AI configuration:
-
-1. **Targeted Knowledge Selection**:
-   - Select only relevant Knowledge Bases for your current task
-   - Too many sources can dilute relevance
-   - Too few may limit the AI's knowledge
-
-2. **Web Tools Balance**:
-   - Enable web search for current information
-   - Keep search results manageable (5-10)
-   - Use news search when timeliness matters
-
-3. **Model Selection**:
-   - Use faster models (Haiku) for simple questions and drafts
-   - Use more capable models (Sonnet) for complex reasoning
-
-4. **Clear Instructions**:
-   - Be specific about the AI's role and tone
-   - Include examples of desired responses when possible
-   - Update instructions for different use cases
-
-5. **Blueprint Management**:
-   - Create different Blueprints for different tasks
-   - Update Blueprints when knowledge bases change
-   - Use secure settings for sensitive configurations
+1. Only owners can view the actual settings
+2. Non-owners will see a "Secure Blueprint" message
+3. You can still use the Blueprint, but cannot view or modify its configuration
 
 ## Troubleshooting
 
-**Issue**: Changes to settings not affecting AI responses
-- Ensure you've made changes in the current session
-- Try asking a new question related to your changes
-- Check if the correct Knowledge Bases are selected
+**Issue**: Cannot save Blueprint changes
+- Check if the Blueprint is marked as Read-Only
+- Verify you have edit permissions for the Blueprint
+- Confirm the Blueprint isn't locked by a Knowledge Base
 
-**Issue**: Unable to save Blueprint changes
-- Verify you have ownership of the Blueprint
-- Check for any error messages in toast notifications
-- Try refreshing the page and making changes again
+**Issue**: Web search not working
+- Ensure Live Web toggle is enabled
+- Check that the search results count is greater than 0
+- Verify your organization has web search permissions
 
-**Issue**: Web search not providing current information
-- Check that "Live Web" is toggled on
-- Verify the search results number is sufficient (5+)
-- Formulate questions that clearly ask for current information
+**Issue**: Knowledge Base content not appearing in responses
+- Check that content is properly selected
+- Verify the minimum match score isn't set too high
+- Ensure the content contains information relevant to your queries
 
-**Issue**: Cannot view Blueprint settings
-- It may be a secure Blueprint that you don't own
-- Request access from the Blueprint owner
-- Create your own Blueprint with similar settings
-
-**Issue**: Knowledge Base content not being used
-- Check minimum match score isn't too high
-- Verify content is selected in the Content dialog
-- Try asking more specific questions related to the content
-
-**Issue**: Model selection dialog not showing all models
-- Some models may require specific permissions
-- Your organization may limit available models
-- Check with your administrator about model access
+**Issue**: Blueprint changes not applying
+- Click "Show Diff" to verify your changes
+- Check if you have permissions to modify the Blueprint
+- Ensure you clicked Save after making changes
 
 ---
 
-For additional assistance with AI settings, please contact your system administrator or refer to the platform documentation.
+For additional assistance with AI Settings, click the question mark icons next to each section heading for contextual help.

@@ -1,4 +1,4 @@
-# AI Chat History Manager User Guide
+# AI Assistant Chat History Guide
 
 <!--
 ## Table of Contents
@@ -31,250 +31,187 @@
 
 ## Introduction
 
-The AI Chat History Manager provides a comprehensive interface for organizing, searching, and managing your AI conversations. This sidebar allows you to access past conversations, create new chat sessions, work with AI Blueprints, and organize your AI interactions through tags and naming. This guide explains how to effectively use the Chat History Manager to maximize your AI assistant experience.
+The Chat History feature in the AI Assistant allows you to manage your conversations, organize discussions with tags, and quickly find previous interactions. This guide explains how to use the chat history panel to manage your AI conversations effectively.
 
 ## Accessing Chat History
 
-The Chat History Manager appears as a sidebar panel within the AI Assistant interface:
+The Chat History panel is located on the right side of the AI Assistant interface. If it's not visible:
 
-1. Access by clicking the chat history icon in the main Assistant interface
-2. The panel displays your conversation history and available Blueprints
-3. History is organized chronologically with newest conversations at the top by default
+1. Click the **Chat History** icon in the top-right corner of the assistant interface
+2. The panel will slide open, displaying your recent conversations
 
-## Chat History Interface
+**Note**: The chat history panel can be collapsed when not needed to provide more space for your conversation.
 
-The Chat History Manager consists of two main sections:
+## Chat History Interface Overview
+
+The Chat History panel consists of these key components:
 
 ![homepage](/images/assistant-chat-bp-history.png)
 
-1. **Chat History Section**:
-   - Search bar at the top for finding specific conversations
-   - Sorting and display controls
-   - List of past conversations with action menus
-   - New chat creation button
+1. **Search Bar**: Filter conversations by name or tags
+2. **Control Buttons**: Tools for sorting, filtering, and managing chats
+3. **Chat List**: Shows all your saved conversations
+4. **Blueprint List**: (Optional) Quick access to your saved AI blueprints
 
-2. **Blueprints Section** (when enabled):
-   - List of available AI Blueprints
-   - Blueprint creation button
-   - Blueprint action buttons
+## Managing Your Chat History
 
-## Managing Conversations
+### Creating a New Chat
 
-### Creating New Chats
-
-To start a fresh conversation:
+To start a new conversation:
 
 ![homepage](/images/assistant-chat-new.png)
 
-1. Click the "+" button in the top-right corner of the Chat History section
-2. A new conversation appears at the top of your history list
-3. The conversation initially uses the default date/time as its name
-4. The AI Assistant interface resets to begin a new conversation
+1. Click the **+** (plus) button in the upper-right corner of the Chat History panel
+2. A new chat session will be created with a default name (date and time)
+3. You can immediately begin conversing with the assistant
 
-You can also create new chats through keyboard shortcut Ctrl+N or from the main Assistant interface.
+When you start typing in a new chat, the AI will automatically generate a title based on your first question.
 
-### Selecting Existing Chats
+### Searching Through Chat History
 
-To resume a previous conversation:
+To find a specific conversation:
 
-1. Locate the desired conversation in the history list
-2. Click on the conversation name
-3. The main Assistant interface loads the selected conversation
-4. All previous messages and context are restored
+1. Type keywords in the search bar at the top of the Chat History panel
+2. The list will filter to show only chats with matching names or tags
+3. Clear the search box to see all conversations again
 
-### Searching Chat History
+### Sorting Chat History
 
-To find specific conversations:
-
-1. Type keywords in the search field at the top of the history panel
-2. Search matches conversation names and tags
-3. Results update in real-time as you type
-4. The list filters to show only matching conversations
-
-### Sorting Options
-
-Change the order of your conversation list:
+You can sort your chat history in different ways:
 
 ![homepage](/images/assistant-chat-sort.png)
 
-1. Click the sort icon (stack of lines) to open the sort menu
-2. Choose from available sorting options:
-   - **Updated (New → Old)**: Most recently active first (default)
-   - **Updated (Old → New)**: Oldest active first
+1. Click the **Sort** button (arrow icon) at the top of the panel
+2. Select a sorting option from the menu:
+   - **Default Sort**: Most recently updated first (default)
+   - **Updated (New → Old)**: Most recently updated first
+   - **Updated (Old → New)**: Oldest updated first
    - **Alpha (A → Z)**: Alphabetical by name
    - **Alpha (Z → A)**: Reverse alphabetical
-   - **Created (New → Old)**: Newest created first
+   - **Created (New → Old)**: Most recently created first
    - **Created (Old → New)**: Oldest created first
 
-3. The selected sort is highlighted and applied immediately
-4. The sort preference persists until changed
+### Filtering Chat History
 
-## Chat Actions
+You can filter conversations based on specific criteria:
 
-### Renaming Chats
+1. **Blueprint Filter**: Click the **Map** icon to show only conversations that use your currently active blueprint
+2. **Tag Display**: Click the **Tags** icon to show or hide tags in the chat list
+3. **Search**: Enter text to filter by chat name or associated tags
 
-To give your conversations meaningful names:
+When filters are active, a badge indicator appears next to the "Chat History" header.
 
-1. Click the three-dot menu next to a conversation
-2. Select "Rename & Tags"
-3. In the dialog that appears:
-   - Enter a new name in the "Chat Name" field
-   - Click "Save" to apply the change
-4. The conversation appears with its new name in the list
+## Working with Individual Chats
 
-Newly created conversations start with a date/time name that you can customize for easier reference.
+### Opening a Previous Conversation
 
-### Adding Tags
+To continue a previous conversation:
 
-Tags help organize and find related conversations:
+1. Find the chat in the history list
+2. Click on the chat name
+3. The conversation will load in the main chat window
+4. You can continue the conversation by typing a new question
+
+### Managing a Chat Session
+
+Each chat has an options menu that can be accessed by:
+
+![homepage](/images/assistant-chat-elpise.png)
+
+1. Click the three dots (**⋮**) next to the chat name
+2. A menu appears with the following options:
+   - **Rename & Tags**: Change the chat name and manage tags
+   - **Clear Conversation**: Erase all messages but keep the chat
+   - **Delete Chat**: Completely remove the chat
+   - **Token Count**: View resource usage statistics
+
+### Renaming Chats and Adding Tags
+
+To organize your chats:
 
 ![homepage](/images/assistant-chat-tags.png)
 
-1. Click the three-dot menu next to a conversation
-2. Select "Rename & Tags"
-3. In the dialog that appears:
-   - Type a tag name and press Enter to add it
-   - Click the X on any tag to remove it
-   - Click "Save" to apply changes
-4. Tags appear below conversation names when tag display is enabled
+1. Select **Rename & Tags** from the chat options menu
+2. Enter a new name in the "Chat Name" field
+3. Add tags by typing in the "Tags" field and pressing Enter
+4. Click "Save" to apply your changes
 
-### Viewing Token Counts
+Tags help you categorize and find related conversations more easily.
 
-To see token usage statistics for a conversation:
+### Viewing Chat Statistics
 
-![homepage](/images/assistant-chat-elpise.png)
-
-1. Click the three-dot menu next to a conversation
-2. Select "Token Count"
-3. A dialog appears showing:
-   - Total tokens used (input and output)
-   - Number of requests made
-   - Breakdown by model used
-   - Charts visualizing usage patterns
-4. This helps track resource utilization
-
-### Clearing Conversations
-
-To remove all messages from a conversation while keeping the chat:
+To see resource usage information:
 
 ![homepage](/images/assistant-chat-elpise.png)
 
-1. Click the three-dot menu next to a conversation
-2. Select "Clear Conversation"
-3. Confirm in the dialog that appears
-4. The conversation remains in your history but all messages are removed
-5. You can start fresh while maintaining the chat's name and tags
+1. Select **Token Count** from the chat options menu
+2. A dialog shows details about:
+   - Number of messages
+   - Input token count
+   - Output token count
+   - Total token usage
 
-### Deleting Chats
+This helps monitor resource consumption for complex conversations.
 
-To completely remove a conversation:
+## Bulk Managing Chat History
 
-![homepage](/images/assistant-chat-elpise.png)
+### Bulk Deleting Chats
 
-1. Click the three-dot menu next to a conversation
-2. Select "Delete Chat"
-3. Confirm the deletion in the dialog that appears
-4. The conversation is permanently removed from your history
+To remove multiple chats at once:
 
-## Blueprint Management
+1. Click the **Trash** icon in the control bar
+2. Checkboxes will appear next to each chat
+3. Select the chats you want to delete
+4. Click "Delete Selected Chats" at the top
+5. Confirm the deletion in the prompt
 
-### Viewing Blueprints
+### Refreshing Chat History
 
-When Blueprints are enabled:
+To update your chat history list with the latest data:
 
-![homepage](/images/assistant-blueprints.png)
+1. Click the **Refresh** icon (circular arrow) in the control bar
+2. The list will refresh to show any recent changes
 
-1. The lower half of the sidebar shows available Blueprints
-2. Each Blueprint displays its name
-3. Tags appear when tag display is enabled
-4. The currently active Blueprint is highlighted
+## Working with Blueprints
 
-### Using Blueprints
+If your role has access to Blueprints, the lower half of the Chat History panel shows your available Blueprints:
 
-To switch to a Blueprint:
+### Selecting a Blueprint
 
-1. Click on the Blueprint name in the list
-2. The main Assistant interface loads the Blueprint
-3. The Blueprint's settings, knowledge sources, and specialized capabilities become active
-4. The conversation starts with the Blueprint's home screen
+To use a specific Blueprint for your conversation:
 
-### Creating Blueprints
+1. Find the Blueprint in the list
+2. Click on its name
+3. The Blueprint will be activated and its home screen will appear
+4. You can start a new conversation using this Blueprint
 
-To create a new Blueprint:
+### Creating or Editing a Blueprint
 
-1. Click the "+" button in the top-right corner of the Blueprints section
-2. The Blueprint editor opens
-3. Configure the Blueprint settings
-4. Save to add it to your Blueprints list
+To manage Blueprints:
 
-You can also edit existing Blueprints by clicking the pencil icon next to their name.
+1. Click the **+** button in the Blueprint section header to create a new Blueprint
+2. Click the **Pencil** icon next to an existing Blueprint to edit it
+3. The Blueprint settings dialog will open for configuration
 
-## Advanced Features
-
-### Tag Visibility
-
-Control whether tags are visible in the history list:
-
-1. Click the tag icon in the button bar above the history list
-2. When highlighted blue, tags are visible beneath each conversation name
-3. When gray, tags are hidden to save space
-4. Tags are still searchable even when not displayed
-
-### Refreshing History
-
-To update the history list with the latest data:
-
-1. Click the refresh icon in the button bar
-2. The system retrieves the latest conversation data
-3. Useful after creating new conversations in other windows
-4. A loading spinner appears during refresh
-
-## Mobile Experience
-
-When using the Chat History Manager on mobile devices:
-
-1. The interface adapts to fit smaller screens
-2. Swipe gestures can be used for navigation
-3. The Blueprint section may appear below the history section
-4. Tap and hold replaces right-click for menu access
-5. The search bar remains accessible at the top
+Active Blueprints are highlighted in the list. You can filter your chat history to show only conversations that use the currently active Blueprint.
 
 ## Troubleshooting
 
 **Issue**: Chat history not loading
-- Click the refresh icon to reload data
+- Click the refresh button to reload the history
 - Check your network connection
-- Verify you're signed in properly
-- If problems persist, try reloading the page
+- Try logging out and back in
 
-**Issue**: Cannot find specific conversations
-- Try different search terms
-- Check if you're using the correct sorting order
-- Try showing tags if they might contain relevant keywords
-- Consider if the conversation might have been deleted
+**Issue**: Can't find a specific chat
+- Try using different search terms
+- Check if filters are active (indicated by the filter badge)
+- Clear filters by clicking the filter badge
 
-**Issue**: Cannot delete or clear conversations
-- Ensure you're not trying to perform actions while the AI is busy responding
-- Check if you have proper permissions for the action
-- Try refreshing the history list
-- If an error appears, note the error message for support
-
-**Issue**: Rename not appearing immediately
-- Some name changes may take a moment to propagate
-- The "Renaming..." indicator shows when a rename is in progress
-- Try refreshing the history list if names aren't updating
-
-**Issue**: Blueprint list not showing all Blueprints
-- Click the refresh icon to reload Blueprints
-- Check if your search term might be filtering the list
-- Verify you have permissions to see all Blueprints
-- Some Blueprints may be restricted to certain users
-
-**Issue**: Tags not appearing
-- Ensure the tag visibility button is activated (blue)
-- Check if the conversation has any tags assigned
-- Try adding tags through the Rename & Tags dialog
+**Issue**: Unable to delete a chat
+- Ensure you have permission to delete chats
+- Try refreshing the chat history list
+- Try bulk delete if individual delete isn't working
 
 ---
 
-For additional assistance with the Chat History Manager, please contact your system administrator or refer to the platform documentation.
+For additional assistance with chat history management, please contact your system administrator.

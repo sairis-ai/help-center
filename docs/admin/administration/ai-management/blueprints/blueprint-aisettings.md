@@ -1,65 +1,19 @@
-# AI Blueprint Manager Guide
-
-<!--
-## Table of Contents
-- [AI Blueprint Manager Guide](#ai-blueprint-manager-guide)
-  - [Table of Contents](#table-of-contents)
-  - [Introduction](#introduction)
-  - [Accessing Blueprint Manager](#accessing-blueprint-manager)
-  - [Blueprint Manager Interface Overview](#blueprint-manager-interface-overview)
-  - [Viewing Blueprints](#viewing-blueprints)
-    - [Blueprint List View](#blueprint-list-view)
-    - [Blueprint Information Display](#blueprint-information-display)
-    - [Blueprint Features Indicators](#blueprint-features-indicators)
-  - [Searching and Filtering Blueprints](#searching-and-filtering-blueprints)
-    - [Global Search](#global-search)
-    - [Topic Filtering](#topic-filtering)
-    - [Feature Filtering](#feature-filtering)
-    - [Group Filtering](#group-filtering)
-    - [Clearing Filters](#clearing-filters)
-  - [Managing Blueprints](#managing-blueprints)
-    - [Creating Blueprints](#creating-blueprints)
-    - [Editing Blueprints](#editing-blueprints)
-    - [Unsaved Changes Handling](#unsaved-changes-handling)
-  - [Blueprint Operations](#blueprint-operations)
-    - [Exporting Blueprint List](#exporting-blueprint-list)
-    - [Refreshing Blueprint Data](#refreshing-blueprint-data)
-  - [Blueprint Data Management](#blueprint-data-management)
-    - [Group Associations](#group-associations)
-    - [Understanding Blueprint Metadata](#understanding-blueprint-metadata)
-  - [Best Practices](#best-practices)
-  - [Troubleshooting](#troubleshooting)
--->
+# AI Blueprint Settings Configuration Guide
 
 ## Introduction
 
-The Blueprint Manager provides a comprehensive interface for administrators to create, view, edit, and manage AI Blueprints. Blueprints define how the AI assistant behaves, what knowledge it can access, and how it interacts with users. This guide covers how to effectively use the Blueprint Manager to organize and maintain your AI experiences.
+AI Blueprint Settings allow you to fine-tune how your AI assistant responds, what information it can access, and what capabilities it has. These settings control the AI's behavior, knowledge sources, and interaction style to create the perfect assistant for specific tasks, topics, or workflows.
 
 ## Accessing Blueprint AI Settings
 
 Blueprint AI Settings can be accessed:
-
-![homepage](/images/blueprint-new.png)
-
-- When creating a new Blueprint by clicking the "+ Add" button
+- When creating a new Blueprint by clicking the "+ Blueprint" button
 - When editing an existing Blueprint by clicking the pencil icon
 - Through the "AI Settings" section of an existing Blueprint
 
-To access this component, navigate to `/blueprint/BlueprintListView` in the system. You'll typically find a link to this page in the administration menu or AI configuration section.
+![homepage](/images/blueprint-ai-settings.png)
 
 **Note**: Some settings may be locked if you don't have edit permissions for the Blueprint or if it's marked as secure.
-
-## Blueprint Manager Interface Overview
-
-The Blueprint Manager consists of these key components:
-
-![homepage](/images/blueprint-manager.png)
-
-1. **Header Section**: Contains the title "Blueprint Manager" with blueprint count badge, description, and Add Blueprint button
-2. **Search and Filter Controls**: Tools for finding specific blueprints including global search, topic filter, and feature filter
-3. **Data Table**: Displays blueprint information in a sortable, filterable table
-4. **Action Buttons**: Quick access to refresh data, clear filters, and export to Excel
-5. **Blueprint Editor**: Full-screen dialog for creating and editing blueprints
 
 ## Secure Blueprint Protection
 
@@ -251,6 +205,20 @@ For additional assistance with Blueprint AI settings, please contact your system
 
 
 
+## Blueprint Configuration Tabs
+
+### Blueprint Tab
 
 
+### AI Settings Tab
+
+The AI Settings tab contains AI behavior configuration:
+- System instructions
+- AI model selection
+- Response style preferences
+- Content sources configuration
+- Knowledge base selection
+- Web integration settings
+
+![homepage](/images/blueprint-ai-settings.png)
 
