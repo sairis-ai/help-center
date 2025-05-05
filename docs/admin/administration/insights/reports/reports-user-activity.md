@@ -8,6 +8,8 @@ The User Activity Report provides administrators with comprehensive insights int
 
 The User Activity Report is available in the Reports section of the application. You can access it by:
 
+![homepage](/images/reports-user.png)
+
 1. Navigating to the Reports Menu
 2. Selecting "User Activity Report" from the list of available reports
 
@@ -16,6 +18,8 @@ The User Activity Report is available in the Reports section of the application.
 ## Report Interface Overview
 
 The User Activity Report interface consists of these key components:
+
+![homepage](/images/reports-user-activity-top.png)
 
 1. **Header Section**: Contains the report title, user count badge, and navigation options
 2. **Time Period Selector**: Controls the time frame for the displayed data
