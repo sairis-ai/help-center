@@ -26,191 +26,246 @@
 
 ## Introduction
 
-The Smart Groups component provides a powerful interface for creating and managing dynamic user groups. Unlike static groups, Smart Groups can automatically include members based on specified criteria, making them ideal for role-based access control, content targeting, and organizational structure management.
+The Smart Group Management interface provides administrators with a powerful tool for creating and managing security and role groups within your organization. Smart Groups allow you to dynamically organize users based on specific criteria, simplifying access control and permissions management across your platform.
 
-## Accessing Smart Groups
+## Accessing Smart Group Management
 
-The Smart Groups component is accessible to users with specific roles:
+The Smart Group Management interface is accessible to users with the following roles:
 - Admin
 - Content
 - Manager
 
-To access this component, navigate to `/groups/GroupListView` in the system. You'll typically find a link to this page in the user management section or administration menu.
+To access the Smart Group Manager, navigate to the Users section from the main administration menu and select "Smart Groups."
 
-## Smart Groups Interface Overview
-
-The Smart Groups interface consists of these key components:
+## Smart Group Interface Overview
 
 ![homepage](/images/smart-groups-manage.png)
 
-1. **Header Section**: Contains the title "Smart Groups" with a brief description
-2. **Action Buttons**: 
+The Smart Group Manager interface consists of these key components:
 
-   - Create new Smart Group
-   - Refresh data
-   - Clear filters
-   - Export to Excel
-3. **Search Bar**: Global search field for finding specific groups
-4. **Data Table**: Displays group information in a scrollable, sortable table
-5. **Empty State**: Information displayed when no groups match current filters
+1. **Header Section**: Contains the title "Smart Groups" with an Add button
+2. **Search and Filter Controls**: Tools to find and filter groups
+3. **Data Table**: Displays all groups with sortable columns
+4. **Action Buttons**: Refresh, filter, export, and help options
+5. **Group Editor**: Opens when adding or editing a group
 
-### Viewing Group Members
+## Understanding Smart Groups
 
-To see which users belong to a Smart Group:
+Smart Groups serve two main purposes in the system:
 
-![homepage](/images/smart-groups-actions.png)
+### 1. Security Groups
 
-1. Click the users icon (people) in the Actions column
-2. The Group Members dialog will open
-3. All users matching the group's criteria will be displayed
-4. Close the dialog when finished
-   
-### Editing Smart Groups
+Security groups determine what content and features users can access:
+- Control access to knowledge bases
+- Determine visibility of AI content
+- Manage permissions for features and sections
+- Define who can see and use specific resources
 
-To edit an existing Smart Group:
+### 2. Role Groups
 
-![homepage](/images/smart-groups-actions.png)
+Role groups determine what actions users can perform:
+- Admin: Full system administration rights
+- Content: Content management capabilities
+- Manager: Team and resource management permissions
+- User: Basic system access and usage
+- Other custom roles specific to your organization
 
-1. Click on the group name or the pencil icon in the Actions column
-2. The Smart Group Dialog will open with the current settings
-3. Make necessary changes
-4. Click "Save" to update the Smart Group
+**Note**: Role groups are indicated by a lock icon and have special protection since they affect system-level permissions.
 
-### Deleting Smart Groups
+## Smart Group List View
 
-To delete a Smart Group:
+The main table displays all groups you have permission to view. Each row contains:
 
-![homepage](/images/smart-groups-actions.png)
+1. **Group Initials**: Visual identifier for the group (clickable to edit)
+2. **Name**: The group name, with a lock icon for role groups (clickable to edit)
+3. **Description**: Explains the group's purpose or criteria
+4. **Type**: Shows whether it's a Security or Role group
+5. **Users**: Displays the count of users in the group
+6. **Actions**: Buttons for viewing members, editing, and deleting the group
 
-1. Click the trash icon in the Actions column
-2. A confirmation dialog will appear asking "Are you sure you want to delete [group_name]?"
-3. Click "Delete" to confirm or "Cancel" to abort
-4. A success notification will appear when deletion is complete
+## Searching for Groups
 
-### Exporting Group Data
+To find specific groups:
 
-To export the Smart Groups list to Excel:
+1. Use the search box in the upper-left corner
+2. Type keywords to search across group names and descriptions
+3. Results update automatically as you type
+4. A filter indicator appears when search filters are active
 
-1. Click the "Export to Excel" button (external link icon)
-2. Confirm the export in the dialog that appears
-3. The browser will download a CSV file
-4. The export includes all currently visible groups (respects active filters)
+## Filtering Groups
 
-## Navigating the Smart Groups List
+The Smart Group Manager offers several filtering options:
 
-### Sorting Groups
+### Quick Filters
 
-To sort the Smart Groups list:
-1. Click on any sortable column header (Name, Description, Users)
-2. Click again to toggle between ascending and descending order
-3. Click a third time to remove sorting
+Use the buttons at the top of the list to filter by group type:
+- **Role**: Shows only role-based groups
+- **Security**: Shows only security permission groups
 
-### Filtering Groups
+The selected filter button appears filled, while inactive filters appear outlined.
 
-There are multiple ways to filter the Smart Groups list:
+### Column Filtering
 
-1. **Global Search**: 
-   - Enter text in the search box in the top-left corner
-   - The system will search across group name and description fields
+Each column has its own filtering capabilities:
+1. Click the filter icon in any column header
+2. Enter filter criteria in the popup
+3. The table will update to show only matching records
 
-2. **Filter Indicator**:
-   - When filters are active, the filter button turns blue
-   - Click the "Filter Slash" button to clear all active filters
-
-### Quick Actions
-
-The interface provides quick action buttons in the top-right corner:
-
-1. **Refresh Data**: Updates the list with the latest group information
-2. **Clear Filters**: Removes all active filters
-3. **Export to Excel**: Exports the current list view to a CSV file
-
-## Smart Group Operations
-
-
-### Creating a New Smart Group
-
-To create a new Smart Group:
+## Creating a New Smart Group
 
 ![homepage](/images/smart-groups-new.png)
 
-1. Click the "+ Smart Group" button in the top-right corner
-2. The Smart Group Dialog will open with empty fields
-3. Configure the group settings:
-   - Group Name (required)
-   - Group Description
-   - Membership rules and conditions
-4. Click "Save" to create the Smart Group
+To create a new group:
 
-### Smart Group Dialog/Rules
+1. Click the "Smart Group" button in the upper-right corner
+2. The Group Editor dialog will open
+3. Fill in the required information:
+   - Name (required)
+   - Description (recommended)
+   - Group Type (Security or Role)
+   - Query criteria that define membership
+4. Click "Save" to create the group
 
-The Smart Group Dialog provides powerful tools for defining group membership:
+## Managing Existing Groups
 
-1. **Membership Rules**:
-   - Create complex query conditions
-   - Combine multiple criteria with AND/OR logic
-   - Preview membership results
+### Editing a Group
 
-2. **Manual Adjustments**:
-   - Force include specific users
-   - Force exclude specific users
-   - Override query results
-  
-## Understanding Smart Group Information
+![homepage](/images/smart-groups-actions.png)
 
-The Smart Groups list displays the following information for each group:
+To modify an existing group:
 
-1. **Group Avatar**: Displays group initials in a circular badge
-2. **Name**: The primary identifier for the group
-3. **Description**: Information about the group's purpose
-4. **Users**: Badge showing the number of users in the group
-5. **Actions**: Interactive buttons for viewing members, editing, and deleting
+1. Click on the group's name, initials, or the pencil icon
+2. The Group Editor dialog will open with current settings
+3. Make your desired changes
+4. Click "Save" to update the group
 
-### State Persistence
+### Viewing Group Members
 
-The Smart Groups component saves your view preferences:
-- Sort order
-- Visible columns
-- Scroll position
+To see all users in a group:
 
-These preferences are stored in the session, so they persist when you navigate away and return.
+1. Click the users icon in the Actions column
+2. A dialog will open showing all members
+3. You can search, filter, and view details about each member
+4. Member lists automatically update based on the group's query criteria
+
+### Deleting a Group
+
+![homepage](/images/smart-groups-actions.png)
+
+To delete a group:
+
+1. Click the trash icon in the Actions column
+2. A confirmation dialog will appear
+3. Click "Delete" to confirm or "Cancel" to abort
+4. The group will be permanently removed
+
+**Warning**: Deleting a group will remove all associated permissions. Users in the deleted group may lose access to certain features or content.
+
+## Group Types and Special Considerations
+
+### Role Groups
+
+Role groups have special protection because they affect system functionality:
+- Indicated by a lock icon next to the name
+- May have restricted editing or deletion
+- Often predefined by the system
+- Changes may affect multiple system features
+
+### Security Groups
+
+Security groups offer more flexibility:
+- Can be freely created and customized
+- Used for resource access control
+- Can be nested or combined
+- Support complex membership queries
+
+## Smart Group Query Builder
+
+The power of Smart Groups comes from the query builder, which allows you to define membership criteria based on:
+
+1. **User Attributes**: Properties like organization, department, or location
+2. **User Metadata**: Custom fields and tags associated with users
+3. **System Activity**: Usage patterns, login frequency, or feature access
+4. **Logical Operators**: AND/OR conditions to create complex rules
+5. **Group Membership**: Inclusion or exclusion from other groups
+
+The query builder offers a visual interface to construct these rules without requiring programming knowledge.
+
+## Managing the Group List
+
+### Refreshing the List
+
+To ensure you're viewing the most current information:
+
+1. Click the refresh icon in the top-right corner
+2. The list will reload with the latest data from the server
+
+### Clearing Filters
+
+To remove all active filters:
+
+1. Click the filter-slash icon in the top-right corner
+2. All filters will be reset to show all groups
+
+### Exporting Group Data
+
+To export the group list for reporting or analysis:
+
+1. Click the export icon in the top-right corner
+2. Confirm the export in the popup dialog
+3. A CSV file will be downloaded to your computer
+4. The exported file includes all visible columns for all groups matching your current filters
+
+## Accessing Help Resources
+
+For additional guidance on using the Smart Group Manager:
+
+1. Click the question mark icon in the top-right corner
+2. The Help Center dialog will open
+3. Relevant documentation for group management will be displayed
+
+## Empty State Handling
+
+If no groups are found (either because none exist or due to filters):
+
+1. A helpful empty state message appears
+2. The message suggests possible actions:
+   - Check your filters
+   - Clear filters
+   - Add a new Smart Group
+3. A visual illustration helps identify the empty state
 
 ## Troubleshooting
 
-**Issue**: Smart Groups list is empty
-- Check if filters are active (blue filter button indicates active filters)
-- Click the "Clear Filters" button to remove all filters
-- Refresh the data using the refresh button
-- Check for network connectivity issues
+**Issue**: No groups appearing in the list
+- Check if filters are active (indicated by the filter badge)
+- Click the filter-slash icon to clear all filters
+- Verify you have permission to view groups
+- Click the refresh button to update the list
 
-**Issue**: Cannot create or edit a Smart Group
-- Ensure you have proper permissions (Admin, Content, or Manager roles)
-- Check that all required fields are completed
-- Verify network connectivity
-- Look for error messages in toast notifications
+**Issue**: Cannot create or edit a group
+- Verify you have appropriate permissions
+- Check for any error messages that appear during save operations
+- Ensure all required fields are completed
+- Role groups may have restricted editing
 
 **Issue**: Group membership not updating
-- Smart Group membership is calculated in real-time
-- User attributes may have changed
-- Click the refresh button to reload the latest data
-- Check if the group query conditions still match your expectations
+- Group membership evaluates automatically based on your query
+- Check your query criteria for logical errors
+- Verify that user profiles contain the expected data
+- Allow time for membership changes to propagate
 
 **Issue**: Export not working
-- Check browser download settings
-- Ensure you have proper permissions
-- Try with a smaller dataset by applying filters first
+- Check your browser's download settings
+- Ensure you have permission to export data
+- Try refreshing the page and attempting the export again
 
-**Issue**: Delete operation fails
-- The group may be referenced by other system components
-- Another administrator may be editing the group
-- Check error messages for specific details
-- Try refreshing the list before attempting to delete again
-
-**Issue**: Cannot access Smart Groups feature
-- Verify you have the required role (Admin, Content, or Manager)
-- Check if your access credentials are still valid
-- Ensure your browser supports all required features
+**Issue**: Cannot delete a group
+- Verify you have administrative permissions
+- Check if the group is a system-required role group
+- Ensure the group isn't required by other system components
+- Try refreshing the page and attempting deletion again
 
 ---
 
-For additional assistance with Smart Groups management, please contact your system administrator.
+For additional assistance with Smart Group management, click the Help button in the top-right corner for context-specific guidance.
