@@ -1,314 +1,322 @@
-# Security Settings Configuration Guide
-
-<!--
-## Table of Contents
-- [Security Settings Configuration Guide](#security-settings-configuration-guide)
-  - [Table of Contents](#table-of-contents)
-  - [Introduction](#introduction)
-  - [Accessing Security Settings](#accessing-security-settings)
-  - [Multi-Factor Authentication](#multi-factor-authentication)
-  - [Identity Providers](#identity-providers)
-    - [Sairis Native Security](#sairis-native-security)
-    - [OIDC Integration](#oidc-integration)
-    - [SAML 2.0 Integration](#saml-20-integration)
-  - [Password Policy Configuration](#password-policy-configuration)
-  - [OIDC Provider Configuration](#oidc-provider-configuration)
-    - [Basic Configuration](#basic-configuration)
-    - [Endpoint Management](#endpoint-management)
-    - [Attribute Mapping](#attribute-mapping)
-    - [Identity Provider Identifiers](#identity-provider-identifiers)
-  - [SAML Provider Configuration](#saml-provider-configuration)
-    - [Basic Configuration](#basic-configuration-1)
-    - [Metadata Document](#metadata-document)
-    - [SAML Signing and Encryption](#saml-signing-and-encryption)
-    - [Attribute Mapping](#attribute-mapping-1)
-    - [SAML Identifiers](#saml-identifiers)
-  - [Best Practices](#best-practices)
-  - [Troubleshooting](#troubleshooting)
---> 
+# Tenant Security Settings Guide
 
 ## Introduction
 
-The Security Settings component allows administrators to configure authentication methods, multi-factor authentication (MFA), and identity provider integrations for your organization. These settings determine how users authenticate with the system and what security measures are required for account access.
+The Tenant Security Settings interface provides administrators with powerful tools for configuring authentication, authorization, and access control for your organization's platform. This security command center allows you to configure Multi-Factor Authentication (MFA), identity providers, password policies, and other critical security features to protect your organization's data and users.
 
-## Accessing Security Settings
+## Accessing Tenant Security Settings
 
 ![homepage](/images/settings-security.png)
 
-The Security Settings component is accessible to users with specific roles:
+The Tenant Security Settings interface is accessible to users with the following roles:
 - Admin
 - Content
 - Manager
 
-To access this component, navigate to the Tenant Settings section in the administration interface.
+To access these settings, navigate to the Administration section from the main menu and select "Tenant Settings," then choose the "Security" tab.
 
-## Multi-Factor Authentication
+## Security Settings Overview
 
-Multi-Factor Authentication (MFA) adds an extra layer of security by requiring users to provide a second verification method beyond their password. The system supports SMS-based MFA, sending a one-time password (OTP) to the user's mobile phone.
+The security configuration interface is organized into three main sections:
 
-Three MFA options are available:
+1. **Login Methods**: Configure MFA and identity providers
+2. **Password Policy**: Manage password requirements (when using native security)
+3. **Identity Provider Configuration**: Set up OIDC or SAML federation (when applicable)
 
-1. **MFA Off**: 
-   - No additional authentication required beyond username/password
-   - Lowest security option
-   - Fastest login experience
+Each section provides detailed controls for securing your tenant and integrating with your existing identity infrastructure.
 
-2. **MFA On (Everyone)**:
-   - All users must provide a mobile phone number
-   - All users must verify via SMS code when logging in on new devices
-   - Highest security option
-   - Ensures consistent security policy across the organization
+## Login Methods Configuration
 
-3. **MFA Optional (Per User)**:
-   - Individual users can be configured for MFA
-   - MFA can be enabled for specific users or roles
-   - Balance between security and flexibility
-   - Allows gradual rollout of MFA
+The Login Methods section allows you to define how users authenticate to the system:
 
-## Identity Providers
+### Multi-Factor Authentication (MFA)
 
-The system supports three authentication approaches:
+Configure MFA protection for your users:
 
-### Sairis Native Security
+1. **MFA Off**: Disable multi-factor authentication entirely
+   - Simplest configuration but least secure
+   - Suitable only for non-sensitive applications
+   - Not recommended for production environments
 
-The default authentication method provided by the platform:
-- Built-in user management
-- Password-based authentication
-- Configurable password policies
-- Support for MFA
-- Can act as an OIDC provider for other applications
+2. **MFA On (Everyone)**: Require MFA for all users
+   - Highest security level
+   - Forces all users to register a phone number
+   - Sends one-time passwords (OTP) via SMS
+   - Required for sensitive data environments
 
-### OIDC Integration
+3. **MFA Optional (Per User)**: Allow individual users to enable MFA
+   - Balanced approach for mixed-sensitivity environments
+   - Users can enable MFA for their own accounts
+   - Administrators can require MFA for specific users
+   - Good transitional strategy when moving toward full MFA
 
-Connect to an existing OpenID Connect (OIDC) provider:
-- Single Sign-On (SSO) with existing identity systems
-- Delegate authentication to external providers
-- Support for major providers like Google, Microsoft, Okta, Auth0
-- Attribute mapping for user profile information
+### Identity Provider Selection
 
-### SAML 2.0 Integration
+Choose how users will authenticate to the system:
 
-Connect to an existing SAML 2.0 provider:
-- Enterprise-grade SSO integration
-- Support for legacy identity systems
-- Digital signing and encryption options
-- Attribute mapping for user profile information
+1. **Sairis Native Security**: Use the built-in authentication system
+   - Includes user management and password policies
+   - Simplest to configure with no external dependencies
+   - Supports MFA, password policies, and account recovery
+   - Can also serve as an identity provider for other applications
+
+2. **Identity Provider - OIDC**: Connect to an external OpenID Connect provider
+   - Integrate with services like Azure AD, Okta, Auth0, etc.
+   - Single Sign-On (SSO) capable
+   - Delegates authentication to your organizational IdP
+   - Requires configuration of endpoints and attribute mapping
+
+3. **Identity Provider - SAML 2.0**: Connect to a SAML-based identity provider
+   - Industry standard for enterprise identity federation
+   - Compatible with major identity providers
+   - Complete SSO integration
+   - Requires SAML metadata exchange and attribute mapping
 
 ## Password Policy Configuration
 
-When using Sairis Native Security, you can configure comprehensive password policies:
+When using Sairis native security, you can configure detailed password policies:
 
-1. **Password Minimum Length**:
-   - Set the minimum number of characters required
+### Password Requirements
+
+Set the fundamental password requirements:
+
+1. **Password Minimum Length**: Define the shortest allowed password
    - Range: 6-99 characters
-   - Recommended: 8 or more characters
-   - Default: 8 characters
+   - Recommended: 8 or more
+   - Industry standard: 12 or more for sensitive systems
+   - Balance security with usability
 
-2. **Temporary Password Validity**:
-   - Number of days before temporary passwords expire
+2. **Temporary Password Validity**: Set expiration for temporary passwords
    - Range: 0-365 days
-   - Default: 30 days
-   - Setting to 0 means passwords never expire
+   - Recommended: 7-30 days
+   - Shorter periods provide better security
+   - "0" forces immediate password change
 
-3. **Password Strength Requirements**:
-   - **Require Lowercase Letters**: When enabled, passwords must include at least one lowercase letter
-   - **Require Uppercase Letters**: When enabled, passwords must include at least one uppercase letter
-   - **Require Numbers**: When enabled, passwords must include at least one numeric character
-   - **Require Special Characters**: When enabled, passwords must include at least one special character
+### Password Strength Controls
 
-All strength requirements are enabled by default, providing maximum security.
+Enable specific complexity requirements:
 
-## OIDC Provider Configuration
+1. **Require Lowercase Letters**: Toggle to require at least one lowercase letter
+   - Recommended: Enabled
+   - Increases character set diversity
 
-When "Identity Provider - OIDC" is selected, you must configure the OIDC integration:
+2. **Require Uppercase Letters**: Toggle to require at least one uppercase letter
+   - Recommended: Enabled
+   - Further increases character set diversity
 
-### Basic Configuration
+3. **Require Numbers**: Toggle to require at least one number
+   - Recommended: Enabled
+   - Expands character set beyond alphabetic
 
-1. **Provider Name**:
-   - Friendly name for the identity provider
-   - Used in administration interfaces
-   - Example: "Corporate OIDC", "Google SSO", "Okta"
+4. **Require Special Characters**: Toggle to require at least one special character
+   - Recommended: Enabled
+   - Greatly increases password entropy
+   - Examples: !@#$%^&*()_+-=[]{}|;:,.<>?
 
-2. **Client ID**:
-   - Identifier issued by your OIDC provider
-   - Uniquely identifies your application with the provider
-   - Obtained when registering with the identity provider
+## OIDC Identity Provider Configuration
 
-3. **Client Secret**:
-   - Secret key issued by your OIDC provider
-   - Should be kept confidential
-   - Used to authenticate your application with the provider
+When "Identity Provider - OIDC" is selected, detailed configuration options appear:
 
-4. **Authorized Scopes**:
-   - OAuth 2.0 scopes that determine what information is requested
-   - Default: "openid" (minimum required)
-   - Additional options: profile, email, phone, etc.
-   - Multiple scopes should be space-separated
+### Basic OIDC Settings
 
-5. **Attribute Request Method**:
-   - HTTP method used to retrieve user attributes
+Configure the connection to your OpenID Connect provider:
+
+1. **Provider Name**: A friendly name for the identity provider
+   - Used in logs and administrative interfaces
+   - Should clearly identify the provider (e.g., "Corporate Azure AD")
+
+2. **Client ID**: The application identifier from your IdP
+   - Obtained when registering this application with your provider
+   - Used to identify your application during authentication
+
+3. **Client Secret**: The secret key for secure communication
+   - Treat as sensitive security credential
+   - Used to authenticate your application to the identity provider
+
+4. **Authorized Scopes**: Data your application requests from the provider
+   - Default: "openid" (minimum required scope)
+   - Common additions: email, profile, phone
+   - Only request what your application needs
+
+5. **Attribute Request Method**: HTTP method for requesting user attributes
    - Options: GET or POST
-   - Default: GET
-   - Should match the configuration of your provider
+   - Depends on your provider's configuration
+   - Most providers use GET for attribute requests
 
-### Endpoint Management
+### OIDC Endpoint Configuration
 
-Two options for configuring endpoints:
+Configure how to connect to your identity provider:
 
-1. **Auto Fill via Issuer URL**:
-   - Automatically discovers endpoints using OpenID Connect discovery
-   - Requires only the Issuer URL to be provided
-   - System retrieves all endpoint URLs from the provider's discovery document
-   - Recommended for most configurations
+1. **Auto Fill via Issuer URL**: Automatically discover endpoints
+   - Simplest configuration option
+   - Requires only the provider's issuer URL
+   - System will discover other endpoints automatically
+   - Works with providers that implement the OIDC discovery specification
 
-2. **Manually Configure Endpoints**:
-   - Allows direct specification of all endpoint URLs
-   - Required fields when selected:
-     - **Authorization Endpoint**: URL for user authentication
-     - **Token Endpoint**: URL for token exchange
-     - **UserInfo Endpoint**: URL for retrieving user attributes
-     - **JWKS URI Endpoint**: URL for JSON Web Key Set (for signature verification)
-   - All URLs must include the full path, including "https://"
+2. **Manually Configure Endpoints**: For providers without discovery support
+   - Requires manual entry of all endpoints
+   - Use when auto-discovery is not supported or reliable
+   - Requires detailed knowledge of your provider's endpoints
 
-### Attribute Mapping
+3. **Required Endpoints**:
+   - **Issuer URL**: Base URL identifying your provider
+   - **Authorization Endpoint**: Where users are redirected to log in
+   - **Token Endpoint**: Where authorization codes are exchanged for tokens
+   - **UserInfo Endpoint**: Where user attributes are retrieved
+   - **JWKS URI**: Provides keys for token verification
 
-Maps OIDC attributes to user profile fields:
+### OIDC Attribute Mapping
+
+Map identity provider attributes to system user properties:
 
 1. **Given Name**: Maps to user's first name
+   - Common values: "given_name", "firstName"
+
 2. **Family Name**: Maps to user's last name
+   - Common values: "family_name", "lastName"
+
 3. **Username**: Maps to login identifier
+   - Common values: "preferred_username", "email", "sub"
+
 4. **Preferred Username**: Maps to display name
+   - Common values: "preferred_username", "name"
+
 5. **Email**: Maps to user's email address
+   - Common values: "email"
+
 6. **Phone Number**: Maps to user's mobile phone
+   - Common values: "phone_number", "mobile"
 
-For each field, you must specify the corresponding attribute name from your OIDC provider.
+### OIDC Identifiers
 
-### Identity Provider Identifiers
+Configure domain-based routing to your identity provider:
 
-Optional domain identifiers for automatic provider selection:
-- Allows routing users to the correct identity provider based on email domain
-- Enter domain names that should be associated with this provider
-- Example: "example.com" would route all users with @example.com emails
-- Multiple domains can be entered (one per line)
+1. **IdP Identifiers**: Email domains associated with this provider
+   - Example: "example.com" (one per line)
+   - When users enter emails with these domains, they're automatically routed to this provider
+   - Enables "smart" IdP selection in multi-tenant environments
 
-## SAML Provider Configuration
+## SAML Identity Provider Configuration
 
-When "Identity Provider - SAML 2.0" is selected, you must configure the SAML integration:
+When "Identity Provider - SAML 2.0" is selected, detailed configuration options appear:
 
-### Basic Configuration
+### Basic SAML Settings
 
-1. **Provider Name**:
-   - Friendly name for the SAML provider
-   - Used in administration interfaces
-   - Example: "Corporate SAML", "Azure AD", "ADFS"
+Configure the connection to your SAML provider:
 
-2. **Add Sign-out Flow**:
-   - When enabled, signing out from the application also signs out from the SAML provider
-   - Creates a more seamless experience
-   - Toggle on/off based on requirements
+1. **Provider Name**: A friendly name for the identity provider
+   - Used in logs and administrative interfaces
+   - Should clearly identify the provider (e.g., "Corporate ADFS")
 
-3. **IdP-initiated SAML Sign-in**:
-   - **Require SP-initiated SAML assertions** (Recommended): More secure, requires sign-in to start from Sairis
-   - **Accept SP-initiated and IdP-initiated SAML assertions**: More flexible, allows sign-in to start from the identity provider
+2. **Sign-out Flow**: Enable simultaneous logout
+   - When enabled: Users are signed out of both Sairis and the IdP
+   - When disabled: Users remain logged in to the IdP
 
-### Metadata Document
+3. **IdP-initiated SAML sign-in**:
+   - Recommended: Require SP-initiated assertions (more secure)
+   - Alternative: Accept both SP and IdP-initiated assertions
 
-SAML metadata document from your identity provider:
-- XML document containing provider configuration details
-- Includes certificates, endpoints, and entity IDs
-- Paste the full XML document into the text area
-- Required for establishing trust with the identity provider
+4. **Metadata Document**: SAML metadata from your provider
+   - XML document containing provider configuration
+   - Includes certificate, endpoints, and entity ID
+   - Typically provided by your identity provider administrator
 
-### SAML Signing and Encryption
+### SAML Security Options
 
-Advanced security options:
+Configure additional security features:
 
-1. **Sign SAML Requests**:
-   - When enabled, all SAML requests are digitally signed
-   - Adds security by proving request authenticity
-   - Requires trust configuration on the identity provider
-
-2. **Require Encrypted SAML Assertions**:
-   - When enabled, requires all SAML assertions to be encrypted
-   - Enhances security by protecting data in transit
+1. **Sign SAML requests**: Digitally sign requests to the provider
+   - Enhances security by verifying request authenticity
    - Requires proper key configuration
 
-### Attribute Mapping
+2. **Require encrypted SAML assertions**: Force encryption of identity data
+   - Highest security for transmitted identity information
+   - May require additional provider configuration
 
-Maps SAML attributes to user profile fields:
+### SAML Attribute Mapping
+
+Map SAML attributes to system user properties:
 
 1. **Given Name**: Maps to user's first name
-2. **Family Name**: Maps to user's last name
-3. **Username**: Maps to login identifier
-4. **Preferred Username**: Maps to display name
-5. **Email**: Maps to user's email address
-6. **Phone Number**: Maps to user's mobile phone
+   - Common values: "givenName", "FirstName"
 
-For each field, you must specify the corresponding attribute name from your SAML provider.
+2. **Family Name**: Maps to user's last name
+   - Common values: "surname", "LastName"
+
+3. **Username**: Maps to login identifier
+   - Common values: "nameID", "userPrincipalName"
+
+4. **Preferred Username**: Maps to display name
+   - Common values: "displayName", "Name"
+
+5. **Email**: Maps to user's email address
+   - Common values: "mail", "email", "emailAddress"
+
+6. **Phone Number**: Maps to user's mobile phone
+   - Common values: "telephoneNumber", "mobile"
 
 ### SAML Identifiers
 
-Optional domain identifiers for automatic provider selection:
-- Allows routing users to the correct identity provider based on email domain
-- Enter domain names that should be associated with this provider
-- Example: "example.com" would route all users with @example.com emails
-- Multiple domains can be entered (one per line)
+Configure domain-based routing to your identity provider:
 
-## Best Practices
+1. **IdP Identifiers**: Email domains associated with this provider
+   - Example: "example.com" (one per line)
+   - When users enter emails with these domains, they're automatically routed to this provider
+   - Enables "smart" IdP selection in multi-tenant environments
 
-For optimal security configuration:
+## Best Practices for Security Settings
 
-1. **Multi-Factor Authentication**:
-   - Enable MFA for all users when possible
-   - At minimum, require MFA for administrative users
-   - Ensure users have updated mobile phone numbers
+### MFA Implementation
 
-2. **Password Policies**:
-   - Use minimum length of 12+ characters for best security
-   - Enable all character type requirements (upper, lower, number, special)
-   - Set reasonable temporary password expiration (7-14 days)
+For optimal security protection:
+- Start with "MFA Optional" during initial rollout
+- Move to "MFA On (Everyone)" after user education
+- Ensure users have updated phone numbers before enforcing
+- Provide clear instructions for MFA enrollment
 
-3. **Identity Provider Integration**:
-   - Use HTTPS for all endpoint URLs
-   - Keep client secrets secure
-   - Test the integration thoroughly before full deployment
-   - Enable signing and encryption for SAML when supported
+### Password Policy Balance
 
-4. **Attribute Mapping**:
-   - Verify attribute names exactly match those provided by your identity provider
-   - Test with sample users before full deployment
-   - Consider required vs. optional attributes in your provider
+Balance security with usability:
+- Longer minimum lengths are generally better than complex requirements
+- Consider using passphrases instead of complex passwords
+- Avoid frequent password changes which can lead to weaker passwords
+- Enable all complexity requirements for sensitive systems
+
+### Identity Provider Selection
+
+Choose the right authentication approach:
+- Use native security for standalone implementations or smaller organizations
+- Use OIDC/SAML when integrating with existing identity infrastructure
+- Consider security, user experience, and administrative overhead
+- Ensure proper attribute mapping to avoid data inconsistency
 
 ## Troubleshooting
 
-**Issue**: Users cannot authenticate with external identity provider
-- Verify client ID and secret are correct
-- Check that all endpoint URLs are accessible
-- Ensure attribute mappings match exactly what the provider sends
-- Review identity provider logs for error details
-
-**Issue**: MFA not working properly
-- Verify user has a valid mobile phone number in their profile
-- Check SMS service configuration in system settings
-- Ensure proper country code is included with phone numbers
+**Issue**: MFA not working for some users
+- Verify phone numbers are properly formatted (+1XXXXXXXXXX)
+- Check carrier support for SMS delivery
+- Consider testing with a different phone number
+- Verify MFA settings are properly saved
 
 **Issue**: Password policy not enforced
-- Verify Sairis Native Security is selected as the identity provider
-- Check that policy settings are saved correctly
-- Test with a new user account or password reset
+- Ensure you're using Sairis native security (not applicable to OIDC/SAML)
+- Check if changes were properly saved
+- Policy applies only to new passwords, not existing ones
+- Temporary passwords follow different validation rules
 
-**Issue**: SAML metadata document rejected
-- Ensure the document is valid XML
-- Check for any extraneous characters or encoding issues
-- Verify the document is from a trusted provider
-- Confirm the document includes all required elements
-- Check with your internal IT department to confirm SAML settings
+**Issue**: OIDC/SAML configuration problems
+- Verify all endpoints are correctly entered
+- Check client ID and secret for accuracy
+- Test with provider's own testing tools
+- Review attribute mapping to ensure proper format
+- Check network connectivity to provider endpoints
 
-**Issue**: "Provider not found" error during login
-- Check identifiers configuration for domain routing
-- Verify the email domain matches the configured identifiers
-- Ensure the identity provider is properly activated
+**Issue**: Users directed to wrong identity provider
+- Review IdP Identifiers for conflicts
+- Check the order of provider precedence
+- Verify domain spelling in identifiers
+- Clear browser cookies and try again
 
 ---
 
-For additional assistance with security configuration, please contact your system administrator or refer to the advanced administration documentation.
+For additional assistance with tenant security settings, please contact your system administrator or security team.

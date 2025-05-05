@@ -1,240 +1,233 @@
-# Platform Branding & Customization Guide
-
-<!--
-## Table of Contents
-- [Platform Branding \& Customization Guide](#platform-branding--customization-guide)
-  - [Table of Contents](#table-of-contents)
-  - [Introduction](#introduction)
-  - [Accessing Branding Settings](#accessing-branding-settings)
-  - [Organization Information](#organization-information)
-  - [Theme Customization](#theme-customization)
-    - [Primary Colors](#primary-colors)
-    - [Secondary Colors](#secondary-colors)
-    - [Surface Colors](#surface-colors)
-      - [Light Mode Surface Color](#light-mode-surface-color)
-      - [Dark Mode Surface Color](#dark-mode-surface-color)
-    - [Display Mode](#display-mode)
-    - [Gradient Generator](#gradient-generator)
-  - [Logo Management](#logo-management)
-    - [Logo Types](#logo-types)
-    - [Uploading Logos](#uploading-logos)
-    - [Logo Editor](#logo-editor)
-  - [Advanced Layout Settings](#advanced-layout-settings)
-    - [Menu Type](#menu-type)
-    - [Menu Theme](#menu-theme)
-  - [Best Practices](#best-practices)
-  - [Troubleshooting](#troubleshooting)
---> 
+# Tenant Branding & Customization Guide
 
 ## Introduction
 
-The Platform Branding & Customization tool allows administrators to personalize the visual appearance of the application to match organizational branding guidelines. This component provides comprehensive controls for customizing colors, uploading logos, and adjusting layout settings to create a cohesive branded experience.
+The Tenant Branding interface provides administrators with powerful tools to customize the appearance of your organization's platform. This visual customization center allows you to personalize colors, upload logos, and create a consistent brand experience across the application for all users in your organization.
 
-## Accessing Branding Settings
+## Accessing Tenant Branding Settings
 
-The Branding Settings component is accessible to users with specific roles:
+The Tenant Branding interface is accessible to users with the following roles:
 - Admin
 - Content
 - Manager
 
-To access this component, navigate to the tenant settings section and select "Branding" from the menu.
+To access these settings, navigate to the Administration section from the main menu and select "Tenant Settings" or "Branding."
 
-## Organization Information
+## Branding Interface Overview
 
-The top section of the branding page contains fields for essential organizational information:
+The Tenant Branding interface is organized into three main sections:
 
 ![homepage](/images/settings-branding.png)
 
-1. **Company Name** (Required)
-   - The official name of your organization
-   - Displayed in various parts of the application
-   - Required field that cannot be left empty
+1. **Company Information**: Basic organizational details
+2. **Colors & Logo**: Visual customization options
+3. **Preview**: Real-time visualization of your changes
 
-2. **Company Alias**
-   - A shorter version or alternative name for your organization
-   - Optional field used in space-constrained areas of the interface
+Each section provides intuitive controls for customizing different aspects of your organization's visual identity within the platform.
 
-3. **Account Notes**
-   - Additional information about the account or branding guidelines
-   - Optional field for administrative notes
+## Company Information Settings
 
-## Theme Customization
+The Company Information section allows you to define basic organizational details:
 
-The Colors & Logo section provides comprehensive controls for adjusting the application's appearance.
+### Company Name
 
-### Primary Colors
+- **Required Field**: Sets the primary name displayed throughout the application
+- **Purpose**: Appears in the header, reports, and email notifications
+- **Best Practice**: Use your organization's full legal name or preferred brand name
 
-The primary color is the main accent color used throughout the application for buttons, highlights, and interactive elements.
+### Company Alias
 
-To set the primary color:
-1. Select one of the predefined color swatches, or
-2. Use the custom color picker to select a precise color
+- **Optional Field**: Provides a shorter alternative name
+- **Purpose**: Used in space-constrained areas of the interface
+- **Best Practice**: Use an abbreviated version that users will recognize
 
-When a primary color is selected:
-- The application automatically generates a color palette based on the selection
-- The theme updates in real-time to preview the changes
-- The "custom" theme is activated when using the color picker
+### Account Notes
 
-### Secondary Colors
+- **Optional Field**: Stores additional information about the account
+- **Purpose**: Internal reference for administrators
+- **Best Practice**: Include contact information for the brand manager
 
-The secondary color is used for accents, highlights, and complementary elements.
+## Colors & Customization
 
-To set the secondary color:
-1. Use the color picker to select a precise color
-2. The application automatically generates a secondary color palette
+The Colors & Logo section provides comprehensive tools to visually customize your tenant:
 
-### Surface Colors
+### Primary Color Selection
 
-Surface colors control the background shades used throughout the application. There are separate controls for light and dark modes.
+Two approaches to selecting primary colors:
 
-#### Light Mode Surface Color
-1. Select from predefined surface color swatches
-2. Changes affect background colors when in light mode
+#### Canned Color Presets
 
-#### Dark Mode Surface Color
-1. Select from predefined surface color swatches
-2. Changes affect background colors when in dark mode
+- Click on any color swatch to instantly apply a preset color theme
+- Presets include professionally designed color schemes
+- Selected preset is highlighted with a primary color outline
+- Automatically configures both light and dark mode variants
 
-### Display Mode
+#### Custom Color Picker
 
-Control whether the application uses light or dark mode by default:
-1. Select "Light" or "Dark" from the Display Mode toggle
-2. The application instantly previews the selected mode
-3. Users can still override this setting with their personal preferences
+For complete control over your brand colors:
 
-### Gradient Generator
+1. **Primary Light**: Sets the main brand color for light mode
+   - Click the color picker to open a color selection dialog
+   - Choose any color using the visual selector or enter a hex code
+   - Changes apply instantly to the interface
 
-Create custom gradients for use in promotional areas or backgrounds:
+2. **Primary Dark**: Sets the main brand color for dark mode
+   - Selected independently from light mode color
+   - Allows for optimal visibility in dark mode
+   - Best practice: Choose a lighter variation of your primary color
 
-1. Select colors for the gradient start, middle, and end points
-2. Preview the gradient in real-time
-3. The gradient is stored for use in compatible application areas
+3. **Secondary Light/Dark**: Sets accent colors for both modes
+   - Used for secondary buttons, highlights, and decorative elements
+   - Complements the primary color
+   - Separate controls for light and dark modes
+
+### Surface Color Customization
+
+Surface colors control the background and card elements:
+
+1. **Light Surface Color**: Sets the background palette for light mode
+   - Click on any swatch to select a preset surface palette
+   - Changes apply to backgrounds, cards, and panels
+   - Selected surface is highlighted with an outline
+
+2. **Dark Surface Color**: Sets the background palette for dark mode
+   - Separate from light mode for optimal contrast
+   - Best practice: Select a darker, complementary palette
+   - Selected surface is highlighted with an outline
+
+### Display Mode Toggle
+
+Switch between light and dark mode previews:
+- Toggle instantly previews your customizations in both modes
+- Allows testing of color visibility and contrast
+- Does not affect individual user preference settings
+
+### Gradient Customization
+
+Create custom gradient effects for special visual elements:
+
+1. **Gradient Color Light**: Custom gradient for light mode
+   - Three color pickers control start, middle, and end colors
+   - Live preview shows the gradient effect
+   - Used in promotional areas and special UI elements
+
+2. **Gradient Color Dark**: Custom gradient for dark mode
+   - Separate controls from light mode
+   - Preview updates in real-time
+   - Best practice: Use colors with sufficient contrast in dark environments
 
 ## Logo Management
 
-The Manage Application Logos section allows you to upload and configure the logos used throughout the application.
+The Logo Management section allows you to upload and manage custom logos:
 
 ### Logo Types
 
-The system requires four distinct logo files:
+The system requires four logo variations:
 
-1. **Logo Light**
-   - The primary full logo on light backgrounds
-   - Recommended size: 155px × 60px
-   - Used in headers and main navigation areas
+1. **Logo Light**: Primary logo for light backgrounds
+   - Recommended size: 640px × 240px
+   - Formats: PNG recommended (with transparency)
+   - Used in headers and light mode interfaces
 
-2. **Mark Light**
-   - The icon-only version on light backgrounds
-   - Recommended size: 50px × 50px
-   - Used in space-constrained areas and mobile views
+2. **Mark Light**: Icon-only version for light backgrounds
+   - Recommended size: 200px × 200px
+   - Used in space-constrained areas and mobile interfaces
+   - Should be recognizable at small sizes
 
-3. **Logo Dark**
-   - The primary full logo on dark backgrounds
-   - Recommended size: 155px × 60px
-   - Automatically used when dark mode is active
+3. **Logo Dark**: Primary logo for dark backgrounds
+   - Same dimensions as Logo Light
+   - Typically a light/white version of your logo
+   - Used automatically when dark mode is active
 
-4. **Mark Dark**
-   - The icon-only version on dark backgrounds
-   - Recommended size: 50px × 50px
-   - Used in space-constrained areas when dark mode is active
+4. **Mark Dark**: Icon-only version for dark backgrounds
+   - Same dimensions as Mark Light
+   - Typically a light/white version of your icon
+   - Used in dark mode for space-constrained areas
 
-### Uploading Logos
+### Logo Upload & Editing
 
-To update any logo:
+To upload or modify any logo:
 
-1. Click on the logo card you wish to update
-2. The logo editor dialog will open showing the current logo
-3. Click the folder icon or drag and drop a new image
-4. Use the editor tools to crop and adjust the image
-5. Click "Save logo" to apply changes
+1. Click on the logo card you want to modify
+2. A logo editor dialog will open showing:
+   - Current logo (if any)
+   - Background color matching actual usage
+   - Image editor tools
 
-### Logo Editor
+3. Use the editor toolbar to:
+   - **Open**: Select a new image from your computer
+   - **Crop**: Adjust the visible portion of the image
+   - **Confirm**: Accept the current crop
+   - **Reset**: Undo changes and start over
+   - **Save Logo**: Finalize and upload your changes
 
-The built-in logo editor provides several tools:
+4. A status indicator will show:
+   - "Uploading New Logo..." during the upload process
+   - "Successfully Uploaded" when complete
 
-1. **Open**: Import an image from your device
-2. **Crop**: Adjust the visible portion of the image
-3. **Confirm**: Accept the current crop selection
-4. **Reset**: Revert to the original image
-5. **Save logo**: Finalize and upload the edited logo
+### Logo Best Practices
 
-The editor automatically resizes images to the appropriate dimensions:
-- Full logos to 155px × 60px
-- Mark logos to 50px × 50px
+For optimal results with logo uploads:
 
-## Advanced Layout Settings
+- Use PNG format with transparency for clean integration
+- Maintain proper aspect ratios (logos are typically wider than tall)
+- Ensure logos are legible at smaller sizes
+- Test both light and dark versions in their respective modes
+- Provide high-resolution images that can be scaled down
 
-For advanced users, additional controls are available to customize the application layout.
+## Advanced Customization Options
 
-### Menu Type
+For more technical administrators, additional customization options are available:
 
-Select from different navigation menu styles:
-- **Static**: Fixed side menu that remains visible
-- **Overlay**: Menu slides over content when activated
-- **Slim**: Narrow icons-only menu that expands on hover
-- **Slim+**: Enhanced slim menu with additional information
-- **Reveal**: Menu that reveals when triggered
-- **Drawer**: Slide-out panel containing the menu
-- **Horizontal**: Menu that spans horizontally across the top
+### Menu Type Selection
 
-### Menu Theme
+Choose from different navigation menu layouts:
+- **Static**: Fixed sidebar always visible
+- **Overlay**: Sidebar appears over content when activated
+- **Slim**: Narrow sidebar with icons only
+- **Slim+**: Narrow sidebar that expands on hover
+- **Reveal**: Hidden sidebar that pushes content when opened
+- **Drawer**: Slide-out sidebar that overlays content
+- **Horizontal**: Top navigation bar instead of sidebar
 
-Choose how the menu's appearance relates to the overall theme:
-- **Color Scheme**: Menu uses the application's color scheme
-- **Primary Color**: Menu uses the primary color as its background
-- **Transparent**: Menu has a transparent background
+### Menu Theme Selection
 
-## Best Practices
+Control the styling of the navigation menu:
+- **Color Scheme**: Uses the surface color palette
+- **Primary Color**: Uses the primary brand color
+- **Transparent**: Uses a transparent background with subtle effects
 
-For optimal branding results:
+## Saving Your Customizations
 
-1. **Logo Consistency**
-   - Maintain consistent visual elements between light and dark versions
-   - Ensure all logos are clearly visible on their intended backgrounds
-   - Use transparent backgrounds for logos when possible
+Changes to branding settings are saved automatically as you make them. The interface provides several indicators of successful updates:
 
-2. **Color Selection**
-   - Choose colors that reflect your brand identity
-   - Ensure sufficient contrast for accessibility
-   - Test your color scheme in both light and dark modes
-
-3. **Gradient Usage**
-   - Use gradients sparingly for maximum impact
-   - Ensure gradient colors complement your primary brand colors
-   - Test gradients for readability when text is overlaid
-
-4. **Regular Review**
-   - Periodically review how branding appears across different devices
-   - Check that colors and logos remain consistent across the application
-   - Update branding when organizational guidelines change
+1. Color changes apply instantly to the interface
+2. Logo uploads show success messages when complete
+3. A brief display mode toggle occurs after logo uploads to refresh the cache
 
 ## Troubleshooting
 
-**Issue**: Logo appears distorted after upload
-- Use an image with the recommended dimensions
-- Ensure the image has sufficient resolution
-- Try using the crop tool to better fit the available space
+**Issue**: Logo appears pixelated or blurry
+- Ensure you're uploading a high-resolution image
+- Check that the aspect ratio is appropriate
+- Try using the crop tool to focus on the essential parts of the logo
 
-**Issue**: Colors don't update immediately
-- Toggle between light and dark mode to refresh the theme
-- Refresh the browser if changes aren't appearing
-- Check network connectivity for upload issues
+**Issue**: Colors don't appear as expected
+- Test in both light and dark modes
+- Consider color accessibility and contrast
+- Some colors may look different on various devices and screens
 
-**Issue**: Unable to upload logos
-- Check that the image format is supported (PNG recommended)
-- Ensure file size is below the maximum limit
-- Verify you have the appropriate permissions
+**Issue**: Changes not visible to all users
+- Some changes may require users to refresh their browsers
+- Persistent caching issues may require clearing browser cache
+- In extreme cases, users may need to log out and back in
 
-**Issue**: Gradient preview doesn't match actual appearance
-- Different screens may display colors differently
-- Test on multiple devices if possible
-- Adjust colors for better cross-device consistency
-
-**Issue**: Logo upload shows error
-- Check the error message in the notification
-- Verify the image format and dimensions
-- Try a different browser if the issue persists
+**Issue**: Logo upload fails
+- Check file format (PNG recommended)
+- Verify file size is under limits (typically 5MB)
+- Ensure you have a stable internet connection
+- Try a different browser if problems persist
 
 ---
 
-For additional assistance with branding customization, please contact your system administrator.
+For additional assistance with tenant branding, please contact your system administrator or support team.

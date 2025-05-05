@@ -120,7 +120,9 @@ export default defineConfig({
             [  
               {text: 'Branding', link: '/admin/administration/manage/global-settings/branding'},
               {text: 'Security', link: '/admin/administration/manage/global-settings/security'},
-              {text: 'Messaging', link: '/admin/administration/manage/global-settings/messaging'}
+              {text: 'Messaging', link: '/admin/administration/manage/global-settings/messaging'},
+              {text: 'Messaging', link: '/admin/administration/manage/global-settings/messaging-verification'},
+              {text: 'Messaging', link: '/admin/administration/manage/global-settings/messaging-mfa'}
             ]
           }
         ] 

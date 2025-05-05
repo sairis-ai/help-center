@@ -1,4 +1,4 @@
-# Messaging Templates Configuration Guide
+# Tenant Messaging Configuration Guide
 
 <!--
 ## Table of Contents
@@ -20,191 +20,235 @@
 
 ## Introduction
 
-The Messaging Templates Configuration allows administrators to customize all system-generated communications sent to users. These communications include account invitations, verification codes, and multi-factor authentication (MFA) messages sent via email or SMS. By customizing these templates, you can ensure all system communications align with your organization's branding and communication style.
+The Tenant Messaging Configuration interface provides administrators with powerful tools to customize all communication templates sent to your users. This communication center allows you to personalize invitation emails, verification messages, and Multi-Factor Authentication (MFA) notifications to maintain consistent branding and provide clear instructions to your users.
 
-## Accessing Messaging Templates
+## Accessing Messaging Configuration
 
 ![homepage](/images/settings-messaging.png)
 
-The Messaging Templates configuration is accessible to users with specific roles:
+The Tenant Messaging Configuration interface is accessible to users with the following roles:
 - Admin
 - Content
 - Manager
 
-To access this component, navigate to the Tenant Settings section and select "Messaging" from the menu.
+To access these settings, navigate to the Administration section from the main menu, select "Tenant Settings," and then choose the "Messaging" tab.
 
-## Messaging Settings Interface Overview
+## Messaging Configuration Overview
 
-The Messaging Settings interface consists of these key components:
+The messaging configuration interface is organized into four main sections, accessible from a navigation menu on the left:
 
-1. **Navigation Menu**: Left sidebar with options for different message types
-   - Invitation
-   - Verification
-   - MFA
-   - Help
+1. **Invitation Messages**: Templates for new user account creation
+2. **Verification Messages**: Templates for account verification and recovery
+3. **MFA Messages**: Templates for Multi-Factor Authentication codes
+4. **Overview**: General information about message configuration
 
-2. **Content Area**: Main section that displays the template editor for the selected message type
+Each section provides detailed controls for customizing both email and SMS communications for different user scenarios.
 
-3. **Help Section**: Informational content explaining the purpose and usage of message templates
+## Understanding Message Types
 
-Each message type has its own dedicated template editor with appropriate fields and options.
+Your platform uses several types of communications with users:
 
-## Message Template Types
+### Invitation Messages
 
-### Invitation Templates
+Sent when:
+- A new user account is created
+- A user is invited to join the platform
+- An administrator provisions a new account
 
-The Invitation template is used when a new user account is created. It provides login credentials and instructions for accessing the system for the first time.
+Content typically includes:
+- Welcome message
+- Initial login instructions
+- Temporary password or setup link
+- Next steps for account activation
 
-**Available Fields:**
+### Verification Messages
 
-1. **SMS Message**:
-   - Used when sending invitations via text message
-   - Must include `{username}` and `{####}` placeholders for username and temporary password
-   - Example: `Your Sairis username is {username} and the temporary password is: {####}`
+Sent when:
+- A user needs to verify their email or phone
+- Account recovery is requested
+- Password reset is initiated
+- Security policy requires verification
 
-2. **Email Subject**:
-   - Subject line for invitation emails
-   - Example: `Your Company Name - Account Invitation`
+Content typically includes:
+- Verification instructions
+- Security code or verification link
+- Expiration information
+- Action steps to complete verification
 
-3. **Email Body**:
-   - HTML-formatted content for invitation emails
-   - Rich text editor allows for formatted text, images, and layout customization
-   - Must include `{username}` and `{####}` placeholders
-   - "Apply Branding" button automatically creates a branded template
+### MFA Messages
 
-### Verification Templates
+Sent when:
+- A user logs in from a new device
+- Multi-Factor Authentication is required
+- Additional security verification is needed
+- User enables MFA on their account
 
-The Verification template is used when users need to verify their identity, such as during account recovery or when security policies require verification.
+Content typically includes:
+- One-time passcode (OTP)
+- Brief instructions
+- Expiration time
+- Security context
 
-**Available Fields:**
+## Template Customization Interface
 
-1. **SMS Message**:
-   - Used when sending verification codes via text message
-   - Must include `{####}` placeholder for the verification code
-   - Example: `Your verification code is: {####}`
+Each message type has a similar customization interface with both email and SMS options:
 
-2. **Email Subject**:
-   - Subject line for verification emails
-   - Example: `Your Company Name - Account Verification`
+### Email Template Customization
 
-3. **Email Body**:
-   - HTML-formatted content for verification emails
-   - Must include either `{####}` placeholder or `{##Verify Email##}` for clickable verification link
-   - "Apply Branding" button automatically creates a branded template
+The email template editor provides:
 
-### Multi-Factor Authentication Templates
+1. **Subject Line Editor**: Customize the email subject
+   - Keep subjects clear and concise
+   - Include your organization name for recognition
+   - Can include dynamic placeholders
 
-The MFA template is used when multi-factor authentication is enabled, sending a verification code to the user's mobile device.
+2. **HTML Email Editor**: Rich text editor for email body
+   - Full formatting capabilities (bold, italic, links, etc.)
+   - HTML editing mode for advanced customization
+   - Preview mode to see how emails will appear
+   - Mobile view to check responsive design
 
-**Available Fields:**
+3. **Email Preview**: Live rendering of your template
+   - Shows exactly how emails will appear to recipients
+   - Updates as you edit the template
+   - Displays placeholder content for dynamic elements
 
-1. **SMS MFA Message**:
-   - Text message sent during MFA challenges
-   - Must include `{####}` placeholder for the verification code
-   - Example: `Your authentication code is: {####}`
+### SMS Template Customization
 
-## Rich Text Editor
+The SMS template editor provides:
 
-The system includes a comprehensive rich text editor for customizing email templates with the following features:
+1. **Plain Text Editor**: Simple editor for SMS messages
+   - Character counter to show message length
+   - Warning when approaching SMS length limits
+   - Visual indicator for message splitting
 
-1. **Formatting Tools**:
-   - Text styling (bold, italic, underline)
-   - Font selection and sizing
-   - Text and background color controls
-   - Paragraph alignment options
+2. **SMS Preview**: Mobile phone rendering of your message
+   - Shows how text will appear on recipient devices
+   - Updates as you edit the template
+   - Displays placeholder content for dynamic elements
 
-2. **Content Tools**:
-   - Bulleted and numbered lists
-   - Links and images
-   - Tables for structured layout
-   - Source code view for direct HTML editing
+## Using Dynamic Placeholders
 
-3. **Preview Mode**:
-   - Full-screen preview to see how the template will appear
+Placeholders are essential variables that get replaced with personalized information when messages are sent:
 
-## Dynamic Placeholders
+### Required Placeholders
 
-Certain placeholders must be included in templates to provide personalized information to users:
+These placeholders **must** be included in certain templates:
 
-1. **Required Placeholders**:
-   - `{username}`: The user's login username
-   - `{####}`: Temporary password or verification code
-   - `{##Verify Email##}`: Creates a clickable verification link in email templates
+1. **Verification Code**: `{####}`
+   - Required in verification and MFA templates
+   - Delivers the security code to the user
+   - System will generate a numeric code during sending
 
-2. **Placeholder Usage**:
-   - Placeholders must be entered exactly as shown, including braces
-   - SMS templates require plain text with placeholders
-   - Email templates can incorporate placeholders into HTML design
+2. **Temporary Password**: `{####}`
+   - Required in invitation templates when using temporary passwords
+   - System will generate a secure password during sending
+   - Format varies based on password policy settings
 
-## Branding Integration
+3. **Email Verification Link**: `{##Verify Email##}`
+   - Required in email verification templates
+   - Creates a clickable verification link
+   - Cannot be customized internally
 
-The system can automatically apply your organization's branding to message templates:
+### Optional Placeholders
 
-1. **Apply Branding Button**:
-   - Located in the top-right corner of each template editor
-   - Generates a professionally designed template using your organization's:
-     - Company name from tenant settings
-     - Primary brand colors
-     - Logo (if configured)
-     - System hostname for proper links
+These placeholders can be used to personalize messages:
 
-2. **Brand Elements Applied**:
-   - Header with company logo/name
-   - Branded color scheme matching your tenant settings
-   - Footer with legal information
-   - Responsive design for various devices
+1. **Username**: `{username}`
+   - Inserts the recipient's username
+   - Helpful for login instructions
+   - Use where identity confirmation is needed
 
-## Best Practices
+2. **Organization Name**: `{organization}`
+   - Inserts your organization name
+   - Helps with message branding
+   - Provides context for the communication
 
-For effective messaging templates:
+## Template Design Best Practices
 
-1. **Clear Communication**:
-   - Keep instructions simple and straightforward
-   - Prominently display important information (username, codes)
-   - Include clear next steps for the user
+### Email Templates
 
-2. **Branding Consistency**:
-   - Use the "Apply Branding" feature to maintain visual consistency
-   - Ensure colors and styling match your organization's brand guidelines
-   - Include your company logo in email communications
+For effective email communications:
 
-3. **Mobile Optimization**:
-   - Keep SMS messages concise (under 160 characters if possible)
-   - Ensure email templates are responsive for mobile viewing
-   - Test templates on different devices and email clients
+1. **Branding Consistency**:
+   - Use your organization's logo and colors
+   - Match the visual style of your platform
+   - Include consistent footer information
+   - Use your standard email layout if possible
 
-4. **Security Considerations**:
-   - Do not include sensitive information beyond required credentials
-   - Inform users about the expiration time for verification codes
-   - Include contact information for support
+2. **Content Structure**:
+   - Start with a clear greeting and purpose
+   - Keep instructions simple and step-by-step
+   - Highlight important information like codes or links
+   - Include contact information for assistance
+   - Add security reminders when appropriate
+
+3. **Responsive Design**:
+   - Ensure templates work on mobile devices
+   - Use responsive layout techniques
+   - Keep critical content visible without scrolling
+   - Test on multiple screen sizes
+
+### SMS Templates
+
+For effective SMS communications:
+
+1. **Brevity and Clarity**:
+   - Keep messages under 160 characters when possible
+   - Focus only on essential information
+   - Begin with organization name for context
+   - Use clear, concise language
+
+2. **Security Considerations**:
+   - Include enough context to verify legitimacy
+   - Avoid links in SMS when possible
+   - Clearly indicate code expiration time
+   - Never ask for sensitive information via SMS
+
+## Template Testing and Validation
+
+Before finalizing templates:
+
+1. **Preview Function**: Use the built-in preview to check appearance
+2. **Test Sends**: Test to actual devices when possible
+3. **Colleague Review**: Have others review your templates
+4. **Accessibility Check**: Ensure templates are accessible to all users
+
+## Template Management
+
+Templates are saved automatically, but you should:
+
+1. **Version Tracking**: Keep notes on major changes
+2. **Backup Important Templates**: Copy text to a separate location
+3. **Regular Review**: Update templates periodically
+4. **Testing After Updates**: Verify templates after system updates
 
 ## Troubleshooting
 
-**Issue**: Placeholders not being replaced with actual values
-- Verify the exact format of placeholders (`{username}` and `{####}`)
-- Check for extra spaces or characters in placeholders
-- Ensure placeholders are in the correct template (invitation vs. verification)
+**Issue**: Placeholders not appearing in sent messages
+- Verify placeholder syntax is exactly as shown: `{####}`
+- Check if placeholder is appropriate for the message type
+- Ensure required placeholders haven't been removed
+- Try resetting to the default template
 
-**Issue**: HTML formatting not appearing in sent emails
-- Verify HTML syntax in the source code view
-- Test email in multiple email clients
-- Check for missing closing tags or invalid HTML
+**Issue**: Email formatting problems
+- Check HTML structure for errors
+- Verify all HTML tags are properly closed
+- Test with different email clients if possible
+- Consider simplifying complex formatting
 
-**Issue**: "Apply Branding" button doesn't update template
-- Ensure tenant settings include company name
-- Verify branding colors are properly configured
-- Try toggling between template types and back
+**Issue**: Messages not being delivered
+- Verify recipient contact information is correct
+- Check system logs for sending errors
+- Ensure message content doesn't trigger spam filters
+- Confirm SMS carrier supports the message format
 
-**Issue**: SMS messages too long
-- SMS messages should ideally be under 160 characters
-- Consider abbreviating instructions
-- Focus only on essential information for SMS templates
-
-**Issue**: Email template looks different when received
-- Different email clients render HTML differently
-- Use simple, well-supported HTML elements
-- Test with major email clients (Gmail, Outlook, etc.)
+**Issue**: Templates reset unexpectedly
+- Some system updates may reset templates to defaults
+- Always maintain backups of customized templates
+- Check for notifications about planned maintenance
+- Contact support if templates change without action
 
 ---
 
-For additional assistance with messaging template configuration, please contact your system administrator.
+For additional assistance with messaging configuration, please contact your system administrator or support team.
