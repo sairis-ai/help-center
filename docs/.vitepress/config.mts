@@ -109,6 +109,15 @@ export default defineConfig({
             ]
           }, 
           {text: 'Roles', link: '/admin/administration/manage/roles' },
+          {text: 'Roles', collapsed: true, items: 
+            [
+              {text: 'User management', link: '/admin/administration/manage/manage/roles/manager'},
+              {text: 'User management', link: '/admin/administration/manage/manage/roles/settings'},
+              {text: 'User management', link: '/admin/administration/manage/manage/roles/assigned-users'},
+              {text: 'User management', link: '/admin/administration/manage/manage/roles/owners'}
+            ]
+          }, 
+
           {text: 'Groups', collapsed: true, items: 
             [  
               {text: 'Group Management', link: '/admin/administration/manage/groups/group-management'},
