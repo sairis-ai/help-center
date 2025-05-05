@@ -46,6 +46,8 @@ export default defineConfig({
               {text: 'AI Content', collapsed: true, items:
                 [
                   {text: 'Content Manager', link: '/admin/administration/ai-management/content/content-management'},
+                  {text: 'Content Access', link: '/admin/administration/ai-management/content/content-access'},
+                  {text: 'Content Access', link: '/admin/administration/ai-management/content/content-properties'},
                   {text: 'Card', link: '/admin/administration/ai-management/content/card-designer'},
                   {text: 'File Manager', link: '/admin/administration/ai-management/content/document-uploads'},
                   {text: 'Web Link', link: '/admin/administration/ai-management/content/web-links'},
@@ -82,6 +84,7 @@ export default defineConfig({
       },
       {text: 'Dashboard Insights', collapsed: true, items: 
         [ 
+          {text: 'Dashboard Guide', link: '/admin/administration/dashboard-insights/ai-dashboard-guide'}, 
           {text: 'Platform', link: '/admin/administration/dashboard-insights/platform'}, 
           {text: 'Tokens', link: '/admin/administration/dashboard-insights/tokens'}, 
           {text: 'KB\'s', link: '/admin/administration/dashboard-insights/kbs'},
