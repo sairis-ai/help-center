@@ -62,7 +62,7 @@ export default defineConfig({
               {text: 'Knowledge Bases', collapsed: true, items:
                 [
                   {text: 'Knowledge Base List',link: '/admin/administration/ai-management/knowledge-bases/knowledge-base-list'},
-                  {text: 'Knowledge Base settings',link: '/admin/administration/ai-management/knowledge-bases/knowledge-base'},
+                  {text: 'Knowledge Base Settings',link: '/admin/administration/ai-management/knowledge-bases/knowledge-base'},
                   {text: '<span style="color:rgb(140,3,252)">&#9734;</span> KB Tutorials', link: '/admin/administration/ai-management/knowledge-bases/create-kb-tutorial'},
                 ]
               }, 
@@ -107,16 +107,15 @@ export default defineConfig({
           {text: 'Roles', link: '/admin/administration/manage/roles' },
           {text: 'Groups', collapsed: true, items: 
             [  
-              {text: 'Group management', link: '/admin/administration/manage/Groups/group-management'},
-              {text: 'Create Groups', link: '/admin/administration/manage/Groups/smart-group'},
-              {text: '<span style="color:rgb(140,3,252)">&#9734;</span> Group Tutorials', link: '/admin/administration/manage/Groups/create-group-tutorials'}
+              {text: 'Group Management', link: '/admin/administration/manage/groups/group-management'},
+              {text: 'Create Groups', link: '/admin/administration/manage/groups/smart-group'},
+              {text: '<span style="color:rgb(140,3,252)">&#9734;</span> Group Tutorials', link: '/admin/administration/manage/groups/create-group-tutorials'}
             ]
           }, 
           {text: 'Global settings',collapsed: true, items: 
             [  
               {text: 'Branding', link: '/admin/administration/manage/global-settings/branding'},
               {text: 'Security', link: '/admin/administration/manage/global-settings/security'},
-              {text: 'Features', link: '/admin/administration/manage/global-settings/features'},
               {text: 'Messaging', link: '/admin/administration/manage/global-settings/messaging'}
             ]
           }
@@ -140,7 +139,7 @@ export default defineConfig({
           {text: 'Chat History', link: '/user/assistant/chat-history' },
           {text: 'Settings', link: '/user/assistant/chat-settings' },
           {text: 'Chat Tokens', link: '/user/assistant/chat-token-counts' },
-          {text: 'content Panel', link: '/user/assistant/content-panel' }          
+          {text: 'Control Panel', link: '/user/assistant/content-panel' }          
         ]
       },
       {text: 'Search', collapsed: false, items: 
