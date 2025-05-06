@@ -28,6 +28,10 @@
 
 The Smart Group Management interface provides administrators with a powerful tool for creating and managing security and role groups within your organization. Smart Groups allow you to dynamically organize users based on specific criteria, simplifying access control and permissions management across your platform.
 
+<a href="/general/tutorials/create-group-tutorials.html">
+  <img src="/images/watch-tutorial-button.png" alt="User Tutorial" style="width:200px;">
+</a>
+
 ## Accessing Smart Group Management
 
 The Smart Group Management interface is accessible to users with the following roles:

@@ -37,6 +37,11 @@
 
 The Content Manager provides a comprehensive interface for viewing, creating, and managing all content within your AI Assistant platform. This centralized hub allows you to work with various types of content including documents, cards, links, and assets. The Content Manager makes it easy to find, filter, and organize content across your knowledge bases.
 
+<a href="/general/tutorials/content-tutorial.html">
+  <img src="/images/watch-tutorial-button.png" alt="User Tutorial" style="width:200px;">
+</a>
+
+
 ## Accessing Content Manager
 
 The Content Manager is accessible to users with specific roles:

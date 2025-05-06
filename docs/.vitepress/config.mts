@@ -56,7 +56,7 @@ export default defineConfig({
               },
               {text: 'Blueprints', collapsed: true, items:
                 [
-                  {text: 'Blueprint List', link: '/admin/administration/ai-management/blueprints/blueprint-list-view'},
+                  {text: 'Blueprint Manager', link: '/admin/administration/ai-management/blueprints/blueprint-list-view'},
                   {text: 'Blueprint Settings', link: '/admin/administration/ai-management/blueprints/blueprint-settings'},
                   {text: 'Blueprint AI Settings', link: '/admin/administration/ai-management/blueprints/blueprint-aisettings'},
                   {text: '<span style="color:rgb(140,3,252)">&#9734;</span> Blueprint Tutorials', link: '/admin/administration/ai-management/blueprints/create-blueprint-tutorial'}            
@@ -64,7 +64,7 @@ export default defineConfig({
               },              
               {text: 'Knowledge Bases', collapsed: true, items:
                 [
-                  {text: 'Knowledge Base List',link: '/admin/administration/ai-management/knowledge-bases/knowledge-base-list'},
+                  {text: 'Knowledge Base Manager',link: '/admin/administration/ai-management/knowledge-bases/knowledge-base-list'},
                   {text: 'Knowledge Base Settings',link: '/admin/administration/ai-management/knowledge-bases/knowledge-base'},
                   {text: '<span style="color:rgb(140,3,252)">&#9734;</span> KB Tutorials', link: '/admin/administration/ai-management/knowledge-bases/create-kb-tutorial'}
                 ]
@@ -107,7 +107,7 @@ export default defineConfig({
         [ 
           {text: 'Users', collapsed: true, items: 
             [
-              {text: 'User management', link: '/admin/administration/manage/users/user-management'},
+              {text: 'User Management', link: '/admin/administration/manage/users/user-management'},
               {text: 'User Profile', link: '/admin/administration/manage/users/user-profile'},
               {text: 'User Groups', link: '/admin/administration/manage/users/user-groups'},
               {text: 'User Privileges', link: '/admin/administration/manage/users/user-privileges'},

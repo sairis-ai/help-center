@@ -4,6 +4,10 @@
 
 The User Role Manager is a powerful administrative tool that allows administrators to manage user roles, permissions, and settings across the application. By defining roles with specific access levels and feature permissions, you can control what different groups of users can see and do within the system. Any changes made to a role automatically update all users assigned to that role.
 
+<a href="/general/tutorials/create-roles-tutorials.html">
+  <img src="/images/watch-tutorial-button.png" alt="User Tutorial" style="width:200px;">
+</a>
+
 ## Accessing the Role Manager
 
 The Role Manager is accessible to users with the following roles:

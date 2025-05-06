@@ -10,9 +10,15 @@ We start with users, and at first you will probably create other Admin users, to
 
 <video width="800" height="600" allow="fullscreen" controls="controls" src="/videos/creating-users-in-sairis.mp4" />
 
+## Creating Roles
+
+Next we start creating roles, these will be used for controlling access to content and your user permissions.
+
+<video width="800" height="600" allow="fullscreen" controls="controls" src="/videos/creating-roles-in-sairis.mp4" />
+
 ## Creating Groups
 
-Next we start creating groups, these will be used for controlling access to content and your user permissions.
+If we require groups other than the Role Groups, we can create additional groups for further controlling access to content and your user permissions.
 
 <video width="800" height="600" allow="fullscreen" controls="controls" src="/videos/creating-groups-in-sairis.mp4" />
 
