@@ -47,7 +47,7 @@ export default defineConfig({
                 [
                   {text: 'Content Manager', link: '/admin/administration/ai-management/content/content-management'},
                   {text: 'Content Access', link: '/admin/administration/ai-management/content/content-access'},
-                  {text: 'Content Access', link: '/admin/administration/ai-management/content/content-properties'},
+                  {text: 'Content Management', link: '/admin/administration/ai-management/content/content-properties'},
                   {text: 'Card', link: '/admin/administration/ai-management/content/card-designer'},
                   {text: 'File Manager', link: '/admin/administration/ai-management/content/document-uploads'},
                   {text: 'Web Link', link: '/admin/administration/ai-management/content/web-links'},
