@@ -1,4 +1,4 @@
-# AI Content Manager User Guide
+# AI Assistant Home Screen Guide
 
 <!--
 ## Table of Contents
@@ -27,208 +27,228 @@
 
 ## Introduction
 
-The AI Content Manager allows you to select specific knowledge sources for your AI conversations. This sidebar interface enables you to browse, search, and select from available knowledge bases and content items, giving you precise control over what information the AI can access during your conversation. By providing focused knowledge sources, you can get more targeted and relevant responses for your specific needs.
+The AI Assistant Home Screen serves as your personalized gateway to organizational knowledge, tools, and resources. This intelligent launch pad organizes content into visual sections based on your access permissions, showcasing relevant resources, featured content, and topic-based collections for immediate access to the information you need.
 
-## Accessing the Content Manager
+## Accessing the Home Screen
 
-The Content Manager appears as a sidebar panel within the AI Assistant interface:
+The AI Assistant Home Screen appears automatically:
+- When you first log in to the platform
+- When you click the Home icon in the navigation menu
+- After closing a conversation by clicking "New Chat"
+- When selecting "Home" from any dropdown menu
 
-1. Click the content/document icon in the main menu of the AI Assistant
-2. The Content Manager sidebar opens on the right side of the interface
-3. From here, you can browse, search, and select content for your conversation
+## Home Screen Interface Overview
 
-## Content Manager Interface
+The Home Screen is organized into a personalized welcome section followed by customizable content sections:
 
-The Content Manager consists of four main sections:
+### 1. Welcome Header
 
-1. **Header**: Contains the "New Content Chat" button and search bar
-2. **Selected Content**: Displays currently selected items as chips
-3. **Knowledge Bases**: Accordion panel for browsing and selecting knowledge repositories
-4. **Assigned Content**: Accordion panel for selecting specific content items
-5. **My Content**: Accordion panel for personal file uploads and categories
+The top section provides:
+- Personalized greeting with your name
+- Brief welcome message
+- Global search for finding content across all sections
 
-## Content Selection
+### 2. Content Sections
 
-### Selected Content View
+Below the welcome header, you'll find multiple horizontal sections:
+- Each section has a descriptive title
+- Content is organized by type, topic, or administrative configuration
+- Sections only appear when they contain viewable content
+- The order and presence of sections is configured by your administrator
 
-The top section displays all currently selected content:
+## Navigating Content Sections
 
-1. Each selected item appears as a colored chip:
-   - Knowledge Base items: Blue/primary color background
-   - Individual content items: White/neutral background
-2. Checkboxes display the name of each selected knowledge base or content item
-3. Empty state shows "empty" when no content is selected
-4. This area scrolls if many items are selected
+The Home Screen contains several types of content sections, each with unique features:
 
-### Managing Selected Content
+### Featured Content
 
-To manage your selected content:
+The Featured section highlights important or new content:
+- Visual cards with images and descriptions
+- Selected by administrators to emphasize key resources
+- Typically appears at the top of the Home Screen
+- Provides quick access to high-priority information
 
-1. **Removing Individual Items**: Click the X on any chip to remove that item
-2. **Clearing All Selections**: Click the "clear" badge next to "Selected Content" heading
-3. **Adding New Items**: Use the Knowledge Bases or Assigned Content panels
+To use Featured content:
+1. Locate the "Featured" section heading
+2. Browse horizontally through the image cards
+3. Click any card to open the associated content
+4. Visual indicators show the content type
 
-Changes to selected content are applied immediately to the conversation context.
+### Topic Sections
 
-## Knowledge Base Selection
+Topic sections organize content by subject matter:
 
-### Browsing Knowledge Bases
+#### Dynamic Topic Rows
 
-To browse available knowledge bases:
+These expandable topic sections show:
+- Row of topic buttons at the top
+- Clicking a topic reveals relevant content below
+- Content filtered to match the selected topic
+- Visual indicators for each content type
 
-1. Click the "Knowledge Bases" accordion panel to expand it
-2. View the list of available knowledge bases
-3. Each knowledge base appears with:
-   - Name and description
-   - Checkbox for selection
-   - Visual indicator of content volume
-4. Use the search box at the top to filter knowledge bases by name or description
+To use Dynamic Topic Rows:
+1. Click any topic button to select it
+2. View the filtered content that appears below
+3. Click a different topic to switch views
+4. Click the same topic again to collapse the view
 
-### Selecting Knowledge Bases
+#### Topic Columns
 
-To select knowledge bases for your conversation:
+These pre-expanded topic sections show:
+- Each topic as its own titled section
+- Content organized horizontally within each topic
+- All topics visible simultaneously without clicking
+- Visual indicators for different content types
 
-1. Click the checkbox next to each knowledge base you want to include
-2. Selected knowledge bases appear in the Selected Content area at the top
-3. Selecting a knowledge base includes all its content in the conversation context
-4. You can combine multiple knowledge bases for broader coverage
+#### Custom Topic Sections
 
-## Individual Content Selection
+These administrator-configured sections contain:
+- Content filtered by specific topic and tag combinations
+- Custom visual styling (colors may differ from other sections)
+- Pre-filtered content relevant to specific functions or teams
+- May include specialized resources
 
-### Browsing Content Items
+## Content Types and Interactions
 
-To browse individual content items:
+The Home Screen displays various content types, each with specific behaviors:
 
-1. Click the "Assigned Content" accordion panel to expand it
-2. View the list of available content items across all knowledge bases
-3. Each content item appears with:
-   - Name/title
-   - File type icon
-   - Parent knowledge base
-   - Additional metadata
-4. Use the search box to find specific content by name, type, or topic
+### Documents
 
-### Selecting Specific Content Items
+Document cards are represented as text boxes with the document name:
+- Click to open the document viewer
+- Supported formats include PDF, Word, text, and more
+- Documents open in a specialized viewer within the platform
+- Some document types may prompt download instead
 
-For more granular control over conversation context:
+### Blueprints
 
-1. Click the checkbox next to each content item you want to include
-2. Selected content items appear in the Selected Content area at the top
-3. This approach is more precise than selecting entire knowledge bases
-4. Ideal when you need very specific information sources
+Blueprint cards provide structured conversation templates:
+- Basic blueprints open a new AI conversation with predefined context
+- Conversation Starter blueprints offer specific question options
+- Visual styling matches other content cards
+- May include specialized icons for different blueprint types
 
-## Personal Content
+### Web Links
 
-### Uploading Files
-
-To use your own files in a conversation:
-
-1. Expand the "My Content" accordion panel
-2. Click "Upload File" to open your device's file browser
-3. Select a file to upload (image formats supported)
-4. Size limit: 1MB per file
-5. Uploaded files appear under selected categories
-
-### Content Categories
-
-Organize your personal content with categories:
-
-1. In the My Content panel, view available categories:
-   - Marketing
-   - Production
-   - Research
-2. Check the categories you want to apply to your content
-3. Files can belong to multiple categories for better organization
+Web link cards have a distinctive appearance:
+- Custom icon representing the link type
+- Titled with the link name
+- Click to open the destination in a new browser tab or window
+- Visual styling may include brand colors or custom backgrounds
 
 ## Search Functionality
 
-The search feature helps you quickly find content:
+The global search at the top of the Home Screen helps you find specific content:
 
-1. Type in the search box at the top of the Content Manager
-2. Search applies to both knowledge bases and content items simultaneously
-3. Results update in real-time as you type
-4. Search matches:
-   - Knowledge base names and descriptions
-   - Content titles and metadata
-   - Tags and topics
-5. Clear the search box to return to the full list
+### Using Search
 
-## Creating Content Chats
+To search across all content:
+1. Click in the search field at the top-right
+2. Type keywords related to what you're looking for
+3. Results update automatically as you type
+4. All sections filter simultaneously to show only matching content
 
-To start a new conversation with your selected content:
+### Search Behavior
 
-1. Click the "New Content Chat" button at the top of the Content Manager
-2. A new conversation starts with the currently selected content items
-3. The AI will only use knowledge from your selected sources
-4. This creates a focused conversation context for targeted answers
+The search feature:
+- Searches across content names and tags
+- Maintains section organization while filtering
+- Shows a loading indicator while refreshing results
+- Temporarily hides sections with no matching content
+- Can be cleared by clicking the "X" icon
 
-## Best Practices
+## Home Screen Customization
 
-For effective content selection:
+While the basic layout is configured by administrators, you can customize your experience:
 
-1. **Targeted Selection**:
-   - Choose only relevant knowledge bases and content for your current topic
-   - Too many sources can dilute relevance
-   - Too few may limit the AI's knowledge
+### Dark/Light Mode
 
-2. **Knowledge Base vs. Individual Content**:
-   - Use knowledge bases for broad topics
-   - Select individual content for specific questions
-   - Mix approaches when needed for optimal results
+To change the visual theme:
+1. Click your profile icon in the top-right
+2. Select "Dark Mode" or "Light Mode"
+3. The Home Screen immediately updates with appropriate colors
+4. Content cards adjust their appearance based on mode
 
-3. **Search Strategies**:
-   - Use specific terms to narrow results
-   - Try different search terms for better matches
-   - Clear search between different content needs
+### Content Filtering
 
-4. **Managing Content Lists**:
-   - Periodically clear all selections when changing topics
-   - Review selected content to ensure relevance
-   - Remove outdated or irrelevant selections
+To focus on specific content types:
+1. Use the global search to filter by keywords
+2. Select topics to see just content in those areas
+3. Use the navigation menu to access specialized content views
+4. Recently used content may appear in a dedicated section
 
-5. **Content Combinations**:
-   - Try different combinations for best results
-   - Start broad, then narrow if needed
-   - Consider combining reference documents with how-to content
+## Content Card Interactions
+
+Content cards provide visual feedback during interaction:
+
+### Hover Effects
+
+When hovering over content cards:
+- Cards elevate slightly with enhanced shadows
+- Scale increases slightly for visual emphasis
+- Border highlights may appear
+- Cursor changes to indicate clickability
+
+### Selection Behavior
+
+When clicking content cards:
+- Documents open in the document viewer
+- Blueprints start new AI conversations
+- Web links open in new browser tabs
+- Conversation starters prompt for topic selection before opening
+
+## Best Practices for Using the Home Screen
+
+### Finding Information Quickly
+
+For optimal navigation:
+- Use the global search for specific content
+- Browse topic sections for subject-matter exploration
+- Check featured content for important updates
+- Scan section titles to locate relevant content areas
+
+### Content Exploration
+
+To discover available resources:
+- Scroll through the entire Home Screen initially
+- Click different topics to see what's available
+- Use search with broad terms to explore content categories
+- Look for visual patterns in content organization
+
+### Efficient Workflow
+
+For daily productivity:
+- Start with featured content for important updates
+- Use topic sections for routine tasks
+- Search for specific needs
+- Pay attention to new content that appears in sections
 
 ## Troubleshooting
 
-**Issue**: Content not appearing in search results
-- Try different search terms
-- Check if content exists in the system
-- Verify you have permissions to access that content
-- Try clearing the search and browsing manually
+**Issue**: Content not appearing in sections
+- Try clearing the search field if active
+- Check if you're in a filtered topic view
+- Verify you have permission to access the content
+- Contact your administrator if content should be visible
 
-**Issue**: Cannot select certain content
-- Verify you have access permissions for that content
-- Check if the content is active and available
-- Try refreshing the Content Manager
-- Contact your administrator if permission issues persist
+**Issue**: Search not finding expected content
+- Try different keywords or partial terms
+- Check if content was recently added (may need refresh)
+- Verify spelling of search terms
+- Look in specific sections if global search isn't working
 
-**Issue**: Selected content not affecting AI responses
-- Ensure content is properly selected (appears in chips)
-- Try starting a new content chat
-- Ask questions that specifically relate to the selected content
-- Check if content contains information relevant to your questions
+**Issue**: Content cards not responding
+- Check your internet connection
+- Try refreshing the page
+- Clear browser cache if problems persist
+- Verify you're logged in with appropriate permissions
 
-**Issue**: Knowledge bases not loading
-- Wait a moment as knowledge bases might be loading
-- Try expanding/collapsing the accordion panel
-- Refresh the Content Manager
-- Check your network connection
-
-**Issue**: File upload failures
-- Verify file is under the size limit (1MB)
-- Check that file format is supported (images)
-- Ensure you have upload permissions
-- Try a different browser if issues persist
-
-**Issue**: Content chips disappear unexpectedly
-- Another user or process might have modified permissions
-- The system might have refreshed content listings
-- Try reselecting the content items
-- If persistent, check with your administrator
+**Issue**: Home Screen appears empty
+- Check for active search filters
+- Try refreshing the page
+- Verify you have been assigned to content groups
+- Contact your administrator to check permission settings
 
 ---
 
-For additional assistance with the Content Manager, please contact your system administrator or refer to the platform documentation.
+For additional assistance with the AI Assistant Home Screen, please contact your system administrator or support team.
