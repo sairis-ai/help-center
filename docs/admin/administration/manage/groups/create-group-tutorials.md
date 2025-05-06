@@ -1,4 +1,4 @@
-# Video Tutorials for User Management in Sairis
+# Video Tutorials for Group Management in Sairis
 
 ## Creating Users
 

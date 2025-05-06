@@ -186,12 +186,13 @@ Platform and AI configuration card:
 
 For new users of the platform:
 
-![homepage](/images/home-learn.png)
 
-1. The "Learn the platform" button in the top-right provides quick access to learning resources
-2. This takes you to the AI Assistant where you can ask questions about using the platform
-3. Start with the AI Assistant card to familiarize yourself with basic functionality
-4. Explore other cards based on your specific role and responsibilities
+
+1. The "Compass" button in the top-right provides quick access to learning resources
+ ![homepage](/images/home-learn.png)
+3. This takes you to the AI Assistant where you can ask questions about using the platform
+4. Start with the AI Assistant card to familiarize yourself with basic functionality
+5. Explore other cards based on your specific role and responsibilities
 
 ## Role-Based Access
 
