@@ -1,4 +1,4 @@
-# MFA Message Configuration Guide
+# MFA Message Guide
 
 ## Introduction
 
