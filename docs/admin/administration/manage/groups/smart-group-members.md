@@ -1,4 +1,4 @@
-# Group Members Viewer Guide
+# Smart Group Members Viewer Guide
 
 ## Introduction
 

@@ -1,4 +1,4 @@
-# Smart Groups Management Guide
+# Smart Group Management Guide
 
 <!--
 ## Table of Contents
