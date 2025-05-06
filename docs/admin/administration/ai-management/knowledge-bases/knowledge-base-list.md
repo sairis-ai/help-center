@@ -30,9 +30,14 @@
 
 The Knowledge Base Manager provides administrators and content managers with a powerful interface for creating, managing, and organizing AI knowledge bases. Knowledge bases are collections of content that power your AI assistant, enabling it to provide accurate, relevant responses based on your organization's specific information and documentation.
 
-<a href="/general/tutorials/create-kb-tutorial.html">
+<!-- <a href="/general/tutorials/create-kb-tutorial.html">
+  <img src="/images/watch-tutorial-button.png" alt="User Tutorial" style="width:200px;">
+</a> -->
+
+<a href="/videos/creating-knowledge-base-in-sairis.mp4" target="_blank">
   <img src="/images/watch-tutorial-button.png" alt="User Tutorial" style="width:200px;">
 </a>
+
 
 ## Accessing the Knowledge Base Manager
 

@@ -34,8 +34,12 @@
 ## Introduction
 
 The Blueprint Manager provides a comprehensive interface for administrators to create, view, edit, and manage AI Blueprints. Blueprints define how the AI assistant behaves, what knowledge it can access, and how it interacts with users. This guide covers how to effectively use the Blueprint Manager to organize and maintain your AI experiences.
-
+<!-- 
 <a href="/general/tutorials/create-blueprint-tutorial.html">
+  <img src="/images/watch-tutorial-button.png" alt="User Tutorial" style="width:200px;">
+</a> -->
+
+<a href="/videos/creating-blueprints-in-sairis.mp4" target="_blank">
   <img src="/images/watch-tutorial-button.png" alt="User Tutorial" style="width:200px;">
 </a>
 

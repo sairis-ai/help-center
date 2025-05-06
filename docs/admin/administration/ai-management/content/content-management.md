@@ -37,9 +37,21 @@
 
 The Content Manager provides a comprehensive interface for viewing, creating, and managing all content within your AI Assistant platform. This centralized hub allows you to work with various types of content including documents, cards, links, and assets. The Content Manager makes it easy to find, filter, and organize content across your knowledge bases.
 
-<a href="/general/tutorials/content-tutorial.html">
+
+<a href="/videos/uploading-content-in-sairis.mp4" target="_blank">
   <img src="/images/watch-tutorial-button.png" alt="User Tutorial" style="width:200px;">
 </a>
+
+<!-- 
+<video width="620" height="620" poster="watch-tutorial-button.png" controls >
+  <source src="/videos/uploading-content-in-sairis.mp4" type="video/mp4">
+</video>
+
+
+<video width="620" height="620" poster="https://help.sairis.ai/assets/watch-tutorial-button.D5upP3LU.png" controls >
+  <source src="/videos/uploading-content-in-sairis.mp4" type="video/mp4">
+</video> -->
+
 
 
 ## Accessing Content Manager

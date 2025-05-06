@@ -28,9 +28,14 @@
 
 The User List component provides a comprehensive interface for managing user accounts within the system. It allows administrators to view, search, filter, and access individual user profiles for detailed management.
 
-<a href="/general/tutorials/create-user-tutorials.html">
+<!-- <a href="/general/tutorials/create-user-tutorials.html">
+  <img src="/images/watch-tutorial-button.png" alt="User Tutorial" style="width:200px;">
+</a> -->
+
+<a href="/videos/creating-users-in-sairis.mp4" target="_blank">
   <img src="/images/watch-tutorial-button.png" alt="User Tutorial" style="width:200px;">
 </a>
+
 
 ## Accessing the User List
 
