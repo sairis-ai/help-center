@@ -28,6 +28,10 @@
 
 The AI Platform Home Dashboard provides a centralized starting point for accessing all major platform features and management tools. This gateway interface presents a clear, visually appealing overview of available modules with quick-access navigation cards. The Home Dashboard is designed to help administrators, content managers, and other authorized users quickly access the tools they need to configure and maintain the AI platform.
 
+<a href="/videos/sairis-ai-assistant-homepage.mp4" target="_blank">
+  <img src="/images/watch-tutorial-button.png" alt="User Tutorial" style="width:200px;">
+</a>
+
 ## Accessing the Home Dashboard
 
 The Home Dashboard is accessible to users with specific roles:
