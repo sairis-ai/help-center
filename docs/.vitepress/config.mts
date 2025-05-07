@@ -135,7 +135,7 @@ export default defineConfig({
               {text: '<span style="color:rgb(140,3,252)">&#9734;</span> Group Tutorials', link: '/admin/administration/manage/groups/create-group-tutorials'}
             ]
           }, 
-          {text: 'Global settings',collapsed: true, items: 
+          {text: 'Global Settings',collapsed: true, items: 
             [  
               {text: 'Branding', link: '/admin/administration/manage/global-settings/branding'},
               {text: 'Security', link: '/admin/administration/manage/global-settings/security'},
