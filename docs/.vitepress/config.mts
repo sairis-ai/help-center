@@ -208,7 +208,8 @@ export default defineConfig({
           {text: '<span style="color:rgb(140,3,252)">&#9734;</span> Groups', link: '/general/tutorials/create-group-tutorials'},
           {text: '<span style="color:rgb(140,3,252)">&#9734;</span> Content', link: '/general/tutorials/content-tutorial'},
           {text: '<span style="color:rgb(140,3,252)">&#9734;</span> KB\'s', link: '/general/tutorials/create-kb-tutorial'},
-          {text: '<span style="color:rgb(140,3,252)">&#9734;</span> Blueprints', link: '/general/tutorials/create-blueprint-tutorial'}    
+          {text: '<span style="color:rgb(140,3,252)">&#9734;</span> Blueprints', link: '/general/tutorials/create-blueprint-tutorial'},
+          {text: '<span style="color:rgb(140,3,252)">&#9734;</span> AI Assistant', link: '/general/tutorials/sairis-ai-assistant-homepage'}       
           ]
       },
     ],
