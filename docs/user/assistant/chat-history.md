@@ -33,9 +33,14 @@
 
 The Chat History feature in the AI Assistant allows you to manage your conversations, organize discussions with tags, and quickly find previous interactions. This guide explains how to use the chat history panel to manage your AI conversations effectively.
 
+
 ## Accessing Chat History
 
 The Chat History panel is located on the right side of the AI Assistant interface. If it's not visible:
+
+<a href="/videos/sairis-ai-assistant-cp-chat.mp4" target="_blank">
+  <img src="/images/watch-tutorial-button.png" alt="User Tutorial" style="width:200px;">
+</a>
 
 1. Click the **Chat History** icon in the top-right corner of the assistant interface
 2. The panel will slide open, displaying your recent conversations
@@ -175,6 +180,11 @@ To update your chat history list with the latest data:
 ## Working with Blueprints
 
 If your role has access to Blueprints, the lower half of the Chat History panel shows your available Blueprints:
+
+<a href="/videos/sairis-ai-assistant-cp-bp.mp4" target="_blank">
+  <img src="/images/watch-tutorial-button.png" alt="User Tutorial" style="width:200px;">
+</a>
+
 
 ### Selecting a Blueprint
 
