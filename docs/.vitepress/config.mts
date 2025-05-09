@@ -161,10 +161,11 @@ export default defineConfig({
           {text: 'Launchpad', link: '/user/assistant/launchpad' },
           {text: 'Assistant Home', link: '/user/assistant/assistant-home' },
           {text: 'Assistant Overview', link: '/user/assistant/assistant-overview' },
+          {text: 'Control Panel', link: '/user/assistant/control-panel' }   ,
           {text: 'Chat History', link: '/user/assistant/chat-history' },
           {text: 'Settings', link: '/user/assistant/chat-settings' },
-          {text: 'Chat Tokens', link: '/user/assistant/chat-token-counts' },
-          {text: 'Control Panel', link: '/user/assistant/control-panel' }          
+          {text: 'Chat Tokens', link: '/user/assistant/chat-token-counts' }
+                 
         ]
       },
       {text: 'Search', collapsed: false, items: 
@@ -209,10 +210,15 @@ export default defineConfig({
           {text: '<span style="color:rgb(140,3,252)">&#9734;</span> Content', link: '/general/tutorials/content-tutorial'},
           {text: '<span style="color:rgb(140,3,252)">&#9734;</span> KB\'s', link: '/general/tutorials/create-kb-tutorial'},
           {text: '<span style="color:rgb(140,3,252)">&#9734;</span> Blueprints', link: '/general/tutorials/create-blueprint-tutorial'},
-          {text: '<span style="color:rgb(140,3,252)">&#9734;</span> AI Assistant - Homepage', link: '/general/tutorials/sairis-ai-assistant-homepage'},
-          {text: '<span style="color:rgb(140,3,252)">&#9734;</span> AI Assistant, Control Panel - Chat', link: '/general/tutorials/sairis-ai-assistant-cp-chat'},
-          {text: '<span style="color:rgb(140,3,252)">&#9734;</span> AI Assistant, Control Panel - Blueprints', link: '/general/tutorials/sairis-ai-assistant-cp-bp'},
-          ]
+          {text: 'AI Assistant', collapsed: false, items: 
+            [
+              {text: '<span style="color:rgb(140,3,252)">&#9734;</span> Homepage', link: '/general/tutorials/sairis-ai-assistant-homepage'},
+              {text: '<span style="color:rgb(140,3,252)">&#9734;</span> Control Panel - Chat', link: '/general/tutorials/sairis-ai-assistant-cp-chat'},
+              {text: '<span style="color:rgb(140,3,252)">&#9734;</span> Control Panel - Blueprints', link: '/general/tutorials/sairis-ai-assistant-cp-bp'},
+              {text: '<span style="color:rgb(140,3,252)">&#9734;</span> Control Panel - Settings', link: '/general/tutorials/sairis-ai-assistant-cp-settings'}
+            ]
+          }  
+        ]
       },
     ],
     '/references/': 
