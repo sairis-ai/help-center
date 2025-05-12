@@ -164,7 +164,8 @@ export default defineConfig({
           {text: 'Control Panel', link: '/user/assistant/control-panel' }   ,
           {text: 'Chat History', link: '/user/assistant/chat-history' },
           {text: 'Settings', link: '/user/assistant/chat-settings' },
-          {text: 'Chat Tokens', link: '/user/assistant/chat-token-counts' }
+          {text: 'Chat Tokens', link: '/user/assistant/chat-token-counts' },
+          {text: '<span style="color:rgb(140,3,252)">&#9734;</span> AI Assistant Tutorials', link: '/user/assistant/assistant-tutorials.md' }
                  
         ]
       },
