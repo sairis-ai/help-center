@@ -1,6 +1,6 @@
 # Video Tutorials for AI Assistant in Sairis
 
-## AI Assistant Homepage
+## AI Assistant: Homepage
 
 <video width="800" height="600" allow="fullscreen" controls>
   <source src="/videos/sairis-ai-assistant-homepage.mp4" type="video/mp4">
