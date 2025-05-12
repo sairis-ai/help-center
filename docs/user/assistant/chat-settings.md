@@ -37,6 +37,10 @@
 
 The AI Assistant Settings panel allows you to customize how the AI assistant works, including which AI model it uses, what content it can access, and how it interacts with external information. These settings can be configured for individual chat sessions or saved as reusable Blueprints that can be shared with others.
 
+<a href="/videos/sairis-ai-assistant-cp-settings.mp4" target="_blank">
+  <img src="/images/watch-tutorial-button.png" alt="User Tutorial" style="width:200px;">
+</a>
+
 ## Accessing AI Settings
 
 The AI Settings panel is located on the right side of the AI Assistant interface. To access it:
