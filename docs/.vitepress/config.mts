@@ -178,7 +178,8 @@ export default defineConfig({
     [
       {text: 'Getting Started', collapsed: false, items: 
         [
-          {text: '<span style="color:rgb(140,3,252)">&#9734;</span> Onboarding Experience', link: '/general/getting-started/onboarding' },
+          {text: '<span style="color:rgb(140,3,252)">&#9734;</span> System Basics', link: '/general/getting-started/onboarding' },
+          {text: '<span style="color:rgb(140,3,252)">&#9734;</span> Onboarding Overview', link: '/general/getting-started/mastering-sairis-onboarding-overview.mp4' },      
           {text: '<span style="color:rgb(140,3,252)">&#9734;</span> Quick Start', link: '/general/getting-started/quick-start' }   
         ]
       },
