@@ -1,4 +1,4 @@
-# Content Manager User Guide
+# AI Content: Manager User Guide
 
 <!--
 ## Table of Contents
@@ -35,7 +35,7 @@
 
 ## Introduction
 
-The Content Manager provides a comprehensive interface for viewing, creating, and managing all content within your AI Assistant platform. This centralized hub allows you to work with various types of content including documents, cards, links, and assets. The Content Manager makes it easy to find, filter, and organize content across your knowledge bases.
+The AI Content: Manager provides a comprehensive interface for viewing, creating, and managing all content within your AI Assistant platform. This centralized hub allows you to work with various types of content including documents, cards, links, and assets. The AI Content: Manager makes it easy to find, filter, and organize content across your knowledge bases.
 
 
 <a href="/videos/uploading-content-in-sairis.mp4" target="_blank">
@@ -54,22 +54,22 @@ The Content Manager provides a comprehensive interface for viewing, creating, an
 
 
 
-## Accessing Content Manager
+## Accessing AI Content: Manager
 
-The Content Manager is accessible to users with specific roles:
+The AI Content: Manager is accessible to users with specific roles:
 - Admin
 - Content
 - Manager
 
 To access this component, navigate to the Content section in the main navigation menu. The default view shows all content across the system.
 
-## Content Manager Interface Overview
+## AI Content: Manager Interface Overview
 
-The Content Manager consists of these key components:
+The AI Content: Manager consists of these key components:
 
 ![homepage](/images/content-manage.png)
 
-1. **Header Section**: Contains the title "Content Manager" with content count badge, description, and Add button
+1. **Header Section**: Contains the title "AI Content: Manager" with content count badge, description, and Add button
 2. **Search and Filter Controls**: Tools for finding specific content including global search, content type filters, knowledge base filters, and quick filters
 3. **Data Table**: Displays content items in a sortable, filterable table
 4. **Action Buttons**: Quick access to refresh data, clear filters, and export to Excel

@@ -45,9 +45,9 @@ export default defineConfig({
             [ 
               {text: 'AI Content', collapsed: true, items:
                 [
-                  {text: 'Content Manager', link: '/admin/administration/ai-management/content/content-management'},
+                  {text: 'AI Content: Manager', link: '/admin/administration/ai-management/content/content-management'},
                   {text: 'Content Access', link: '/admin/administration/ai-management/content/content-access'},
-                  {text: 'Content Management', link: '/admin/administration/ai-management/content/content-properties'},
+                  {text: 'Content Properties Management', link: '/admin/administration/ai-management/content/content-properties'},
                   {text: 'Card', link: '/admin/administration/ai-management/content/card-designer'},
                   {text: 'File Manager', link: '/admin/administration/ai-management/content/document-uploads'},
                   {text: 'Web Link', link: '/admin/administration/ai-management/content/web-links'},
@@ -224,18 +224,18 @@ export default defineConfig({
     ],
     '/references/': 
     [
-      {text: 'LLM\'s', link: '/references/llm/llm'},
-      {text: 'Release Notes', collapsed: true, items: 
-        [
-          {text: 'Release 1001', link: '/references/release-notes/coming-soon' }
-        ]
-      },
-      {text: 'Legal', collapsed: true, items: 
-        [
-          {text: 'Legal Doc', link: '/references/legal/coming-soon' }          
-        ]
-      },
-      {text: 'Coming Soon - Network Status', link: '/references/network-status/coming-soon'},
+      {text: 'LLM\'s', link: '/references/llm/llm'} //,
+      // {text: 'Release Notes', collapsed: true, items: 
+      //   [
+      //     {text: 'Release 1001', link: '/references/release-notes/coming-soon' }
+      //   ]
+      // },
+      // {text: 'Legal', collapsed: true, items: 
+      //   [
+      //     {text: 'Legal Doc', link: '/references/legal/coming-soon' }          
+      //   ]
+      // },
+      // {text: 'Coming Soon - Network Status', link: '/references/network-status/coming-soon'},
     ], 
     },
   }

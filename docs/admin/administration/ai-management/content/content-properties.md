@@ -1,17 +1,17 @@
-# AI Content Management Guide
+# AI Content Properties Management Guide
 
 ## Introduction
 
-The Content Management interface provides a powerful tool for uploading, organizing, and managing the documents that power your AI assistant. This document-centric approach allows you to provide your AI with structured information, control how content is processed, and organize information for optimal retrieval.
+The Content Properties Management interface provides a powerful tool for uploading, organizing, and managing the documents that power your AI assistant. This document-centric approach allows you to provide your AI with structured information, control how content is processed, and organize information for optimal retrieval.
 
-## Accessing Content Management
+## Accessing Content Properties Management
 
-The Content Management interface is accessible to users with Content Manager permissions. You can access it:
+The Content Properties Management interface is accessible to users with Content Manager permissions. You can access it:
 - Through the main navigation menu under "Content"
 - Via the Knowledge Base interface when adding or managing content
 - By clicking "Manage Content" in various AI administration areas
 
-## Content Management Interface Overview
+## Content Properties Management Interface Overview
 
 The interface consists of two main tabs:
 1. **Content**: For managing file information, uploading documents, and configuring metadata
@@ -172,7 +172,7 @@ View detailed technical information about the content:
    - AI processing status
    - Creation and modification information
 
-## Content Management Best Practices
+## Content Properties Management Best Practices
 
 ### Document Optimization
 
