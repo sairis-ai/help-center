@@ -155,7 +155,7 @@ If documents are taking longer than expected to process:
 - Larger documents may take more time
 - Complex file formats like PDFs with images require additional processing time
 - Check your network connection
-- 
+  
 ### Knowledge Base Filtering
 
 To filter content by knowledge base:
