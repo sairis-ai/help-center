@@ -143,6 +143,19 @@ To filter content by type:
 
 ![homepage](/images/content-remove-filters.png)
 
+### Content Processing Queue
+
+When you upload documents, they are processed by the system and go through a fanout process. To monitor processing status:
+
+1. Click the clock icon button to toggle the Content Processing Queue view
+2. Processing documents will show a progress bar indicating completion percentage
+3. The system automatically refreshes every 30 seconds when documents are processing
+
+If documents are taking longer than expected to process:
+- Larger documents may take more time
+- Complex file formats like PDFs with images require additional processing time
+- Check your network connection
+- 
 ### Knowledge Base Filtering
 
 To filter content by knowledge base:
@@ -167,6 +180,18 @@ To filter by topics or tags:
 2. Select from the dropdown list of available topics or tags
 3. The list updates to show only content with the selected topic or tag
 
+### Content Processing Queue
+
+When you upload documents, they are processed by the system and go through a fanout process. To monitor processing status:
+
+1. Click the clock icon button to toggle the Content Processing Queue view
+2. Processing documents will show a progress bar indicating completion percentage
+3. The system automatically refreshes every 30 seconds when documents are processing
+
+If documents are taking longer than expected to process:
+- Larger documents may take more time
+- Complex file formats like PDFs with images require additional processing time
+- Check your network connection
 ### Quick Filters
 
 Pre-configured filters for common scenarios:

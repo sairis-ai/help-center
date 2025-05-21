@@ -45,14 +45,14 @@ To add files to your AI knowledge base:
    - A progress indicator appears during upload
    - Status badges show "Pending" → "Uploading" → "Succeeded"
 
-### File Processing
+### AI Processing Status
 
-After upload, files undergo AI processing:
-1. Initial content record creation
-2. File upload to secure storage
-3. Text extraction and processing
-4. AI vectorization and indexing
-5. Availability for knowledge retrieval
+After uploading, files are processed by the AI system:
+
+1. Processing status is indicated in the Content Properties
+2. During processing, a progress indicator is shown
+3. If processing takes longer than expected, a "Retry AI Processing" button appears
+4. Click "Retry" if processing seems stuck or encounters issues
 
 **Note**: Processing can take several minutes per document depending on size and complexity. Larger documents may take longer.
 
@@ -120,6 +120,15 @@ To replace an existing file:
 2. Select a new file to replace the current one
 3. The file is uploaded and processed while maintaining the same metadata
 
+### AI Processing Status
+
+After uploading, files are processed by the AI system:
+
+1. Processing status is indicated in the Content Properties
+2. During processing, a progress indicator is shown
+3. If processing takes longer than expected, a "Retry AI Processing" button appears
+4. Click "Retry" if processing seems stuck or encounters issues
+   
 ### Editing Multiple Files
 
 When uploading multiple files:
