@@ -51,8 +51,14 @@ After uploading, files are processed by the AI system:
 
 1. Processing status is indicated in the Content Properties
 2. During processing, a progress indicator is shown
-3. If processing takes longer than expected, a "Retry AI Processing" button appears
-4. Click "Retry" if processing seems stuck or encounters issues
+   - Processing
+   - Convert to PDF (only if it's a non-pdf file)
+   - Compress pdf
+   - Extracting tables: Processing structured table data in your document 
+   - Vectorizing data: Inserting the data into the DB
+   - Complete 
+4. If processing takes longer than expected, a "Retry AI Processing" button appears
+5. Click "Retry" if processing seems stuck or encounters issues
 
 **Note**: Processing can take several minutes per document depending on size and complexity. Larger documents may take longer.
 
@@ -126,6 +132,11 @@ After uploading, files are processed by the AI system:
 
 1. Processing status is indicated in the Content Properties
 2. During processing, a progress indicator is shown
+   - Processing
+   - Convert to PDF (only if it's a non-pdf file)
+   - Compress
+   - Extracting tables: Processing structured table data in your document 
+   - Vectorizing data: Inserting the data into the DB 
 3. If processing takes longer than expected, a "Retry AI Processing" button appears
 4. Click "Retry" if processing seems stuck or encounters issues
    
