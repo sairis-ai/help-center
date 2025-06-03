@@ -15,7 +15,7 @@ hero:
   text: "Help Center"
   tagline: Generative AI Enablement
   actions:
-    - theme: starting
+    - theme: brand
       text: Get Started
       link: "/general/learn/learn"
     - theme: alt
