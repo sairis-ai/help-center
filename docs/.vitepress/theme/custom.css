@@ -68,6 +68,13 @@
     background-color: #25294f !important; 
    }
 
+   .VPButton.medium.starting 
+   {
+     border-color: var(--vp-button-brand-border);
+     color: var(--vp-button-brand-text);
+     background-color: #3c1433 !important; 
+    }
+
   /* .image-bg 
   {
     width: 1620px !important;

@@ -15,13 +15,16 @@ hero:
   text: "Help Center"
   tagline: Generative AI Enablement
   actions:
-    - theme: brand
+    - theme: starting
+      text: Get Started
+      link: "/general/learn/learn"
+    - theme: alt
       text: Admins
       link: "/admin/administration/administration-home"
-    - theme: brand
+    - theme: alt
       text: End Users
       link: "/user/assistant/assistant-home"
-    - theme: brand
+    - theme: alt
       text: Learning
       link: "/general/learn/learn"
 
@@ -40,4 +43,7 @@ features:
       src: "/images/tutorial.png"
     
 --- 
+
+
+
 
