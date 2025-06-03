@@ -220,7 +220,7 @@ export default defineConfig({
               {text: '<span style="color:rgb(140,3,252)">&#9734;</span> Blueprints', link: '/general/tutorials/create-blueprint-tutorial'},
             ]
           },
-          {text: 'AI Assistant - End User', collapsed: true, items: 
+          {text: 'End User - AI Assistant', collapsed: true, items: 
             [
               {text: '<span style="color:rgb(140,3,252)">&#9734;</span> Homepage', link: '/general/tutorials/sairis-ai-assistant-homepage'},
               {text: '<span style="color:rgb(140,3,252)">&#9734;</span> Control Panel - Chat', link: '/general/tutorials/sairis-ai-assistant-cp-chat'},
