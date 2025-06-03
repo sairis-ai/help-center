@@ -1,7 +1,5 @@
-# Welcome to Sairis
+# Discover Sairis
 
-## High-Level Overview
-
-Welcome to Sairis! You're about to watch a quick video that’ll walk you through the high-level basics of our system. Get ready to explore all the great features waiting for you—enjoy!
+Dive into our innovative software designed to streamline your workflow and boost productivity. This brief video introduces you to Sairis, showcasing its powerful features and intuitive interface. Get ready to explore how Sairis can transform the way you work—let's get started!
 
 <video width="800" height="600" allow="fullscreen" controls="controls" src="/videos/mastering-sairis-a-seamless-onboarding-experience.mp4" />
