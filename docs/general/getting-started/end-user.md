@@ -32,3 +32,21 @@ Still in the control panel, you can select different blueprints to engage AI in 
 Lastly, we get into the settings, which allows fine tuning of AI, their modes, and items like usage of LLM or web to help with responses.
 
 <video width="800" height="600" allow="fullscreen" controls="controls" src="/videos/sairis-ai-assistant-cp-settings.mp4" />
+
+## Summary
+
+This page introduces End Users to the Sairis AI platform, focusing on how to effectively utilize its features for productivity and creativity.
+
+- **Using the AI Assistant:**  
+ Learn how to interact with the AI Assistant to ask questions, generate ideas, summarize documents, and engage with assigned content.
+
+- **Control Panel - Chat:**  
+ Discover how to view and manage all your AI chats within the control panel.
+
+- **Control Panel - Blueprints:**  
+ Understand how to select different blueprints to guide AI interactions in chat.
+
+- **Control Panel - Settings:**  
+ Explore settings to fine-tune AI behavior, switch between AI modes, and configure options like using different AI models or enabling web searches.
+
+Each section includes a video walkthrough to help you get started with these key End User tasks.
