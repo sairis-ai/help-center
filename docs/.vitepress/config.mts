@@ -179,7 +179,7 @@ export default defineConfig({
       {text: 'Getting Started', collapsed: false, items: 
         [
           {text: 'Step 1: <span style="color:rgb(140,3,252)">&#9734;</span> Discover Sairis: Explainer Video', link: '/general/getting-started/onboarding' }, 
-          {text: 'Step 2: <span style="color:rgb(140,3,252)">&#9734;</span> What\'s my role?', link: '/general/getting-started/my-role' },
+          {text: 'Step 2: <span style="color:rgb(140,3,252)">&#9734;</span> What\'s my role, persona?', link: '/general/getting-started/my-role' },
           {text: 'Personas: Quick Start', collapsed: false, items: 
             [
               {text: '<span style="color:rgb(140,3,252)">&#9734;</span> Global Admin', link: '/general/getting-started/global-admin' },
