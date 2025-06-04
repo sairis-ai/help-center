@@ -219,6 +219,14 @@ export default defineConfig({
       {
         text: '<span style="color:rgb(140,3,252)">&#9734;</span> Tutorials', collapsed: true, items: 
         [ 
+          {text: 'End User', collapsed: true, items: 
+            [
+              {text: '<span style="color:rgb(140,3,252)">&#9734;</span> Homepage', link: '/general/tutorials/sairis-ai-assistant-homepage'},
+              {text: '<span style="color:rgb(140,3,252)">&#9734;</span> Control Panel - Chat', link: '/general/tutorials/sairis-ai-assistant-cp-chat'},
+              {text: '<span style="color:rgb(140,3,252)">&#9734;</span> Control Panel - Blueprints', link: '/general/tutorials/sairis-ai-assistant-cp-bp'},
+              {text: '<span style="color:rgb(140,3,252)">&#9734;</span> Control Panel - Settings', link: '/general/tutorials/sairis-ai-assistant-cp-settings'}
+            ]
+          },
           {text: 'Administrators', collapsed: true, items: 
             [
               {text: '<span style="color:rgb(140,3,252)">&#9734;</span> Users', link: '/general/tutorials/create-user-tutorials'},
@@ -228,16 +236,9 @@ export default defineConfig({
               {text: '<span style="color:rgb(140,3,252)">&#9734;</span> KB\'s', link: '/general/tutorials/create-kb-tutorial'},
               {text: '<span style="color:rgb(140,3,252)">&#9734;</span> Blueprints', link: '/general/tutorials/create-blueprint-tutorial'},
             ]
-          },
-          {text: 'End User - AI Assistant', collapsed: true, items: 
-            [
-              {text: '<span style="color:rgb(140,3,252)">&#9734;</span> Homepage', link: '/general/tutorials/sairis-ai-assistant-homepage'},
-              {text: '<span style="color:rgb(140,3,252)">&#9734;</span> Control Panel - Chat', link: '/general/tutorials/sairis-ai-assistant-cp-chat'},
-              {text: '<span style="color:rgb(140,3,252)">&#9734;</span> Control Panel - Blueprints', link: '/general/tutorials/sairis-ai-assistant-cp-bp'},
-              {text: '<span style="color:rgb(140,3,252)">&#9734;</span> Control Panel - Settings', link: '/general/tutorials/sairis-ai-assistant-cp-settings'}
-            ]
           }
-                  ]
+         
+        ]
       },
       {text: '<span style="color:rgb(140,3,252)">&#9734;</span> = Video Included'}  
     ],
