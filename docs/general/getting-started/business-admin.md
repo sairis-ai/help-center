@@ -9,6 +9,47 @@ Business Admins also have the authority to create and manage users within their 
 This role strikes a balance between operational flexibility and controlled access, ensuring that departmental administrators can effectively manage their specific areas while maintaining overall system integrity and security.
 
 ## Managing your departments users in Sairis
-We start by introducing you to Users
+See how to add, edit, and manage users within your department
 
 <video width="800" height="600" allow="fullscreen" controls="controls" src="/videos/creating-users-in-sairis.mp4" />
+
+## Placing your departments users into Smart Group
+Learn to organize users into Smart Groups for streamlined permissions and management
+
+<video width="800" height="600" allow="fullscreen" controls="controls" src="/videos/creating-groups-in-sairis.mp4" />
+
+## Creating your departments Knowledge Bases
+Discover how to create and structure knowledge bases for your department’s information
+
+<video width="800" height="600" allow="fullscreen" controls="controls" src="/videos/creating-knowledge-base-in-sairis.mp4" />
+
+## Creating your departments Blue Prints
+Find out how to build and customize Blueprints as templates for your department’s workflows
+
+<video width="800" height="600" allow="fullscreen" controls="controls" src="/videos/creating-blueprints-in-sairis.mp4" />
+
+## Creating your departments Content
+Get step-by-step instructions for uploading and managing content using the Content Manager
+
+<video width="800" height="600" allow="fullscreen" controls="controls" src="/videos/uploading-content-in-sairis.mp4" />
+
+## Summary
+
+This page covers the essential tasks for Business Admins in Sairis, each with a video walkthrough:
+
+- **Managing your department’s users:**  
+  Learn how to create and manage users within your department
+
+- **Placing users into Smart Groups:**  
+  Organize users into Smart Groups for better management and permissions
+
+- **Creating Knowledge Bases:**  
+  Set up department-specific knowledge bases to store and organize information
+
+- **Creating Blueprints:**  
+  Build Blueprints as templates or frameworks for your department’s processes
+
+- **Creating Content:**  
+  Use the Content Manager to upload and manage your department’s content
+
+Each section provides a step-by-step video to help you get started with these key Business Admin tasks
