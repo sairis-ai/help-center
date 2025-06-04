@@ -184,9 +184,10 @@ export default defineConfig({
           {text: '2: <span style="color:rgb(140,3,252)">&#9734;</span> What\'s my role?', link: '/general/getting-started/my-role' },
           {text: '3: Roles: Quick Start', collapsed: false, items: 
             [
-              {text: '<span style="color:rgb(140,3,252)">&#9734;</span> Global Admin', link: '/general/getting-started/global-admin' },
+              {text: '<span style="color:rgb(140,3,252)">&#9734;</span> End User', link: '/general/getting-started/end-user' },
               {text: '<span style="color:rgb(140,3,252)">&#9734;</span> Business Admin', link: '/general/getting-started/business-admin' },
-              {text: '<span style="color:rgb(140,3,252)">&#9734;</span> End User', link: '/general/getting-started/end-user' }
+              {text: '<span style="color:rgb(140,3,252)">&#9734;</span> Global Admin', link: '/general/getting-started/global-admin' }
+              
             ]
           } 
         ]
