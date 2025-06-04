@@ -19,11 +19,11 @@ hero:
       text: Get Started
       link: "/general/learn/learn"
     - theme: alt
-      text: Admins
-      link: "/admin/administration/administration-home"
-    - theme: alt
       text: End Users
       link: "/user/assistant/assistant-home"
+    - theme: alt
+      text: Admins
+      link: "/admin/administration/administration-home"
     - theme: alt
       text: Learning
       link: "/general/learn/learn"

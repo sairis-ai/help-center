@@ -31,10 +31,10 @@ export default defineConfig({
     },
 
     nav: [
-     { text: 'Admins', link: '/admin/administration/administration-home'},
-     { text: 'End Users', link: '/user/assistant/assistant-home'},
-     { text: 'Learning', link: '/general/learn/learn'},
-     { text: 'Reference', link: '/references/references-home'}
+      { text: 'End Users', link: '/user/assistant/assistant-home'},
+      { text: 'Admins', link: '/admin/administration/administration-home'},
+      { text: 'Learning', link: '/general/learn/learn'},
+      { text: 'Reference', link: '/references/references-home'}
     ],
   
     sidebar: 
