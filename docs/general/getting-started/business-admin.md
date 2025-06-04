@@ -8,27 +8,27 @@ Business Admins also have the authority to create and manage users within their 
 
 This role strikes a balance between operational flexibility and controlled access, ensuring that departmental administrators can effectively manage their specific areas while maintaining overall system integrity and security.
 
-## Managing your departments users in Sairis
+## Sairis User Control
 See how to add, edit, and manage users within your department
 
 <video width="800" height="600" allow="fullscreen" controls="controls" src="/videos/creating-users-in-sairis.mp4" />
 
-## Placing your departments users into Smart Group
+## Smart Group Setup
 Learn to organize users into Smart Groups for streamlined permissions and management
 
 <video width="800" height="600" allow="fullscreen" controls="controls" src="/videos/creating-groups-in-sairis.mp4" />
 
-## Creating your departments Knowledge Bases
+## Build Knowledge Bases
 Discover how to create and structure knowledge bases for your department’s information
 
 <video width="800" height="600" allow="fullscreen" controls="controls" src="/videos/creating-knowledge-base-in-sairis.mp4" />
 
-## Creating your departments Blue Prints
+## Create Blueprints
 Find out how to build and customize Blueprints as templates for your department’s workflows
 
 <video width="800" height="600" allow="fullscreen" controls="controls" src="/videos/creating-blueprints-in-sairis.mp4" />
 
-## Creating your departments Content
+## Content Setup Tool
 Get step-by-step instructions for uploading and managing content using the Content Manager
 
 <video width="800" height="600" allow="fullscreen" controls="controls" src="/videos/uploading-content-in-sairis.mp4" />
