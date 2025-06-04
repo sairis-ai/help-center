@@ -10,18 +10,25 @@ The upcoming videos will demonstrate how you can interact with the Sairis AI Ass
 During the videos you'll discover how to effectively navigate and utilize the platform's user-focused features.
 
 ## Using the AI Assistant
-We start by introducing you to the AI Assistant 
+
+We start by introducing you to the AI Assistant.
 
 <video width="800" height="600" allow="fullscreen" controls="controls" src="/videos/sairis-ai-assistant-homepage.mp4" />
 
 ## Control Panel - Chat
 
+Next we show you how you can view and manage all your AI chats in the control panel.
+
 <video width="800" height="600" allow="fullscreen" controls="controls" src="/videos/sairis-ai-assistant-cp-chat.mp4" />
 
 ## Control Panel - Blueprints
 
+Still in the control panel, you can select different blueprints to engage AI in chat.
+
 <video width="800" height="600" allow="fullscreen" controls="controls" src="/videos/sairis-ai-assistant-cp-bp.mp4" />
 
 ## Control Panel - Settings
+
+Lastly, we get into the settings, which allows fine tuning of AI, their modes, and items like usage of LLM or web to help with responses.
 
 <video width="800" height="600" allow="fullscreen" controls="controls" src="/videos/sairis-ai-assistant-cp-settings.mp4" />
