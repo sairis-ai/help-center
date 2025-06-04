@@ -178,9 +178,15 @@ export default defineConfig({
     [
       {text: 'Getting Started', collapsed: false, items: 
         [
-          {text: '<span style="color:rgb(140,3,252)">&#9734;</span> 1) Discover Sairis: Explainer Video', link: '/general/getting-started/onboarding' }, 
-          {text: '<span style="color:rgb(140,3,252)">&#9734;</span> 2) What\'s my role?', link: '/general/getting-started/my-role' },
-          {text: '<span style="color:rgb(140,3,252)">&#9734;</span> 3) Admin: Quick Start', link: '/general/getting-started/quick-start' }
+          {text: 'Step 1: <span style="color:rgb(140,3,252)">&#9734;</span> Discover Sairis: Explainer Video', link: '/general/getting-started/onboarding' }, 
+          {text: 'Step 2: <span style="color:rgb(140,3,252)">&#9734;</span> What\'s my role?', link: '/general/getting-started/my-role' },
+          {text: 'Personas: Quick Start', collapsed: false, items: 
+            [
+              {text: '<span style="color:rgb(140,3,252)">&#9734;</span> Global Admin', link: '/general/getting-started/global-admin' },
+              {text: '<span style="color:rgb(140,3,252)">&#9734;</span> Business Admin', link: '/general/getting-started/business-admin' },
+              {text: '<span style="color:rgb(140,3,252)">&#9734;</span> End User', link: '/general/getting-started/end-user' }
+            ]
+          } 
         ]
       },
       {text: 'Onboarding', collapsed: true, items: 
