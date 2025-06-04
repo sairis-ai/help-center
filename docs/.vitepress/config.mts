@@ -146,6 +146,7 @@ export default defineConfig({
           }
         ] 
       },
+      {text: '<span style="color:rgb(140,3,252)">&#9734;</span> = Video Included'}  
       // {
       //  text: 'Tenant', collapsed: true,items: 
       //  [ 
@@ -172,7 +173,8 @@ export default defineConfig({
         [
           {text: 'Launchpad', link: '/user/search/user-search' }          
         ]
-      }
+      },
+      {text: '<span style="color:rgb(140,3,252)">&#9734;</span> = Video Included'}  
     ], 
     '/general/': 
     [
@@ -233,9 +235,10 @@ export default defineConfig({
               {text: '<span style="color:rgb(140,3,252)">&#9734;</span> Control Panel - Blueprints', link: '/general/tutorials/sairis-ai-assistant-cp-bp'},
               {text: '<span style="color:rgb(140,3,252)">&#9734;</span> Control Panel - Settings', link: '/general/tutorials/sairis-ai-assistant-cp-settings'}
             ]
-          }  
-        ]
+          }
+                  ]
       },
+      {text: '<span style="color:rgb(140,3,252)">&#9734;</span> = Video Included'}  
     ],
     '/references/': 
     [
