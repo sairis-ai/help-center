@@ -1,19 +1,19 @@
-# Tenant Security Settings Guide
+# Security Settings Guide
 
 ## Introduction
 
-The Tenant Security Settings interface provides administrators with powerful tools for configuring authentication, authorization, and access control for your organization's platform. This security command center allows you to configure Multi-Factor Authentication (MFA), identity providers, password policies, and other critical security features to protect your organization's data and users.
+The Security Settings interface provides administrators with powerful tools for configuring authentication, authorization, and access control for your organization's platform. This security command center allows you to configure Multi-Factor Authentication (MFA), identity providers, password policies, and other critical security features to protect your organization's data and users.
 
-## Accessing Tenant Security Settings
+## Accessing Security Settings
 
 ![homepage](/images/settings-security.png)
 
-The Tenant Security Settings interface is accessible to users with the following roles:
+The Security Settings interface is accessible to users with the following roles:
 - Admin
 - Content
 - Manager
 
-To access these settings, navigate to the Administration section from the main menu and select "Tenant Settings," then choose the "Security" tab.
+To access these settings, navigate to the Administration section from the main menu and select "Settings," then choose the "Security" tab.
 
 ## Security Settings Overview
 

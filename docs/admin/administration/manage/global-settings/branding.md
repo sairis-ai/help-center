@@ -1,21 +1,21 @@
-# Tenant Branding & Customization Guide
+# Branding & Customization Guide
 
 ## Introduction
 
-The Tenant Branding interface provides administrators with powerful tools to customize the appearance of your organization's platform. This visual customization center allows you to personalize colors, upload logos, and create a consistent brand experience across the application for all users in your organization.
+The Branding interface provides administrators with powerful tools to customize the appearance of your organization's platform. This visual customization center allows you to personalize colors, upload logos, and create a consistent brand experience across the application for all users in your organization.
 
-## Accessing Tenant Branding Settings
+## Accessing Branding Settings
 
 The Tenant Branding interface is accessible to users with the following roles:
 - Admin
 - Content
 - Manager
 
-To access these settings, navigate to the Administration section from the main menu and select "Tenant Settings" or "Branding."
+To access these settings, navigate to the Administration section from the main menu and select "Settings" or "Branding."
 
 ## Branding Interface Overview
 
-The Tenant Branding interface is organized into three main sections:
+The Branding interface is organized into three main sections:
 
 ![homepage](/images/settings-branding.png)
 

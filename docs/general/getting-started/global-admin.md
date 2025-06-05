@@ -11,6 +11,43 @@ You will learn how Global Admins can maintain system integrity, manage high-leve
 
 
 ## Roles within Sairis
-We start by introducing you to Roles.
+We start by introducing you to Roles and the actions users will be permitted.
 
 <video width="800" height="600" allow="fullscreen" controls="controls" src="/videos/creating-roles-in-sairis.mp4" />
+
+##  User Control
+Next how to add, edit, and manage users placed in those Roles.
+
+<video width="800" height="600" allow="fullscreen" controls="controls" src="/videos/creating-users-in-sairis.mp4" />
+
+## Smart Group Setup
+Move on to organize users into Smart Groups for streamlined permissions and management
+
+<video width="800" height="600" allow="fullscreen" controls="controls" src="/videos/creating-groups-in-sairis.mp4" />
+
+## Manage Knowledge Bases
+Discover how to create and structure knowledge bases, and assign Group ownerships appropriately.
+
+<video width="800" height="600" allow="fullscreen" controls="controls" src="/videos/creating-knowledge-base-in-sairis.mp4" />
+
+## Control Blueprints
+Find out how to build and customize Blueprints as templates for your department’s workflows
+
+<video width="800" height="600" allow="fullscreen" controls="controls" src="/videos/creating-blueprints-in-sairis.mp4" />
+
+## Loading & managing Content
+Get step-by-step instructions for uploading and managing content using the Content Manager
+
+<video width="800" height="600" allow="fullscreen" controls="controls" src="/videos/uploading-content-in-sairis.mp4" />
+
+## System Branding 
+Customize the appearance of your organization's platform  
+
+[System Branding](/admin/administration/manage/global-settings/branding)  
+
+
+## System Security Settings 
+Configuring authentication, authorization, and access control for your organization's platform.  
+
+[System Security](/admin/administration/manage/global-settings/security) 
+
