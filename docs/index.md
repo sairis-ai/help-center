@@ -17,7 +17,7 @@ hero:
   actions:
     - theme: brand
       text: Get Started
-      link: "/general/learn/learn"
+      link: "/general/getting-started/onboarding"
     - theme: alt
       text: End Users
       link: "/user/assistant/assistant-home"
