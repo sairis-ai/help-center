@@ -74,6 +74,34 @@
      color: var(--vp-button-brand-text);
      background-color: #3c1433 !important; 
     }
+.button-group
+    {
+      margin-top: 1rem;
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+    }
+
+    .custom-button 
+    {
+      padding: 0.5rem 1rem;
+      background-color: #25294f !important;
+      color: white !important;
+      text-decoration: none !important;
+      border-radius: 999px !important; /* Makes it pill-shaped */
+      border-radius: 5px;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+      border: none;
+      font-size: 1rem;
+      transition: transform 0.2s ease !important;
+    }
+
+    .custom-button:hover
+    {
+      background-color: #aeaeae !important;
+      transform: scale(1.1) !important;
+    }
 
   /* .image-bg 
   {
