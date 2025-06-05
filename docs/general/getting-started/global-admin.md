@@ -45,9 +45,37 @@ Customize the appearance of your organization's platform
 
 [System Branding](/admin/administration/manage/global-settings/branding)  
 
-
 ## System Security Settings 
 Configuring authentication, authorization, and access control for your organization's platform.  
 
 [System Security](/admin/administration/manage/global-settings/security) 
 
+## Summary
+
+This guide outlines the responsibilities and capabilities of Global Admins within the Sairis platform, focusing on system-wide administration and configuration.
+
+- **Roles within Sairis:**  
+Understand the different user roles and the permissions associated with each.
+
+- **User Control:**  
+Learn how to add, edit, and manage users, assigning them to appropriate roles.
+
+- **Smart Group Setup:**  
+Organize users into Smart Groups to streamline permissions and management.
+
+- **Manage Knowledge Bases:**  
+Create and structure knowledge bases, assigning group ownerships as needed.
+
+- **Control Blueprints:**  
+Build and customize blueprints to serve as templates for departmental workflows.
+
+- **Loading & Managing Content:**  
+Upload and manage content using the Content Manager tool.
+
+- **System Branding:**  
+Customize the platform's appearance to reflect your organization's branding.
+
+- **System Security Settings:**  
+Configure authentication, authorization, and access controls to secure your organization's platform.
+
+Each section includes detailed instructions and, where applicable, video walkthroughs to assist Global Admins in effectively managing the Sairis platform.
