@@ -48,7 +48,7 @@ Customize the appearance of your organization's platform
 ## System Security Settings 
 Configuring authentication, authorization, and access control for your organization's platform.  
 
-[System Security](/admin/administration/manage/global-settings/security) 
+<video width="800" height="600" allow="fullscreen" controls> <source src="/videos/security.mp4" type="video/mp4"></video>
 
 ## Summary
 

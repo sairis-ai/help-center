@@ -4,6 +4,8 @@
 
 The Security Settings interface provides administrators with powerful tools for configuring authentication, authorization, and access control for your organization's platform. This security command center allows you to configure Multi-Factor Authentication (MFA), identity providers, password policies, and other critical security features to protect your organization's data and users.
 
+<video width="800" height="600" allow="fullscreen" controls> <source src="/videos/security.mp4" type="video/mp4"></video>
+
 ## Accessing Security Settings
 
 ![homepage](/images/settings-security.png)
