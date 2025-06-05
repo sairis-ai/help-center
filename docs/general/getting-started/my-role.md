@@ -5,6 +5,10 @@ Welcome to "What's My Role in Sairis?" This page introduces you to the key perso
 
 <video width="800" height="600" allow="fullscreen" controls="controls" src="/videos/my-role.mp4" />
 
+<P> </P>
+
+<div align="center">Choose your role to explore tailored training</div>
+
 <div class="button-group">
   <a class="custom-button" href="/general/getting-started/end-user">End Users</a>
   <a class="custom-button" href="/general/getting-started/business-admin">Business Admin</a>
