@@ -4,6 +4,8 @@
 
 The Branding interface provides administrators with powerful tools to customize the appearance of your organization's platform. This visual customization center allows you to personalize colors, upload logos, and create a consistent brand experience across the application for all users in your organization.
 
+<video width="800" height="600" allow="fullscreen" controls> <source src="/videos/branding.mp4" type="video/mp4"></video>
+
 ## Accessing Branding Settings
 
 The Tenant Branding interface is accessible to users with the following roles:

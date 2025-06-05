@@ -43,7 +43,7 @@ Get step-by-step instructions for uploading and managing content using the Conte
 ## System Branding 
 Customize the appearance of your organization's platform  
 
-[System Branding](/admin/administration/manage/global-settings/branding)  
+<video width="800" height="600" allow="fullscreen" controls> <source src="/videos/branding.mp4" type="video/mp4"></video>  
 
 ## System Security Settings 
 Configuring authentication, authorization, and access control for your organization's platform.  
