@@ -55,7 +55,13 @@ Blueprint AI Settings can be accessed:
 
 To access this component, navigate to `/blueprint/BlueprintListView` in the system. You'll typically find a link to this page in the administration menu or AI configuration section.
 
-**Note**: Some settings may be locked if you don't have edit permissions for the Blueprint or if it's marked as secure.
+**Issues Accessing a Blueprint?**: 
+- Some settings may be locked if you don't have edit permissions for the Blueprint or if it's marked as 'Secure'.
+- You also may not be able to edit a Blueprint if you granted ownership/edit capabilities of the blueprint.   
+  - Please check with your Business Admin or Global Admin if you believe either of these may be the issue.
+- Also, if the blueprint was auto-created when you created the Knowledge Base, the blueprint will be locked for direct editing [you can change settings via the matching knowledge base].  This will be indicated by 'Locked' being enabled under Features.
+
+![homepage](/images/blueprint-locked.png)
 
 ## Blueprint Manager Interface Overview
 
