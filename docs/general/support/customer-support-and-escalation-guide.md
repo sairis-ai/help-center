@@ -12,7 +12,7 @@ This guide outlines Sairis’s customer support processes, escalation paths, and
 
 ## Office Hours
 
-- **Monday–Friday**: 7:00 AM – 6:00 PM MST
+- **Monday–Friday**: 8:00 AM – 5:00 PM MST
 - **After Hours**: All other times, with extended SLA response times.
 
 ## Contact Methods
@@ -27,58 +27,63 @@ This guide outlines Sairis’s customer support processes, escalation paths, and
 
 ## How to Report Issues
 
-### Content-Related Issues
+### Examples of ticket information
 
 Provide:
 - Member login experiencing the issue.
-- Device/serial number.
-- Content details (e.g., “Recipe.pdf” in Organization > Recipes > Fall Menu).
+- Area of the site
+- Content details (e.g., “SOP.pdf” in Knowledge Base ).
+- Screenshots where applicable
 
 If requested by Sairis Support:
-- **Diagnostic Report**: Tap the gear icon, select “Generate Diagnostic Report,” and submit (encrypted with AES-256).
 - **End-User Collaboration**: Work directly with affected users (e.g., managers, crew).
-
-### Team Manager-Related Issues
-
-Provide:
-- Location number.
-- Employee ID.
-- Course or form name.
-- Approximate date/time of the issue.
 
 ## Support Metrics and SLAs
 
 ### New Ticket Response Time
 
-- **Description**: Tickets to `support@sairis.ai` receive an instant automated reply. Engineers and managers are notified via text and desktop app. Unassigned tickets escalate after 15 minutes.
+- **Description**: Tickets to `support@sairis.ai` receive an instant automated reply. Engineers and managers are notified email and desktop app. Unassigned tickets escalate after 15 minutes.
 - **SLAs**:
-  - Business Hours: 12 minutes
-  - After Hours: 23 minutes
+  - Business Hours: 15 minutes
+  - After Hours: 12 hours
 
-### Regular Support Tickets
+### Support Tickets SLA Time Targets
 
-- **Description**: Issues not requiring software development, handled by engineers with access to servers, databases, backups, licensing, and monitoring systems (AWS CloudWatch, SIEM). Skills include debugging, database administration, and security.
-- **SLAs**:
-  - Business Hours: 3.1 hours
-  - After Hours: 4.3 hours
-
-### Software Bugs – Critical/Hot Fix
+### Software Bugs – Urgent
 
 - **Description**: Bugs affecting >5% of users, preventing application use. Hotfixes are developed, tested, and applied outside normal cycles to servers or apps.
-- **SLAs**:
-  - Business Hours: 17.3 hours
-  - After Hours: 22.5 hours
+- **Response SLA**:
+  - Business Hours: 30 minutes
+  - After Hours: 4 hours
+- **Resolve SLA**:
+  - 1 days
 
-### Software Bugs – Major
+### Software Bugs – High
 
 - **Description**: Bugs impacting >5% of users, blocking a feature but with workarounds. Fixed in Agile 2-week sprints, with monthly releases.
-- **SLA**: 4 weeks (Business or After Hours)
+- **Response SLA**:
+  - Business Hours: 30 minutes
+  - After Hours: 8 hours
+- **Resolve SLA**:
+  - 3 days
 
-### Software Bugs – Minor
+### Software Bugs – Medium
+
+- **Description**: Bugs impacting >5% of users, blocking a feature but with workarounds. Fixed in Agile 2-week sprints, with monthly releases.
+- **Response SLA**:
+  - Business Hours: 60 minutes
+  - After Hours: 12 hours
+- **Resolve SLA**:
+  - 10 days
+
+### Software Bugs – Low
 
 - **Description**: Bugs in obscure cases with workarounds, not impeding workflows.
-- **SLA**: 8 weeks (Business or After Hours)
-
+- **Response SLA**:
+  - Business Hours: 1200 minutes
+  - After Hours: 24 hours
+- **Resolve SLA**:
+  - 30 days
 ## Escalation Path
 
 For unresolved issues, escalate as follows:
