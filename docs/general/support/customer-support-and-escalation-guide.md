@@ -58,7 +58,7 @@ If requested by Sairis Support:
 - **Resolve SLA**:
   - 1 days
 
-### Software Bugs – High
+### Software Bugs – Major
 
 - **Description**: A major defect resulting in loss of business functionality and would require a workaround. Fixed in Agile 2-week sprints, with monthly releases.
 - **Response SLA**:
@@ -67,9 +67,9 @@ If requested by Sairis Support:
 - **Resolve SLA**:
   - 3 days
 
-### Software Bugs – Medium
+### Software Bugs – Minor
 
-- **Description**: Defect which has a medium impact on business functions, but can be immediately managed or worked around. Fixed in Agile 2-week sprints, with monthly releases.
+- **Description**: Unexpected or undesired behavior which has a medium impact on business functions, but can be immediately managed or worked around. Fixed in Agile 2-week sprints, with monthly releases.
 - **Response SLA**:
   - Business Hours: 60 minutes
   - After Hours: 12 hours
@@ -78,7 +78,7 @@ If requested by Sairis Support:
 
 ### Software Bugs – Low
 
-- **Description**: Cosmetic or has no business or user impact.
+- **Description**: An inconvenience or annoyance that doesn't seriously impact functionality.
 - **Response SLA**:
   - Business Hours: 1200 minutes
   - After Hours: 24 hours
