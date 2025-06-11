@@ -51,7 +51,7 @@ If requested by Sairis Support:
 
 ### Software Bugs – Urgent
 
-- **Description**: Bugs affecting >5% of users, preventing application use. Hotfixes are developed, tested, and applied outside normal cycles to servers or apps.
+- **Description**: Creates a major disruption to the business operation. A severe application problem causing considerable downtime. Hotfixes are developed, tested, and applied outside normal cycles to servers or apps.
 - **Response SLA**:
   - Business Hours: 30 minutes
   - After Hours: 4 hours
@@ -60,7 +60,7 @@ If requested by Sairis Support:
 
 ### Software Bugs – High
 
-- **Description**: Bugs impacting >5% of users, blocking a feature but with workarounds. Fixed in Agile 2-week sprints, with monthly releases.
+- **Description**: A major defect resulting in loss of business functionality and would require a workaround. Fixed in Agile 2-week sprints, with monthly releases.
 - **Response SLA**:
   - Business Hours: 30 minutes
   - After Hours: 8 hours
@@ -69,7 +69,7 @@ If requested by Sairis Support:
 
 ### Software Bugs – Medium
 
-- **Description**: Bugs impacting >5% of users, blocking a feature but with workarounds. Fixed in Agile 2-week sprints, with monthly releases.
+- **Description**: Defect which has a medium impact on business functions, but can be immediately managed or worked around. Fixed in Agile 2-week sprints, with monthly releases.
 - **Response SLA**:
   - Business Hours: 60 minutes
   - After Hours: 12 hours
@@ -78,7 +78,7 @@ If requested by Sairis Support:
 
 ### Software Bugs – Low
 
-- **Description**: Bugs in obscure cases with workarounds, not impeding workflows.
+- **Description**: Cosmetic or has no business or user impact.
 - **Response SLA**:
   - Business Hours: 1200 minutes
   - After Hours: 24 hours
