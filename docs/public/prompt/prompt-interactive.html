@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Build Your Restaurant Reviewer Instructions</title>
+    <title>Build Your Social Media Post Instructions</title>
     <style>
         * {
             margin: 0;
@@ -113,6 +113,7 @@
         .progress-label {
             font-size: 0.875rem;
             color: #6b7280;
+            font-weight: 500;
         }
 
         .progress-step.active .progress-label {
@@ -122,10 +123,16 @@
 
         .step-content {
             display: none;
+            animation: fadeIn 0.5s ease-in;
         }
 
         .step-content.active {
             display: block;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
         }
 
         .step-title {
@@ -143,8 +150,8 @@
 
         .choice-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 1rem;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
             margin-bottom: 2rem;
         }
 
@@ -186,6 +193,13 @@
             color: #6b7280;
         }
 
+        .choice-features {
+            font-size: 0.75rem;
+            color: #9ca3af;
+            margin-top: 0.5rem;
+            font-style: italic;
+        }
+
         .next-button {
             background: #3B40B6;
             color: white;
@@ -217,7 +231,7 @@
         .instruction-preview {
             background: #f9fafb;
             border: 1px solid #e5e7eb;
-            border-radius: 6px;
+            border-radius: 8px;
             padding: 1rem;
             font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
             font-size: 0.875rem;
@@ -239,7 +253,7 @@
         .final-instruction {
             background: #f9fafb;
             border: 1px solid #e5e7eb;
-            border-radius: 6px;
+            border-radius: 8px;
             padding: 2rem;
             font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
             font-size: 0.875rem;
@@ -247,6 +261,25 @@
             white-space: pre-wrap;
             color: #374151;
             margin-top: 2rem;
+            position: relative;
+        }
+
+        .copy-button {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            background: #3B40B6;
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+            font-size: 0.875rem;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .copy-button:hover {
+            background: #7c3aed;
         }
 
         .completion-message {
@@ -290,184 +323,268 @@
             .choice-grid {
                 grid-template-columns: 1fr;
             }
+
+            h1 {
+                font-size: 2rem;
+            }
         }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="main-content">
-            <h1>Build Your Restaurant Reviewer Instructions</h1>
-            <p class="subtitle">Let's walk through creating professional AI instructions step by step. Make your choices and watch your instruction build in real-time!</p>
+            <h1>Build Your Social Media Post Instructions</h1>
+            <p class="subtitle">Create platform-specific AI instructions that generate engaging social media content. Watch your instruction evolve as you make choices!</p>
             
             <div class="progress-bar">
                 <div class="progress-step active" data-step="1">
                     <div class="progress-circle">1</div>
-                    <div class="progress-label">Reviewer Type</div>
+                    <div class="progress-label">Platform</div>
                 </div>
                 <div class="progress-step" data-step="2">
                     <div class="progress-circle">2</div>
-                    <div class="progress-label">Tone & Style</div>
+                    <div class="progress-label">Content Type</div>
                 </div>
                 <div class="progress-step" data-step="3">
                     <div class="progress-circle">3</div>
-                    <div class="progress-label">Focus Areas</div>
+                    <div class="progress-label">Audience & Tone</div>
                 </div>
                 <div class="progress-step" data-step="4">
                     <div class="progress-circle">4</div>
-                    <div class="progress-label">Format</div>
+                    <div class="progress-label">Format & Style</div>
                 </div>
             </div>
 
-            <!-- Step 1: Reviewer Type -->
+            <!-- Step 1: Platform Selection -->
             <div class="step-content active" data-step="1">
-                <h2 class="step-title">Choose Your Reviewer Type</h2>
-                <p class="step-description">What kind of restaurant reviewer do you want to be? This sets the foundation for your entire instruction.</p>
+                <h2 class="step-title">Choose Your Platform</h2>
+                <p class="step-description">Which social media platform are you creating content for? Each platform has unique requirements and best practices.</p>
                 
                 <div class="choice-grid">
-                    <div class="choice-card" data-choice="casual-foodie">
+                    <div class="choice-card" data-choice="instagram">
                         <div class="choice-title">
-                            <span class="choice-icon">🍕</span>
-                            Casual Foodie
+                            <span class="choice-icon">📸</span>
+                            Instagram
                         </div>
-                        <div class="choice-description">Relatable, everyday dining experiences. Perfect for neighborhood spots and comfort food.</div>
+                        <div class="choice-description">Visual-first platform with emphasis on aesthetics, hashtags, and storytelling through images.</div>
+                        <div class="choice-features">Stories, Reels, carousels, 2200 char limit</div>
                     </div>
-                    <div class="choice-card" data-choice="professional-critic">
+                    <div class="choice-card" data-choice="linkedin">
                         <div class="choice-title">
-                            <span class="choice-icon">⭐</span>
-                            Professional Critic
+                            <span class="choice-icon">💼</span>
+                            LinkedIn
                         </div>
-                        <div class="choice-description">Authoritative, detailed analysis. High-end establishments and culinary expertise.</div>
+                        <div class="choice-description">Professional network focused on industry insights, career content, and business discussions.</div>
+                        <div class="choice-features">Long-form posts, professional tone, industry focus</div>
                     </div>
-                    <div class="choice-card" data-choice="local-guide">
+                    <div class="choice-card" data-choice="tiktok">
                         <div class="choice-title">
-                            <span class="choice-icon">🏘️</span>
-                            Local Community Guide
+                            <span class="choice-icon">🎵</span>
+                            TikTok
                         </div>
-                        <div class="choice-description">Helpful neighbor sharing honest recommendations. Focus on value and local favorites.</div>
+                        <div class="choice-description">Short-form video platform driven by trends, creativity, and viral content.</div>
+                        <div class="choice-features">Video scripts, trending sounds, hook-heavy content</div>
                     </div>
-                    <div class="choice-card" data-choice="fine-dining">
+                    <div class="choice-card" data-choice="twitter">
                         <div class="choice-title">
-                            <span class="choice-icon">🥂</span>
-                            Fine Dining Expert
+                            <span class="choice-icon">🐦</span>
+                            Twitter/X
                         </div>
-                        <div class="choice-description">Sophisticated palate, luxury experiences. Michelin-worthy establishments and wine pairings.</div>
+                        <div class="choice-description">Real-time conversation platform for news, opinions, and quick updates.</div>
+                        <div class="choice-features">280 characters, threads, real-time engagement</div>
+                    </div>
+                    <div class="choice-card" data-choice="facebook">
+                        <div class="choice-title">
+                            <span class="choice-icon">👥</span>
+                            Facebook
+                        </div>
+                        <div class="choice-description">Community-focused platform for longer-form content and group discussions.</div>
+                        <div class="choice-features">Longer posts, community building, varied content types</div>
+                    </div>
+                    <div class="choice-card" data-choice="youtube">
+                        <div class="choice-title">
+                            <span class="choice-icon">🎬</span>
+                            YouTube
+                        </div>
+                        <div class="choice-description">Video platform for educational, entertainment, and long-form content.</div>
+                        <div class="choice-features">Video descriptions, thumbnails, SEO optimization</div>
                     </div>
                 </div>
                 
                 <button class="next-button" disabled onclick="nextStep()">Next Step</button>
             </div>
 
-            <!-- Step 2: Tone & Style -->
+            <!-- Step 2: Content Type -->
             <div class="step-content" data-step="2">
-                <h2 class="step-title">Pick Your Tone & Style</h2>
-                <p class="step-description">How do you want to sound when writing reviews? Your tone shapes how readers connect with your content.</p>
+                <h2 class="step-title">Select Your Content Type</h2>
+                <p class="step-description">What kind of content do you want to create? Different content types serve different purposes and audiences.</p>
                 
                 <div class="choice-grid">
+                    <div class="choice-card" data-choice="educational">
+                        <div class="choice-title">
+                            <span class="choice-icon">🎓</span>
+                            Educational
+                        </div>
+                        <div class="choice-description">Share knowledge, tips, tutorials, and valuable insights to help your audience learn.</div>
+                        <div class="choice-features">How-to guides, industry insights, tips & tricks</div>
+                    </div>
+                    <div class="choice-card" data-choice="promotional">
+                        <div class="choice-title">
+                            <span class="choice-icon">📢</span>
+                            Promotional
+                        </div>
+                        <div class="choice-description">Showcase products, services, or achievements while providing value to your audience.</div>
+                        <div class="choice-features">Product launches, service highlights, announcements</div>
+                    </div>
+                    <div class="choice-card" data-choice="personal-story">
+                        <div class="choice-title">
+                            <span class="choice-icon">💭</span>
+                            Personal Story
+                        </div>
+                        <div class="choice-description">Share personal experiences, journeys, and authentic moments that connect with your audience.</div>
+                        <div class="choice-features">Life lessons, personal experiences, vulnerable moments</div>
+                    </div>
+                    <div class="choice-card" data-choice="behind-scenes">
+                        <div class="choice-title">
+                            <span class="choice-icon">🎬</span>
+                            Behind-the-Scenes
+                        </div>
+                        <div class="choice-description">Give your audience a peek into your process, workspace, or daily routine.</div>
+                        <div class="choice-features">Work process, team culture, day-in-the-life</div>
+                    </div>
+                    <div class="choice-card" data-choice="entertainment">
+                        <div class="choice-title">
+                            <span class="choice-icon">🎪</span>
+                            Entertainment
+                        </div>
+                        <div class="choice-description">Create fun, engaging content that entertains and brings joy to your audience.</div>
+                        <div class="choice-features">Humor, trends, challenges, creative content</div>
+                    </div>
+                    <div class="choice-card" data-choice="inspirational">
+                        <div class="choice-title">
+                            <span class="choice-icon">✨</span>
+                            Inspirational
+                        </div>
+                        <div class="choice-description">Motivate and inspire your audience with uplifting messages and success stories.</div>
+                        <div class="choice-features">Motivational quotes, success stories, encouragement</div>
+                    </div>
+                </div>
+                
+                <button class="next-button" disabled onclick="nextStep()">Next Step</button>
+            </div>
+
+            <!-- Step 3: Audience & Tone -->
+            <div class="step-content" data-step="3">
+                <h2 class="step-title">Define Your Audience & Tone</h2>
+                <p class="step-description">Who are you speaking to and how do you want to sound? Your tone should match both your audience and your brand personality.</p>
+                
+                <div class="choice-grid">
+                    <div class="choice-card" data-choice="professional-authoritative">
+                        <div class="choice-title">
+                            <span class="choice-icon">🏢</span>
+                            Professional & Authoritative
+                        </div>
+                        <div class="choice-description">Expert voice for business professionals, industry leaders, and decision-makers.</div>
+                        <div class="choice-features">Industry expertise, thought leadership, formal language</div>
+                    </div>
                     <div class="choice-card" data-choice="friendly-conversational">
                         <div class="choice-title">
                             <span class="choice-icon">😊</span>
                             Friendly & Conversational
                         </div>
-                        <div class="choice-description">Like chatting with a friend over coffee. Warm, approachable, and easy to read.</div>
+                        <div class="choice-description">Approachable tone for building community and connecting with everyday people.</div>
+                        <div class="choice-features">Personal pronouns, casual language, relatable examples</div>
                     </div>
-                    <div class="choice-card" data-choice="authoritative-detailed">
-                        <div class="choice-title">
-                            <span class="choice-icon">📝</span>
-                            Authoritative & Detailed
-                        </div>
-                        <div class="choice-description">Comprehensive analysis with culinary knowledge. Professional but accessible.</div>
-                    </div>
-                    <div class="choice-card" data-choice="entertaining-quirky">
-                        <div class="choice-title">
-                            <span class="choice-icon">🎭</span>
-                            Entertaining & Quirky
-                        </div>
-                        <div class="choice-description">Fun, memorable writing with personality. Makes dining reviews engaging stories.</div>
-                    </div>
-                    <div class="choice-card" data-choice="honest-straightforward">
-                        <div class="choice-title">
-                            <span class="choice-icon">💯</span>
-                            Honest & Straightforward
-                        </div>
-                        <div class="choice-description">No-nonsense, direct feedback. Tell it like it is with helpful specifics.</div>
-                    </div>
-                </div>
-                
-                <button class="next-button" disabled onclick="nextStep()">Next Step</button>
-            </div>
-
-            <!-- Step 3: Focus Areas -->
-            <div class="step-content" data-step="3">
-                <h2 class="step-title">What Should You Focus On?</h2>
-                <p class="step-description">Different diners care about different things. What's most important for your reviews to cover?</p>
-                
-                <div class="choice-grid">
-                    <div class="choice-card" data-choice="food-taste">
-                        <div class="choice-title">
-                            <span class="choice-icon">🍽️</span>
-                            Food Quality & Taste
-                        </div>
-                        <div class="choice-description">Deep dives into flavors, ingredients, preparation, and culinary execution.</div>
-                    </div>
-                    <div class="choice-card" data-choice="service-atmosphere">
-                        <div class="choice-title">
-                            <span class="choice-icon">🏟️</span>
-                            Service & Atmosphere
-                        </div>
-                        <div class="choice-description">The complete dining experience - ambiance, staff, and overall vibe.</div>
-                    </div>
-                    <div class="choice-card" data-choice="value-practical">
-                        <div class="choice-title">
-                            <span class="choice-icon">💰</span>
-                            Value & Practical Info
-                        </div>
-                        <div class="choice-description">Bang for your buck, portions, location, parking, and practical dining details.</div>
-                    </div>
-                    <div class="choice-card" data-choice="instagram-experience">
-                        <div class="choice-title">
-                            <span class="choice-icon">📸</span>
-                            Instagram & Experience
-                        </div>
-                        <div class="choice-description">Visual appeal, shareability, and memorable moments worth posting about.</div>
-                    </div>
-                </div>
-                
-                <button class="next-button" disabled onclick="nextStep()">Next Step</button>
-            </div>
-
-            <!-- Step 4: Format -->
-            <div class="step-content" data-step="4">
-                <h2 class="step-title">Choose Your Review Format</h2>
-                <p class="step-description">How should your reviews be structured? The format guides readers through your thoughts.</p>
-                
-                <div class="choice-grid">
-                    <div class="choice-card" data-choice="narrative-story">
-                        <div class="choice-title">
-                            <span class="choice-icon">📖</span>
-                            Narrative Story
-                        </div>
-                        <div class="choice-description">Tell the dining experience as a story from arrival to departure.</div>
-                    </div>
-                    <div class="choice-card" data-choice="structured-sections">
-                        <div class="choice-title">
-                            <span class="choice-icon">📋</span>
-                            Structured Sections
-                        </div>
-                        <div class="choice-description">Clear sections: Food, Service, Atmosphere, Value with ratings or scores.</div>
-                    </div>
-                    <div class="choice-card" data-choice="quick-highlights">
+                    <div class="choice-card" data-choice="trendy-energetic">
                         <div class="choice-title">
                             <span class="choice-icon">⚡</span>
-                            Quick Highlights
+                            Trendy & Energetic
                         </div>
-                        <div class="choice-description">Scannable format with key points, pros/cons, and bottom-line recommendation.</div>
+                        <div class="choice-description">Dynamic voice for younger audiences who love current trends and viral content.</div>
+                        <div class="choice-features">Current slang, emojis, trending references, high energy</div>
                     </div>
-                    <div class="choice-card" data-choice="detailed-analysis">
+                    <div class="choice-card" data-choice="authentic-vulnerable">
                         <div class="choice-title">
-                            <span class="choice-icon">🔍</span>
-                            Detailed Analysis
+                            <span class="choice-icon">💝</span>
+                            Authentic & Vulnerable
                         </div>
-                        <div class="choice-description">Comprehensive breakdown with specific examples and culinary insights.</div>
+                        <div class="choice-description">Genuine voice for deep connections through honest, heartfelt communication.</div>
+                        <div class="choice-features">Personal stories, emotions, honest struggles, real talk</div>
+                    </div>
+                    <div class="choice-card" data-choice="witty-humorous">
+                        <div class="choice-title">
+                            <span class="choice-icon">😄</span>
+                            Witty & Humorous
+                        </div>
+                        <div class="choice-description">Entertaining voice that uses humor to engage and build memorable connections.</div>
+                        <div class="choice-features">Clever wordplay, funny observations, light-hearted tone</div>
+                    </div>
+                    <div class="choice-card" data-choice="inspirational-motivating">
+                        <div class="choice-title">
+                            <span class="choice-icon">🚀</span>
+                            Inspirational & Motivating
+                        </div>
+                        <div class="choice-description">Uplifting voice that encourages and empowers your audience to take action.</div>
+                        <div class="choice-features">Positive language, call-to-action, empowerment, motivation</div>
+                    </div>
+                </div>
+                
+                <button class="next-button" disabled onclick="nextStep()">Next Step</button>
+            </div>
+
+            <!-- Step 4: Format & Style -->
+            <div class="step-content" data-step="4">
+                <h2 class="step-title">Choose Your Format & Style</h2>
+                <p class="step-description">How should your content be structured? The format affects readability, engagement, and platform optimization.</p>
+                
+                <div class="choice-grid">
+                    <div class="choice-card" data-choice="hook-story-cta">
+                        <div class="choice-title">
+                            <span class="choice-icon">🎣</span>
+                            Hook → Story → CTA
+                        </div>
+                        <div class="choice-description">Start with attention-grabbing hook, tell engaging story, end with clear call-to-action.</div>
+                        <div class="choice-features">High engagement, story-driven, action-oriented</div>
+                    </div>
+                    <div class="choice-card" data-choice="listicle-tips">
+                        <div class="choice-title">
+                            <span class="choice-icon">📝</span>
+                            Listicle & Tips
+                        </div>
+                        <div class="choice-description">Scannable numbered lists, bullet points, and actionable tips for easy consumption.</div>
+                        <div class="choice-features">Easy to scan, practical value, shareable format</div>
+                    </div>
+                    <div class="choice-card" data-choice="question-answer">
+                        <div class="choice-title">
+                            <span class="choice-icon">❓</span>
+                            Question & Answer
+                        </div>
+                        <div class="choice-description">Pose interesting questions and provide valuable answers to spark discussion.</div>
+                        <div class="choice-features">Engagement-focused, discussion starters, interactive</div>
+                    </div>
+                    <div class="choice-card" data-choice="before-after">
+                        <div class="choice-title">
+                            <span class="choice-icon">🔄</span>
+                            Before & After
+                        </div>
+                        <div class="choice-description">Show transformation, progress, or comparison to demonstrate value and results.</div>
+                        <div class="choice-features">Visual storytelling, proof of concept, transformation</div>
+                    </div>
+                    <div class="choice-card" data-choice="carousel-series">
+                        <div class="choice-title">
+                            <span class="choice-icon">📱</span>
+                            Carousel Series
+                        </div>
+                        <div class="choice-description">Multi-slide content that breaks complex topics into digestible, swipeable pieces.</div>
+                        <div class="choice-features">Multi-part content, detailed breakdowns, visual flow</div>
+                    </div>
+                    <div class="choice-card" data-choice="viral-trend">
+                        <div class="choice-title">
+                            <span class="choice-icon">🔥</span>
+                            Viral Trend Format
+                        </div>
+                        <div class="choice-description">Leverage current trends, memes, or viral formats while adding your unique perspective.</div>
+                        <div class="choice-features">Trend-aware, viral potential, cultural relevance</div>
                     </div>
                 </div>
                 
@@ -477,12 +594,13 @@
             <!-- Completion Step -->
             <div class="step-content" data-step="5">
                 <div class="completion-message">
-                    <div class="completion-title">🎉 Your Restaurant Reviewer Instruction is Complete!</div>
-                    <p>You've just experienced the power of thoughtful AI instruction design. Look how much more specific and useful your instruction became!</p>
-                    <button class="restart-button" onclick="restartBuilder()">Try Building Another</button>
+                    <div class="completion-title">🎉 Your Social Media Instruction is Ready!</div>
+                    <p>You've created a tailored AI instruction that understands your platform, audience, and goals. This will generate much more effective social media content!</p>
+                    <button class="restart-button" onclick="restartBuilder()">Create Another Instruction</button>
                 </div>
                 
                 <div class="final-instruction" id="final-instruction">
+                    <button class="copy-button" onclick="copyToClipboard()">Copy</button>
                     <!-- Generated instruction will appear here -->
                 </div>
             </div>
@@ -492,7 +610,7 @@
             <h3 class="sidebar-title">Your Instruction Preview</h3>
             <div class="instruction-preview" id="instruction-preview">
 <span class="xml-tag">&lt;instruction&gt;</span>
-<span class="xml-content">Write a restaurant review...</span>
+<span class="xml-content">Create a social media post...</span>
 <span class="xml-tag">&lt;/instruction&gt;</span>
 
 <em>Make your choices to see this build!</em>
@@ -505,87 +623,151 @@
         let choices = {};
         
         const stepData = {
-            1: { key: 'reviewerType', title: 'Reviewer Type' },
-            2: { key: 'tone', title: 'Tone & Style' },
-            3: { key: 'focus', title: 'Focus Areas' },
-            4: { key: 'format', title: 'Format' }
+            1: { key: 'platform', title: 'Platform' },
+            2: { key: 'contentType', title: 'Content Type' },
+            3: { key: 'audienceTone', title: 'Audience & Tone' },
+            4: { key: 'format', title: 'Format & Style' }
         };
 
         const choiceDefinitions = {
-            // Reviewer Types
-            'casual-foodie': {
-                role: 'You are a casual food enthusiast who loves exploring different restaurants',
-                context: 'Writing for everyday diners who want honest, relatable restaurant experiences',
-                tone: 'friendly and approachable, like talking to a good friend about food'
+            // Platforms
+            'instagram': {
+                platform: 'Instagram',
+                context: 'Creating content for Instagram\'s visual-first platform',
+                requirements: 'Visual storytelling, hashtag optimization, stories/reels consideration',
+                limits: '2200 character limit, visual-first approach, hashtag strategy',
+                features: 'Use relevant hashtags, consider visual appeal, optimize for Stories and Reels'
             },
-            'professional-critic': {
-                role: 'You are a professional food critic with extensive culinary knowledge',
-                context: 'Writing authoritative reviews for discerning diners who value expert analysis', 
-                tone: 'knowledgeable and sophisticated while remaining accessible'
+            'linkedin': {
+                platform: 'LinkedIn',
+                context: 'Creating professional content for LinkedIn\'s business network',
+                requirements: 'Professional tone, industry relevance, networking focus',
+                limits: 'No character limit, professional standards, business context',
+                features: 'Professional insights, industry trends, career-focused content'
             },
-            'local-guide': {
-                role: 'You are a local community member sharing honest dining recommendations',
-                context: 'Helping neighbors and visitors find good value and quality in local restaurants',
-                tone: 'helpful and trustworthy, like a knowledgeable local friend'
+            'tiktok': {
+                platform: 'TikTok',
+                context: 'Creating viral short-form video content for TikTok',
+                requirements: 'Hook within first 3 seconds, trend awareness, engaging script',
+                limits: 'Video script format, 60-second attention span, trending elements',
+                features: 'Strong opening hook, trending sounds/hashtags, engaging video script'
             },
-            'fine-dining': {
-                role: 'You are a fine dining expert with a sophisticated palate',
-                context: 'Reviewing upscale establishments for luxury dining enthusiasts',
-                tone: 'refined and detailed, with appreciation for culinary artistry'
+            'twitter': {
+                platform: 'Twitter/X',
+                context: 'Creating concise, engaging content for Twitter\'s real-time platform',
+                requirements: 'Concise messaging, thread consideration, real-time relevance',
+                limits: '280 character limit, thread potential, conversational tone',
+                features: 'Concise messaging, thread optimization, real-time engagement'
+            },
+            'facebook': {
+                platform: 'Facebook',
+                context: 'Creating community-focused content for Facebook\'s diverse audience',
+                requirements: 'Community engagement, longer-form content, discussion starters',
+                limits: 'Longer posts acceptable, community focus, diverse audience',
+                features: 'Community building, discussion starters, varied content lengths'
+            },
+            'youtube': {
+                platform: 'YouTube',
+                context: 'Creating video descriptions and titles for YouTube content',
+                requirements: 'SEO optimization, compelling titles, detailed descriptions',
+                limits: 'SEO considerations, thumbnail thinking, detailed descriptions',
+                features: 'SEO optimization, compelling titles, detailed video descriptions'
             },
 
-            // Tones
+            // Content Types
+            'educational': {
+                contentType: 'Educational',
+                purpose: 'Teach and provide valuable knowledge to your audience',
+                approach: 'Share actionable insights, tips, and educational content that helps your audience learn and grow'
+            },
+            'promotional': {
+                contentType: 'Promotional',
+                purpose: 'Showcase products, services, or achievements while providing value',
+                approach: 'Balance promotional content with genuine value, focusing on benefits rather than just features'
+            },
+            'personal-story': {
+                contentType: 'Personal Story',
+                purpose: 'Share authentic personal experiences and connect emotionally',
+                approach: 'Tell genuine stories that resonate with your audience and show vulnerability when appropriate'
+            },
+            'behind-scenes': {
+                contentType: 'Behind-the-Scenes',
+                purpose: 'Give audience exclusive access to your process and daily life',
+                approach: 'Show the human side of your brand or personal journey with authentic, unpolished moments'
+            },
+            'entertainment': {
+                contentType: 'Entertainment',
+                purpose: 'Entertain and bring joy to your audience',
+                approach: 'Create fun, engaging content that makes people smile, laugh, or feel entertained'
+            },
+            'inspirational': {
+                contentType: 'Inspirational',
+                purpose: 'Motivate and inspire your audience to take positive action',
+                approach: 'Share uplifting messages, success stories, and motivational content that empowers your audience'
+            },
+
+            // Audience & Tone
+            'professional-authoritative': {
+                audience: 'Business professionals and industry leaders',
+                tone: 'Professional, authoritative, and expert-focused',
+                voice: 'Use industry terminology, formal language, and demonstrate expertise and thought leadership'
+            },
             'friendly-conversational': {
-                style: 'Write in a warm, conversational tone as if chatting with a friend over coffee',
-                voice: 'Use "I" statements, share personal reactions, and keep language approachable'
+                audience: 'General audience seeking authentic connections',
+                tone: 'Friendly, approachable, and conversational',
+                voice: 'Use personal pronouns, casual language, and relatable examples to build community'
             },
-            'authoritative-detailed': {
-                style: 'Write with authority and expertise, providing comprehensive analysis',
-                voice: 'Use professional language while remaining clear and informative'
+            'trendy-energetic': {
+                audience: 'Younger demographic interested in trends and viral content',
+                tone: 'Energetic, trendy, and culturally aware',
+                voice: 'Use current slang, emojis, trending references, and high-energy language'
             },
-            'entertaining-quirky': {
-                style: 'Write with personality and flair, making reviews engaging and memorable',
-                voice: 'Use creative descriptions, humor when appropriate, and distinctive voice'
+            'authentic-vulnerable': {
+                audience: 'People seeking genuine connections and real stories',
+                tone: 'Authentic, vulnerable, and emotionally honest',
+                voice: 'Share personal struggles, emotions, and honest experiences with genuine vulnerability'
             },
-            'honest-straightforward': {
-                style: 'Write direct, honest assessments without unnecessary embellishment',
-                voice: 'Be clear, specific, and helpful with straightforward recommendations'
+            'witty-humorous': {
+                audience: 'People who appreciate humor and clever content',
+                tone: 'Witty, humorous, and entertaining',
+                voice: 'Use clever wordplay, funny observations, and light-hearted humor to engage'
             },
-
-            // Focus Areas
-            'food-taste': {
-                focus: 'Prioritize detailed descriptions of food quality, flavors, ingredients, and preparation',
-                details: 'Include specific dish recommendations, cooking techniques, and taste profiles'
-            },
-            'service-atmosphere': {
-                focus: 'Emphasize the complete dining experience including service quality and restaurant ambiance',
-                details: 'Cover staff attentiveness, restaurant decor, noise level, and overall atmosphere'
-            },
-            'value-practical': {
-                focus: 'Highlight value for money, portion sizes, and practical dining information',
-                details: 'Include pricing context, location details, parking, and practical tips for diners'
-            },
-            'instagram-experience': {
-                focus: 'Focus on visual appeal, presentation, and memorable, shareable moments',
-                details: 'Describe photo-worthy dishes, unique decor, and Instagram-worthy aspects'
+            'inspirational-motivating': {
+                audience: 'People seeking motivation and personal growth',
+                tone: 'Inspirational, motivating, and empowering',
+                voice: 'Use positive language, call-to-action phrases, and empowering messages'
             },
 
             // Formats
-            'narrative-story': {
-                structure: 'Tell the dining experience as a flowing narrative from arrival to departure',
-                format: 'Chronological storytelling with natural transitions between different aspects'
+            'hook-story-cta': {
+                structure: 'Start with compelling hook, develop with story, end with clear call-to-action',
+                format: 'Hook (first line grabs attention) → Story/Context (middle builds engagement) → CTA (ends with clear action)',
+                optimization: 'Front-load value, maintain engagement throughout, drive specific action'
             },
-            'structured-sections': {
-                structure: 'Organize with clear sections: Food, Service, Atmosphere, and Overall Rating',
-                format: 'Use headers and structured breakdown for easy scanning'
+            'listicle-tips': {
+                structure: 'Organize content as numbered lists or bullet points with actionable tips',
+                format: 'Clear headline → Numbered/bulleted points → Practical takeaways',
+                optimization: 'Easy to scan, highly shareable, practical value in each point'
             },
-            'quick-highlights': {
-                structure: 'Start with key highlights, then pros/cons, ending with clear recommendation',
-                format: 'Scannable bullet points and concise paragraphs for busy readers'
+            'question-answer': {
+                structure: 'Pose engaging questions and provide valuable answers',
+                format: 'Compelling question → Detailed answer → Follow-up engagement question',
+                optimization: 'Encourage comments, spark discussion, provide genuine value in answers'
             },
-            'detailed-analysis': {
-                structure: 'Provide comprehensive analysis with specific examples and culinary insights',
-                format: 'In-depth paragraphs with detailed observations and expert commentary'
+            'before-after': {
+                structure: 'Show transformation, progress, or comparison to demonstrate results',
+                format: 'Before state → Transformation process → After results → Key insights',
+                optimization: 'Visual storytelling, concrete examples, measurable outcomes'
+            },
+            'carousel-series': {
+                structure: 'Break complex topics into multiple slides or parts for easy consumption',
+                format: 'Intro slide → Multiple detail slides → Summary/CTA slide',
+                optimization: 'Each slide valuable alone, logical flow, strong finish'
+            },
+            'viral-trend': {
+                structure: 'Leverage current trends while adding unique perspective and value',
+                format: 'Trend reference → Personal/brand angle → Unique insight → Engagement hook',
+                optimization: 'Trend awareness, original perspective, timing considerations'
             }
         };
 
@@ -651,37 +833,41 @@
             let instruction = '';
 
             // Build instruction based on current choices
-            if (choices.reviewerType) {
-                const reviewerChoice = choiceDefinitions[choices.reviewerType];
+            if (choices.platform) {
+                const platformChoice = choiceDefinitions[choices.platform];
                 instruction += `<span class="xml-tag">&lt;instruction&gt;</span>
-<span class="xml-content">Write a restaurant review</span>
+<span class="xml-content">Create an engaging social media post for ${platformChoice.platform}</span>
 <span class="xml-tag">&lt;/instruction&gt;</span>
 
-<span class="xml-tag">&lt;role&gt;</span>
-<span class="xml-content">${reviewerChoice.role}</span>
-<span class="xml-tag">&lt;/role&gt;</span>
+<span class="xml-tag">&lt;platform&gt;</span>
+<span class="xml-content">${platformChoice.context}</span>
+<span class="xml-tag">&lt;/platform&gt;</span>
 
-<span class="xml-tag">&lt;context&gt;</span>
-<span class="xml-content">${reviewerChoice.context}</span>
-<span class="xml-tag">&lt;/context&gt;</span>`;
+<span class="xml-tag">&lt;requirements&gt;</span>
+<span class="xml-content">${platformChoice.requirements}</span>
+<span class="xml-tag">&lt;/requirements&gt;</span>`;
             }
 
-            if (choices.tone) {
-                const toneChoice = choiceDefinitions[choices.tone];
+            if (choices.contentType) {
+                const contentChoice = choiceDefinitions[choices.contentType];
                 instruction += `
+
+<span class="xml-tag">&lt;content_type&gt;</span>
+<span class="xml-content">${contentChoice.contentType}: ${contentChoice.purpose}</span>
+<span class="xml-tag">&lt;/content_type&gt;</span>`;
+            }
+
+            if (choices.audienceTone) {
+                const toneChoice = choiceDefinitions[choices.audienceTone];
+                instruction += `
+
+<span class="xml-tag">&lt;audience&gt;</span>
+<span class="xml-content">${toneChoice.audience}</span>
+<span class="xml-tag">&lt;/audience&gt;</span>
 
 <span class="xml-tag">&lt;tone&gt;</span>
-<span class="xml-content">${toneChoice.style}</span>
+<span class="xml-content">${toneChoice.tone}</span>
 <span class="xml-tag">&lt;/tone&gt;</span>`;
-            }
-
-            if (choices.focus) {
-                const focusChoice = choiceDefinitions[choices.focus];
-                instruction += `
-
-<span class="xml-tag">&lt;focus&gt;</span>
-<span class="xml-content">${focusChoice.focus}</span>
-<span class="xml-tag">&lt;/focus&gt;</span>`;
             }
 
             if (choices.format) {
@@ -693,29 +879,28 @@
 <span class="xml-tag">&lt;/format&gt;</span>`;
             }
 
-            // Add constraints and examples once we have all choices
+            // Add optimization and examples once we have all choices
             if (Object.keys(choices).length >= 4) {
+                const platformChoice = choiceDefinitions[choices.platform];
+                const formatChoice = choiceDefinitions[choices.format];
+                
                 instruction += `
 
-<span class="xml-tag">&lt;constraints&gt;</span>
-<span class="xml-content">- Keep reviews between 200-400 words
-- Include specific examples and details
-- Provide actionable information for readers
-- Be honest and balanced in assessment</span>
-<span class="xml-tag">&lt;/constraints&gt;</span>
+<span class="xml-tag">&lt;optimization&gt;</span>
+<span class="xml-content">${platformChoice.features}
+${formatChoice.optimization}</span>
+<span class="xml-tag">&lt;/optimization&gt;</span>
 
 <span class="xml-tag">&lt;examples&gt;</span>
-<span class="xml-content">**Good opening:** "Walking into Bella Vista, I was immediately struck by the warm lighting and the inviting aroma of fresh herbs..."
-
-**Specific detail:** "The osso buco was perfectly tender, falling off the bone, with a rich saffron risotto that had just the right bite..."
-
-**Helpful conclusion:** "At $28 for the entree, it's a splurge, but worth it for special occasions. Reservations recommended for weekend dinners."</span>
+<span class="xml-content">**Strong opening:** "Here's what nobody tells you about..."
+**Engaging middle:** "I tried this for 30 days and here's what happened..."
+**Clear CTA:** "Save this post and try it yourself! What's your experience been?"</span>
 <span class="xml-tag">&lt;/examples&gt;</span>`;
             }
 
             if (instruction === '') {
                 instruction = `<span class="xml-tag">&lt;instruction&gt;</span>
-<span class="xml-content">Write a restaurant review...</span>
+<span class="xml-content">Create a social media post...</span>
 <span class="xml-tag">&lt;/instruction&gt;</span>
 
 <em>Make your choices to see this build!</em>`;
@@ -725,54 +910,86 @@
         }
 
         function generateFinalInstruction() {
-            const reviewerChoice = choiceDefinitions[choices.reviewerType];
-            const toneChoice = choiceDefinitions[choices.tone];
-            const focusChoice = choiceDefinitions[choices.focus];
+            const platformChoice = choiceDefinitions[choices.platform];
+            const contentChoice = choiceDefinitions[choices.contentType];
+            const toneChoice = choiceDefinitions[choices.audienceTone];
             const formatChoice = choiceDefinitions[choices.format];
 
             let instruction = `<instruction>
-Write a restaurant review that provides valuable insights for potential diners
+Create an engaging social media post for ${platformChoice.platform} that drives meaningful engagement and achieves specific content goals
 </instruction>
 
-<role>
-${reviewerChoice.role}
-</role>
+<platform>
+${platformChoice.context}
+Platform requirements: ${platformChoice.requirements}
+${platformChoice.limits}
+</platform>
 
-<context>
-${reviewerChoice.context}
-</context>
+<content_type>
+${contentChoice.contentType}: ${contentChoice.purpose}
+Approach: ${contentChoice.approach}
+</content_type>
+
+<audience>
+Target audience: ${toneChoice.audience}
+</audience>
 
 <tone>
-${toneChoice.style}
-${toneChoice.voice}
+${toneChoice.tone}
+Voice guidelines: ${toneChoice.voice}
 </tone>
 
-<focus>
-${focusChoice.focus}
-${focusChoice.details}
-</focus>
-
 <format>
-${formatChoice.structure}
-${formatChoice.format}
+Structure: ${formatChoice.structure}
+Format details: ${formatChoice.format}
 </format>
 
+<optimization>
+Platform-specific optimization: ${platformChoice.features}
+Format optimization: ${formatChoice.optimization}
+</optimization>
+
 <constraints>
-- Keep reviews between 200-400 words
-- Include specific examples and details
-- Provide actionable information for readers
-- Be honest and balanced in assessment
+- Follow ${platformChoice.platform} best practices and character limits
+- Ensure content aligns with ${contentChoice.contentType.toLowerCase()} goals
+- Maintain ${toneChoice.tone.toLowerCase()} throughout
+- Include clear value proposition for the audience
+- End with appropriate call-to-action when relevant
 </constraints>
 
 <examples>
-**Good opening:** "Walking into Bella Vista, I was immediately struck by the warm lighting and the inviting aroma of fresh herbs..."
+**Strong opening hooks:**
+- "Here's what nobody tells you about [topic]..."
+- "I tried [approach] for [timeframe] and here's what happened..."
+- "Stop doing [common mistake]. Do this instead:"
 
-**Specific detail:** "The osso buco was perfectly tender, falling off the bone, with a rich saffron risotto that had just the right bite..."
+**Engaging middle content:**
+- Share specific examples and personal experiences
+- Use storytelling to maintain interest
+- Include actionable insights and practical tips
 
-**Helpful conclusion:** "At $28 for the entree, it's a splurge, but worth it for special occasions. Reservations recommended for weekend dinners."
+**Effective CTAs:**
+- "Save this post and try it yourself!"
+- "What's your experience with [topic]? Share below!"
+- "Tag someone who needs to see this"
+- "Follow for more [content type] content"
 </examples>`;
 
-            document.getElementById('final-instruction').textContent = instruction;
+            document.getElementById('final-instruction').innerHTML = `<button class="copy-button" onclick="copyToClipboard()">Copy</button>${instruction}`;
+        }
+
+        function copyToClipboard() {
+            const instruction = document.getElementById('final-instruction').textContent;
+            navigator.clipboard.writeText(instruction).then(() => {
+                const button = document.querySelector('.copy-button');
+                const originalText = button.textContent;
+                button.textContent = 'Copied!';
+                button.style.background = '#10b981';
+                setTimeout(() => {
+                    button.textContent = originalText;
+                    button.style.background = '#3B40B6';
+                }, 2000);
+            });
         }
 
         function restartBuilder() {
