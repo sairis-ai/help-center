@@ -195,7 +195,14 @@ export default defineConfig({
       {text: 'Onboarding', collapsed: true, items: 
         [
           {text: '<span style="color:rgb(140,3,252)">&#9734;</span> Onboarding Overview', link: '/general/getting-started/onboarding-overview' },   
-          {text: '<span style="color:rgb(140,3,252)">&#9734;</span> Learn AI Instructions', link: '/general/prompt-engineering/overview' },   
+          {text: '<span style="color:rgb(140,3,252)">&#9734;</span> Learn AI Instructions', collapsed: true, link: 'general/prompt-engineering/understand-ai-1',items:  
+            [
+              {text: '<span style="color:rgb(140,3,252)">&#128214;</span> Part 1: Understanding & Examples', link: '/general/prompt-engineering/understand-ai-1'},
+              {text: '<span style="color:rgb(140,3,252)">&#128214;</span> Part 2: Organization & Structure', link: '/general/prompt-engineering/structure-2'},
+              {text: '<span style="color:rgb(140,3,252)">&#128214;</span> Part 3: Advanced & Reference', link: '/general/prompt-engineering/advanced-3'},
+              {text: '<span style="color:rgb(140,3,252)">&#128214;</span> Interactive Instruction Builder', link: '/prompt/prompt-interactive.html', target: '_blank'}
+            ]
+          }
         ]
       },
       {
