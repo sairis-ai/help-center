@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Build Your Restaurant Reviewer Instructions</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background-color: #f8f9fa;
+            color: #374151;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+            display: grid;
+            grid-template-columns: 1fr 400px;
+            gap: 3rem;
+        }
+
+        .main-content {
+            background: white;
+            border-radius: 8px;
+            padding: 2.5rem;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        }
+
+        .sidebar {
+            background: white;
+            border-radius: 8px;
+            padding: 2rem;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+            height: fit-content;
+            position: sticky;
+            top: 2rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 600;
+            color: #1f2937;
+            margin-bottom: 1rem;
+        }
+
+        .subtitle {
+            font-size: 1.125rem;
+            color: #6b7280;
+            margin-bottom: 3rem;
+        }
+
+        .progress-bar {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 3rem;
+        }
+
+        .progress-step {
+            flex: 1;
+            text-align: center;
+            position: relative;
+        }
+
+        .progress-step:not(:last-child)::after {
+            content: '';
+            position: absolute;
+            top: 15px;
+            left: 60%;
+            right: -40%;
+            height: 2px;
+            background: #e5e7eb;
+            z-index: 1;
+        }
+
+        .progress-step.completed:not(:last-child)::after {
+            background: #3B40B6;
+        }
+
+        .progress-circle {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background: #e5e7eb;
+            color: #6b7280;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 0.5rem;
+            font-weight: 600;
+            font-size: 0.875rem;
+            position: relative;
+            z-index: 2;
+        }
+
+        .progress-step.active .progress-circle {
+            background: #3B40B6;
+            color: white;
+        }
+
+        .progress-step.completed .progress-circle {
+            background: #3B40B6;
+            color: white;
+        }
+
+        .progress-label {
+            font-size: 0.875rem;
+            color: #6b7280;
+        }
+
+        .progress-step.active .progress-label {
+            color: #3B40B6;
+            font-weight: 600;
+        }
+
+        .step-content {
+            display: none;
+        }
+
+        .step-content.active {
+            display: block;
+        }
+
+        .step-title {
+            font-size: 1.875rem;
+            font-weight: 600;
+            color: #1f2937;
+            margin-bottom: 0.5rem;
+        }
+
+        .step-description {
+            font-size: 1.125rem;
+            color: #6b7280;
+            margin-bottom: 2rem;
+        }
+
+        .choice-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .choice-card {
+            border: 2px solid #e5e7eb;
+            border-radius: 8px;
+            padding: 1.5rem;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            background: white;
+        }
+
+        .choice-card:hover {
+            border-color: #3B40B6;
+            box-shadow: 0 4px 12px rgba(139, 92, 246, 0.15);
+        }
+
+        .choice-card.selected {
+            border-color: #3B40B6;
+            background: #f3f4f6;
+            box-shadow: 0 4px 12px rgba(139, 92, 246, 0.15);
+        }
+
+        .choice-title {
+            font-weight: 600;
+            color: #1f2937;
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .choice-icon {
+            font-size: 1.25rem;
+        }
+
+        .choice-description {
+            font-size: 0.875rem;
+            color: #6b7280;
+        }
+
+        .next-button {
+            background: #3B40B6;
+            color: white;
+            border: none;
+            padding: 0.75rem 2rem;
+            border-radius: 6px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.2s ease;
+            float: right;
+        }
+
+        .next-button:hover {
+            background: #7c3aed;
+        }
+
+        .next-button:disabled {
+            background: #d1d5db;
+            cursor: not-allowed;
+        }
+
+        .sidebar-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: #1f2937;
+            margin-bottom: 1rem;
+        }
+
+        .instruction-preview {
+            background: #f9fafb;
+            border: 1px solid #e5e7eb;
+            border-radius: 6px;
+            padding: 1rem;
+            font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+            font-size: 0.875rem;
+            line-height: 1.5;
+            white-space: pre-wrap;
+            color: #374151;
+            max-height: 500px;
+            overflow-y: auto;
+        }
+
+        .xml-tag {
+            color: #3B40B6;
+        }
+
+        .xml-content {
+            color: #5c5c5c;
+        }
+
+        .final-instruction {
+            background: #f9fafb;
+            border: 1px solid #e5e7eb;
+            border-radius: 6px;
+            padding: 2rem;
+            font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+            font-size: 0.875rem;
+            line-height: 1.6;
+            white-space: pre-wrap;
+            color: #374151;
+            margin-top: 2rem;
+        }
+
+        .completion-message {
+            text-align: center;
+            padding: 2rem;
+            background: linear-gradient(135deg, #3b3fb3 0%, #3B40B6 100%);
+            color: white;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+        }
+
+        .completion-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .restart-button {
+            background: white;
+            color: #3B40B6;
+            border: 2px solid white;
+            padding: 0.75rem 2rem;
+            border-radius: 6px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            margin-top: 1rem;
+        }
+
+        .restart-button:hover {
+            background: #f3f4f6;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+                padding: 1rem;
+            }
+            
+            .choice-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="main-content">
+            <h1>Build Your Restaurant Reviewer Instructions</h1>
+            <p class="subtitle">Let's walk through creating professional AI instructions step by step. Make your choices and watch your instruction build in real-time!</p>
+            
+            <div class="progress-bar">
+                <div class="progress-step active" data-step="1">
+                    <div class="progress-circle">1</div>
+                    <div class="progress-label">Reviewer Type</div>
+                </div>
+                <div class="progress-step" data-step="2">
+                    <div class="progress-circle">2</div>
+                    <div class="progress-label">Tone & Style</div>
+                </div>
+                <div class="progress-step" data-step="3">
+                    <div class="progress-circle">3</div>
+                    <div class="progress-label">Focus Areas</div>
+                </div>
+                <div class="progress-step" data-step="4">
+                    <div class="progress-circle">4</div>
+                    <div class="progress-label">Format</div>
+                </div>
+            </div>
+
+            <!-- Step 1: Reviewer Type -->
+            <div class="step-content active" data-step="1">
+                <h2 class="step-title">Choose Your Reviewer Type</h2>
+                <p class="step-description">What kind of restaurant reviewer do you want to be? This sets the foundation for your entire instruction.</p>
+                
+                <div class="choice-grid">
+                    <div class="choice-card" data-choice="casual-foodie">
+                        <div class="choice-title">
+                            <span class="choice-icon">🍕</span>
+                            Casual Foodie
+                        </div>
+                        <div class="choice-description">Relatable, everyday dining experiences. Perfect for neighborhood spots and comfort food.</div>
+                    </div>
+                    <div class="choice-card" data-choice="professional-critic">
+                        <div class="choice-title">
+                            <span class="choice-icon">⭐</span>
+                            Professional Critic
+                        </div>
+                        <div class="choice-description">Authoritative, detailed analysis. High-end establishments and culinary expertise.</div>
+                    </div>
+                    <div class="choice-card" data-choice="local-guide">
+                        <div class="choice-title">
+                            <span class="choice-icon">🏘️</span>
+                            Local Community Guide
+                        </div>
+                        <div class="choice-description">Helpful neighbor sharing honest recommendations. Focus on value and local favorites.</div>
+                    </div>
+                    <div class="choice-card" data-choice="fine-dining">
+                        <div class="choice-title">
+                            <span class="choice-icon">🥂</span>
+                            Fine Dining Expert
+                        </div>
+                        <div class="choice-description">Sophisticated palate, luxury experiences. Michelin-worthy establishments and wine pairings.</div>
+                    </div>
+                </div>
+                
+                <button class="next-button" disabled onclick="nextStep()">Next Step</button>
+            </div>
+
+            <!-- Step 2: Tone & Style -->
+            <div class="step-content" data-step="2">
+                <h2 class="step-title">Pick Your Tone & Style</h2>
+                <p class="step-description">How do you want to sound when writing reviews? Your tone shapes how readers connect with your content.</p>
+                
+                <div class="choice-grid">
+                    <div class="choice-card" data-choice="friendly-conversational">
+                        <div class="choice-title">
+                            <span class="choice-icon">😊</span>
+                            Friendly & Conversational
+                        </div>
+                        <div class="choice-description">Like chatting with a friend over coffee. Warm, approachable, and easy to read.</div>
+                    </div>
+                    <div class="choice-card" data-choice="authoritative-detailed">
+                        <div class="choice-title">
+                            <span class="choice-icon">📝</span>
+                            Authoritative & Detailed
+                        </div>
+                        <div class="choice-description">Comprehensive analysis with culinary knowledge. Professional but accessible.</div>
+                    </div>
+                    <div class="choice-card" data-choice="entertaining-quirky">
+                        <div class="choice-title">
+                            <span class="choice-icon">🎭</span>
+                            Entertaining & Quirky
+                        </div>
+                        <div class="choice-description">Fun, memorable writing with personality. Makes dining reviews engaging stories.</div>
+                    </div>
+                    <div class="choice-card" data-choice="honest-straightforward">
+                        <div class="choice-title">
+                            <span class="choice-icon">💯</span>
+                            Honest & Straightforward
+                        </div>
+                        <div class="choice-description">No-nonsense, direct feedback. Tell it like it is with helpful specifics.</div>
+                    </div>
+                </div>
+                
+                <button class="next-button" disabled onclick="nextStep()">Next Step</button>
+            </div>
+
+            <!-- Step 3: Focus Areas -->
+            <div class="step-content" data-step="3">
+                <h2 class="step-title">What Should You Focus On?</h2>
+                <p class="step-description">Different diners care about different things. What's most important for your reviews to cover?</p>
+                
+                <div class="choice-grid">
+                    <div class="choice-card" data-choice="food-taste">
+                        <div class="choice-title">
+                            <span class="choice-icon">🍽️</span>
+                            Food Quality & Taste
+                        </div>
+                        <div class="choice-description">Deep dives into flavors, ingredients, preparation, and culinary execution.</div>
+                    </div>
+                    <div class="choice-card" data-choice="service-atmosphere">
+                        <div class="choice-title">
+                            <span class="choice-icon">🏟️</span>
+                            Service & Atmosphere
+                        </div>
+                        <div class="choice-description">The complete dining experience - ambiance, staff, and overall vibe.</div>
+                    </div>
+                    <div class="choice-card" data-choice="value-practical">
+                        <div class="choice-title">
+                            <span class="choice-icon">💰</span>
+                            Value & Practical Info
+                        </div>
+                        <div class="choice-description">Bang for your buck, portions, location, parking, and practical dining details.</div>
+                    </div>
+                    <div class="choice-card" data-choice="instagram-experience">
+                        <div class="choice-title">
+                            <span class="choice-icon">📸</span>
+                            Instagram & Experience
+                        </div>
+                        <div class="choice-description">Visual appeal, shareability, and memorable moments worth posting about.</div>
+                    </div>
+                </div>
+                
+                <button class="next-button" disabled onclick="nextStep()">Next Step</button>
+            </div>
+
+            <!-- Step 4: Format -->
+            <div class="step-content" data-step="4">
+                <h2 class="step-title">Choose Your Review Format</h2>
+                <p class="step-description">How should your reviews be structured? The format guides readers through your thoughts.</p>
+                
+                <div class="choice-grid">
+                    <div class="choice-card" data-choice="narrative-story">
+                        <div class="choice-title">
+                            <span class="choice-icon">📖</span>
+                            Narrative Story
+                        </div>
+                        <div class="choice-description">Tell the dining experience as a story from arrival to departure.</div>
+                    </div>
+                    <div class="choice-card" data-choice="structured-sections">
+                        <div class="choice-title">
+                            <span class="choice-icon">📋</span>
+                            Structured Sections
+                        </div>
+                        <div class="choice-description">Clear sections: Food, Service, Atmosphere, Value with ratings or scores.</div>
+                    </div>
+                    <div class="choice-card" data-choice="quick-highlights">
+                        <div class="choice-title">
+                            <span class="choice-icon">⚡</span>
+                            Quick Highlights
+                        </div>
+                        <div class="choice-description">Scannable format with key points, pros/cons, and bottom-line recommendation.</div>
+                    </div>
+                    <div class="choice-card" data-choice="detailed-analysis">
+                        <div class="choice-title">
+                            <span class="choice-icon">🔍</span>
+                            Detailed Analysis
+                        </div>
+                        <div class="choice-description">Comprehensive breakdown with specific examples and culinary insights.</div>
+                    </div>
+                </div>
+                
+                <button class="next-button" disabled onclick="completeBuilder()">Build My Instruction</button>
+            </div>
+
+            <!-- Completion Step -->
+            <div class="step-content" data-step="5">
+                <div class="completion-message">
+                    <div class="completion-title">🎉 Your Restaurant Reviewer Instruction is Complete!</div>
+                    <p>You've just experienced the power of thoughtful AI instruction design. Look how much more specific and useful your instruction became!</p>
+                    <button class="restart-button" onclick="restartBuilder()">Try Building Another</button>
+                </div>
+                
+                <div class="final-instruction" id="final-instruction">
+                    <!-- Generated instruction will appear here -->
+                </div>
+            </div>
+        </div>
+
+        <div class="sidebar">
+            <h3 class="sidebar-title">Your Instruction Preview</h3>
+            <div class="instruction-preview" id="instruction-preview">
+<span class="xml-tag">&lt;instruction&gt;</span>
+<span class="xml-content">Write a restaurant review...</span>
+<span class="xml-tag">&lt;/instruction&gt;</span>
+
+<em>Make your choices to see this build!</em>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let currentStep = 1;
+        let choices = {};
+        
+        const stepData = {
+            1: { key: 'reviewerType', title: 'Reviewer Type' },
+            2: { key: 'tone', title: 'Tone & Style' },
+            3: { key: 'focus', title: 'Focus Areas' },
+            4: { key: 'format', title: 'Format' }
+        };
+
+        const choiceDefinitions = {
+            // Reviewer Types
+            'casual-foodie': {
+                role: 'You are a casual food enthusiast who loves exploring different restaurants',
+                context: 'Writing for everyday diners who want honest, relatable restaurant experiences',
+                tone: 'friendly and approachable, like talking to a good friend about food'
+            },
+            'professional-critic': {
+                role: 'You are a professional food critic with extensive culinary knowledge',
+                context: 'Writing authoritative reviews for discerning diners who value expert analysis', 
+                tone: 'knowledgeable and sophisticated while remaining accessible'
+            },
+            'local-guide': {
+                role: 'You are a local community member sharing honest dining recommendations',
+                context: 'Helping neighbors and visitors find good value and quality in local restaurants',
+                tone: 'helpful and trustworthy, like a knowledgeable local friend'
+            },
+            'fine-dining': {
+                role: 'You are a fine dining expert with a sophisticated palate',
+                context: 'Reviewing upscale establishments for luxury dining enthusiasts',
+                tone: 'refined and detailed, with appreciation for culinary artistry'
+            },
+
+            // Tones
+            'friendly-conversational': {
+                style: 'Write in a warm, conversational tone as if chatting with a friend over coffee',
+                voice: 'Use "I" statements, share personal reactions, and keep language approachable'
+            },
+            'authoritative-detailed': {
+                style: 'Write with authority and expertise, providing comprehensive analysis',
+                voice: 'Use professional language while remaining clear and informative'
+            },
+            'entertaining-quirky': {
+                style: 'Write with personality and flair, making reviews engaging and memorable',
+                voice: 'Use creative descriptions, humor when appropriate, and distinctive voice'
+            },
+            'honest-straightforward': {
+                style: 'Write direct, honest assessments without unnecessary embellishment',
+                voice: 'Be clear, specific, and helpful with straightforward recommendations'
+            },
+
+            // Focus Areas
+            'food-taste': {
+                focus: 'Prioritize detailed descriptions of food quality, flavors, ingredients, and preparation',
+                details: 'Include specific dish recommendations, cooking techniques, and taste profiles'
+            },
+            'service-atmosphere': {
+                focus: 'Emphasize the complete dining experience including service quality and restaurant ambiance',
+                details: 'Cover staff attentiveness, restaurant decor, noise level, and overall atmosphere'
+            },
+            'value-practical': {
+                focus: 'Highlight value for money, portion sizes, and practical dining information',
+                details: 'Include pricing context, location details, parking, and practical tips for diners'
+            },
+            'instagram-experience': {
+                focus: 'Focus on visual appeal, presentation, and memorable, shareable moments',
+                details: 'Describe photo-worthy dishes, unique decor, and Instagram-worthy aspects'
+            },
+
+            // Formats
+            'narrative-story': {
+                structure: 'Tell the dining experience as a flowing narrative from arrival to departure',
+                format: 'Chronological storytelling with natural transitions between different aspects'
+            },
+            'structured-sections': {
+                structure: 'Organize with clear sections: Food, Service, Atmosphere, and Overall Rating',
+                format: 'Use headers and structured breakdown for easy scanning'
+            },
+            'quick-highlights': {
+                structure: 'Start with key highlights, then pros/cons, ending with clear recommendation',
+                format: 'Scannable bullet points and concise paragraphs for busy readers'
+            },
+            'detailed-analysis': {
+                structure: 'Provide comprehensive analysis with specific examples and culinary insights',
+                format: 'In-depth paragraphs with detailed observations and expert commentary'
+            }
+        };
+
+        // Add click handlers to choice cards
+        document.addEventListener('click', function(e) {
+            if (e.target.closest('.choice-card')) {
+                const card = e.target.closest('.choice-card');
+                const step = currentStep;
+                
+                // Remove selected class from all cards in current step
+                document.querySelectorAll(`[data-step="${step}"] .choice-card`).forEach(c => {
+                    c.classList.remove('selected');
+                });
+                
+                // Add selected class to clicked card
+                card.classList.add('selected');
+                
+                // Store choice
+                const choice = card.getAttribute('data-choice');
+                choices[stepData[step].key] = choice;
+                
+                // Enable next button
+                document.querySelector(`[data-step="${step}"] .next-button`).disabled = false;
+                
+                // Update instruction preview
+                updateInstructionPreview();
+            }
+        });
+
+        function nextStep() {
+            // Mark current step as completed
+            document.querySelector(`[data-step="${currentStep}"]`).classList.add('completed');
+            document.querySelector(`[data-step="${currentStep}"]`).classList.remove('active');
+            
+            // Hide current step content
+            document.querySelector(`.step-content[data-step="${currentStep}"]`).classList.remove('active');
+            
+            // Move to next step
+            currentStep++;
+            
+            // Show next step
+            document.querySelector(`[data-step="${currentStep}"]`).classList.add('active');
+            document.querySelector(`.step-content[data-step="${currentStep}"]`).classList.add('active');
+        }
+
+        function completeBuilder() {
+            // Mark final step as completed
+            document.querySelector(`[data-step="${currentStep}"]`).classList.add('completed');
+            document.querySelector(`[data-step="${currentStep}"]`).classList.remove('active');
+            
+            // Hide current step content
+            document.querySelector(`.step-content[data-step="${currentStep}"]`).classList.remove('active');
+            
+            // Show completion step
+            document.querySelector('.step-content[data-step="5"]').classList.add('active');
+            
+            // Generate final instruction
+            generateFinalInstruction();
+        }
+
+        function updateInstructionPreview() {
+            const preview = document.getElementById('instruction-preview');
+            let instruction = '';
+
+            // Build instruction based on current choices
+            if (choices.reviewerType) {
+                const reviewerChoice = choiceDefinitions[choices.reviewerType];
+                instruction += `<span class="xml-tag">&lt;instruction&gt;</span>
+<span class="xml-content">Write a restaurant review</span>
+<span class="xml-tag">&lt;/instruction&gt;</span>
+
+<span class="xml-tag">&lt;role&gt;</span>
+<span class="xml-content">${reviewerChoice.role}</span>
+<span class="xml-tag">&lt;/role&gt;</span>
+
+<span class="xml-tag">&lt;context&gt;</span>
+<span class="xml-content">${reviewerChoice.context}</span>
+<span class="xml-tag">&lt;/context&gt;</span>`;
+            }
+
+            if (choices.tone) {
+                const toneChoice = choiceDefinitions[choices.tone];
+                instruction += `
+
+<span class="xml-tag">&lt;tone&gt;</span>
+<span class="xml-content">${toneChoice.style}</span>
+<span class="xml-tag">&lt;/tone&gt;</span>`;
+            }
+
+            if (choices.focus) {
+                const focusChoice = choiceDefinitions[choices.focus];
+                instruction += `
+
+<span class="xml-tag">&lt;focus&gt;</span>
+<span class="xml-content">${focusChoice.focus}</span>
+<span class="xml-tag">&lt;/focus&gt;</span>`;
+            }
+
+            if (choices.format) {
+                const formatChoice = choiceDefinitions[choices.format];
+                instruction += `
+
+<span class="xml-tag">&lt;format&gt;</span>
+<span class="xml-content">${formatChoice.structure}</span>
+<span class="xml-tag">&lt;/format&gt;</span>`;
+            }
+
+            // Add constraints and examples once we have all choices
+            if (Object.keys(choices).length >= 4) {
+                instruction += `
+
+<span class="xml-tag">&lt;constraints&gt;</span>
+<span class="xml-content">- Keep reviews between 200-400 words
+- Include specific examples and details
+- Provide actionable information for readers
+- Be honest and balanced in assessment</span>
+<span class="xml-tag">&lt;/constraints&gt;</span>
+
+<span class="xml-tag">&lt;examples&gt;</span>
+<span class="xml-content">**Good opening:** "Walking into Bella Vista, I was immediately struck by the warm lighting and the inviting aroma of fresh herbs..."
+
+**Specific detail:** "The osso buco was perfectly tender, falling off the bone, with a rich saffron risotto that had just the right bite..."
+
+**Helpful conclusion:** "At $28 for the entree, it's a splurge, but worth it for special occasions. Reservations recommended for weekend dinners."</span>
+<span class="xml-tag">&lt;/examples&gt;</span>`;
+            }
+
+            if (instruction === '') {
+                instruction = `<span class="xml-tag">&lt;instruction&gt;</span>
+<span class="xml-content">Write a restaurant review...</span>
+<span class="xml-tag">&lt;/instruction&gt;</span>
+
+<em>Make your choices to see this build!</em>`;
+            }
+
+            preview.innerHTML = instruction;
+        }
+
+        function generateFinalInstruction() {
+            const reviewerChoice = choiceDefinitions[choices.reviewerType];
+            const toneChoice = choiceDefinitions[choices.tone];
+            const focusChoice = choiceDefinitions[choices.focus];
+            const formatChoice = choiceDefinitions[choices.format];
+
+            let instruction = `<instruction>
+Write a restaurant review that provides valuable insights for potential diners
+</instruction>
+
+<role>
+${reviewerChoice.role}
+</role>
+
+<context>
+${reviewerChoice.context}
+</context>
+
+<tone>
+${toneChoice.style}
+${toneChoice.voice}
+</tone>
+
+<focus>
+${focusChoice.focus}
+${focusChoice.details}
+</focus>
+
+<format>
+${formatChoice.structure}
+${formatChoice.format}
+</format>
+
+<constraints>
+- Keep reviews between 200-400 words
+- Include specific examples and details
+- Provide actionable information for readers
+- Be honest and balanced in assessment
+</constraints>
+
+<examples>
+**Good opening:** "Walking into Bella Vista, I was immediately struck by the warm lighting and the inviting aroma of fresh herbs..."
+
+**Specific detail:** "The osso buco was perfectly tender, falling off the bone, with a rich saffron risotto that had just the right bite..."
+
+**Helpful conclusion:** "At $28 for the entree, it's a splurge, but worth it for special occasions. Reservations recommended for weekend dinners."
+</examples>`;
+
+            document.getElementById('final-instruction').textContent = instruction;
+        }
+
+        function restartBuilder() {
+            currentStep = 1;
+            choices = {};
+            
+            // Reset all progress steps
+            document.querySelectorAll('.progress-step').forEach(step => {
+                step.classList.remove('active', 'completed');
+            });
+            document.querySelector('[data-step="1"]').classList.add('active');
+            
+            // Reset all step content
+            document.querySelectorAll('.step-content').forEach(content => {
+                content.classList.remove('active');
+            });
+            document.querySelector('.step-content[data-step="1"]').classList.add('active');
+            
+            // Reset all choice cards
+            document.querySelectorAll('.choice-card').forEach(card => {
+                card.classList.remove('selected');
+            });
+            
+            // Reset all buttons
+            document.querySelectorAll('.next-button').forEach(btn => {
+                btn.disabled = true;
+            });
+            
+            // Reset instruction preview
+            updateInstructionPreview();
+        }
+    </script>
+</body>
+</html>
