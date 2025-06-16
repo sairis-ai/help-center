@@ -9,11 +9,6 @@ Welcome to your journey from writing basic AI prompts to crafting professional-g
 </details>
 
 <details>
-<summary><span style="color:rgb(140,3,252)">&#9734;</span>How to Access the Instructions for your Blueprint</summary>
-<video width="800" height="600" allow="fullscreen" controls="controls" src="/videos//access-blueprint.mp4" />
-</details>
-
-<details>
 <summary><span style="color:rgb(140,3,252)">&#9734;</span>How to Access the Instructions for your Knowledge Base</summary>
 <video width="800" height="600" allow="fullscreen" controls="controls" src="/videos//access-blueprint.mp4" />
 </details>
