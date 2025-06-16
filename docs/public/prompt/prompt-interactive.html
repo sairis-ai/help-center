@@ -915,50 +915,50 @@ ${formatChoice.optimization}</span>
             const toneChoice = choiceDefinitions[choices.audienceTone];
             const formatChoice = choiceDefinitions[choices.format];
 
-            let instruction = `<instruction>
-Create an engaging social media post for ${platformChoice.platform} that drives meaningful engagement and achieves specific content goals
-</instruction>
+            let instruction = `<button class="copy-button" onclick="copyToClipboard()">Copy</button><span class="xml-tag">&lt;instruction&gt;</span>
+<span class="xml-content">Create an engaging social media post for ${platformChoice.platform} that drives meaningful engagement and achieves specific content goals</span>
+<span class="xml-tag">&lt;/instruction&gt;</span>
 
-<platform>
-${platformChoice.context}
+<span class="xml-tag">&lt;platform&gt;</span>
+<span class="xml-content">${platformChoice.context}
 Platform requirements: ${platformChoice.requirements}
-${platformChoice.limits}
-</platform>
+${platformChoice.limits}</span>
+<span class="xml-tag">&lt;/platform&gt;</span>
 
-<content_type>
-${contentChoice.contentType}: ${contentChoice.purpose}
-Approach: ${contentChoice.approach}
-</content_type>
+<span class="xml-tag">&lt;content_type&gt;</span>
+<span class="xml-content">${contentChoice.contentType}: ${contentChoice.purpose}
+Approach: ${contentChoice.approach}</span>
+<span class="xml-tag">&lt;/content_type&gt;</span>
 
-<audience>
-Target audience: ${toneChoice.audience}
-</audience>
+<span class="xml-tag">&lt;audience&gt;</span>
+<span class="xml-content">Target audience: ${toneChoice.audience}</span>
+<span class="xml-tag">&lt;/audience&gt;</span>
 
-<tone>
-${toneChoice.tone}
-Voice guidelines: ${toneChoice.voice}
-</tone>
+<span class="xml-tag">&lt;tone&gt;</span>
+<span class="xml-content">${toneChoice.tone}
+Voice guidelines: ${toneChoice.voice}</span>
+<span class="xml-tag">&lt;/tone&gt;</span>
 
-<format>
-Structure: ${formatChoice.structure}
-Format details: ${formatChoice.format}
-</format>
+<span class="xml-tag">&lt;format&gt;</span>
+<span class="xml-content">Structure: ${formatChoice.structure}
+Format details: ${formatChoice.format}</span>
+<span class="xml-tag">&lt;/format&gt;</span>
 
-<optimization>
-Platform-specific optimization: ${platformChoice.features}
-Format optimization: ${formatChoice.optimization}
-</optimization>
+<span class="xml-tag">&lt;optimization&gt;</span>
+<span class="xml-content">Platform-specific optimization: ${platformChoice.features}
+Format optimization: ${formatChoice.optimization}</span>
+<span class="xml-tag">&lt;/optimization&gt;</span>
 
-<constraints>
-- Follow ${platformChoice.platform} best practices and character limits
+<span class="xml-tag">&lt;constraints&gt;</span>
+<span class="xml-content">- Follow ${platformChoice.platform} best practices and character limits
 - Ensure content aligns with ${contentChoice.contentType.toLowerCase()} goals
 - Maintain ${toneChoice.tone.toLowerCase()} throughout
 - Include clear value proposition for the audience
-- End with appropriate call-to-action when relevant
-</constraints>
+- End with appropriate call-to-action when relevant</span>
+<span class="xml-tag">&lt;/constraints&gt;</span>
 
-<examples>
-**Strong opening hooks:**
+<span class="xml-tag">&lt;examples&gt;</span>
+<span class="xml-content">**Strong opening hooks:**
 - "Here's what nobody tells you about [topic]..."
 - "I tried [approach] for [timeframe] and here's what happened..."
 - "Stop doing [common mistake]. Do this instead:"
@@ -972,14 +972,27 @@ Format optimization: ${formatChoice.optimization}
 - "Save this post and try it yourself!"
 - "What's your experience with [topic]? Share below!"
 - "Tag someone who needs to see this"
-- "Follow for more [content type] content"
-</examples>`;
+- "Follow for more [content type] content"</span>
+<span class="xml-tag">&lt;/examples&gt;</span>`;
 
-            document.getElementById('final-instruction').innerHTML = `<button class="copy-button" onclick="copyToClipboard()">Copy</button>${instruction}`;
+            document.getElementById('final-instruction').innerHTML = instruction;
         }
 
         function copyToClipboard() {
-            const instruction = document.getElementById('final-instruction').textContent;
+            // Get the text content without HTML tags for copying
+            const instructionElement = document.getElementById('final-instruction');
+            const tempDiv = document.createElement('div');
+            tempDiv.innerHTML = instructionElement.innerHTML;
+            
+            // Remove the copy button from the temp div
+            const copyButton = tempDiv.querySelector('.copy-button');
+            if (copyButton) {
+                copyButton.remove();
+            }
+            
+            // Get clean text content
+            const instruction = tempDiv.textContent || tempDiv.innerText;
+            
             navigator.clipboard.writeText(instruction).then(() => {
                 const button = document.querySelector('.copy-button');
                 const originalText = button.textContent;
