@@ -2,6 +2,18 @@
 
 Welcome to your journey from writing basic AI prompts to crafting professional-grade instructions that get exactly the results you want. This guide will transform how you communicate with AI models.
 
+## How to Access the Instruction
+<details> 
+<summary>How to Access the Instructions for your Chat</summary>
+<video width="800" height="600" allow="fullscreen" controls="controls" src="/videos/access-chat.mp4" />
+</details>
+
+<details>
+<summary>How to Access the Instructions for your Blueprint</summary>
+<video width="800" height="600" allow="fullscreen" controls="controls" src="/videos//access-blueprint.mp4" />
+</details>
+
+
 ## How AI Reads Instructions
 
 Think of AI like a brilliant new employee on their first day. They're incredibly capable, but they need clear instructions because they don't know your company culture, preferences, or the "unspoken rules" yet.
