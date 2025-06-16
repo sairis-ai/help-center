@@ -4,12 +4,12 @@ Welcome to your journey from writing basic AI prompts to crafting professional-g
 
 ## How to Access the Instruction
 <details> 
-<summary>How to Access the Instructions for your Chat</summary>
+<summary><span style="color:rgb(140,3,252)">&#9734;</span>How to Access the Instructions for your Chat</summary>
 <video width="800" height="600" allow="fullscreen" controls="controls" src="/videos/access-chat.mp4" />
 </details>
 
 <details>
-<summary>How to Access the Instructions for your Blueprint</summary>
+<summary><span style="color:rgb(140,3,252)">&#9734;</span>How to Access the Instructions for your Blueprint</summary>
 <video width="800" height="600" allow="fullscreen" controls="controls" src="/videos//access-blueprint.mp4" />
 </details>
 
