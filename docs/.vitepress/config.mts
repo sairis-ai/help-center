@@ -195,21 +195,21 @@ export default defineConfig({
       {text: 'Onboarding', collapsed: true, items: 
         [
           {text: '<span style="color:rgb(140,3,252)">&#9734;</span> Onboarding Overview', link: '/general/getting-started/onboarding-overview' },   
-          {text: '<span style="color:rgb(140,3,252)">&#9734;</span> Learn AI Instructions', collapsed: true, link: 'general/prompt-engineering/understand-ai-1',items:  
-            [
-              {text: '<span style="color:rgb(140,3,252)">&#128214;</span> Part 1: Understanding & Examples', link: '/general/prompt-engineering/understand-ai-1'},
-              {text: '<span style="color:rgb(140,3,252)">&#128214;</span> Part 2: Organization & Structure', link: '/general/prompt-engineering/structure-2'},
-              {text: '<span style="color:rgb(140,3,252)">&#128214;</span> Part 3: Advanced & Reference', link: '/general/prompt-engineering/advanced-3'},
-              {text: '<span style="color:rgb(140,3,252)">&#128214;</span> Interactive Instruction Builder', link: '/prompt/prompt-interactive.html', target: '_blank'}
-            ]
-          }
         ]
       },
       {
-        text: '<span style="color:rgb(140,3,252)">&#128214;</span> Learn', collapsed: true, items: 
-        [ 
-          {text: 'Prompt Engineering', collapsed: true, link: '/general/learn/prompt-engineering', items: 
-          [  
+        text: 'Learn AI instructions', collapsed: true, items: 
+        [
+          {text: '<span style="color:rgb(140,3,252)">&#128214;</span> Part 1: Understanding & Examples', link: '/general/prompt-engineering/understand-ai-1'},
+          {text: '<span style="color:rgb(140,3,252)">&#128214;</span> Part 2: Organization & Structure', link: '/general/prompt-engineering/structure-2'},
+          {text: '<span style="color:rgb(140,3,252)">&#128214;</span> Part 3: Advanced & Reference', link: '/general/prompt-engineering/advanced-3'},
+          {text: '<span style="color:rgb(140,3,252)">&#128214;</span> Interactive Instruction Builder', link: '/prompt/prompt-interactive.html', target: '_blank'}
+        ]
+      },
+      {
+        text: 'Mastering Prompts', collapsed: true, items: 
+        [  
+           
             {text: '<span style="color:rgb(140,3,252)">&#128214;</span> 100 - Intro to PE',link: '/general/learn/100-intro-to-prompt-engineering'},
             {text: '<span style="color:rgb(140,3,252)">&#128214;</span> 101 - What is PE?', link: '/general/learn/101-what-is-prompt-engineering'},
             {text: '<span style="color:rgb(140,3,252)">&#128214;</span> 102 - Inputs', link: '/general/learn/102-writing-clear-user-inputs'},
@@ -219,9 +219,7 @@ export default defineConfig({
             {text: '<span style="color:rgb(140,3,252)">&#128214;</span> 106 - Context vs RAG', link: '/general/learn/106-context-vs-RAG'},
             {text: '<span style="color:rgb(140,3,252)">&#128214;</span> 107 - Managing Context', link: '/general/learn/107-managing-context-in-prompts'},
             {text: '<span style="color:rgb(140,3,252)">&#128214;</span> 108 - Working with Knowledge', link: '/general/learn/108-working-with-knowledge'}
-          ]
-        },
-          {text: 'More Coming Soon'}
+          
         ] 
       },
       {
