@@ -219,7 +219,7 @@ export default defineConfig({
             {text: '<span style="color:rgb(140,3,252)">&#128214;</span> 106 - Context vs RAG', link: '/general/learn/106-context-vs-RAG'},
             {text: '<span style="color:rgb(140,3,252)">&#128214;</span> 107 - Managing Context', link: '/general/learn/107-managing-context-in-prompts'},
             {text: '<span style="color:rgb(140,3,252)">&#128214;</span> 108 - Working with Knowledge', link: '/general/learn/108-working-with-knowledge'},
-            {text: '<span style="color:rgb(140,3,252)">&#128214;</span> Interactive Prompt Builder', link: '/prompt/prompt-transformer.html', target: '_blank'}
+            {text: '<span style="color:rgb(140,3,252)">&#128214;</span> Interactive Prompt Builder', link: '/prompt/prompt_transformer.html', target: '_blank'}
           
         ] 
       },
