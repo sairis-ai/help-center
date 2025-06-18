@@ -198,7 +198,7 @@ export default defineConfig({
         ]
       },
       {
-        text: 'Learn AI instructions', collapsed: true, items: 
+        text: 'Learn AI Instructions', collapsed: true, items: 
         [
           {text: '<span style="color:rgb(140,3,252)">&#128214;</span> Part 1: Understanding & Examples', link: '/general/prompt-engineering/understand-ai-1'},
           {text: '<span style="color:rgb(140,3,252)">&#128214;</span> Part 2: Organization & Structure', link: '/general/prompt-engineering/structure-2'},
@@ -207,7 +207,7 @@ export default defineConfig({
         ]
       },
       {
-        text: 'Mastering Prompts', collapsed: true, items: 
+        text: 'Learn Mastering Prompts', collapsed: true, items: 
         [  
            
             {text: '<span style="color:rgb(140,3,252)">&#128214;</span> 100 - Intro to PE',link: '/general/learn/100-intro-to-prompt-engineering'},
