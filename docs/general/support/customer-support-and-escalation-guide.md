@@ -42,10 +42,8 @@ If requested by Sairis Support:
 
 ### New Ticket Response Time
 
-- **Description**: Tickets to `support@sairis.ai` receive an instant automated reply. Engineers and managers are notified email and desktop app. Unassigned tickets escalate after 15 minutes.
-- **SLAs**:
-  - Business Hours: 15 minutes
-  - After Hours: 12 hours
+- **Description**: Tickets to `support@sairis.ai` receive an instant automated reply. Engineers and managers are notified email and desktop app.
+
 
 ### Support Tickets SLA Time Targets
 
@@ -53,7 +51,7 @@ If requested by Sairis Support:
 
 - **Description**: Creates a major disruption to the business operation. A severe application problem causing considerable downtime. Hotfixes are developed, tested, and applied outside normal cycles to servers or apps.
 - **Response SLA**:
-  - Business Hours: 30 minutes
+  - Business Hours: 15 minutes
   - After Hours: 4 hours
 - **Resolve SLA**:
   - 1 days
@@ -80,7 +78,7 @@ If requested by Sairis Support:
 
 - **Description**: An inconvenience or annoyance that doesn't seriously impact functionality.
 - **Response SLA**:
-  - Business Hours: 1200 minutes
+  - Business Hours: 120 minutes
   - After Hours: 24 hours
 - **Resolve SLA**:
   - 30 days
