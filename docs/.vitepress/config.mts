@@ -180,7 +180,7 @@ export default defineConfig({
     [
       {text: 'Getting Started', collapsed: false, items: 
         [
-          {text: '1: <span style="color:rgb(140,3,252)">&#9734;</span> Discover Sairis', link: '/general/prompt-engineering/overview.html' }, 
+          {text: '1: <span style="color:rgb(140,3,252)">&#9734;</span> Discover Sairis', link: '/general/getting-started/onboarding' }, 
           {text: '2: <span style="color:rgb(140,3,252)">&#9734;</span> What\'s my role?', link: '/general/getting-started/my-role' },
           {text: '3: Roles: Quick Start', collapsed: false, items: 
             [
