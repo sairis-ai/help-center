@@ -1,0 +1,1066 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Prompt Builder</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background-color: #f9fafb;
+            color: #374151;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 3rem 1.5rem;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #111827;
+            margin-bottom: 1rem;
+        }
+
+        .header p {
+            font-size: 1.125rem;
+            color: #6b7280;
+            max-width: 48rem;
+            margin: 0 auto;
+        }
+
+        .progress-bar {
+            margin-bottom: 3rem;
+        }
+
+        .progress-steps {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .step {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .step-icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 2.5rem;
+            height: 2.5rem;
+            border-radius: 50%;
+            border: 2px solid;
+            font-weight: bold;
+        }
+
+        .step-icon.active {
+            background-color: #2563eb;
+            border-color: #2563eb;
+            color: white;
+        }
+
+        .step-icon.completed {
+            background-color: #059669;
+            border-color: #059669;
+            color: white;
+        }
+
+        .step-icon.inactive {
+            background-color: white;
+            border-color: #d1d5db;
+            color: #9ca3af;
+        }
+
+        .step-title {
+            font-size: 0.875rem;
+            font-weight: 500;
+        }
+
+        .step-title.active {
+            color: #2563eb;
+        }
+
+        .step-title.completed {
+            color: #059669;
+        }
+
+        .step-title.inactive {
+            color: #9ca3af;
+        }
+
+        .card {
+            background: white;
+            border-radius: 0.5rem;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+            border: 1px solid #e5e7eb;
+            padding: 2rem;
+        }
+
+        .grid {
+            display: grid;
+            gap: 1.5rem;
+        }
+
+        .grid-3 {
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        }
+
+        .grid-2 {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        @media (max-width: 768px) {
+            .grid-2 {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .scenario-card {
+            padding: 1.5rem;
+            text-align: left;
+            border: 2px solid #e5e7eb;
+            border-radius: 0.5rem;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .scenario-card:hover {
+            border-color: #93c5fd;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .scenario-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 0.75rem;
+        }
+
+        .scenario-title {
+            font-weight: 600;
+            color: #111827;
+        }
+
+        .scenario-category {
+            font-size: 0.75rem;
+            padding: 0.25rem 0.5rem;
+            background-color: #dbeafe;
+            color: #2563eb;
+            border-radius: 0.25rem;
+        }
+
+        .btn {
+            padding: 0.75rem 1.5rem;
+            border: none;
+            border-radius: 0.5rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .btn-primary {
+            background-color: #2563eb;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background-color: #1d4ed8;
+        }
+
+        .btn-primary:disabled {
+            background-color: #d1d5db;
+            cursor: not-allowed;
+        }
+
+        .btn-secondary {
+            background-color: #6b7280;
+            color: white;
+        }
+
+        .btn-secondary:hover {
+            background-color: #4b5563;
+        }
+
+        .btn-success {
+            background-color: #059669;
+            color: white;
+        }
+
+        .btn-success:hover {
+            background-color: #047857;
+        }
+
+        .prompt-box {
+            background-color: #f9fafb;
+            padding: 1rem;
+            border-radius: 0.5rem;
+            border: 1px solid #e5e7eb;
+            min-height: 120px;
+        }
+
+        .prompt-box.before {
+            background-color: #fef2f2;
+            border-color: #fecaca;
+        }
+
+        .prompt-box.after {
+            background-color: #f0fdf4;
+            border-color: #bbf7d0;
+        }
+
+        .score-bar {
+            width: 100%;
+            height: 0.75rem;
+            background-color: #e5e7eb;
+            border-radius: 9999px;
+            overflow: hidden;
+            margin-bottom: 1rem;
+        }
+
+        .score-fill {
+            height: 100%;
+            transition: width 0.5s ease;
+            border-radius: 9999px;
+        }
+
+        .score-red {
+            background-color: #ef4444;
+        }
+
+        .score-yellow {
+            background-color: #eab308;
+        }
+
+        .score-green {
+            background-color: #22c55e;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-label {
+            display: block;
+            font-size: 0.875rem;
+            font-weight: 500;
+            color: #374151;
+            margin-bottom: 0.5rem;
+        }
+
+        .form-select {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #d1d5db;
+            border-radius: 0.5rem;
+            font-size: 1rem;
+            outline: none;
+            transition: border-color 0.2s;
+        }
+
+        .form-select:focus {
+            border-color: #2563eb;
+            box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.2);
+        }
+
+        .improvement-text {
+            font-size: 0.875rem;
+            color: #059669;
+            margin-top: 0.25rem;
+        }
+
+        .checkmark {
+            color: #059669;
+            font-weight: bold;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .mb-2 {
+            margin-bottom: 0.5rem;
+        }
+
+        .mb-4 {
+            margin-bottom: 1rem;
+        }
+
+        .mb-6 {
+            margin-bottom: 1.5rem;
+        }
+
+        .mb-8 {
+            margin-bottom: 2rem;
+        }
+
+        .mt-4 {
+            margin-top: 1rem;
+        }
+
+        .mt-6 {
+            margin-top: 1.5rem;
+        }
+
+        .flex {
+            display: flex;
+        }
+
+        .items-center {
+            align-items: center;
+        }
+
+        .justify-between {
+            justify-content: space-between;
+        }
+
+        .justify-center {
+            justify-content: center;
+        }
+
+        .gap-4 {
+            gap: 1rem;
+        }
+
+        .text-sm {
+            font-size: 0.875rem;
+        }
+
+        .text-lg {
+            font-size: 1.125rem;
+        }
+
+        .text-xl {
+            font-size: 1.25rem;
+        }
+
+        .text-2xl {
+            font-size: 1.5rem;
+        }
+
+        .text-3xl {
+            font-size: 1.875rem;
+        }
+
+        .font-semibold {
+            font-weight: 600;
+        }
+
+        .font-bold {
+            font-weight: 700;
+        }
+
+        .text-gray-600 {
+            color: #6b7280;
+        }
+
+        .text-gray-700 {
+            color: #4b5563;
+        }
+
+        .text-gray-800 {
+            color: #1f2937;
+        }
+
+        .text-gray-900 {
+            color: #111827;
+        }
+
+        .text-red-600 {
+            color: #dc2626;
+        }
+
+        .text-green-600 {
+            color: #059669;
+        }
+
+        .text-blue-600 {
+            color: #2563eb;
+        }
+
+        .success-icon {
+            width: 4rem;
+            height: 4rem;
+            background-color: #d1fae5;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+            font-size: 2rem;
+        }
+
+        .improvement-list {
+            list-style: none;
+        }
+
+        .improvement-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 0.5rem;
+            font-size: 0.875rem;
+        }
+
+        .improvement-item::before {
+            content: "✓";
+            margin-right: 0.5rem;
+            color: #059669;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <h1>Interactive Prompt Builder</h1>
+            <p>Learn prompt engineering by building better prompts step-by-step. See how each element improves your results in real-time.</p>
+        </div>
+
+        <!-- Progress Bar -->
+        <div class="progress-bar">
+            <div class="progress-steps">
+                <div class="step">
+                    <div class="step-icon active" id="step-icon-0">1</div>
+                    <span class="step-title active" id="step-title-0">Choose</span>
+                </div>
+                <div class="step">
+                    <div class="step-icon inactive" id="step-icon-1">2</div>
+                    <span class="step-title inactive" id="step-title-1">Original</span>
+                </div>
+                <div class="step">
+                    <div class="step-icon inactive" id="step-icon-2">3</div>
+                    <span class="step-title inactive" id="step-title-2">Build</span>
+                </div>
+                <div class="step">
+                    <div class="step-icon inactive" id="step-icon-3">4</div>
+                    <span class="step-title inactive" id="step-title-3">Success</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Step 0: Choose Example -->
+        <div id="step-0" class="card">
+            <div class="text-center mb-8">
+                <h2 class="text-2xl font-semibold text-gray-900 mb-4">Choose Your Scenario</h2>
+                <p class="text-gray-600">Pick a business scenario to practice prompt building</p>
+            </div>
+            
+            <div class="grid grid-3">
+                <div class="scenario-card" onclick="selectScenario(0)">
+                    <div class="scenario-header">
+                        <h3 class="scenario-title">Team Email</h3>
+                        <span class="scenario-category">Communication</span>
+                    </div>
+                    <p class="text-sm text-gray-600 mb-4">You need to inform your team about an upcoming meeting</p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-sm text-gray-500">Interactive Demo</span>
+                        <span style="color: #2563eb;">▶</span>
+                    </div>
+                </div>
+
+                <div class="scenario-card" onclick="selectScenario(1)">
+                    <div class="scenario-header">
+                        <h3 class="scenario-title">Budget Report</h3>
+                        <span class="scenario-category">Business Analysis</span>
+                    </div>
+                    <p class="text-sm text-gray-600 mb-4">You need to analyze departmental spending for leadership</p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-sm text-gray-500">Interactive Demo</span>
+                        <span style="color: #2563eb;">▶</span>
+                    </div>
+                </div>
+
+                <div class="scenario-card" onclick="selectScenario(2)">
+                    <div class="scenario-header">
+                        <h3 class="scenario-title">Project Plan</h3>
+                        <span class="scenario-category">Project Management</span>
+                    </div>
+                    <p class="text-sm text-gray-600 mb-4">You need to plan a product launch for stakeholders</p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-sm text-gray-500">Interactive Demo</span>
+                        <span style="color: #2563eb;">▶</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Step 1: Original Prompt -->
+        <div id="step-1" class="card hidden">
+            <div class="text-center mb-8">
+                <h2 class="text-2xl font-semibold text-gray-900 mb-4">Starting Point</h2>
+                <p class="text-gray-600">Here's the basic prompt we'll improve together</p>
+            </div>
+            
+            <div style="max-width: 48rem; margin: 0 auto;">
+                <div class="mb-6">
+                    <h3 class="font-semibold text-gray-700 mb-2">Scenario: <span id="current-scenario-title"></span></h3>
+                    <p class="text-gray-600 mb-4" id="current-scenario-description"></p>
+                </div>
+                
+                <div class="prompt-box before mb-6">
+                    <h4 class="font-semibold text-red-600 mb-3">Current Prompt:</h4>
+                    <p class="text-lg text-gray-800" id="original-prompt-text"></p>
+                </div>
+                
+                <div class="mb-8">
+                    <div class="flex justify-between items-center mb-2">
+                        <span class="text-sm font-medium text-gray-700">Prompt Quality</span>
+                        <span class="text-sm font-semibold text-red-600">2/10</span>
+                    </div>
+                    <div class="score-bar">
+                        <div class="score-fill score-red" style="width: 20%;"></div>
+                    </div>
+                </div>
+                
+                <div class="text-center">
+                    <button class="btn btn-primary" onclick="goToStep(2)">
+                        Start Building Better Prompt →
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Step 2: Interactive Building -->
+        <div id="step-2" class="grid grid-2 gap-8 hidden">
+            <div class="card">
+                <h3 class="text-xl font-semibold text-gray-900 mb-6">Build Your Prompt</h3>
+                <p class="text-gray-600 mb-6">Select options to improve the prompt. Watch the quality score increase!</p>
+                
+                <div id="form-container">
+                    <!-- Form will be populated by JavaScript -->
+                </div>
+                
+                <div class="mt-6" style="padding-top: 1.5rem; border-top: 1px solid #e5e7eb;">
+                    <p class="text-sm text-gray-600 mb-2">Progress: <span id="progress-count">0</span>/5 elements added</p>
+                    <button id="review-btn" class="btn btn-primary" style="width: 100%;" onclick="goToStep(3)" disabled>
+                        Add 3 more elements
+                    </button>
+                </div>
+            </div>
+            
+            <div class="card">
+                <h3 class="text-xl font-semibold text-gray-900 mb-4">Live Preview</h3>
+                
+                <div class="prompt-box mb-6" id="live-preview">
+                    <p class="text-gray-800" id="current-prompt-text"></p>
+                </div>
+                
+                <div class="mb-6">
+                    <div class="flex justify-between items-center mb-2">
+                        <span class="text-sm font-medium text-gray-700">Quality Score</span>
+                        <span class="text-sm font-semibold" id="current-score">2/10</span>
+                    </div>
+                    <div class="score-bar">
+                        <div class="score-fill score-red" id="current-score-bar" style="width: 20%;"></div>
+                    </div>
+                </div>
+                
+                <div id="improvements-list" style="display: none;">
+                    <h4 class="font-semibold text-green-600 mb-2">Improvements Added:</h4>
+                    <ul class="improvement-list" id="improvements-ul"></ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Step 3: Success -->
+        <div id="step-3" class="hidden">
+            <div class="text-center mb-8">
+                <div class="success-icon">✓</div>
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Great Job!</h2>
+                <p class="text-lg text-gray-600">You've transformed a basic prompt into something much more effective</p>
+            </div>
+            
+            <div class="grid grid-2 gap-8 mb-8" style="max-width: 80rem; margin: 0 auto;">
+                <div class="card">
+                    <h3 class="text-lg font-semibold text-red-600 mb-4">Before</h3>
+                    <div class="prompt-box before mb-4">
+                        <p class="text-gray-800" id="final-original-prompt"></p>
+                    </div>
+                    <div class="text-sm text-gray-600">
+                        <p>Quality Score: 2/10</p>
+                        <p class="text-red-600">Vague and unclear</p>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <h3 class="text-lg font-semibold text-green-600 mb-4">After Your Improvements</h3>
+                    <div class="prompt-box after mb-4">
+                        <p class="text-gray-800" id="final-improved-prompt"></p>
+                    </div>
+                    <div class="text-sm text-gray-600">
+                        <p>Quality Score: <span id="final-score">8</span>/10</p>
+                        <p class="text-green-600" id="final-message">Excellent transformation!</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card mb-8" style="max-width: 64rem; margin: 0 auto;">
+                <h3 class="text-xl font-semibold text-gray-900 mb-4">What Made the Difference</h3>
+                <div class="grid grid-2 gap-6">
+                    <div>
+                        <h4 class="font-semibold text-green-600 mb-3">Elements You Added:</h4>
+                        <ul class="improvement-list" id="final-improvements-list"></ul>
+                    </div>
+                    
+                    <div>
+                        <h4 class="font-semibold text-blue-600 mb-3">Why It Matters:</h4>
+                        <div class="text-sm text-gray-600" id="final-explanations"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card" style="max-width: 32rem; margin: 0 auto;">
+                <div class="flex gap-4 justify-center mb-4" style="flex-wrap: wrap;">
+                    <button class="btn btn-primary" onclick="copyToClipboard()">
+                        📋 Copy Your Improved Prompt
+                    </button>
+                    
+                    <button class="btn btn-secondary" onclick="resetDemo()">
+                        🔄 Try Another Scenario
+                    </button>
+                </div>
+                
+                <div class="text-center">
+                    <p class="text-sm text-gray-600">
+                        You've learned the key principles of effective prompting!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Data
+        const examples = [
+            {
+                title: "Team Email",
+                category: "Communication",
+                basePrompt: "Write an email about the meeting",
+                scenario: "You need to inform your team about an upcoming meeting",
+                options: {
+                    roles: ["Project Manager", "Team Lead", "Department Head"],
+                    audiences: ["Development Team", "Marketing Team", "Entire Team"],
+                    goals: ["Inform about agenda", "Confirm attendance", "Share meeting prep"],
+                    formats: ["Professional email", "Brief announcement", "Detailed invitation"],
+                    tones: ["Professional", "Friendly", "Urgent"]
+                },
+                improvements: {
+                    role: "Adds authority and context",
+                    audience: "Targets the right people", 
+                    goal: "Clarifies the purpose",
+                    format: "Sets expectations for output",
+                    tone: "Ensures appropriate style"
+                }
+            },
+            {
+                title: "Budget Report",
+                category: "Business Analysis",
+                basePrompt: "Help me with my budget",
+                scenario: "You need to analyze departmental spending for leadership",
+                options: {
+                    roles: ["Finance Manager", "Department Head", "Business Analyst"],
+                    audiences: ["Executive Team", "Board Members", "Department Staff"],
+                    goals: ["Analyze spending patterns", "Identify cost savings", "Plan next quarter"],
+                    formats: ["Executive summary", "Detailed report", "Presentation slides"],
+                    tones: ["Professional", "Data-driven", "Consultative"]
+                },
+                improvements: {
+                    role: "Establishes financial expertise",
+                    audience: "Tailors complexity level",
+                    goal: "Focuses the analysis",
+                    format: "Provides clear structure",
+                    tone: "Matches audience expectations"
+                }
+            },
+            {
+                title: "Project Plan",
+                category: "Project Management", 
+                basePrompt: "Make a project timeline",
+                scenario: "You need to plan a product launch for stakeholders",
+                options: {
+                    roles: ["Product Manager", "Project Lead", "Program Director"],
+                    audiences: ["Stakeholders", "Development Team", "Executive Sponsors"],
+                    goals: ["Plan product launch", "Coordinate resources", "Track milestones"],
+                    formats: ["Gantt chart", "Phase breakdown", "Milestone timeline"],
+                    tones: ["Professional", "Detailed", "Strategic"]
+                },
+                improvements: {
+                    role: "Shows product ownership",
+                    audience: "Determines detail level",
+                    goal: "Defines project scope",
+                    format: "Specifies deliverable type",
+                    tone: "Sets communication style"
+                }
+            }
+        ];
+
+        // State
+        let currentExample = 0;
+        let currentStep = 0;
+        let selectedInputs = {
+            role: '',
+            audience: '',
+            goal: '',
+            format: '',
+            tone: ''
+        };
+
+        function selectScenario(index) {
+            currentExample = index;
+            resetInputs();
+            goToStep(1);
+            
+            const example = examples[currentExample];
+            document.getElementById('current-scenario-title').textContent = example.title;
+            document.getElementById('current-scenario-description').textContent = example.scenario;
+            document.getElementById('original-prompt-text').textContent = `"${example.basePrompt}"`;
+            
+            populateForm();
+            updatePrompt();
+        }
+
+        function populateForm() {
+            const example = examples[currentExample];
+            const container = document.getElementById('form-container');
+            container.innerHTML = '';
+            
+            const fields = [
+                { key: 'role', label: '1. Your Role', options: example.options.roles },
+                { key: 'audience', label: '2. Target Audience', options: example.options.audiences },
+                { key: 'goal', label: '3. Main Goal', options: example.options.goals },
+                { key: 'format', label: '4. Output Format', options: example.options.formats },
+                { key: 'tone', label: '5. Tone', options: example.options.tones }
+            ];
+            
+            fields.forEach(field => {
+                const div = document.createElement('div');
+                div.className = 'form-group';
+                
+                div.innerHTML = `
+                    <label class="form-label">
+                        ${field.label} <span class="checkmark" id="check-${field.key}" style="display: none;">✓</span>
+                    </label>
+                    <select class="form-select" id="select-${field.key}" onchange="updateInput('${field.key}', this.value)">
+                        <option value="">Choose ${field.key}...</option>
+                        ${field.options.map(option => `<option value="${option}">${option}</option>`).join('')}
+                    </select>
+                    <p class="improvement-text" id="improvement-${field.key}" style="display: none;"></p>
+                `;
+                
+                container.appendChild(div);
+            });
+        }
+
+        function updateInput(key, value) {
+            selectedInputs[key] = value;
+            
+            const checkmark = document.getElementById(`check-${key}`);
+            const improvement = document.getElementById(`improvement-${key}`);
+            const example = examples[currentExample];
+            
+            if (value) {
+                checkmark.style.display = 'inline';
+                improvement.style.display = 'block';
+                improvement.textContent = example.improvements[key];
+            } else {
+                checkmark.style.display = 'none';
+                improvement.style.display = 'none';
+            }
+            
+            updatePrompt();
+            updateProgress();
+        }
+
+        function updatePrompt() {
+            const example = examples[currentExample];
+            let prompt = example.basePrompt;
+            let score = 2;
+            
+            if (selectedInputs.role) {
+                prompt = `As a ${selectedInputs.role}, ${prompt.toLowerCase()}`;
+                score += 2;
+            }
+            
+            if (selectedInputs.audience) {
+                prompt += ` for my ${selectedInputs.audience}`;
+                score += 2;
+            }
+            
+            if (selectedInputs.goal) {
+                prompt += ` to ${selectedInputs.goal.toLowerCase()}`;
+                score += 2;
+            }
+            
+            if (selectedInputs.format) {
+                prompt += `. Create this as a ${selectedInputs.format.toLowerCase()}`;
+                score += 1;
+            }
+            
+            if (selectedInputs.tone) {
+                prompt += ` using a ${selectedInputs.tone.toLowerCase()} tone`;
+                score += 1;
+            }
+            
+            prompt += '.';
+            score = Math.min(score, 10);
+            
+            document.getElementById('current-prompt-text').textContent = prompt;
+            document.getElementById('current-score').textContent = `${score}/10`;
+            
+            const scoreBar = document.getElementById('current-score-bar');
+            scoreBar.style.width = `${score * 10}%`;
+            scoreBar.className = 'score-fill ' + (score <= 3 ? 'score-red' : score <= 6 ? 'score-yellow' : 'score-green');
+            
+            const scoreText = document.getElementById('current-score');
+            scoreText.className = 'text-sm font-semibold ' + (score <= 3 ? 'text-red-600' : score <= 6 ? 'text-yellow-600' : 'text-green-600');
+            
+            updateImprovementsList();
+        }
+
+        function updateProgress() {
+            const completedInputs = Object.values(selectedInputs).filter(Boolean).length;
+            document.getElementById('progress-count').textContent = completedInputs;
+            
+            const reviewBtn = document.getElementById('review-btn');
+            if (completedInputs >= 3) {
+                reviewBtn.disabled = false;
+                reviewBtn.textContent = 'Review My Prompt';
+            } else {
+                reviewBtn.disabled = true;
+                reviewBtn.textContent = `Add ${3 - completedInputs} more elements`;
+            }
+        }
+
+        function updateImprovementsList() {
+            const completedInputs = Object.values(selectedInputs).filter(Boolean).length;
+            const improvementsList = document.getElementById('improvements-list');
+            const improvementsUl = document.getElementById('improvements-ul');
+            
+            if (completedInputs > 0) {
+                improvementsList.style.display = 'block';
+                improvementsUl.innerHTML = '';
+                
+                Object.entries(selectedInputs).forEach(([key, value]) => {
+                    if (value) {
+                        const li = document.createElement('li');
+                        li.className = 'improvement-item';
+                        li.innerHTML = `<span style="text-transform: capitalize; font-weight: 500;">${key}:</span> <span>${value}</span>`;
+                        improvementsUl.appendChild(li);
+                    }
+                });
+            } else {
+                improvementsList.style.display = 'none';
+            }
+        }
+
+        function goToStep(step) {
+            // Hide all steps
+            for (let i = 0; i <= 3; i++) {
+                const stepEl = document.getElementById(`step-${i}`);
+                if (stepEl) stepEl.classList.add('hidden');
+            }
+            
+            // Show current step
+            const currentStepEl = document.getElementById(`step-${step}`);
+            if (currentStepEl) currentStepEl.classList.remove('hidden');
+            currentStep = step;
+            
+            // Update progress bar
+            updateProgressBar();
+            
+            // Handle step-specific logic
+            if (step === 3) {
+                populateFinalResults();
+            }
+        }
+
+        function updateProgressBar() {
+            for (let i = 0; i <= 3; i++) {
+                const icon = document.getElementById(`step-icon-${i}`);
+                const title = document.getElementById(`step-title-${i}`);
+                
+                if (i < currentStep) {
+                    icon.className = 'step-icon completed';
+                    title.className = 'step-title completed';
+                } else if (i === currentStep) {
+                    icon.className = 'step-icon active';
+                    title.className = 'step-title active';
+                } else {
+                    icon.className = 'step-icon inactive';
+                    title.className = 'step-title inactive';
+                }
+            }
+        }
+
+        function populateFinalResults() {
+            const example = examples[currentExample];
+            const completedInputs = Object.values(selectedInputs).filter(Boolean).length;
+            let score = 2 + (completedInputs * 1.6);
+            score = Math.min(Math.round(score), 10);
+            
+            // Build final prompt
+            let finalPrompt = example.basePrompt;
+            if (selectedInputs.role) {
+                finalPrompt = `As a ${selectedInputs.role}, ${finalPrompt.toLowerCase()}`;
+            }
+            if (selectedInputs.audience) {
+                finalPrompt += ` for my ${selectedInputs.audience}`;
+            }
+            if (selectedInputs.goal) {
+                finalPrompt += ` to ${selectedInputs.goal.toLowerCase()}`;
+            }
+            if (selectedInputs.format) {
+                finalPrompt += `. Create this as a ${selectedInputs.format.toLowerCase()}`;
+            }
+            if (selectedInputs.tone) {
+                finalPrompt += ` using a ${selectedInputs.tone.toLowerCase()} tone`;
+            }
+            finalPrompt += '.';
+            
+            // Update final results
+            document.getElementById('final-original-prompt').textContent = `"${example.basePrompt}"`;
+            document.getElementById('final-improved-prompt').textContent = `"${finalPrompt}"`;
+            document.getElementById('final-score').textContent = score;
+            
+            // Update final message
+            const finalMessage = document.getElementById('final-message');
+            if (score >= 8) {
+                finalMessage.textContent = 'Excellent transformation!';
+            } else if (score >= 6) {
+                finalMessage.textContent = 'Significant improvement!';
+            } else {
+                finalMessage.textContent = 'Much better than before!';
+            }
+            
+            // Update improvements list
+            const finalImprovementsList = document.getElementById('final-improvements-list');
+            finalImprovementsList.innerHTML = '';
+            
+            Object.entries(selectedInputs).forEach(([key, value]) => {
+                if (value) {
+                    const li = document.createElement('li');
+                    li.className = 'improvement-item';
+                    li.innerHTML = `<span style="text-transform: capitalize; font-weight: 500;">${key}:</span> <span>${value}</span>`;
+                    finalImprovementsList.appendChild(li);
+                }
+            });
+            
+            // Update explanations
+            const explanations = document.getElementById('final-explanations');
+            explanations.innerHTML = '';
+            
+            Object.entries(selectedInputs).forEach(([key, value]) => {
+                if (value) {
+                    const p = document.createElement('p');
+                    p.textContent = `• ${getExplanation(key)}`;
+                    explanations.appendChild(p);
+                }
+            });
+            
+            // Store final prompt for copying
+            window.finalPromptForCopy = finalPrompt;
+        }
+
+        function getExplanation(key) {
+            const explanations = {
+                role: 'Clear role provides authority and context',
+                audience: 'Specific audience guides the right tone',
+                goal: 'Defined goal focuses the output',
+                format: 'Format specification sets clear expectations',
+                tone: 'Appropriate tone ensures effectiveness'
+            };
+            return explanations[key] || '';
+        }
+
+        function copyToClipboard() {
+            if (window.finalPromptForCopy && navigator.clipboard) {
+                navigator.clipboard.writeText(window.finalPromptForCopy).then(() => {
+                    // Show feedback
+                    const btn = event.target;
+                    const originalText = btn.innerHTML;
+                    btn.innerHTML = '✅ Copied!';
+                    
+                    setTimeout(() => {
+                        btn.innerHTML = originalText;
+                    }, 2000);
+                }).catch(() => {
+                    // Fallback for older browsers
+                    fallbackCopyTextToClipboard(window.finalPromptForCopy);
+                });
+            } else {
+                // Fallback for older browsers
+                fallbackCopyTextToClipboard(window.finalPromptForCopy);
+            }
+        }
+
+        function fallbackCopyTextToClipboard(text) {
+            const textArea = document.createElement("textarea");
+            textArea.value = text;
+            textArea.style.top = "0";
+            textArea.style.left = "0";
+            textArea.style.position = "fixed";
+            
+            document.body.appendChild(textArea);
+            textArea.focus();
+            textArea.select();
+            
+            try {
+                document.execCommand('copy');
+                alert('Prompt copied to clipboard!');
+            } catch (err) {
+                alert('Failed to copy prompt');
+            }
+            
+            document.body.removeChild(textArea);
+        }
+
+        function resetDemo() {
+            currentStep = 0;
+            currentExample = 0;
+            resetInputs();
+            goToStep(0);
+        }
+
+        function resetInputs() {
+            selectedInputs = {
+                role: '',
+                audience: '',
+                goal: '',
+                format: '',
+                tone: ''
+            };
+        }
+
+        // Initialize on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            updateProgressBar();
+        });
+    </script>
+</body>
+</html>
