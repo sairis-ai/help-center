@@ -19,6 +19,12 @@
   <source src="/videos/sairis-ai-assistant-cp-bp.mp4" type="video/mp4">
 </video>
 
+## AI Assistant: Control Panel - My Content
+
+<video width="800" height="600" allow="fullscreen" controls>
+  <source src="/videos/sairis-ai-assistant-cp-my-content.mp4" type="video/mp4">
+</video>
+
 ## AI Assistant: Control Panel Settings
 
 <video width="800" height="600" allow="fullscreen" controls>
