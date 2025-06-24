@@ -2,7 +2,7 @@
 
 ## What is the Control Panel?
 
-The Control Panel is where you go to tune how the AI works so you can change it exactly to your needs. You can view your chat history, choose which documents the AI uses, change AI models, turn citations on/off, enable live web search, and adjust other settings to get the responses you want.
+The Control Panel puts you in the driver's seat of your AI experience. Whether you want to choose specific documents for the AI to reference, change how it responds, or adjust advanced settings, you can do it all right from this panel without interrupting your workflow. Ready to see what's possible? Let's explore.
 
 ## How to Open the Control Panel
 
@@ -18,9 +18,9 @@ The Control Panel should already be open on the right side of your screen. If yo
 
 ![Image](/images/control-panel-2.png)
 
-**Chat** - Your conversation history and saved templates
-**Content** - Choose what information the AI can access  
-**Settings** - Change how the AI behaves and responds
+1. **Chat** - Your conversation history and saved templates
+2. **Content** - Choose what information the AI can access  
+3. **Settings** - Change how the AI behaves and responds
 
 ## Chat: Managing Your Chats
 
@@ -57,7 +57,6 @@ The Control Panel should already be open on the right side of your screen. If yo
 3. Each knowledge base appears with:
    - Name and description
    - Checkbox for selection
-   - Visual indicator of content volume
 4. Use the search box at the top to filter knowledge bases by name or description
 
 ### Selecting Knowledge Bases
