@@ -40,24 +40,91 @@ The Control Panel should already be open on the right side of your screen. If yo
 
 ![Image](/images/control-panel-5.png)
 
-### Selecting What the AI Can Use:
+## Knowledge Base Selection
 
-**Knowledge Bases** 
 - This is where you see and select your Knowledge Bases
 
-**Assigned Content** 
-- Check boxes next to individual content
-- Good for questions about specific content
+![Image](/images/content-panel-7.png)
+1. Click the "Knowledge Bases" accordion panel to expand it
+2. View the list of available knowledge bases
+3. Each knowledge base appears with:
+   - Name and description
+   - Checkbox for selection
+   - Visual indicator of content volume
+4. Use the search box at the top to filter knowledge bases by name or description
 
-**My Content** 
-- Upload your own files
-- Check boxes next to files you want to use
+### Selecting Knowledge Bases
+To select knowledge bases for your conversation:
 
-### Using Your Selected Content:
+1. Click the checkbox next to each knowledge base you want to include
+2. Selected knowledge bases appear in the Selected Content area at the top
+3. Selecting a knowledge base includes all its content in the conversation context
+4. You can combine multiple knowledge bases for broader coverage
 
-1. **Pick your sources** - Select knowledge bases ,specific content, or file
-2. **See what you chose** - Blue boxes = knowledge bases, White boxes = files  
-3. **Ask questions** - The AI will only use your selected sources
+## Assigned Content
+
+- This is to browse Assigned content items:
+
+Click the "Assigned Content" accordion panel to expand it
+
+![Image](/images/sontent-panel-8.png)
+
+## Two ways to File Attach:
+
+### Search Mode:
+
+This is the default mode. It searches the AI database for your file and only pulls back data related to your conversation. This is useful for large files when you only need to find specific parts based on your questions. Uses fewer tokens for search results.
+
+### Attach Mode:
+
+Makes the entire file content accessible to the AI. This attaches the whole file so you can reference any part of it. Uses more tokens to process the complete document with each request.
+
+---
+
+### Attaching Files
+
+1. View the list of available content items across all knowledge bases
+2. Each content item appears with:
+   - Name/title
+3. Use the search box to find specific content by name, type, or topic
+4. Select your File Attaching Mode
+5. Click the checkbox next to each content item you want to include
+   - This approach is more precise than selecting entire knowledge bases
+6. Selected content items appear in the Selected Content area at the top
+
+---
+
+### Selecting Specific Content Items
+
+For more granular control over conversation context:
+
+1. Click the checkbox next to each content item you want to include
+2. Selected content items appear in the Selected Content area at the top
+3. This approach is more precise than selecting entire knowledge bases
+4. Ideal when you need very specific information sources
+
+## My Content
+
+### Upload your Own Files
+
+1. Click (+) Upload Files
+
+![Image](/images/control-panel-11.png)
+
+2. Either Drag and drop OR click Add Files
+3. Upload your files
+4. You can see them in 'My Uploaded Content' and in the Control Panel
+
+
+### Using your Selected Files
+
+How to use your files
+
+![Image](/images/control-panel-9.png)
+
+1. Expand the "My Content" accordion panel
+2. Select a file you uploaded (Check the box)
+3. It will have a **Blue Check Mark**
 
 **Quick tip:** Remove items by clicking the checkmark, or click "Clear" to remove everything.
 
@@ -67,7 +134,7 @@ The Control Panel should already be open on the right side of your screen. If yo
 
 ### AI Behavior:
 - **AI Model** - Choose which AI version to use
-- **Blueprint** - Set how the AI should act 
+- **Blueprint** - Pick a Blueprint to use
 - **Instructions** - Add custom instructions (if allowed)
 - **AI Mode** - Change response style
 
@@ -75,15 +142,6 @@ The Control Panel should already be open on the right side of your screen. If yo
 - **Citations On/Off** - Show where answers come from
 - **Live Web On/Off** - Let AI search the internet
 - **Content Filtering** - Block certain types of content
-
-### Quick Actions:
-- Turn on citations to see sources
-- Enable web search for current information  
-- Try different AI modes for different tasks
-
-### Tip:
-
-- Try diffrent settings and play around with it to find your best settings
 
 ## Quick Troubleshooting
 
