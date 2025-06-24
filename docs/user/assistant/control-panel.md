@@ -36,6 +36,13 @@ The Control Panel should already be open on the right side of your screen. If yo
 - Use search to find specific topics
 - Try different blueprints
 
+<details>
+  <summary><span style="color:rgb(140,3,252)">&#9734;</span>Need more help? Click here for a video walkthrough</summary>
+  <video width="800" height="600" allow="fullscreen" controls>
+    <source src="/videos/sairis-ai-assistant-cp-chat.mp4" type="video/mp4">
+  </video>
+</details>
+
 ## Content: Choosing Content
 
 ![Image](/images/control-panel-5.png)
@@ -115,7 +122,6 @@ For more granular control over conversation context:
 3. Upload your files
 4. You can see them in 'My Uploaded Content' and in the Control Panel
 
-
 ### Using your Selected Files
 
 How to use your files
@@ -126,7 +132,12 @@ How to use your files
 2. Select a file you uploaded (Check the box)
 3. It will have a **Blue Check Mark**
 
-**Quick tip:** Remove items by clicking the checkmark, or click "Clear" to remove everything.
+<details>
+  <summary><span style="color:rgb(140,3,252)">&#9734;</span>Need more help? Click here for a video walkthrough</summary>
+  <video width="800" height="600" allow="fullscreen" controls>
+    <source src="/videos/sairis-ai-assistant-cp-my-content.mp4" type="video/mp4">
+  </video>
+</details>
 
 ## Settings: Customizing Your AI
 
@@ -142,6 +153,13 @@ How to use your files
 - **Citations On/Off** - Show where answers come from
 - **Live Web On/Off** - Let AI search the internet
 - **Content Filtering** - Block certain types of content
+
+<details>
+  <summary><span style="color:rgb(140,3,252)">&#9734;</span>Need more help? Click here for a video walkthrough</summary>
+  <video width="800" height="600" allow="fullscreen" controls>
+    <source src="/videos/sairis-ai-assistant-cp-settings.mp4" type="video/mp4">
+  </video>
+</details>
 
 ## Quick Troubleshooting
 
