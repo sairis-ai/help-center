@@ -27,6 +27,24 @@ Still in the control panel, you can select different blueprints to engage AI in 
 
 <video width="800" height="600" allow="fullscreen" controls="controls" src="/videos/sairis-ai-assistant-cp-bp.mp4" />
 
+## Control Panel - Knowledge Bases
+
+Still in the control panel, you can select different Knowledge Bases to engage AI in chat.
+
+<video width="800" height="600" allow="fullscreen" controls="controls" src="/videos/sairis-ai-assistant-cp-kb.mp4" />
+
+## Control Panel - Assigned Content
+
+Still in the control panel, you can select different Assigned Content to engage AI in chat.
+
+<video width="800" height="600" allow="fullscreen" controls="controls" src="/videos/sairis-ai-assistant-cp-assigned-content.mp4" />
+
+## Control Panel - My Content
+
+Still in the control panel, you can select different Content that is yours to engage AI in chat.
+
+<video width="800" height="600" allow="fullscreen" controls="controls" src="/videos/sairis-ai-assistant-cp-my-content.mp4" />
+
 ## Control Panel - Settings
 
 Lastly, we get into the settings, which allows fine tuning of AI, their modes, and items like usage of LLM or web to help with responses.

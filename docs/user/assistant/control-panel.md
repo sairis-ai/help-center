@@ -67,6 +67,10 @@ To select knowledge bases for your conversation:
 3. Selecting a knowledge base includes all its content in the conversation context
 4. You can combine multiple knowledge bases for broader coverage
 
+<a href="/videos/sairis-ai-assistant-cp-kb.mp4" target="_blank">
+  <img src="/images/watch-tutorial-button.png" alt="User Tutorial" style="width:200px;">
+</a>
+
 ## Assigned Content
 
 ![Image](/images/control-panel-12.png)
@@ -78,6 +82,10 @@ This is the default mode. It searches the AI database for your file and only pul
 ### Attach Mode:
 
 Makes the entire file content accessible to the AI. This attaches the whole file so you can reference any part of it. Uses more tokens to process the complete document with each request.
+
+<a href="/videos/sairis-ai-assistant-cp-diffrent-attachment.mp4" target="_blank">
+  <img src="/images/watch-tutorial-button.png" alt="User Tutorial" style="width:200px;">
+</a>
 
 ---
 
@@ -93,13 +101,17 @@ Makes the entire file content accessible to the AI. This attaches the whole file
    - This approach is more precise than selecting entire knowledge bases
 7. Selected content items appear in the Selected Content area at the top
 
+<a href="/videos/sairis-ai-assistant-cp-assigned-content.mp4" target="_blank">
+  <img src="/images/watch-tutorial-button.png" alt="User Tutorial" style="width:200px;">
+</a>
+
 ## My Content
 
 ### Upload your Own Files
 
 1. Click (+) Upload Files
 
-![Image](/images/control-panel-12.png)
+![Image](/images/control-panel-13.png)
 
 2. Either Drag and drop OR click Add Files
     ![Image](/images/control-panel-11.png)
