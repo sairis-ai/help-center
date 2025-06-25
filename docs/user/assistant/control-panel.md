@@ -75,22 +75,6 @@ To select knowledge bases for your conversation:
 
 ![Image](/images/control-panel-12.png)
 
-### Search Mode:
-
-This is the default mode. It searches the AI database for your file and only pulls back data related to your conversation. This is useful for large files when you only need to find specific parts based on your questions. Uses fewer tokens for search results.
-
-### Attach Mode:
-
-Makes the entire file content accessible to the AI. This attaches the whole file so you can reference any part of it. Uses more tokens to process the complete document with each request.
-
-<a href="/videos/sairis-ai-assistant-cp-diffrent-attachment.mp4" target="_blank">
-  <img src="/images/watch-tutorial-button.png" alt="User Tutorial" style="width:200px;">
-</a>
-
----
-
-### Attaching Files
-
 1. Click the "Assigned Content" accordion panel to expand it
 2. Choose either search or Attach Mode
 3. View the list of available content items across all knowledge bases
@@ -102,6 +86,20 @@ Makes the entire file content accessible to the AI. This attaches the whole file
 7. Selected content items appear in the Selected Content area at the top
 
 <a href="/videos/sairis-ai-assistant-cp-assigned-content.mp4" target="_blank">
+  <img src="/images/watch-tutorial-button.png" alt="User Tutorial" style="width:200px;">
+</a>
+
+## Diffrent Attaching Modes
+
+### Search Mode:
+
+This is the default mode. It searches the AI database for your file and only pulls back data related to your conversation. This is useful for large files when you only need to find specific parts based on your questions. Uses fewer tokens for search results.
+
+### Attach Mode:
+
+Makes the entire file content accessible to the AI. This attaches the whole file so you can reference any part of it. Uses more tokens to process the complete document with each request.
+
+<a href="/videos/sairis-ai-assistant-cp-diffrent-attachment1.mp4" target="_blank">
   <img src="/images/watch-tutorial-button.png" alt="User Tutorial" style="width:200px;">
 </a>
 
