@@ -3,6 +3,5 @@
 ## Creating Blueprints
 
 <video width="800" height="600" allow="fullscreen" controls>
-  <source src="/videos/creating-blueprints-in-sairis.mp4" type="video/mp4">
+  <source src="https://help.sairis.ai/videos/creating-blueprints-in-sairis.mp4" type="video/mp4">
 </video>
-
