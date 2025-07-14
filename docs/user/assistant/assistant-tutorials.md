@@ -49,10 +49,6 @@ With focus on the Control Panel (CP)
 </a>
 </center>
 
-## CP: My Content
-
-<video width="800" height="600" allow="fullscreen" controls="controls" src="/videos/sairis-ai-assistant-cp-my-content.mp4" />
-
 ## CP: Settings
 
 <video width="800" height="600" allow="fullscreen" controls>
