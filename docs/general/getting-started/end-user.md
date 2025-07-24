@@ -9,6 +9,21 @@ The upcoming videos will demonstrate how you can interact with the Sairis AI Ass
 
 During the videos you'll discover how to effectively navigate and utilize the platform's user-focused features.
 
+<center>
+<a href="/videos/end-user-getting-started-summary.mp4" target="_blank" 
+   style="display: inline-flex; align-items: center; gap: 10px; 
+          padding: 10px 16px; border: 2px solid #4299e1; border-radius: 25px; 
+          background: white; text-decoration: none; color: #4a5568; 
+          transition: all 0.3s ease; font-weight: 500;"
+   onmouseover="this.style.borderColor='#4a5568'; this.style.background='#f7fafc'" 
+   onmouseout="this.style.borderColor='#4299e1'; this.style.background='white'">
+  <span>Full Duration Video: Getting Started [15 min]</span>
+  <span style="background: #4299e1; color: white; padding: 4px 8px; 
+               border-radius: 10px; font-size: 120x;">▶</span>
+</a>
+</center>
+
+
 ## Using the AI Assistant
 
 We start by introducing you to the AI Assistant.
