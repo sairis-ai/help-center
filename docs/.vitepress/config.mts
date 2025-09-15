@@ -26,6 +26,7 @@ export default defineConfig({
       provider: 'algolia',
       options: {
         appId: 'GHBPJGLDFI',
+        // This was an old API key, don't know where it came from, but it worked for a while.  Want to leave it here in case we need to revert.
         // apiKey: '45d97a19ad7a3e508dc49efff031e5cf',
         apiKey: '2ab3d3a8c7b3bbe05ebeb46e3dd03f38',
         indexName: 'help-sairis',
