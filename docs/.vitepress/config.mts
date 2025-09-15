@@ -32,12 +32,12 @@ export default defineConfig({
         // OR
         askAi: {
           // at minimum you must provide the assistantId you received from Algolia
-          assistantId: 'RtkJLMVZy3Yh'
+          assistantId: 'RtkJLMVZy3Yh',
           // optional overrides – if omitted, the top-level appId/apiKey/indexName values are reused
           // apiKey: '...',
           // appId: '...',
           // indexName: '...'
-        }
+        },
       }
     },
 
