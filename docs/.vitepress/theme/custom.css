@@ -74,6 +74,18 @@
      color: var(--vp-button-brand-text);
      background-color: #3c1433 !important; 
     }
+
+    /* To adjust the height of the search modal */
+    .DocSearch-Modal{
+      height: 90dvh; 
+    }
+
+    /* To style the search results dropdown */
+    .DocSearch-Dropdown {
+      height: 90dvh; 
+    } 
+
+
 .button-group
     {
       margin-top: 1rem;
