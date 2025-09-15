@@ -20,18 +20,19 @@ export default defineConfig({
 
   //  Another way to present star bullets ----  {text: '<span style="color:rgb(140,3,252)">☆</span> Quick Start', link: '/Getting-Started/quick-start' }
 
+  
   themeConfig: {
     search: {
       provider: 'algolia',
       options: {
         appId: 'GHBPJGLDFI',
         apiKey: '45d97a19ad7a3e508dc49efff031e5cf',
+        // apiKey: '2ab3d3a8c7b3bbe05ebeb46e3dd03f38',
         indexName: 'help-sairis',
-        askAi: "RtkJLMVZy3Yh"
         // OR
-        // askAi: {
+        askAi: {
           // at minimum you must provide the assistantId you received from Algolia
-          // assistantId: 'RtkJLMVZy3Yh',
+          assistantId: 'RtkJLMVZy3Yh'
           // optional overrides – if omitted, the top-level appId/apiKey/indexName values are reused
           // apiKey: '...',
           // appId: '...',
