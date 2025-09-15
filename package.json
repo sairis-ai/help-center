@@ -1,11 +1,14 @@
 {
   "devDependencies": {
-    "vitepress": "^1.6.4"
+    "vitepress": "^2.0.0-alpha.12"
   },
   "scripts": {
-    "docs:dev": "vitepress dev docs" ,
+    "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs && cp docs/robot.txt docs/.vitepress/dist/ && cp docs/favicon.ico docs/.vitepress/dist/",
     "docs:preview": "vitepress preview docs",
     "upgrade": "ncu --interactive --format group"
+  },
+  "dependencies": {
+    "npm-check-updates": "^18.1.1"
   }
 }

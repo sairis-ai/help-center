@@ -26,18 +26,19 @@ export default defineConfig({
       provider: 'algolia',
       options: {
         appId: 'GHBPJGLDFI',
-        apiKey: '45d97a19ad7a3e508dc49efff031e5cf',
-        // apiKey: '2ab3d3a8c7b3bbe05ebeb46e3dd03f38',
+        // apiKey: '45d97a19ad7a3e508dc49efff031e5cf',
+        apiKey: '2ab3d3a8c7b3bbe05ebeb46e3dd03f38',
         indexName: 'help-sairis',
+        askAi: 'RtkJLMVZy3Yh'
         // OR
-        askAi: {
-          // at minimum you must provide the assistantId you received from Algolia
-          assistantId: 'RtkJLMVZy3Yh',
-          // optional overrides – if omitted, the top-level appId/apiKey/indexName values are reused
-          // apiKey: '...',
-          // appId: '...',
-          // indexName: '...'
-        },
+        // askAi: {
+        //   // at minimum you must provide the assistantId you received from Algolia
+        //   assistantId: 'RtkJLMVZy3Yh',
+        //   // optional overrides – if omitted, the top-level appId/apiKey/indexName values are reused
+        //   // apiKey: '...',
+        //   // appId: '...',
+        //   // indexName: '...'
+        // },
       }
     },
 
