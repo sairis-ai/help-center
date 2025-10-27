@@ -187,7 +187,7 @@ export default defineConfig({
         [
           {text: 'User Guide', link: '/user/ai-builder/user-guide' },
           {text: 'Quick Reference', link: '/user/ai-builder/reference-guide' },
-           {text: 'Best Practices', collapsed: false, items: 
+          {text: 'Best Practices', collapsed: false, items: 
             [
               {text: ' Role Definition', link: '/user/ai-builder/role-definition' },
               {text: ' Tone & Style', link: '/user/ai-builder/tone-and-style'},
