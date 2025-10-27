@@ -183,6 +183,11 @@ export default defineConfig({
           {text: '<span style="color:rgb(140,3,252)">&#9734;</span> AI Assistant Tutorials', link: '/user/assistant/assistant-tutorials.md' }                 
         ]
       },
+      {text: 'AI Builder', collapsed: false, items: 
+        [
+          {text: 'User Guide', link: '/user/ai-builder/user-guide' }          
+        ]
+      },
       {text: 'Search', collapsed: false, items: 
         [
           {text: 'Launchpad', link: '/user/search/user-search' }          
@@ -208,7 +213,12 @@ export default defineConfig({
       },
       {text: 'Onboarding', collapsed: true, items: 
         [
-          {text: '<span style="color:rgb(140,3,252)">&#9734;</span> Onboarding Overview', link: '/general/getting-started/onboarding-overview' },   
+          {text: '<span style="color:rgb(140,3,252)">&#9734;</span> Onboarding Overview', link: '/general/getting-started/ai-builder/why-ai-builder' },   
+        ]
+      },
+       {text: 'AI Builder', collapsed: false, items: 
+        [
+          {text: 'Why Use it?', link: '/general/getting-started/ai-builder/why-ai-builder' }          
         ]
       },
       {
