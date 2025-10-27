@@ -249,11 +249,11 @@ When [SITUATION], you [RESPONSE APPROACH].
 ## Resources and Support
 
 ### Documentation Links
-- [AI Builder User Guide](AI_Builder_User_Guide.md)
-- [Role Definition Best Practices](AI_Builder_Best_Practices_Role_Definition.md)
-- [Tone & Style Guide](AI_Builder_Best_Practices_Tone_Style.md)
-- [Instruction Writing Guide](AI_Builder_Best_Practices_Instructions.md)
-- [Testing and Validation Guide](AI_Builder_Best_Practices_Testing.md)
+- [AI Builder User Guide](user-guide.md)
+- [Role Definition Best Practices](role-definition.md)
+- [Tone & Style Guide](tone-and-style.md)
+- [Instruction Writing Guide](instructions.md)
+- [Testing and Validation Guide](testing.md)
 
 ### Getting Help
 - **Built-in Help**: Use the AI Assistant in AI Builder for guidance

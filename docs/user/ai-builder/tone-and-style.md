@@ -538,6 +538,6 @@ Remember that style development is an iterative process. Start with clear guidel
 ---
 
 *Related Guides:*
-- [AI Builder Role Definition Best Practices](AI_Builder_Best_Practices_Role_Definition.md)
-- [AI Builder Instruction Writing Guide](AI_Builder_Best_Practices_Instructions.md)
-- [AI Builder Testing and Validation](AI_Builder_Best_Practices_Testing.md)
+- [AI Builder Role Definition Best Practices](role-definition.md)
+- [AI Builder Instruction Writing Guide](instructions.md)
+- [AI Builder Testing and Validation](testing.md)

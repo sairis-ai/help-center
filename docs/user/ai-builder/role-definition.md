@@ -338,6 +338,6 @@ Remember: The best AI roles feel natural and helpful to users while maintaining 
 ---
 
 *Related Guides:*
-- [AI Builder Tone & Style Best Practices](AI_Builder_Best_Practices_Tone_Style.md)
-- [AI Builder Instruction Writing Guide](AI_Builder_Best_Practices_Instructions.md)
-- [AI Builder Testing and Validation](AI_Builder_Best_Practices_Testing.md)
+- [AI Builder Tone & Style Best Practices](tone-and-style.md)
+- [AI Builder Instruction Writing Guide](instructions.md)
+- [AI Builder Testing and Validation](testing.md)

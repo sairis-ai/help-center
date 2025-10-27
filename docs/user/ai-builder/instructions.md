@@ -530,6 +530,6 @@ The investment in quality instruction writing pays dividends in AI performance, 
 ---
 
 *Related Guides:*
-- [AI Builder Role Definition Best Practices](AI_Builder_Best_Practices_Role_Definition.md)
-- [AI Builder Tone & Style Best Practices](AI_Builder_Best_Practices_Tone_Style.md)
-- [AI Builder Testing and Validation](AI_Builder_Best_Practices_Testing.md)
+- [AI Builder Role Definition Best Practices](role-definition.md)
+- [AI Builder Tone & Style Best Practices](tone-and-style.md)
+- [AI Builder Testing and Validation](testing.md)
