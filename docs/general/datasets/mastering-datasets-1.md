@@ -1,11 +1,13 @@
 # Data Analytics - Comprehensive User Guide
 
+<!-- 
 **Last Updated:** October 21, 2025
 **Updated By:** Robert Smith
 **Version:** 2.0
-**Status:** Complete Feature Set
+**Status:** Complete Feature Set 
+-->
 
----
+<!-- 
 
 ## Table of Contents
 
@@ -45,7 +47,7 @@
 8. [Troubleshooting](#troubleshooting)
 9. [Summary](#summary)
 
----
+-->
 
 ## Overview
 
@@ -65,8 +67,6 @@ The Data Analytics tool provides **natural language access to your structured da
 - **Zero Configuration** - Works with any dataset structure immediately
 - **Financial Grade** - Precision calculations with audit trails
 - **Intelligent** - Understands partial names, fuzzy values, context
-
----
 
 ## Getting Started
 
@@ -90,8 +90,6 @@ Add filters using the `|` separator:
 "show top 10 deals | exclude status closed lost"
 "count records | date=2024-01-01 to 2024-12-31"
 ```
-
----
 
 ## Core Features
 
