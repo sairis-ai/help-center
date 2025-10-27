@@ -189,10 +189,10 @@ export default defineConfig({
           {text: 'Quick Reference', link: '/user/ai-builder/reference-guide' },
            {text: 'Best Practices', collapsed: false, items: 
             [
-              {text: '<span style="color:rgb(140,3,252)">&#9734;</span> End User', link: '/user/ai-builder/role-definition' },
-              {text: '<span style="color:rgb(140,3,252)">&#9734;</span> Business Admin', link: '/user/ai-builder/tone-and-style'},
-              {text: '<span style="color:rgb(140,3,252)">&#9734;</span> Global Admin', link: '/user/ai-builder/instructions' },
-              {text: '<span style="color:rgb(140,3,252)">&#9734;</span> Global Admin', link: '/user/ai-builder/testing' }
+              {text: ' End User', link: '/user/ai-builder/role-definition' },
+              {text: ' Business Admin', link: '/user/ai-builder/tone-and-style'},
+              {text: ' Global Admin', link: '/user/ai-builder/instructions' },
+              {text: ' Global Admin', link: '/user/ai-builder/testing' }
             ]
           }           
         ]
