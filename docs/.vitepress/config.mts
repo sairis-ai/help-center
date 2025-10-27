@@ -211,7 +211,7 @@ export default defineConfig({
         ]
       },
       {
-        text: 'Learn AI Instructions', collapsed: true, items: 
+        text: 'Intro to Prompts', collapsed: true, items: 
         [
           {text: '<span style="color:rgb(140,3,252)">&#128214;</span> Part 1: Understanding & Examples', link: '/general/prompt-engineering/understand-ai-1'},
           {text: '<span style="color:rgb(140,3,252)">&#128214;</span> Part 2: Organization & Structure', link: '/general/prompt-engineering/structure-2'},
@@ -220,7 +220,7 @@ export default defineConfig({
         ]
       },
       {
-        text: 'Learn Mastering Prompts', collapsed: true, items: 
+        text: 'Mastering Prompts', collapsed: true, items: 
         [  
            
             {text: '<span style="color:rgb(140,3,252)">&#128214;</span> 100 - Intro to PE',link: '/general/learn/100-intro-to-prompt-engineering'},
@@ -235,6 +235,12 @@ export default defineConfig({
             {text: '<span style="color:rgb(140,3,252)">&#128214;</span> Interactive Prompt Builder', link: '/prompt/prompt_transformer.html', target: '_blank'}
           
         ] 
+      },
+        {
+        text: 'Mastering Datasets', collapsed: true, items: 
+        [
+          {text: '<span style="color:rgb(140,3,252)">&#128214;</span> How Datasets find Data', link: '/general/datasets/mastering-datasets-1'}
+        ]
       },
       {
         text: '<span style="color:rgb(140,3,252)">&#9734;</span> Tutorials', collapsed: true, items: 
