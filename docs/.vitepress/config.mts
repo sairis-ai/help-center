@@ -183,7 +183,7 @@ export default defineConfig({
           {text: '<span style="color:rgb(140,3,252)">&#9734;</span> AI Assistant Tutorials', link: '/user/assistant/assistant-tutorials.md' }                 
         ]
       },
-      {text: '<span style="color:rgb(140,3,252)">*NEW* </span>AI Builder', collapsed: false, items: 
+      {text: '<span style="color:rgb(140,3,252)">*NEW* </span>AI Builder', collapsed: true, items: 
         [
           {text: 'User Guide', link: '/user/ai-builder/user-guide' },
           {text: 'Quick Reference', link: '/user/ai-builder/reference-guide' },
@@ -215,7 +215,6 @@ export default defineConfig({
               {text: '<span style="color:rgb(140,3,252)">&#9734;</span> End User', link: '/general/getting-started/end-user' },
               {text: '<span style="color:rgb(140,3,252)">&#9734;</span> Business Admin', link: '/general/getting-started/business-admin' },
               {text: '<span style="color:rgb(140,3,252)">&#9734;</span> Global Admin', link: '/general/getting-started/global-admin' }
-              
             ]
           } 
         ]
