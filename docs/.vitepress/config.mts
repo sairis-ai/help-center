@@ -179,11 +179,11 @@ export default defineConfig({
           {text: 'Chat History', link: '/user/assistant/chat-history' },
           {text: 'Settings', link: '/user/assistant/chat-settings' },
           {text: 'Chat Tokens', link: '/user/assistant/chat-token-counts' },
-          {text: '<span style="color:rgb(140,3,252)">&#128214; * NEW *</span> Analytics', link: '/general/analytics/mastering-analytics-1'},
+          {text: '<span style="color:rgb(140,3,252); font-weight: bold">&#128214; *NEW*</span> Analytics', link: '/general/analytics/mastering-analytics-1'},
           {text: '<span style="color:rgb(140,3,252)">&#9734;</span> AI Assistant Tutorials', link: '/user/assistant/assistant-tutorials.md' }                 
         ]
       },
-      {text: 'AI Builder', collapsed: false, items: 
+      {text: '<span style="color:rgb(140,3,252)">*NEW* </span>AI Builder', collapsed: false, items: 
         [
           {text: 'User Guide', link: '/user/ai-builder/user-guide' },
           {text: 'Quick Reference', link: '/user/ai-builder/reference-guide' },
