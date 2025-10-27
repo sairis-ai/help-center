@@ -55,11 +55,11 @@ The Data Analytics tool provides **natural language access to your structured da
 
 ### Key Capabilities
 
-✅ **Domain Agnostic** - Works with any dataset and column names
-✅ **Natural Language** - Ask questions in plain English
-✅ **Financial Accuracy** - All calculations verified with MathTool (50-digit precision)
-✅ **Smart Matching** - Fuzzy column and value matching
-✅ **Rich Analysis** - Grouping, ranking, trending, forecasting, and more
+✅ **Domain Agnostic** - Works with any dataset and column names<br>
+✅ **Natural Language** - Ask questions in plain English<br>
+✅ **Financial Accuracy** - All calculations verified with MathTool (50-digit precision)<br>
+✅ **Smart Matching** - Fuzzy column and value matching<br>
+✅ **Rich Analysis** - Grouping, ranking, trending, forecasting, and more<br>
 
 ### What Makes This Different
 
@@ -1611,14 +1611,14 @@ The Data Analytics tool transforms natural language questions into precise data 
 
 ### Key Strengths
 
-✅ **Natural Language** - Ask questions in plain English
-✅ **Truly Domain Agnostic** - Works with ANY dataset automatically (sales, HR, safety, inventory, custom)
-✅ **Fuzzy Matching** - Understands partial names and values ("jordan" → "Jordan Faas")
-✅ **Financial Precision** - 50-digit accuracy with MathTool verification
-✅ **Temporal Analysis** - Trends, forecasts, growth rates (hourly to yearly)
-✅ **Specialized Metrics** - Automatic TRIFR, win rates, turnover calculations
-✅ **Smart Auto-Detection** - Automatically finds date, value, and entity columns
-✅ **Rich Analysis** - 15+ analysis types including pivots, percentages, rankings
+✅ **Natural Language** - Ask questions in plain English<br>
+✅ **Truly Domain Agnostic** - Works with ANY dataset automatically (sales, HR, safety, inventory, custom)<br>
+✅ **Fuzzy Matching** - Understands partial names and values ("jordan" → "Jordan Faas")<br>
+✅ **Financial Precision** - 50-digit accuracy with MathTool verification<br>
+✅ **Temporal Analysis** - Trends, forecasts, growth rates (hourly to yearly)<br>
+✅ **Specialized Metrics** - Automatic TRIFR, win rates, turnover calculations<br>
+✅ **Smart Auto-Detection** - Automatically finds date, value, and entity columns<br>
+✅ **Rich Analysis** - 15+ analysis types including pivots, percentages, rankings<br>
 ✅ **Clear Results** - Formatted markdown tables with audit trails
 
 ### Complete Feature List
@@ -1631,18 +1631,18 @@ The Data Analytics tool transforms natural language questions into precise data 
 5. Filtering (basic, comparison, exclusion)
 
 **Analysis Features:**
-6. Statistical Analysis (min, max, mean, median, std dev)
-7. Percentages & Ratios
-8. Calculated Columns
-9. Fuzzy Value Matching
-10. Temporal Analysis (hourly, daily, weekly, monthly, quarterly, yearly)
-11. Trending Analysis (growth rates, momentum, patterns)
-12. Forecasting (1-12 periods ahead with confidence intervals)
-13. Specialized Domain Metrics (TRIFR, win rates, churn, etc.)
-14. Identifier Analysis (detailed entity breakdowns)
-15. Ranking Analysis (leaderboards, performance metrics)
-16. Pivot Tables (multi-dimensional analysis)
-17. Conditional Counting
+1. Statistical Analysis (min, max, mean, median, std dev)
+2. Percentages & Ratios
+3. Calculated Columns
+4. Fuzzy Value Matching
+5. Temporal Analysis (hourly, daily, weekly, monthly, quarterly, yearly)
+6. Trending Analysis (growth rates, momentum, patterns)
+7. Forecasting (1-12 periods ahead with confidence intervals)
+8. Specialized Domain Metrics (TRIFR, win rates, churn, etc.)
+9. Identifier Analysis (detailed entity breakdowns)
+10. Ranking Analysis (leaderboards, performance metrics)
+11. Pivot Tables (multi-dimensional analysis)
+12. Conditional Counting
 
 ### What's Next?
 
