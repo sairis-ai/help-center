@@ -225,7 +225,7 @@ export default defineConfig({
           {text: '<span style="color:rgb(140,3,252)">&#9734;</span> Onboarding Overview', link: '/general/getting-started/ai-builder/why-ai-builder' },   
         ]
       },
-       {text: 'AI Builder', collapsed: false, items: 
+       {text: 'AI Builder', collapsed: true, items: 
         [
           {text: 'Why Use it?', link: '/general/getting-started/ai-builder/why-ai-builder' }             
         ]
