@@ -185,7 +185,16 @@ export default defineConfig({
       },
       {text: 'AI Builder', collapsed: false, items: 
         [
-          {text: 'User Guide', link: '/user/ai-builder/user-guide' }          
+          {text: 'User Guide', link: '/user/ai-builder/user-guide' },
+          {text: 'Quick Reference', link: '/user/ai-builder/reference-guide' },
+           {text: 'Best Practices', collapsed: false, items: 
+            [
+              {text: '<span style="color:rgb(140,3,252)">&#9734;</span> End User', link: '/user/ai-builder/role-definition' },
+              {text: '<span style="color:rgb(140,3,252)">&#9734;</span> Business Admin', link: '/user/ai-builder/tone-and-style'},
+              {text: '<span style="color:rgb(140,3,252)">&#9734;</span> Global Admin', link: '/user/ai-builder/instructions' },
+              {text: '<span style="color:rgb(140,3,252)">&#9734;</span> Global Admin', link: '/user/ai-builder/testing' }
+            ]
+          }           
         ]
       },
       {text: 'Search', collapsed: false, items: 
@@ -218,7 +227,7 @@ export default defineConfig({
       },
        {text: 'AI Builder', collapsed: false, items: 
         [
-          {text: 'Why Use it?', link: '/general/getting-started/ai-builder/why-ai-builder' }          
+          {text: 'Why Use it?', link: '/general/getting-started/ai-builder/why-ai-builder' }             
         ]
       },
       {
