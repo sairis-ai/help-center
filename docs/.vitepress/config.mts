@@ -179,6 +179,7 @@ export default defineConfig({
           {text: 'Chat History', link: '/user/assistant/chat-history' },
           {text: 'Settings', link: '/user/assistant/chat-settings' },
           {text: 'Chat Tokens', link: '/user/assistant/chat-token-counts' },
+          {text: '<span style="color:rgb(140,3,252)">&#128214; * NEW *</span> Analytics', link: '/general/analytics/mastering-analytics-1'},
           {text: '<span style="color:rgb(140,3,252)">&#9734;</span> AI Assistant Tutorials', link: '/user/assistant/assistant-tutorials.md' }                 
         ]
       },
@@ -239,7 +240,7 @@ export default defineConfig({
         {
         text: 'Mastering Datasets', collapsed: true, items: 
         [
-          {text: '<span style="color:rgb(140,3,252)">&#128214;</span> How Datasets find Data', link: '/general/datasets/mastering-datasets-1'}
+          {text: '<span style="color:rgb(140,3,252)">&#128214;</span> Intro: How Analytics find Data', link: '/general/analytics/mastering-analytics-1'}
         ]
       },
       {
