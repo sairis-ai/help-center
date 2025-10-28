@@ -12,7 +12,7 @@ The AI Builder transforms your high-level vision into precise AI instructions th
 
 AI Builder can be accessed through:
 
-![AI Builder Welcome Screen](https://help.sairis.ai/assets/ai-builder-welcome.png) *(Replace with actual screenshot)*
+![homepage](/images/ai-builder-start.png)
 
 • The main navigation menu under "AI Management"
 • The "+ Add" button when creating new AI instructions
@@ -25,7 +25,7 @@ AI Builder can be accessed through:
 
 The AI Builder consists of several key components:
 
-![AI Builder Interface](https://help.sairis.ai/assets/ai-builder-interface.png) *(Replace with actual screenshot)*
+![homepage](/images/ai-builder-welcome.png)
 
 1. **Welcome Screen**: Introduces the AI Builder with feature overview and mode selection
 2. **Step Navigation**: Left sidebar showing your progress through the builder process
