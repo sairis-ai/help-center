@@ -185,6 +185,7 @@ export default defineConfig({
       },
       {text: '<span style="color:rgb(140,3,252)">*NEW* </span>AI Builder', collapsed: true, items: 
         [
+          {text: 'Why Use it?', link: '/general/getting-started/ai-builder/why-ai-builder' },  
           {text: 'User Guide', link: '/user/ai-builder/user-guide' },
           {text: 'Quick Reference', link: '/user/ai-builder/reference-guide' },
           {text: 'Best Practices', collapsed: true, items: 

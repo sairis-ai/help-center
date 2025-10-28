@@ -15,11 +15,13 @@ This quick reference guide provides essential information for using AI Builder e
 | **Best For** | Quick setup, beginners | Complex requirements, experts |
 
 ### Simple Mode Workflow
+![homepage](/images/ai-builder-simple.png)
 1. **Settings** → Configure name, description, Blueprint association
 2. **AI Instructions** → Single interview process for comprehensive setup
 3. **Output** → Review and publish
 
 ### Advanced Mode Workflow
+![homepage](/images/ai-builder-advanced.png)
 1. **Settings** → Configure basic properties
 2. **Role** → Define AI expertise and personality
 3. **Tone & Style** → Set communication approach
@@ -30,16 +32,19 @@ This quick reference guide provides essential information for using AI Builder e
 ## Getting Started Options
 
 ### Option 1: New AI Instructions
+![homepage](/images/ai-builder-new-instructions.png)
 - Start completely from scratch
 - Full control over all settings
 - Best for: Custom requirements
 
 ### Option 2: Open/Copy AI Builder
+![homepage](/images/ai-builder-open-builder.png)
 - Work with existing AI Builder
 - Choose "Open" to edit or "Copy" to duplicate
 - Best for: Building on proven patterns
 
 ### Option 3: Open/Copy Blueprint
+![homepage](/images/ai-builder-open-bp.png)
 - Start from existing Blueprint
 - Inherits Blueprint's AI instructions
 - Best for: Blueprint-centric workflows
@@ -47,6 +52,7 @@ This quick reference guide provides essential information for using AI Builder e
 ## Role Definition Cheat Sheet
 
 ### Role Categories
+![homepage](/images/ai-builder-predefined-roles.png)
 - **Analyst**: Data analysis, research, insights
 - **Creative**: Writing, design, content creation
 - **Technical**: Programming, engineering, troubleshooting
@@ -74,7 +80,7 @@ When [SITUATION], you [RESPONSE APPROACH].
 ```
 
 ## Communication Styles Quick Guide
-
+![homepage](/images/ai-builder-styles.png)
 ### Professional Business
 - **Language**: Formal, structured
 - **Tone**: Respectful, objective
