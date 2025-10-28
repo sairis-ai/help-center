@@ -6,6 +6,8 @@ Imagine creating sophisticated AI assistants that deliver professional-grade res
 
 **The Bottom Line**: AI Builder users create better AI experiences 10x faster than traditional prompt engineering, with results that consistently outperform manually crafted prompts by 40-60% in quality metrics.
 
+*Read the full guide: [AI Builder User Guide](/user/ai-builder/user-guide.md)*
+
 ## The Traditional AI Challenge: Why Most People Struggle
 
 ### The Steep Learning Curve
@@ -466,3 +468,5 @@ AI Builder represents **10,000+ hours of expert prompt engineering** distilled i
 ---
 
 *Ready to join the thousands of professionals who have transformed from AI novices to experts with AI Builder? Your competitive advantage starts now.*
+
+Read the full guide: [AI Builder User Guide](/user/ai-builder/user-guide.md)
