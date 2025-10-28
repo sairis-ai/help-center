@@ -229,7 +229,7 @@ Create detailed instructions for how your AI should process information:
 
 Define how your AI presents results and information:
 
-![Output Format](https://help.sairis.ai/assets/ai-builder-output.png) *(Replace with actual screenshot)*
+![homepage](/images/ai-builder-output.png)
 
 **Output Types**:
 - **Reports**: Structured documents with sections and summaries
