@@ -25,6 +25,7 @@ An AI role defines:
 **Brand Alignment**: Roles can reflect your organization's values and communication style
 
 ## Role Categories and Examples
+![homepage](/images/ai-builder-predefined-roles.png)
 
 ### 1. Analyst Roles
 
