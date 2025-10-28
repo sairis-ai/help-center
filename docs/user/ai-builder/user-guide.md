@@ -266,7 +266,7 @@ Define how your AI presents results and information:
 
 Review and finalize your complete AI instruction set:
 
-![AI Instructions Review](https://help.sairis.ai/assets/ai-builder-final.png) *(Replace with actual screenshot)*
+![homepage](/images/ai-builder-final-instructions.png)
 
 This final step combines all your previous configurations into a comprehensive instruction set that includes:
 
@@ -296,7 +296,7 @@ Review, test, and publish your AI instructions.
 
 Both modes allow you to enable advanced AI capabilities:
 
-![AI Features](https://help.sairis.ai/assets/ai-builder-features.png) *(Replace with actual screenshot)*
+![homepage](/images/ai-builder-features.png)
 
 **Available Features**:
 - **Charts and Diagrams**: Enable data visualization capabilities
@@ -343,7 +343,7 @@ When associated with a Blueprint, your AI Builder can access:
 
 Use the built-in testing interface to validate your AI instructions:
 
-![AI Testing Interface](https://help.sairis.ai/assets/ai-builder-test.png) *(Replace with actual screenshot)*
+![homepage](/images/ai-builder-test.png)
 
 **Testing Features**:
 - **Interactive Chat**: Converse with your AI to test responses
