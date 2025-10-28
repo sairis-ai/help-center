@@ -76,7 +76,7 @@ Provides complete control and customization for sophisticated AI applications:
 
 When you first open the AI Builder, you'll choose how to begin:
 
-![Getting Started Options](https://help.sairis.ai/assets/ai-builder-start.png) *(Replace with actual screenshot)*
+![homepage](/images/ai-builder-welcome-2.png)
 
 ### Option 1: New AI Instructions
 Create a completely new set of AI instructions from scratch:
@@ -102,7 +102,7 @@ Start from an existing Blueprint:
 
 The first step in both modes involves configuring your AI Builder settings:
 
-![Builder Settings](https://help.sairis.ai/assets/ai-builder-settings.png) *(Replace with actual screenshot)*
+![homepage](/images/ai-builder-settings.png)
 
 ### Required Settings
 
@@ -134,7 +134,7 @@ The first step in both modes involves configuring your AI Builder settings:
 
 Define what role your AI should adopt and how it should behave:
 
-![AI Role Configuration](https://help.sairis.ai/assets/ai-builder-role.png) *(Replace with actual screenshot)*
+![homepage](/images/ai-builder-predefined-roles.png)
 
 **Role Categories**:
 - **Analyst**: Data analysis and research-focused roles
@@ -166,7 +166,7 @@ Define what role your AI should adopt and how it should behave:
 
 Control how your AI communicates and presents information:
 
-![Tone & Style Settings](https://help.sairis.ai/assets/ai-builder-tone.png) *(Replace with actual screenshot)*
+![homepage](/images/ai-builder-styles.png)
 
 **Communication Styles**:
 - **Professional**: Formal, business-appropriate language
@@ -197,7 +197,7 @@ Control how your AI communicates and presents information:
 
 Create detailed instructions for how your AI should process information:
 
-![My Instructions](https://help.sairis.ai/assets/ai-builder-instructions.png) *(Replace with actual screenshot)*
+![homepage](/images/ai-builder-instructions.png)
 
 **Instruction Types**:
 - **Analysis Instructions**: How to analyze data and information
@@ -209,6 +209,8 @@ Create detailed instructions for how your AI should process information:
 **Workflow Components**:
 
 1. **Predefined Workflows**:
+![homepage](/images/ai-builder-predefined-instructions.png)
+  
    - Common processing patterns for typical use cases
    - Tested and optimized instruction sets
    - Easy to customize and extend
