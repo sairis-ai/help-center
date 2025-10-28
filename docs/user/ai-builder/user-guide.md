@@ -464,24 +464,24 @@ For additional assistance with AI Builder:
 ## Additional Resources
 
 ### Related Documentation
-- [Blueprint Manager Guide](https://help.sairis.ai/admin/administration/ai-management/blueprints/blueprint-list-view.html)
-- [Blueprint Settings](https://help.sairis.ai/admin/administration/ai-management/blueprints/blueprint-settings.html)
-- [Blueprint AI Settings](https://help.sairis.ai/admin/administration/ai-management/blueprints/blueprint-aisettings.html)
-- [Content Management](https://help.sairis.ai/admin/administration/ai-management/content/content-tutorial.html)
+- [Blueprint Manager Guide](/admin/administration/ai-management/blueprints/blueprint-list-view.html)
+- [Blueprint Settings](/admin/administration/ai-management/blueprints/blueprint-settings.html)
+- [Blueprint AI Settings](/admin/administration/ai-management/blueprints/blueprint-aisettings.html)
+- [Content Management](/admin/administration/ai-management/content/content-tutorial.html)
 
 ### Video Tutorials
-- [AI Builder Overview](https://help.sairis.ai/videos/ai-builder-overview.mp4) *(Replace with actual links)*
-- [Advanced Mode Walkthrough](https://help.sairis.ai/videos/ai-builder-advanced.mp4)
-- [Simple Mode Quick Start](https://help.sairis.ai/videos/ai-builder-simple.mp4)
-- [Blueprint Integration](https://help.sairis.ai/videos/ai-builder-blueprints.mp4)
+- *[AI Builder Overview](/videos/coming-soon.md)*
+- *[Advanced Mode Walkthrough](/videos/coming-soon.md)*
+- *[Simple Mode Quick Start](/videos/coming-soon.md)*
+- *[Blueprint Integration](/videos/coming-soon.md)*
 
 ### Support Links
-- [End Users Guide](https://help.sairis.ai/user/assistant/assistant-home.html)
-- [Administration Guide](https://help.sairis.ai/admin/administration/administration-home.html)
-- [Learning Resources](https://help.sairis.ai/general/learn/learn.html)
-- [Technical Reference](https://help.sairis.ai/references/references-home.html)
+- [End Users Guide](/user/assistant/assistant-home.html)
+- [Administration Guide](/admin/administration/administration-home.html)
+- [Learning Resources](/general/learn/learn.html)
+- [Technical Reference](/references/references-home.html)
 
 ---
 
-*Previous page: [Content Tutorials](https://help.sairis.ai/admin/administration/ai-management/content/content-tutorial.html)*
-*Next page: [Blueprint Manager](https://help.sairis.ai/admin/administration/ai-management/blueprints/blueprint-list-view.html)*
+*Previous page: [Content Tutorials](/admin/administration/ai-management/content/content-tutorial.html)*
+*Next page: [Blueprint Manager](h/admin/administration/ai-management/blueprints/blueprint-list-view.html)*
