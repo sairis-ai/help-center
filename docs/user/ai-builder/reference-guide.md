@@ -157,6 +157,7 @@ When [SITUATION], you [RESPONSE APPROACH].
 ## Blueprint Integration Guide
 
 ### Creating New Blueprint from AI Builder
+![homepage](/images/ai-builder-create-bp.png)
 1. Complete AI Builder configuration
 2. Click "Create Blueprint" in final step
 3. Configure Blueprint settings (AI model, content sources)
@@ -164,6 +165,7 @@ When [SITUATION], you [RESPONSE APPROACH].
 5. Save and activate Blueprint
 
 ### Updating Existing Blueprint
+![homepage](/images/ai-builder-change-bp.png)
 1. In Builder Settings, click "Change" next to Associated Blueprint
 2. Select target Blueprint from list
 3. Complete AI Builder configuration

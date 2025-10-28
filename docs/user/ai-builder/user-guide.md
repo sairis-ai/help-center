@@ -6,7 +6,7 @@ The AI Builder is a powerful tool that allows you to create sophisticated AI-dri
 
 The AI Builder transforms your high-level vision into precise AI instructions through an intuitive, step-by-step process that requires no technical expertise.
 
-[User Tutorial Video](https://help.sairis.ai/videos/ai-builder-tutorial.mp4) *(Replace with actual video link when available)*
+<!-- [User Tutorial Video](https://help.sairis.ai/videos/ai-builder-tutorial.mp4) *(Replace with actual video link when available)* -->
 
 ## Accessing AI Builder
 
