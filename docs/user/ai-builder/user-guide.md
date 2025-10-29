@@ -464,24 +464,24 @@ For additional assistance with AI Builder:
 ## Additional Resources
 
 ### Related Documentation
-- [Blueprint Manager Guide](/admin/administration/ai-management/blueprints/blueprint-list-view)
-- [Blueprint Settings](/admin/administration/ai-management/blueprints/blueprint-settings)
-- [Blueprint AI Settings](/admin/administration/ai-management/blueprints/blueprint-aisettings)
-- [Content Management](/admin/administration/ai-management/content/content-tutorial)
+- [Blueprint Manager Guide](/admin/administration/ai-management/blueprints/blueprint-list-view.md)
+- [Blueprint Settings](/admin/administration/ai-management/blueprints/blueprint-settings.md)
+- [Blueprint AI Settings](/admin/administration/ai-management/blueprints/blueprint-aisettings.md)
+- [Content Management](/admin/administration/ai-management/content/content-tutorial.md)
 
 ### Video Tutorials
-- *[AI Builder Overview](/videos/coming-soon)*
-- *[Advanced Mode Walkthrough](/videos/coming-soon)*
-- *[Simple Mode Quick Start](/videos/coming-soon)*
-- *[Blueprint Integration](/videos/coming-soon)*
+- *[AI Builder Overview](/videos/coming-soon.md)*
+- *[Advanced Mode Walkthrough](/videos/coming-soon.md)*
+- *[Simple Mode Quick Start](/videos/coming-soon.md)*
+- *[Blueprint Integration](/videos/coming-soon.md)*
 
 ### Support Links
-- [End Users Guide](/user/assistant/assistant-home)
-- [Administration Guide](/admin/administration/administration-home)
-- [Learning Resources](/general/learn/learn)
-- [Technical Reference](/references/references-home)
+- [End Users Guide](/user/assistant/assistant-home.md)
+- [Administration Guide](/admin/administration/administration-home.md)
+- [Learning Resources](/general/learn/learn.md)
+- [Technical Reference](/references/references-home.md)
 
 ---
 
-*Previous page: [Content Tutorials](/admin/administration/ai-management/content/content-tutorial)*
-*Next page: [Blueprint Manager](h/admin/administration/ai-management/blueprints/blueprint-list-view)*
+*Previous page: [Content Tutorials](/admin/administration/ai-management/content/content-tutorial.md)*
+*Next page: [Blueprint Manager](/admin/administration/ai-management/blueprints/blueprint-list-view.md)*
