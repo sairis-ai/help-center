@@ -259,7 +259,8 @@ export default defineConfig({
         {
         text: 'Mastering Datasets', collapsed: true, items: 
         [
-          {text: '<span style="color:rgb(140,3,252)">&#128214;</span> Intro: How Analytics find Data', link: '/general/analytics/mastering-analytics-1'}
+          {text: '<span style="color:rgb(140,3,252)">&#128214;</span> Intro: How Analytics find Data', link: '/general/analytics/mastering-analytics-1'},
+          {text: '<span style="color:rgb(140,3,252)">&#128214;</span> Data in PDF\'s', link: '/general/analytics/data-in-pdfs'},
         ]
       },
       {
