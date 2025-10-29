@@ -464,24 +464,24 @@ For additional assistance with AI Builder:
 ## Additional Resources
 
 ### Related Documentation
-- [Blueprint Manager Guide](/admin/administration/ai-management/blueprints/blueprint-list-view.html)
-- [Blueprint Settings](/admin/administration/ai-management/blueprints/blueprint-settings.html)
-- [Blueprint AI Settings](/admin/administration/ai-management/blueprints/blueprint-aisettings.html)
-- [Content Management](/admin/administration/ai-management/content/content-tutorial.html)
+- [Blueprint Manager Guide](/admin/administration/ai-management/blueprints/blueprint-list-view)
+- [Blueprint Settings](/admin/administration/ai-management/blueprints/blueprint-settings)
+- [Blueprint AI Settings](/admin/administration/ai-management/blueprints/blueprint-aisettings)
+- [Content Management](/admin/administration/ai-management/content/content-tutorial)
 
 ### Video Tutorials
-- *[AI Builder Overview](/videos/coming-soon.md)*
-- *[Advanced Mode Walkthrough](/videos/coming-soon.md)*
-- *[Simple Mode Quick Start](/videos/coming-soon.md)*
-- *[Blueprint Integration](/videos/coming-soon.md)*
+- *[AI Builder Overview](/videos/coming-soon)*
+- *[Advanced Mode Walkthrough](/videos/coming-soon)*
+- *[Simple Mode Quick Start](/videos/coming-soon)*
+- *[Blueprint Integration](/videos/coming-soon)*
 
 ### Support Links
-- [End Users Guide](/user/assistant/assistant-home.html)
-- [Administration Guide](/admin/administration/administration-home.html)
-- [Learning Resources](/general/learn/learn.html)
-- [Technical Reference](/references/references-home.html)
+- [End Users Guide](/user/assistant/assistant-home)
+- [Administration Guide](/admin/administration/administration-home)
+- [Learning Resources](/general/learn/learn)
+- [Technical Reference](/references/references-home)
 
 ---
 
-*Previous page: [Content Tutorials](/admin/administration/ai-management/content/content-tutorial.html)*
-*Next page: [Blueprint Manager](h/admin/administration/ai-management/blueprints/blueprint-list-view.html)*
+*Previous page: [Content Tutorials](/admin/administration/ai-management/content/content-tutorial)*
+*Next page: [Blueprint Manager](h/admin/administration/ai-management/blueprints/blueprint-list-view)*
