@@ -85,7 +85,7 @@ If requested by Sairis Support:
 ## Escalation Path
 
 For unresolved issues, escalate as follows:
-1. **VP of Operations**: `rfick@sairis.ai`
+1. **Head of Operations**: `rfick@sairis.ai`
 2. **CTO**: `rsmith@sairis.ai`
 
 
