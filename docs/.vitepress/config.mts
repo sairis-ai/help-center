@@ -79,7 +79,7 @@ export default defineConfig({
                 [
                   {text: 'KB Manager',link: '/admin/administration/ai-management/knowledge-bases/knowledge-base-list'},
                   {text: 'KB Settings',link: '/admin/administration/ai-management/knowledge-bases/knowledge-base'},
-                  {text: 'KB User Guide',link: '/admin/administration/ai-management/knowledge-bases/knowledge-base-user-guide'},
+                  // {text: 'KB User Guide',link: '/admin/administration/ai-management/knowledge-bases/knowledge-base-user-guide'},
                   {text: '<span style="color:rgb(140,3,252)">&#9734;</span> KB Tutorials', link: '/admin/administration/ai-management/knowledge-bases/create-kb-tutorial'}
                 ]
               }, 
@@ -199,9 +199,14 @@ export default defineConfig({
           }           
         ]
       },
-      {text: 'Search', collapsed: false, items: 
+      {text: 'Search', collapsed: true, items: 
         [
           {text: 'Launchpad', link: '/user/search/user-search' }          
+        ]
+      },
+       {text: 'Pro Tips', collapsed: true, items: 
+        [
+          {text: 'KB User Guide',link: '/user/pro-tips/knowledge-base-user-guide'}       
         ]
       },
       {text: '<span style="color:rgb(140,3,252)">&#9734;</span> = Video Included'}  
