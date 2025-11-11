@@ -75,10 +75,11 @@ export default defineConfig({
                   {text: '<span style="color:rgb(140,3,252)">&#9734;</span> Blueprint Tutorials', link: '/admin/administration/ai-management/blueprints/create-blueprint-tutorial'}            
                 ]
               },              
-              {text: 'Knowledge Bases', collapsed: true, items:
+              {text: 'Knowledge Bases [KB]', collapsed: true, items:
                 [
-                  {text: 'Knowledge Base Manager',link: '/admin/administration/ai-management/knowledge-bases/knowledge-base-list'},
-                  {text: 'Knowledge Base Settings',link: '/admin/administration/ai-management/knowledge-bases/knowledge-base'},
+                  {text: 'KB Manager',link: '/admin/administration/ai-management/knowledge-bases/knowledge-base-list'},
+                  {text: 'KB Settings',link: '/admin/administration/ai-management/knowledge-bases/knowledge-base'},
+                  {text: 'KB User Guide',link: '/admin/administration/ai-management/knowledge-bases/knowledge-base-user-guide'},
                   {text: '<span style="color:rgb(140,3,252)">&#9734;</span> KB Tutorials', link: '/admin/administration/ai-management/knowledge-bases/create-kb-tutorial'}
                 ]
               }, 
