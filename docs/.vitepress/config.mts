@@ -134,6 +134,7 @@ export default defineConfig({
           {text: 'Roles', collapsed: true, items: 
             [
               {text: 'Manager', link: '/admin/administration/manage/roles/manager'},
+              {text: 'User License', link: '/admin/administration/manage/roles/user-license-comparison'},
               {text: 'Settings', link: '/admin/administration/manage/roles/settings'},
               {text: 'Assigned Users', link: '/admin/administration/manage/roles/assign-users'},
               {text: 'Owners', link: '/admin/administration/manage/roles/owners'},
