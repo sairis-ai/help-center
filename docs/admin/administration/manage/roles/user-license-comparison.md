@@ -8,7 +8,7 @@ Based on Sairis' licensing documentation, here's a comprehensive comparison betw
 | **Usage Pattern**                                   | Occasional use throughout the workday                 | Intensive daily AI usage                              |
 | **AI Credits Allocation**                           | Limited (lower usage tier)                            | Expanded (intensive usage tier)                       |
 | **RAG-Powered Search**                              | ✓ Access to authorized knowledge bases                | ✓ Access to authorized knowledge bases                |
-| **Multi-Knowledge Base Access**                     | ✓ Across authorized bases                             | ✓ Across authorized bases                             |
+| **Multi-Blueprint Access**                          | ✓ Across authorized Blueprints                        | ✓ Across authorized Blueprints                        |
 | **Citations & Source Navigation**                   | ✓ View and navigate to sources                        | ✓ View and navigate to sources                        |
 | **Multi-Language Support**                          | ✓ Auto-translation                                    | ✓ Auto-translation                                    |
 | **Agent Access**                                    | ✓ Basic access and usage controls                     | ✓ Full access and management                          |
@@ -21,10 +21,11 @@ Based on Sairis' licensing documentation, here's a comprehensive comparison betw
 | **Export to External Apps**                         | ✗ Not available                                       | ✓ Word, email, etc.                                   |
 | **Content in Context Management**                   | ✗ Not available                                       | ✓ Dynamic turn-by-turn control                        |
 | **Real-time AI Adjustments**                        | ✗ Not available                                       | ✓ Prompt engineering with save                        |
-| **Knowledge Base Creation**                         | ✗ Cannot create or edit                               | ✓ Unlimited KB creation                               |
+| **Multi-Knowledge Base Access**                     | ✗ Cannot edit or manage                               | ✓ Across authorized bases                             |
+| **Knowledge Base Creation/Management**              | ✗ Cannot create or edit/manage                        | ✓ Unlimited KB creation                               |
 | **Content Publishing**                              | ✗ Cannot publish                                      | ✓ Drag-and-drop publishing                            |
 | **No-Code Agent Builder (Blueprints)**              | ✗ Cannot build or edit                                | ✓ Full visual blueprint builder                       |
-| **Blueprint Management**                            | ✗ Cannot edit or manage                               | ✓ Granular permission controls                        |
+| **Blueprint Creation/Management**                   | ✗ Cannot create or edit/manage                        | ✓ Granular permission controls                        |
 | **System/Global Administrator**                     | ✗ Cannot be assigned                                  | ✓ Can be granted permissions                          |
 | **AI Administrator**                                | ✗ Cannot be assigned                                  | ✓ Can be granted permissions                          |
 | **Access AI Insights/Dashboards**                   | ✗ Cannot view reports                                 | ✓ Full dashboard access                               |
