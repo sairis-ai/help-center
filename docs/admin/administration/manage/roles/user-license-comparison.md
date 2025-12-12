@@ -21,7 +21,7 @@ Based on Sairis' licensing documentation, here's a comprehensive comparison betw
 | **Export to External Apps**                         | ✗ Not available                                       | ✓ Word, email, etc.                                   |
 | **Content in Context Management**                   | ✗ Not available                                       | ✓ Dynamic turn-by-turn control                        |
 | **Real-time AI Adjustments**                        | ✗ Not available                                       | ✓ Prompt engineering with save                        |
-| **Multi-Knowledge Base Access**                     | ✗ Cannot edit or manage                               | ✓ Across authorized bases                             |
+| **Multi-Knowledge Base Access**                     | ✗ Cannot View                                         | ✓ Across authorized bases                             |
 | **Knowledge Base Creation/Management**              | ✗ Cannot create or edit/manage                        | ✓ Unlimited KB creation                               |
 | **Content Publishing**                              | ✗ Cannot publish                                      | ✓ Drag-and-drop publishing                            |
 | **No-Code Agent Builder (Blueprints)**              | ✗ Cannot build or edit                                | ✓ Full visual blueprint builder                       |
