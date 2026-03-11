@@ -9,6 +9,6 @@
     "upgrade": "ncu --interactive --format group"
   },
   "dependencies": {
-    "npm-check-updates": "^18.1.1"
+    "npm-check-updates": "^19.6.3"
   }
 }
