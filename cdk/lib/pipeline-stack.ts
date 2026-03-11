@@ -205,7 +205,7 @@ export class PipelineStack extends cdk.Stack {
               // 'node --version',
               'export NODE_OPTIONS=--max_old_space_size=6000',
               'npm install n',
-              'n 20',
+              'n 22',
               'node --version',
               'npm install',
             ],
