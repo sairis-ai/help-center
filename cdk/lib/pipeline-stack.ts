@@ -161,7 +161,7 @@ export class PipelineStack extends cdk.Stack {
       stageName: 'Source',
       actions: [
         new codepipeline_actions.GitHubSourceAction({
-          actionName: 'MergedInGit',
+          actionName: 'MergedInGitHub',
           owner: 'sairis-ai',
           repo: 'help-center',
           oauthToken: SecretValue.secretsManager('GIT_HUB2'),
