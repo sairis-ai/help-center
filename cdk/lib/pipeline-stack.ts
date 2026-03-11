@@ -106,7 +106,7 @@ export class PipelineStack extends cdk.Stack {
       recordName: 'help', // Creates 'help.sairis.ai'
       target: route53.RecordTarget.fromAlias(new targets.CloudFrontTarget(helpCenterDistribution)),
     });
-    
+
     // Import the dev hosted zone using both the exported zone ID and providing the zone name
     const hostedZoneDev = route53.HostedZone.fromHostedZoneAttributes(this, 'HelpCenterHostedZoneDev', {
       hostedZoneId: cdk.Fn.importValue('dev-zone-id'), // Update this to your dev zone ID export name
