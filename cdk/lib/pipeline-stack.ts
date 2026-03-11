@@ -12,11 +12,11 @@ import { S3Origin } from 'aws-cdk-lib/aws-cloudfront-origins'
 import { PipelineType } from 'aws-cdk-lib/aws-codepipeline'
 import type { Construct } from 'constructs'
 
-// Redeploy: 2026-03-11
-
 export class PipelineStack extends cdk.Stack {
   constructor(scope: Construct, id: string, props?: cdk.StackProps) {
     super(scope, id, props)
+
+    cdk.Tags.of(this).add('LastDeployed', '2026-03-11')
 
     const helpCenterBucketArtifact = new s3.Bucket(this, 'HelpCenterBucketArtifact', {
       bucketName: 'sairis-help-center-bucket-artifact',
