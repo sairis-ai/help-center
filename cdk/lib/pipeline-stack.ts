@@ -12,7 +12,7 @@ import { S3Origin } from 'aws-cdk-lib/aws-cloudfront-origins'
 import { PipelineType } from 'aws-cdk-lib/aws-codepipeline'
 import type { Construct } from 'constructs'
 
-//
+// Redeploy: 2026-03-11
 
 export class PipelineStack extends cdk.Stack {
   constructor(scope: Construct, id: string, props?: cdk.StackProps) {
