@@ -5,7 +5,6 @@ import {
   aws_codepipeline_actions as codepipeline_actions,
   aws_route53 as route53,
   aws_s3 as s3,
-  SecretValue,
   aws_route53_targets as targets
 } from 'aws-cdk-lib'
 import { S3Origin } from 'aws-cdk-lib/aws-cloudfront-origins'
@@ -160,14 +159,13 @@ export class PipelineStack extends cdk.Stack {
     pipeline.addStage({
       stageName: 'Source',
       actions: [
-        new codepipeline_actions.GitHubSourceAction({
+        new codepipeline_actions.CodeStarConnectionsSourceAction({
           actionName: 'MergedInGitHub',
           owner: 'sairis-ai',
           repo: 'help-center',
-          oauthToken: SecretValue.secretsManager('GIT_HUB2'),
+          connectionArn: 'arn:aws:codeconnections:us-west-2:884568634535:connection/263e2322-42f4-49e9-9b72-ef8f1c919e5b',
           branch: 'main',
           output: outputSources,
-          trigger: codepipeline_actions.GitHubTrigger.WEBHOOK,
         }),
       ],
     })
