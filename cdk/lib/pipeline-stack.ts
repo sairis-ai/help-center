@@ -15,7 +15,7 @@ export class PipelineStack extends cdk.Stack {
   constructor(scope: Construct, id: string, props?: cdk.StackProps) {
     super(scope, id, props)
 
-    cdk.Tags.of(this).add('LastDeployed', '2026-03-12 16:00:00')
+    cdk.Tags.of(this).add('LastDeployed', '2026-03-12 15:00:00')
 
     const helpCenterBucketArtifact = new s3.Bucket(this, 'HelpCenterBucketArtifact', {
       bucketName: 'sairis-help-center-bucket-artifact',
