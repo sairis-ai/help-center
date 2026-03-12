@@ -150,24 +150,32 @@ export class PipelineStack extends cdk.Stack {
       restartExecutionOnUpdate: true,
       pipelineType: PipelineType.V2,
       artifactBucket: helpCenterBucketArtifact,
-
     })
 
     const outputSources = new codepipeline.Artifact()
     const outputBuilds = new codepipeline.Artifact()
 
+    const sourceAction = new codepipeline_actions.CodeStarConnectionsSourceAction({
+      actionName: 'MergedInGitHub',
+      owner: 'sairis-ai',
+      repo: 'help-center',
+      connectionArn: 'arn:aws:codeconnections:us-west-2:884568634535:connection/263e2322-42f4-49e9-9b72-ef8f1c919e5b',
+      branch: 'main',
+      output: outputSources,
+      triggerOnPush: false,
+    })
+
     pipeline.addStage({
       stageName: 'Source',
-      actions: [
-        new codepipeline_actions.CodeStarConnectionsSourceAction({
-          actionName: 'MergedInGitHub',
-          owner: 'sairis-ai',
-          repo: 'help-center',
-          connectionArn: 'arn:aws:codeconnections:us-west-2:884568634535:connection/263e2322-42f4-49e9-9b72-ef8f1c919e5b',
-          branch: 'main',
-          output: outputSources,
-        }),
-      ],
+      actions: [sourceAction],
+    })
+
+    pipeline.addTrigger({
+      providerType: codepipeline.ProviderType.CODE_STAR_SOURCE_CONNECTION,
+      gitConfiguration: {
+        sourceAction,
+        pushFilter: [{ branchesIncludes: ['main'] }],
+      },
     })
 
     const invalidateHelpCenter = new codebuild.PipelineProject(this, `InvalidateHelpCenter`, {
