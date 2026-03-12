@@ -162,12 +162,20 @@ export class PipelineStack extends cdk.Stack {
       connectionArn: 'arn:aws:codeconnections:us-west-2:884568634535:connection/263e2322-42f4-49e9-9b72-ef8f1c919e5b',
       branch: 'main',
       output: outputSources,
-      triggerOnPush: true,
+      triggerOnPush: false,
     })
 
     pipeline.addStage({
       stageName: 'Source',
       actions: [sourceAction],
+    })
+
+    pipeline.addTrigger({
+      providerType: codepipeline.ProviderType.CODE_STAR_SOURCE_CONNECTION,
+      gitConfiguration: {
+        sourceAction,
+        pushFilter: [{ branchesIncludes: ['main'] }],
+      },
     })
 
     const invalidateHelpCenter = new codebuild.PipelineProject(this, `InvalidateHelpCenter`, {
