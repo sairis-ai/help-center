@@ -30,7 +30,10 @@ export default defineConfig({
         // apiKey: '45d97a19ad7a3e508dc49efff031e5cf',
         apiKey: '2ab3d3a8c7b3bbe05ebeb46e3dd03f38',
         indexName: 'help-sairis',
-        askAi: 'RtkJLMVZy3Yh'
+        askAi={{
+          assistantId: "776cf8d4-249c-4c2a-9162-4ffa76bd0980",
+          agentStudio: true,
+        }}
         // OR
         // askAi: {
         //   // at minimum you must provide the assistantId you received from Algolia
