@@ -24,6 +24,23 @@ export class PipelineStack extends cdk.Stack {
       enforceSSL: true,
       versioned: true,
       removalPolicy: cdk.RemovalPolicy.DESTROY,
+      // Rule IDs match the rules applied by hand on 2026-11-22 so that CloudFormation
+      // takes them over in place. Artifacts are disposable: the pipeline rebuilds them.
+      lifecycleRules: [
+        {
+          id: 'expire-help-center-pipeline-artifacts',
+          prefix: 'HelpCenterPipeline/',
+          expiration: cdk.Duration.days(30),
+        },
+        {
+          id: 'expire-help-center-artifact-noncurrent-versions',
+          noncurrentVersionExpiration: cdk.Duration.days(7),
+        },
+        {
+          id: 'abort-help-center-incomplete-uploads',
+          abortIncompleteMultipartUploadAfter: cdk.Duration.days(7),
+        },
+      ],
     })
 
 
@@ -34,6 +51,22 @@ export class PipelineStack extends cdk.Stack {
       enforceSSL: true,
       versioned: true,
       removalPolicy: cdk.RemovalPolicy.DESTROY,
+      // No rule expires CURRENT versions: the live site must never be touched.
+      lifecycleRules: [
+        {
+          id: 'expire-help-center-noncurrent-versions',
+          noncurrentVersionExpiration: cdk.Duration.days(30),
+          noncurrentVersionsToRetain: 2,
+        },
+        {
+          id: 'remove-help-center-expired-delete-markers',
+          expiredObjectDeleteMarker: true,
+        },
+        {
+          id: 'abort-help-center-incomplete-uploads',
+          abortIncompleteMultipartUploadAfter: cdk.Duration.days(7),
+        },
+      ],
     })
 
 
