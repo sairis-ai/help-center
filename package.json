@@ -1,6 +1,6 @@
 {
   "devDependencies": {
-    "vitepress": "2.0.0-alpha.17"
+    "vitepress": "2.0.0-alpha.21"
   },
   "scripts": {
     "docs:dev": "vitepress dev docs",
@@ -9,6 +9,6 @@
     "upgrade": "ncu --interactive --format group"
   },
   "dependencies": {
-    "npm-check-updates": "^20.0.0"
+    "npm-check-updates": "^23.1.1"
   }
 }
