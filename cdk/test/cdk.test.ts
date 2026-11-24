@@ -1,5 +1,5 @@
 import * as cdk from 'aws-cdk-lib'
-import { Template } from 'aws-cdk-lib/assertions'
+import { Match, Template } from 'aws-cdk-lib/assertions'
 import { PipelineStack } from '../lib/pipeline-stack'
 
 const template = (): Template => {
@@ -74,5 +74,27 @@ describe('help center bucket lifecycle rules', () => {
     for (const b of Object.values(buckets) as any[]) {
       expect(b.Properties.LifecycleConfiguration).toBeUndefined()
     }
+  })
+})
+
+describe('help center pipeline source', () => {
+  it('reads GitHub through the help-center-github connection', () => {
+    const arn = 'arn:aws:codeconnections:us-west-2:884568634535:connection/774147bf-7b03-4127-9ae8-478b36909f90'
+    const t = template()
+    t.hasResourceProperties('AWS::CodePipeline::Pipeline', {
+      Stages: Match.arrayWith([
+        Match.objectLike({
+          Name: 'Source',
+          Actions: [Match.objectLike({ Configuration: Match.objectLike({ ConnectionArn: arn }) })],
+        }),
+      ]),
+    })
+    t.hasResourceProperties('AWS::IAM::Policy', {
+      PolicyDocument: {
+        Statement: Match.arrayWith([
+          Match.objectLike({ Action: 'codestar-connections:UseConnection', Resource: arn }),
+        ]),
+      },
+    })
   })
 })
