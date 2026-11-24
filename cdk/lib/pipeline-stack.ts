@@ -192,7 +192,7 @@ export class PipelineStack extends cdk.Stack {
       actionName: 'MergedInGitHub',
       owner: 'sairis-ai',
       repo: 'help-center',
-      connectionArn: 'arn:aws:codeconnections:us-west-2:884568634535:connection/263e2322-42f4-49e9-9b72-ef8f1c919e5b',
+      connectionArn: 'arn:aws:codeconnections:us-west-2:884568634535:connection/774147bf-7b03-4127-9ae8-478b36909f90',
       branch: 'main',
       output: outputSources,
       triggerOnPush: true,
